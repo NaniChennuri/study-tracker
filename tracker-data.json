@@ -1,0 +1,32 @@
+{
+  "hunterName": "Nani",
+  "totalXP": 0,
+  "streak": 0,
+  "totalDays": 0,
+  "lastStudyDate": null,
+  "answersWritten": 0,
+  "stats": {
+    "mcq": 0,
+    "speed": 0,
+    "retrieval": 0,
+    "clarity": 0,
+    "psir": 0
+  },
+  "statHistory": {
+    "mcq": [],
+    "speed": [],
+    "retrieval": [],
+    "clarity": [],
+    "psir": []
+  },
+  "subjects": {},
+  "completedQuests": {},
+  "mockHistory": [],
+  "activityLog": [
+    {
+      "time": "4/24/2026, 6:37:38 PM",
+      "text": "Nani has awakened as a Hunter",
+      "xp": 0
+    }
+  ]
+}
