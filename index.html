@@ -1,0 +1,1122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>UPSC Hunter — Study Tracker</title>
+<link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;500;600;700&family=Orbitron:wght@400;700;900&family=DM+Mono:wght@300;400;500&display=swap" rel="stylesheet"/>
+<style>
+:root {
+  --bg: #05070f;
+  --bg2: #080c18;
+  --panel: #0c1120;
+  --panel2: #101828;
+  --border: #1a2540;
+  --border2: #243050;
+  --blue: #4a9eff;
+  --blue2: #2060cc;
+  --cyan: #00d4ff;
+  --gold: #ffd700;
+  --gold2: #cc9900;
+  --purple: #9b59ff;
+  --green: #00ff88;
+  --red: #ff4455;
+  --orange: #ff8800;
+  --text: #e8eeff;
+  --muted: #4a5a80;
+  --muted2: #2a3550;
+
+  --e-col: #888;
+  --d-col: #4a9eff;
+  --c-col: #00d4ff;
+  --b-col: #9b59ff;
+  --a-col: #ffd700;
+  --s-col: #ff4455;
+  --sp-col: #ff8800;
+}
+* { margin:0; padding:0; box-sizing:border-box; }
+html { scroll-behavior: smooth; }
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: 'Rajdhani', sans-serif;
+  font-weight: 400;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+/* ── SCANLINE OVERLAY ── */
+body::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  background: repeating-linear-gradient(0deg, transparent, transparent 2px, rgba(0,0,0,.03) 2px, rgba(0,0,0,.03) 4px);
+  pointer-events: none;
+  z-index: 1000;
+}
+
+/* ── SETUP SCREEN ── */
+#setup-screen {
+  position: fixed; inset: 0;
+  background: var(--bg);
+  display: flex; align-items: center; justify-content: center;
+  z-index: 500;
+  flex-direction: column;
+  gap: 0;
+}
+.setup-box {
+  background: var(--panel);
+  border: 1px solid var(--border2);
+  border-radius: 8px;
+  padding: 40px;
+  width: 100%; max-width: 480px;
+  position: relative;
+}
+.setup-box::before {
+  content: '';
+  position: absolute;
+  inset: -1px;
+  border-radius: 8px;
+  background: linear-gradient(135deg, var(--blue), var(--purple), var(--cyan));
+  z-index: -1;
+  opacity: .4;
+}
+.setup-title {
+  font-family: 'Orbitron', monospace;
+  font-size: 1.4rem; font-weight: 900;
+  color: var(--cyan);
+  text-align: center;
+  margin-bottom: 6px;
+  letter-spacing: 2px;
+}
+.setup-sub {
+  text-align: center;
+  color: var(--muted);
+  font-size: 13px;
+  margin-bottom: 28px;
+}
+.setup-label {
+  font-family: 'DM Mono', monospace;
+  font-size: 10px; letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--muted);
+  margin-bottom: 6px;
+  display: block;
+}
+.setup-input {
+  width: 100%;
+  background: var(--bg2);
+  border: 1px solid var(--border2);
+  border-radius: 4px;
+  padding: 10px 14px;
+  color: var(--text);
+  font-family: 'DM Mono', monospace;
+  font-size: 13px;
+  margin-bottom: 16px;
+  outline: none;
+  transition: border-color .2s;
+}
+.setup-input:focus { border-color: var(--cyan); }
+.setup-btn {
+  width: 100%;
+  padding: 12px;
+  background: linear-gradient(135deg, var(--blue2), var(--purple));
+  border: none; border-radius: 4px;
+  color: white;
+  font-family: 'Orbitron', monospace;
+  font-size: 12px; font-weight: 700;
+  letter-spacing: 2px;
+  cursor: pointer;
+  transition: opacity .2s;
+  margin-top: 4px;
+}
+.setup-btn:hover { opacity: .85; }
+.setup-note {
+  margin-top: 16px;
+  font-size: 11px; color: var(--muted);
+  text-align: center; line-height: 1.6;
+}
+
+/* ── HEADER ── */
+header {
+  padding: 20px 28px 16px;
+  border-bottom: 1px solid var(--border);
+  display: flex; align-items: center; gap: 20px;
+  flex-wrap: wrap;
+  background: linear-gradient(180deg, rgba(74,158,255,.04) 0%, transparent 100%);
+}
+.logo {
+  font-family: 'Orbitron', monospace;
+  font-size: clamp(1rem, 3vw, 1.4rem);
+  font-weight: 900;
+  color: var(--cyan);
+  letter-spacing: 2px;
+  text-shadow: 0 0 20px rgba(0,212,255,.3);
+}
+.logo span { color: var(--gold); }
+.header-rank {
+  display: flex; align-items: center; gap: 10px;
+  margin-left: auto;
+}
+.rank-badge {
+  font-family: 'Orbitron', monospace;
+  font-size: 1.6rem; font-weight: 900;
+  width: 52px; height: 52px;
+  border-radius: 6px;
+  display: flex; align-items: center; justify-content: center;
+  border: 2px solid;
+  text-shadow: 0 0 10px currentColor;
+  box-shadow: 0 0 15px -5px currentColor;
+}
+.rank-info { font-size: 12px; color: var(--muted); }
+.rank-name { font-size: 15px; font-weight: 600; color: var(--text); }
+
+.header-xp { flex: 1; min-width: 200px; max-width: 300px; }
+.xp-label { font-family: 'DM Mono', monospace; font-size: 9px; letter-spacing: 2px; text-transform: uppercase; color: var(--muted); margin-bottom: 5px; display: flex; justify-content: space-between; }
+.xp-bar { height: 8px; background: var(--panel2); border-radius: 4px; overflow: hidden; border: 1px solid var(--border); }
+.xp-fill { height: 100%; border-radius: 4px; background: linear-gradient(90deg, var(--blue), var(--cyan)); transition: width .6s ease; position: relative; }
+.xp-fill::after { content: ''; position: absolute; inset: 0; background: linear-gradient(90deg, transparent, rgba(255,255,255,.2)); animation: shimmer 2s infinite; }
+@keyframes shimmer { 0%{transform:translateX(-100%)} 100%{transform:translateX(100%)} }
+
+.hdr-btns { display: flex; gap: 8px; }
+.hdr-btn {
+  padding: 7px 14px;
+  background: var(--panel2);
+  border: 1px solid var(--border2);
+  border-radius: 4px;
+  color: var(--muted);
+  font-family: 'DM Mono', monospace;
+  font-size: 10px; letter-spacing: 1px;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: all .2s;
+}
+.hdr-btn:hover { border-color: var(--cyan); color: var(--cyan); }
+.hdr-btn.save-btn { border-color: var(--green); color: var(--green); }
+.hdr-btn.save-btn:hover { background: rgba(0,255,136,.1); }
+
+/* ── MAIN LAYOUT ── */
+main { padding: 24px 28px; display: flex; flex-direction: column; gap: 24px; }
+
+/* ── SECTION TITLE ── */
+.sec-title {
+  font-family: 'Orbitron', monospace;
+  font-size: 11px; letter-spacing: 3px;
+  text-transform: uppercase;
+  color: var(--muted);
+  margin-bottom: 14px;
+  display: flex; align-items: center; gap: 10px;
+}
+.sec-title::after { content: ''; flex: 1; height: 1px; background: var(--border); }
+
+/* ── STATS GRID ── */
+.stats-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); gap: 12px; }
+.stat-card {
+  background: var(--panel);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 14px 16px;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  transition: border-color .2s;
+}
+.stat-card:hover { border-color: var(--border2); }
+.stat-card::before { content: ''; position: absolute; top: 0; left: 0; width: 100%; height: 2px; }
+.stat-card.mcq::before { background: var(--blue); }
+.stat-card.speed::before { background: var(--green); }
+.stat-card.retrieval::before { background: var(--purple); }
+.stat-card.clarity::before { background: var(--gold); }
+.stat-card.psir::before { background: var(--orange); }
+
+.stat-label { font-family: 'DM Mono', monospace; font-size: 9px; letter-spacing: 1.5px; text-transform: uppercase; color: var(--muted); margin-bottom: 8px; }
+.stat-val { font-family: 'Orbitron', monospace; font-size: 1.8rem; font-weight: 700; line-height: 1; }
+.stat-card.mcq .stat-val { color: var(--blue); }
+.stat-card.speed .stat-val { color: var(--green); }
+.stat-card.retrieval .stat-val { color: var(--purple); }
+.stat-card.clarity .stat-val { color: var(--gold); }
+.stat-card.psir .stat-val { color: var(--orange); }
+.stat-unit { font-size: 12px; font-weight: 400; }
+.stat-bar { height: 3px; background: var(--border); border-radius: 2px; margin-top: 10px; overflow: hidden; }
+.stat-fill { height: 100%; border-radius: 2px; transition: width .4s; }
+.stat-card.mcq .stat-fill { background: var(--blue); }
+.stat-card.speed .stat-fill { background: var(--green); }
+.stat-card.retrieval .stat-fill { background: var(--purple); }
+.stat-card.clarity .stat-fill { background: var(--gold); }
+.stat-card.psir .stat-fill { background: var(--orange); }
+.stat-delta { font-size: 11px; color: var(--muted); margin-top: 4px; }
+.stat-delta.up { color: var(--green); }
+.stat-delta.down { color: var(--red); }
+
+/* ── STAT LOG MODAL ── */
+.modal-overlay {
+  position: fixed; inset: 0;
+  background: rgba(0,0,0,.7);
+  z-index: 200;
+  display: none; align-items: center; justify-content: center;
+}
+.modal-overlay.open { display: flex; }
+.modal {
+  background: var(--panel);
+  border: 1px solid var(--border2);
+  border-radius: 8px;
+  padding: 28px;
+  width: 100%; max-width: 360px;
+}
+.modal-title { font-family: 'Orbitron', monospace; font-size: 13px; letter-spacing: 2px; color: var(--cyan); margin-bottom: 16px; }
+.modal-row { display: flex; gap: 10px; align-items: center; margin-bottom: 12px; }
+.modal-label { font-size: 13px; color: var(--muted); min-width: 80px; }
+.modal-input {
+  flex: 1; background: var(--bg2); border: 1px solid var(--border2);
+  border-radius: 4px; padding: 8px 10px;
+  color: var(--text); font-family: 'DM Mono', monospace; font-size: 13px;
+  outline: none;
+}
+.modal-input:focus { border-color: var(--cyan); }
+.modal-btns { display: flex; gap: 8px; margin-top: 16px; }
+.mbtn {
+  flex: 1; padding: 9px;
+  border-radius: 4px; border: 1px solid var(--border2);
+  font-family: 'DM Mono', monospace; font-size: 11px; letter-spacing: 1px;
+  text-transform: uppercase; cursor: pointer; transition: all .2s;
+}
+.mbtn.confirm { background: rgba(74,158,255,.15); border-color: var(--blue); color: var(--blue); }
+.mbtn.confirm:hover { background: rgba(74,158,255,.25); }
+.mbtn.cancel { background: transparent; color: var(--muted); }
+.mbtn.cancel:hover { color: var(--text); }
+
+/* ── DAILY QUESTS ── */
+.quests-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 10px; }
+.quest {
+  background: var(--panel);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 12px 14px;
+  display: flex; align-items: center; gap: 12px;
+  cursor: pointer;
+  transition: all .2s;
+  user-select: none;
+}
+.quest:hover { border-color: var(--border2); }
+.quest.done { background: rgba(0,255,136,.04); border-color: rgba(0,255,136,.2); }
+.quest-check {
+  width: 22px; height: 22px;
+  border-radius: 4px;
+  border: 2px solid var(--border2);
+  display: flex; align-items: center; justify-content: center;
+  font-size: 13px;
+  flex-shrink: 0;
+  transition: all .2s;
+}
+.quest.done .quest-check { background: var(--green); border-color: var(--green); color: var(--bg); }
+.quest-body { flex: 1; }
+.quest-title { font-size: 13px; font-weight: 600; }
+.quest.done .quest-title { color: var(--muted); text-decoration: line-through; }
+.quest-sub { font-size: 11px; color: var(--muted); margin-top: 1px; }
+.quest-xp {
+  font-family: 'Orbitron', monospace;
+  font-size: 10px; color: var(--gold);
+  white-space: nowrap;
+}
+
+/* ── DUNGEON (WEEKLY MOCK) ── */
+.dungeon-panel {
+  background: var(--panel);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 20px;
+}
+.dungeon-header { display: flex; align-items: center; gap: 14px; margin-bottom: 16px; }
+.dungeon-icon {
+  width: 44px; height: 44px;
+  background: rgba(255,68,85,.1);
+  border: 1px solid rgba(255,68,85,.3);
+  border-radius: 6px;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 20px;
+}
+.dungeon-title { font-family: 'Orbitron', monospace; font-size: 14px; font-weight: 700; color: var(--red); }
+.dungeon-sub { font-size: 12px; color: var(--muted); margin-top: 2px; }
+.dungeon-form { display: flex; flex-wrap: wrap; gap: 10px; align-items: flex-end; }
+.df-group { display: flex; flex-direction: column; gap: 4px; }
+.df-label { font-family: 'DM Mono', monospace; font-size: 9px; letter-spacing: 1.5px; text-transform: uppercase; color: var(--muted); }
+.df-input {
+  background: var(--bg2); border: 1px solid var(--border2);
+  border-radius: 4px; padding: 8px 10px;
+  color: var(--text); font-family: 'DM Mono', monospace; font-size: 13px;
+  width: 120px; outline: none;
+}
+.df-input:focus { border-color: var(--red); }
+.df-btn {
+  padding: 9px 18px;
+  background: rgba(255,68,85,.1);
+  border: 1px solid rgba(255,68,85,.4);
+  border-radius: 4px;
+  color: var(--red);
+  font-family: 'Orbitron', monospace; font-size: 10px; letter-spacing: 1.5px;
+  text-transform: uppercase; cursor: pointer; transition: all .2s;
+}
+.df-btn:hover { background: rgba(255,68,85,.2); }
+
+.mock-history { margin-top: 16px; display: flex; flex-direction: column; gap: 6px; max-height: 160px; overflow-y: auto; }
+.mock-entry {
+  display: flex; align-items: center; gap: 10px;
+  padding: 8px 10px;
+  background: var(--panel2);
+  border-radius: 4px;
+  font-size: 12px;
+}
+.mock-date { font-family: 'DM Mono', monospace; font-size: 10px; color: var(--muted); min-width: 80px; }
+.mock-type { font-size: 11px; color: var(--blue); min-width: 80px; }
+.mock-score { font-family: 'Orbitron', monospace; font-size: 13px; font-weight: 700; margin-left: auto; }
+.mock-score.high { color: var(--green); }
+.mock-score.mid { color: var(--gold); }
+.mock-score.low { color: var(--red); }
+
+/* ── SUBJECT TRACKER ── */
+.subjects-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 10px; }
+.subj-card {
+  background: var(--panel);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 14px;
+  cursor: pointer;
+  transition: all .2s;
+}
+.subj-card:hover { border-color: var(--border2); }
+.subj-card.unlocked { border-color: rgba(0,255,136,.3); background: rgba(0,255,136,.03); }
+.subj-header { display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 10px; }
+.subj-name { font-size: 14px; font-weight: 600; }
+.subj-level { font-family: 'DM Mono', monospace; font-size: 9px; letter-spacing: 1px; padding: 2px 8px; border-radius: 3px; }
+.lv0 { background: rgba(255,136,0,.1); color: var(--orange); border: 1px solid rgba(255,136,0,.2); }
+.lv1 { background: rgba(74,158,255,.1); color: var(--blue); border: 1px solid rgba(74,158,255,.2); }
+.lv2 { background: rgba(0,255,136,.1); color: var(--green); border: 1px solid rgba(0,255,136,.2); }
+.lv3 { background: rgba(155,89,255,.1); color: var(--purple); border: 1px solid rgba(155,89,255,.2); }
+.subj-progress { height: 4px; background: var(--border); border-radius: 2px; overflow: hidden; }
+.subj-fill { height: 100%; border-radius: 2px; transition: width .4s; }
+.subj-meta { display: flex; justify-content: space-between; margin-top: 6px; font-size: 11px; color: var(--muted); }
+.subj-unlock { font-size: 11px; color: var(--green); margin-top: 6px; }
+
+/* ── STREAK ── */
+.streak-row { display: flex; gap: 10px; flex-wrap: wrap; }
+.streak-card {
+  background: var(--panel);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 14px 18px;
+  display: flex; align-items: center; gap: 14px;
+  flex: 1; min-width: 160px;
+}
+.streak-num { font-family: 'Orbitron', monospace; font-size: 2rem; font-weight: 900; color: var(--gold); text-shadow: 0 0 20px rgba(255,215,0,.3); }
+.streak-label { font-size: 13px; color: var(--muted); }
+.streak-sub { font-size: 11px; color: var(--muted2); margin-top: 2px; }
+
+/* ── LOG ── */
+.log-list { display: flex; flex-direction: column; gap: 4px; max-height: 200px; overflow-y: auto; }
+.log-entry {
+  padding: 8px 12px;
+  background: var(--panel);
+  border-radius: 4px;
+  display: flex; gap: 10px; align-items: center;
+  font-size: 12px;
+}
+.log-time { font-family: 'DM Mono', monospace; font-size: 10px; color: var(--muted); min-width: 120px; }
+.log-text { color: var(--text); }
+.log-xp { font-family: 'Orbitron', monospace; font-size: 10px; color: var(--gold); margin-left: auto; }
+
+/* ── SAVE STATUS ── */
+.save-status {
+  position: fixed; bottom: 20px; right: 20px;
+  padding: 10px 18px;
+  border-radius: 6px;
+  font-family: 'DM Mono', monospace;
+  font-size: 11px; letter-spacing: 1px;
+  z-index: 100;
+  transition: all .3s;
+  opacity: 0; pointer-events: none;
+}
+.save-status.show { opacity: 1; }
+.save-status.ok { background: rgba(0,255,136,.15); border: 1px solid var(--green); color: var(--green); }
+.save-status.err { background: rgba(255,68,85,.15); border: 1px solid var(--red); color: var(--red); }
+.save-status.saving { background: rgba(74,158,255,.15); border: 1px solid var(--blue); color: var(--blue); }
+
+/* scrollbar */
+::-webkit-scrollbar { width: 4px; }
+::-webkit-scrollbar-track { background: var(--bg2); }
+::-webkit-scrollbar-thumb { background: var(--border2); border-radius: 2px; }
+
+@media(max-width:600px){
+  header { padding: 14px 16px; }
+  main { padding: 16px; }
+  .rank-badge { width: 40px; height: 40px; font-size: 1.2rem; }
+}
+</style>
+</head>
+<body>
+
+<!-- ── SETUP SCREEN ── -->
+<div id="setup-screen">
+  <div class="setup-box">
+    <div class="setup-title">SYSTEM AWAKENING</div>
+    <div class="setup-sub">One-time setup. Your token stays in your browser only.</div>
+    <label class="setup-label">GitHub Personal Access Token</label>
+    <input class="setup-input" type="password" id="setup-token" placeholder="github_pat_..."/>
+    <label class="setup-label">Hunter Name (your name)</label>
+    <input class="setup-input" type="text" id="setup-name" placeholder="e.g. Nani"/>
+    <button class="setup-btn" onclick="completeSetup()">ENTER THE SYSTEM</button>
+    <div class="setup-note">
+      Token is stored only in your browser (localStorage).<br/>
+      It is never committed to GitHub or shared anywhere.<br/>
+      Repo: github.com/NaniChennuri/study-tracker
+    </div>
+  </div>
+</div>
+
+<!-- ── STAT LOG MODAL ── -->
+<div class="modal-overlay" id="stat-modal">
+  <div class="modal">
+    <div class="modal-title" id="modal-title">UPDATE STAT</div>
+    <div class="modal-row">
+      <span class="modal-label" id="modal-label">Value</span>
+      <input class="modal-input" type="number" id="modal-input" min="0" max="100"/>
+      <span style="font-size:12px;color:var(--muted)" id="modal-unit">%</span>
+    </div>
+    <div style="font-size:12px;color:var(--muted);margin-bottom:4px;" id="modal-hint"></div>
+    <div class="modal-btns">
+      <button class="mbtn cancel" onclick="closeModal()">Cancel</button>
+      <button class="mbtn confirm" onclick="saveStatFromModal()">Update</button>
+    </div>
+  </div>
+</div>
+
+<!-- ── HEADER ── -->
+<header>
+  <div class="logo">UPSC <span>HUNTER</span></div>
+  <div id="header-xp" class="header-xp">
+    <div class="xp-label">
+      <span>EXPERIENCE</span>
+      <span id="xp-text">0 / 500 XP</span>
+    </div>
+    <div class="xp-bar"><div class="xp-fill" id="xp-fill" style="width:0%"></div></div>
+  </div>
+  <div class="header-rank">
+    <div class="rank-badge" id="rank-badge">E</div>
+    <div>
+      <div class="rank-name" id="rank-name">E Rank Hunter</div>
+      <div class="rank-info" id="rank-info">Just awakened</div>
+    </div>
+  </div>
+  <div class="hdr-btns">
+    <button class="hdr-btn save-btn" onclick="saveToGitHub()">⬆ SAVE</button>
+    <button class="hdr-btn" onclick="resetDay()">NEW DAY</button>
+    <button class="hdr-btn" onclick="showSettings()">⚙</button>
+  </div>
+</header>
+
+<main>
+
+  <!-- STREAK -->
+  <div>
+    <div class="sec-title">Hunter Status</div>
+    <div class="streak-row">
+      <div class="streak-card">
+        <div class="streak-num" id="streak-num">0</div>
+        <div>
+          <div class="streak-label">Day Streak 🔥</div>
+          <div class="streak-sub">Consecutive study days</div>
+        </div>
+      </div>
+      <div class="streak-card">
+        <div class="streak-num" style="color:var(--cyan)" id="total-days">0</div>
+        <div>
+          <div class="streak-label">Total Days</div>
+          <div class="streak-sub">Since awakening</div>
+        </div>
+      </div>
+      <div class="streak-card">
+        <div class="streak-num" style="color:var(--purple)" id="total-xp-disp">0</div>
+        <div>
+          <div class="streak-label">Total XP</div>
+          <div class="streak-sub">Lifetime earned</div>
+        </div>
+      </div>
+      <div class="streak-card">
+        <div class="streak-num" style="color:var(--green)" id="answers-written">0</div>
+        <div>
+          <div class="streak-label">Answers Written</div>
+          <div class="streak-sub">Total answers</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- STATS -->
+  <div>
+    <div class="sec-title">Character Stats — Click to Update</div>
+    <div class="stats-grid">
+      <div class="stat-card mcq" onclick="openModal('mcq')">
+        <div class="stat-label">MCQ Accuracy</div>
+        <div class="stat-val"><span id="stat-mcq">0</span><span class="stat-unit">%</span></div>
+        <div class="stat-bar"><div class="stat-fill" id="bar-mcq" style="width:0%"></div></div>
+        <div class="stat-delta" id="delta-mcq">No data yet</div>
+      </div>
+      <div class="stat-card speed" onclick="openModal('speed')">
+        <div class="stat-label">Writing Speed</div>
+        <div class="stat-val"><span id="stat-speed">0</span><span class="stat-unit">min/ans</span></div>
+        <div class="stat-bar"><div class="stat-fill" id="bar-speed" style="width:0%"></div></div>
+        <div class="stat-delta" id="delta-speed">Target: 12 min</div>
+      </div>
+      <div class="stat-card retrieval" onclick="openModal('retrieval')">
+        <div class="stat-label">Retrieval Score</div>
+        <div class="stat-val"><span id="stat-retrieval">0</span><span class="stat-unit">/5</span></div>
+        <div class="stat-bar"><div class="stat-fill" id="bar-retrieval" style="width:0%"></div></div>
+        <div class="stat-delta" id="delta-retrieval">Evening recall score</div>
+      </div>
+      <div class="stat-card clarity" onclick="openModal('clarity')">
+        <div class="stat-label">Answer Clarity</div>
+        <div class="stat-val"><span id="stat-clarity">0</span><span class="stat-unit">/5</span></div>
+        <div class="stat-bar"><div class="stat-fill" id="bar-clarity" style="width:0%"></div></div>
+        <div class="stat-delta" id="delta-clarity">Structure + vision</div>
+      </div>
+      <div class="stat-card psir" onclick="openModal('psir')">
+        <div class="stat-label">PSIR Depth</div>
+        <div class="stat-val"><span id="stat-psir">0</span><span class="stat-unit">/5</span></div>
+        <div class="stat-bar"><div class="stat-fill" id="bar-psir" style="width:0%"></div></div>
+        <div class="stat-delta" id="delta-psir">Argument sharpness</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- DAILY QUESTS -->
+  <div>
+    <div class="sec-title">Daily Quests — <span id="quest-date" style="color:var(--cyan)"></span></div>
+    <div class="quests-grid" id="quests-container"></div>
+  </div>
+
+  <!-- WEEKLY DUNGEON -->
+  <div>
+    <div class="sec-title">Weekly Dungeon — Mock Test</div>
+    <div class="dungeon-panel">
+      <div class="dungeon-header">
+        <div class="dungeon-icon">⚔️</div>
+        <div>
+          <div class="dungeon-title">DUNGEON RAID</div>
+          <div class="dungeon-sub">Log your mock test result. Weekly mock covers this week's topics.</div>
+        </div>
+      </div>
+      <div class="dungeon-form">
+        <div class="df-group">
+          <div class="df-label">Mock Type</div>
+          <select class="df-input" id="mock-type" style="width:150px">
+            <option>Weekly</option>
+            <option>Monthly Mega</option>
+            <option>Subject-wise</option>
+            <option>CSAT</option>
+            <option>Full Prelims</option>
+          </select>
+        </div>
+        <div class="df-group">
+          <div class="df-label">Score %</div>
+          <input class="df-input" type="number" id="mock-score" min="0" max="100" placeholder="65"/>
+        </div>
+        <div class="df-group">
+          <div class="df-label">Subject</div>
+          <input class="df-input" type="text" id="mock-subject" placeholder="Polity" style="width:120px"/>
+        </div>
+        <button class="df-btn" onclick="logMock()">LOG RAID</button>
+      </div>
+      <div class="mock-history" id="mock-history"></div>
+    </div>
+  </div>
+
+  <!-- SUBJECT TRACKER -->
+  <div>
+    <div class="sec-title">Subject Skills — Click to Update Progress</div>
+    <div class="subjects-grid" id="subjects-container"></div>
+  </div>
+
+  <!-- ACTIVITY LOG -->
+  <div>
+    <div class="sec-title">Activity Log</div>
+    <div class="log-list" id="log-list"></div>
+  </div>
+
+</main>
+
+<div class="save-status" id="save-status"></div>
+
+<script>
+// ── CONFIG ──
+const GITHUB_USER = 'NaniChennuri';
+const GITHUB_REPO = 'study-tracker';
+const DATA_FILE   = 'tracker-data.json';
+
+// ── SUBJECTS ──
+const SUBJECTS = [
+  { id:'psir',    name:'PSIR',              level:'lv0', topics:64 },
+  { id:'history', name:'History',           level:'lv1', topics:45 },
+  { id:'polity',  name:'Polity',            level:'lv1', topics:23 },
+  { id:'economy', name:'Economy',           level:'lv1', topics:18 },
+  { id:'geo',     name:'Geography',         level:'lv1', topics:15 },
+  { id:'ethics',  name:'Ethics',            level:'lv2', topics:8  },
+  { id:'sci',     name:'Science & Tech',    level:'lv2', topics:8  },
+  { id:'env',     name:'Environment',       level:'lv2', topics:6  },
+  { id:'society', name:'Society & SJ',      level:'lv3', topics:10 },
+  { id:'security',name:'Security',          level:'lv3', topics:10 },
+  { id:'ir',      name:'IR',                level:'lv3', topics:10 },
+  { id:'gov',     name:'Governance',        level:'lv3', topics:7  },
+  { id:'dm',      name:'Disaster Mgmt',     level:'lv3', topics:5  },
+  { id:'essay',   name:'Essay',             level:'lv0', topics:20 },
+  { id:'csat',    name:'CSAT',              level:'lv0', topics:20 },
+];
+
+// ── DAILY QUESTS ──
+const QUESTS = {
+  0: [ // Sunday
+    { id:'sun_read',   title:'Ethics Topic Read',     sub:'60 min morning read',          xp:30 },
+    { id:'sun_edit',   title:'Editorial',             sub:'30 min — The Hindu',           xp:10 },
+    { id:'sun_rev',    title:'10-min Re-revision',    sub:'Recall today\'s topic',         xp:15 },
+    { id:'sun_ca',     title:'CA Read',               sub:'Insights daily — 20 min',      xp:10 },
+    { id:'sun_write',  title:'Ethics Case Study',     sub:'Write full case study answer', xp:25 },
+    { id:'sun_essay',  title:'Essay / CSAT',          sub:'Fortnightly — whichever week', xp:20 },
+  ],
+  1: [ // Monday
+    { id:'mon_read',  title:'GS Topic Read',          sub:'60 min — current L1 subject',  xp:30 },
+    { id:'mon_edit',  title:'Editorial',              sub:'30 min — The Hindu',           xp:10 },
+    { id:'mon_rev',   title:'10-min Re-revision',     sub:'Recall today\'s topic',        xp:15 },
+    { id:'mon_ca',    title:'CA Read',                sub:'Insights daily — 20 min',      xp:10 },
+    { id:'mon_out',   title:'MCQ or Answer Writing',  sub:'On today\'s GS topic',         xp:25 },
+  ],
+  2: [ // Tuesday
+    { id:'tue_read',  title:'PSIR Topic Read',        sub:'60 min — current paper',       xp:30 },
+    { id:'tue_edit',  title:'Editorial',              sub:'30 min — IR angle',            xp:10 },
+    { id:'tue_rev',   title:'10-min Re-revision',     sub:'Recall today\'s PSIR topic',   xp:15 },
+    { id:'tue_ca',    title:'CA Read',                sub:'Insights daily — 20 min',      xp:10 },
+    { id:'tue_write', title:'PSIR Answer Writing',    sub:'1 PYQ answer — compulsory',    xp:30 },
+  ],
+  3: [ // Wednesday
+    { id:'wed_read',  title:'GS Topic Read',          sub:'60 min — current L1 subject',  xp:30 },
+    { id:'wed_edit',  title:'Editorial',              sub:'30 min — governance angle',    xp:10 },
+    { id:'wed_rev',   title:'10-min Re-revision',     sub:'Recall today\'s topic',        xp:15 },
+    { id:'wed_ca',    title:'CA Read',                sub:'Insights daily — 20 min',      xp:10 },
+    { id:'wed_out',   title:'MCQ or Answer Writing',  sub:'On today\'s GS topic',         xp:25 },
+  ],
+  4: [ // Thursday
+    { id:'thu_read',  title:'PSIR Topic Read',        sub:'60 min — continue from Tue',   xp:30 },
+    { id:'thu_edit',  title:'Editorial',              sub:'30 min — political theory',    xp:10 },
+    { id:'thu_rev',   title:'10-min Re-revision',     sub:'Recall today\'s PSIR topic',   xp:15 },
+    { id:'thu_ca',    title:'CA Read',                sub:'Insights daily — 20 min',      xp:10 },
+    { id:'thu_write', title:'PSIR Answer Writing',    sub:'1 PYQ answer — compulsory',    xp:30 },
+  ],
+  5: [ // Friday
+    { id:'fri_read',  title:'GS Topic Read',          sub:'60 min — wrap up week subject',xp:30 },
+    { id:'fri_edit',  title:'Editorial',              sub:'30 min — essay angle',         xp:10 },
+    { id:'fri_rev',   title:'10-min Re-revision',     sub:'Today + Monday recall',        xp:15 },
+    { id:'fri_ca',    title:'CA Read',                sub:'Insights daily — 20 min',      xp:10 },
+    { id:'fri_out',   title:'MCQ or Answer Writing',  sub:'On today\'s GS topic',         xp:25 },
+  ],
+  6: [ // Saturday
+    { id:'sat_read',  title:'GS Topic Read',          sub:'60 min — uninterrupted',       xp:30 },
+    { id:'sat_rev',   title:'10-min Re-revision',     sub:'Recall today\'s topic',        xp:15 },
+    { id:'sat_ca',    title:'CA Read',                sub:'Insights daily — 20 min',      xp:10 },
+    { id:'sat_mock',  title:'Weekly Mock Test',       sub:'90 min timed — week topics',   xp:50 },
+    { id:'sat_anal',  title:'Mock Analysis',          sub:'Every wrong answer traced',    xp:30 },
+  ],
+};
+
+// ── RANKS ──
+const RANKS = [
+  { rank:'E', name:'E Rank Hunter',    info:'Just awakened',          xpNeeded:0,    color:'var(--e-col)' },
+  { rank:'D', name:'D Rank Hunter',    info:'Showing promise',        xpNeeded:500,  color:'var(--d-col)' },
+  { rank:'C', name:'C Rank Hunter',    info:'Building strength',      xpNeeded:1500, color:'var(--c-col)' },
+  { rank:'B', name:'B Rank Hunter',    info:'Reliable combatant',     xpNeeded:3500, color:'var(--b-col)' },
+  { rank:'A', name:'A Rank Hunter',    info:'Elite hunter',           xpNeeded:7000, color:'var(--a-col)' },
+  { rank:'S', name:'S Rank Hunter',    info:'Prelims cleared',        xpNeeded:12000,color:'var(--s-col)' },
+  { rank:'S+',name:'National Hunter',  info:'Mains written',          xpNeeded:20000,color:'var(--sp-col)' },
+];
+
+// ── STATE ──
+let state = {
+  hunterName: '',
+  totalXP: 0,
+  streak: 0,
+  totalDays: 0,
+  lastStudyDate: null,
+  answersWritten: 0,
+  stats: { mcq:0, speed:0, retrieval:0, clarity:0, psir:0 },
+  statHistory: { mcq:[], speed:[], retrieval:[], clarity:[], psir:[] },
+  subjects: {},
+  completedQuests: {},  // date -> [quest ids]
+  mockHistory: [],
+  activityLog: [],
+};
+let currentStatKey = null;
+let githubToken = '';
+
+// ── INIT ──
+function init() {
+  githubToken = localStorage.getItem('gh_token') || '';
+  const savedState = localStorage.getItem('upsc_state');
+  if (savedState) {
+    try { state = { ...state, ...JSON.parse(savedState) }; } catch(e) {}
+  }
+  if (!githubToken || !state.hunterName) {
+    document.getElementById('setup-screen').style.display = 'flex';
+  } else {
+    document.getElementById('setup-screen').style.display = 'none';
+    loadFromGitHub();
+  }
+  renderAll();
+}
+
+async function loadFromGitHub() {
+  if (!githubToken) return;
+  try {
+    const res = await fetch(`https://api.github.com/repos/${GITHUB_USER}/${GITHUB_REPO}/contents/${DATA_FILE}`, {
+      headers: { Authorization: `token ${githubToken}`, Accept: 'application/vnd.github.v3+json' }
+    });
+    if (res.ok) {
+      const json = await res.json();
+      const data = JSON.parse(atob(json.content));
+      state = { ...state, ...data };
+      localStorage.setItem('upsc_state', JSON.stringify(state));
+      renderAll();
+      showStatus('Data loaded from GitHub', 'ok');
+    }
+  } catch(e) { /* silent fail — use localStorage */ }
+}
+
+function completeSetup() {
+  const token = document.getElementById('setup-token').value.trim();
+  const name  = document.getElementById('setup-name').value.trim();
+  if (!token || !name) { alert('Please enter both token and name'); return; }
+  githubToken = token;
+  state.hunterName = name;
+  localStorage.setItem('gh_token', token);
+  localStorage.setItem('upsc_state', JSON.stringify(state));
+  document.getElementById('setup-screen').style.display = 'none';
+  addLog(`${name} has awakened as a Hunter`, 0);
+  loadFromGitHub();
+  renderAll();
+}
+
+// ── RENDER ──
+function renderAll() {
+  renderHeader();
+  renderQuests();
+  renderStats();
+  renderSubjects();
+  renderMockHistory();
+  renderLog();
+  document.getElementById('quest-date').textContent = new Date().toDateString();
+  document.getElementById('streak-num').textContent = state.streak;
+  document.getElementById('total-days').textContent = state.totalDays;
+  document.getElementById('total-xp-disp').textContent = state.totalXP;
+  document.getElementById('answers-written').textContent = state.answersWritten;
+}
+
+function renderHeader() {
+  const rank = getCurrentRank();
+  const nextRank = getNextRank();
+  const badge = document.getElementById('rank-badge');
+  badge.textContent = rank.rank;
+  badge.style.color = rank.color;
+  badge.style.borderColor = rank.color;
+  document.getElementById('rank-name').textContent = `${state.hunterName || 'Hunter'} · ${rank.name}`;
+  document.getElementById('rank-info').textContent = rank.info;
+  const xpInLevel = state.totalXP - rank.xpNeeded;
+  const xpNeeded  = nextRank ? (nextRank.xpNeeded - rank.xpNeeded) : 1000;
+  const pct = nextRank ? Math.min(100, (xpInLevel / xpNeeded) * 100) : 100;
+  document.getElementById('xp-fill').style.width = pct + '%';
+  document.getElementById('xp-text').textContent = nextRank
+    ? `${xpInLevel} / ${xpNeeded} XP`
+    : `MAX RANK`;
+}
+
+function renderQuests() {
+  const day = new Date().getDay();
+  const quests = QUESTS[day] || QUESTS[1];
+  const todayKey = getTodayKey();
+  const done = state.completedQuests[todayKey] || [];
+  const container = document.getElementById('quests-container');
+  container.innerHTML = quests.map(q => `
+    <div class="quest ${done.includes(q.id) ? 'done' : ''}" onclick="toggleQuest('${q.id}', ${q.xp})">
+      <div class="quest-check">${done.includes(q.id) ? '✓' : ''}</div>
+      <div class="quest-body">
+        <div class="quest-title">${q.title}</div>
+        <div class="quest-sub">${q.sub}</div>
+      </div>
+      <div class="quest-xp">+${q.xp} XP</div>
+    </div>
+  `).join('');
+}
+
+function renderStats() {
+  const s = state.stats;
+  document.getElementById('stat-mcq').textContent = s.mcq;
+  document.getElementById('stat-speed').textContent = s.speed;
+  document.getElementById('stat-retrieval').textContent = s.retrieval;
+  document.getElementById('stat-clarity').textContent = s.clarity;
+  document.getElementById('stat-psir').textContent = s.psir;
+  document.getElementById('bar-mcq').style.width = s.mcq + '%';
+  document.getElementById('bar-speed').style.width = s.speed > 0 ? Math.max(10, 100 - ((s.speed / 30) * 100)) + '%' : '0%';
+  document.getElementById('bar-retrieval').style.width = (s.retrieval / 5 * 100) + '%';
+  document.getElementById('bar-clarity').style.width = (s.clarity / 5 * 100) + '%';
+  document.getElementById('bar-psir').style.width = (s.psir / 5 * 100) + '%';
+  // deltas
+  renderDelta('mcq', state.statHistory.mcq, s.mcq, '%');
+  if (s.speed > 0) {
+    const d = document.getElementById('delta-speed');
+    d.textContent = s.speed <= 12 ? '✓ On target' : `${s.speed - 12} min over target`;
+    d.className = 'stat-delta ' + (s.speed <= 12 ? 'up' : 'down');
+  }
+  renderDelta('retrieval', state.statHistory.retrieval, s.retrieval, '/5');
+  renderDelta('clarity', state.statHistory.clarity, s.clarity, '/5');
+  renderDelta('psir', state.statHistory.psir, s.psir, '/5');
+}
+
+function renderDelta(key, history, current, unit) {
+  const el = document.getElementById('delta-' + key);
+  if (!el) return;
+  if (history.length < 2) { el.textContent = 'Baseline'; el.className = 'stat-delta'; return; }
+  const prev = history[history.length - 2];
+  const diff = current - prev;
+  if (diff > 0) { el.textContent = `↑ +${diff}${unit} from last`; el.className = 'stat-delta up'; }
+  else if (diff < 0) { el.textContent = `↓ ${diff}${unit} from last`; el.className = 'stat-delta down'; }
+  else { el.textContent = 'No change'; el.className = 'stat-delta'; }
+}
+
+function renderSubjects() {
+  const container = document.getElementById('subjects-container');
+  container.innerHTML = SUBJECTS.map(s => {
+    const progress = state.subjects[s.id] || 0;
+    const pct = Math.min(100, (progress / s.topics) * 100);
+    const colors = { lv0:'#ff8800', lv1:'#4a9eff', lv2:'#00ff88', lv3:'#9b59ff' };
+    const col = colors[s.level] || '#4a9eff';
+    const unlocked = pct >= 100;
+    return `
+      <div class="subj-card ${unlocked ? 'unlocked' : ''}" onclick="updateSubject('${s.id}', ${s.topics})">
+        <div class="subj-header">
+          <div class="subj-name">${s.name}</div>
+          <div class="subj-level ${s.level}">${s.level.toUpperCase()}</div>
+        </div>
+        <div class="subj-progress">
+          <div class="subj-fill" style="width:${pct}%;background:${col}"></div>
+        </div>
+        <div class="subj-meta">
+          <span>${progress} / ${s.topics} topics</span>
+          <span>${Math.round(pct)}%</span>
+        </div>
+        ${unlocked ? '<div class="subj-unlock">✓ SKILL UNLOCKED</div>' : ''}
+      </div>
+    `;
+  }).join('');
+}
+
+function renderMockHistory() {
+  const container = document.getElementById('mock-history');
+  const entries = [...state.mockHistory].reverse().slice(0, 10);
+  if (!entries.length) { container.innerHTML = '<div style="font-size:12px;color:var(--muted);padding:8px;">No raids logged yet.</div>'; return; }
+  container.innerHTML = entries.map(m => {
+    const cls = m.score >= 70 ? 'high' : m.score >= 50 ? 'mid' : 'low';
+    return `<div class="mock-entry">
+      <span class="mock-date">${m.date}</span>
+      <span class="mock-type">${m.type}</span>
+      <span style="font-size:11px;color:var(--muted)">${m.subject || ''}</span>
+      <span class="mock-score ${cls}">${m.score}%</span>
+    </div>`;
+  }).join('');
+}
+
+function renderLog() {
+  const container = document.getElementById('log-list');
+  const entries = [...state.activityLog].reverse().slice(0, 20);
+  if (!entries.length) { container.innerHTML = '<div style="font-size:12px;color:var(--muted);padding:8px;">No activity yet.</div>'; return; }
+  container.innerHTML = entries.map(l => `
+    <div class="log-entry">
+      <span class="log-time">${l.time}</span>
+      <span class="log-text">${l.text}</span>
+      ${l.xp ? `<span class="log-xp">+${l.xp} XP</span>` : ''}
+    </div>
+  `).join('');
+}
+
+// ── ACTIONS ──
+function toggleQuest(id, xp) {
+  const todayKey = getTodayKey();
+  if (!state.completedQuests[todayKey]) state.completedQuests[todayKey] = [];
+  const arr = state.completedQuests[todayKey];
+  const idx = arr.indexOf(id);
+  if (idx === -1) {
+    arr.push(id);
+    state.totalXP += xp;
+    if (id.includes('write') || id.includes('out')) state.answersWritten++;
+    addLog(`Quest completed: ${id.replace(/_/g,' ')}`, xp);
+    updateStreak();
+  } else {
+    arr.splice(idx, 1);
+    state.totalXP = Math.max(0, state.totalXP - xp);
+    if (id.includes('write') || id.includes('out')) state.answersWritten = Math.max(0, state.answersWritten - 1);
+  }
+  saveLocal();
+  renderAll();
+}
+
+function openModal(key) {
+  currentStatKey = key;
+  const labels = { mcq:'MCQ Score', speed:'Minutes/Answer', retrieval:'Recall (1-5)', clarity:'Clarity (1-5)', psir:'PSIR Depth (1-5)' };
+  const units  = { mcq:'%', speed:'min', retrieval:'/5', clarity:'/5', psir:'/5' };
+  const hints  = { mcq:'Enter your latest mock MCQ accuracy %', speed:'How many minutes per answer today?', retrieval:'1=poor 2=weak 3=ok 4=good 5=perfect', clarity:'1=vague 3=structured 5=sharp&precise', psir:'1=surface 3=analytical 5=exam-ready' };
+  document.getElementById('modal-title').textContent = 'UPDATE: ' + (labels[key] || key).toUpperCase();
+  document.getElementById('modal-label').textContent = labels[key] || key;
+  document.getElementById('modal-unit').textContent = units[key] || '';
+  document.getElementById('modal-hint').textContent = hints[key] || '';
+  document.getElementById('modal-input').value = state.stats[key] || '';
+  document.getElementById('stat-modal').classList.add('open');
+}
+
+function closeModal() {
+  document.getElementById('stat-modal').classList.remove('open');
+  currentStatKey = null;
+}
+
+function saveStatFromModal() {
+  if (!currentStatKey) return;
+  const val = parseFloat(document.getElementById('modal-input').value);
+  if (isNaN(val)) return;
+  const prev = state.stats[currentStatKey];
+  state.stats[currentStatKey] = val;
+  if (!state.statHistory[currentStatKey]) state.statHistory[currentStatKey] = [];
+  state.statHistory[currentStatKey].push(val);
+  const diff = val - prev;
+  if (diff !== 0) addLog(`Stat updated: ${currentStatKey} → ${val}${diff > 0 ? ' (↑'+diff+')' : ' (↓'+Math.abs(diff)+')'}`, 0);
+  closeModal();
+  saveLocal();
+  renderAll();
+}
+
+function logMock() {
+  const score   = parseInt(document.getElementById('mock-score').value);
+  const type    = document.getElementById('mock-type').value;
+  const subject = document.getElementById('mock-subject').value;
+  if (isNaN(score)) { alert('Enter a score'); return; }
+  const entry = { date: new Date().toLocaleDateString(), type, subject, score };
+  state.mockHistory.push(entry);
+  // update MCQ stat
+  state.stats.mcq = score;
+  if (!state.statHistory.mcq) state.statHistory.mcq = [];
+  state.statHistory.mcq.push(score);
+  const xp = score >= 70 ? 100 : score >= 50 ? 60 : 30;
+  state.totalXP += xp;
+  addLog(`${type} mock: ${score}% — ${subject || 'Mixed'}`, xp);
+  document.getElementById('mock-score').value = '';
+  document.getElementById('mock-subject').value = '';
+  saveLocal();
+  renderAll();
+}
+
+function updateSubject(id, maxTopics) {
+  const current = state.subjects[id] || 0;
+  const val = prompt(`Topics completed for ${id} (out of ${maxTopics}):`, current);
+  if (val === null) return;
+  const n = parseInt(val);
+  if (isNaN(n) || n < 0 || n > maxTopics) return;
+  const prev = state.subjects[id] || 0;
+  state.subjects[id] = n;
+  if (n >= maxTopics && prev < maxTopics) {
+    state.totalXP += 200;
+    addLog(`SKILL UNLOCKED: ${id.toUpperCase()} complete!`, 200);
+  } else {
+    addLog(`Subject updated: ${id} → ${n}/${maxTopics} topics`, 0);
+  }
+  saveLocal();
+  renderAll();
+}
+
+function resetDay() {
+  if (!confirm('Start a new day? This resets today\'s quest checkmarks.')) return;
+  updateStreak();
+  saveLocal();
+  renderAll();
+}
+
+function updateStreak() {
+  const today = getTodayKey();
+  const yesterday = getYesterdayKey();
+  if (state.lastStudyDate === yesterday) {
+    state.streak++;
+  } else if (state.lastStudyDate !== today) {
+    state.streak = 1;
+  }
+  if (state.lastStudyDate !== today) {
+    state.totalDays++;
+    state.lastStudyDate = today;
+  }
+}
+
+function addLog(text, xp) {
+  state.activityLog.push({ time: new Date().toLocaleString(), text, xp });
+  if (state.activityLog.length > 100) state.activityLog.shift();
+}
+
+// ── GITHUB SAVE ──
+async function saveToGitHub() {
+  if (!githubToken) { showStatus('No token. Go to ⚙ settings.', 'err'); return; }
+  showStatus('Saving...', 'saving');
+  saveLocal();
+  try {
+    // get current SHA
+    let sha = null;
+    const getRes = await fetch(`https://api.github.com/repos/${GITHUB_USER}/${GITHUB_REPO}/contents/${DATA_FILE}`, {
+      headers: { Authorization: `token ${githubToken}`, Accept: 'application/vnd.github.v3+json' }
+    });
+    if (getRes.ok) { const j = await getRes.json(); sha = j.sha; }
+    const content = btoa(unescape(encodeURIComponent(JSON.stringify(state, null, 2))));
+    const body = { message: `tracker update ${new Date().toISOString()}`, content };
+    if (sha) body.sha = sha;
+    const putRes = await fetch(`https://api.github.com/repos/${GITHUB_USER}/${GITHUB_REPO}/contents/${DATA_FILE}`, {
+      method: 'PUT',
+      headers: { Authorization: `token ${githubToken}`, 'Content-Type': 'application/json', Accept: 'application/vnd.github.v3+json' },
+      body: JSON.stringify(body)
+    });
+    if (putRes.ok) { showStatus('Saved to GitHub ✓', 'ok'); addLog('Data saved to GitHub', 0); }
+    else { const err = await putRes.json(); showStatus('Save failed: ' + (err.message || putRes.status), 'err'); }
+  } catch(e) { showStatus('Network error: ' + e.message, 'err'); }
+}
+
+function showSettings() {
+  const token = prompt('Update GitHub token (leave empty to keep current):', '');
+  if (token && token.trim()) {
+    githubToken = token.trim();
+    localStorage.setItem('gh_token', githubToken);
+    showStatus('Token updated', 'ok');
+  }
+}
+
+// ── HELPERS ──
+function saveLocal() { localStorage.setItem('upsc_state', JSON.stringify(state)); }
+function getTodayKey() { return new Date().toISOString().split('T')[0]; }
+function getYesterdayKey() { const d = new Date(); d.setDate(d.getDate()-1); return d.toISOString().split('T')[0]; }
+
+function getCurrentRank() {
+  let r = RANKS[0];
+  for (const rank of RANKS) { if (state.totalXP >= rank.xpNeeded) r = rank; }
+  return r;
+}
+function getNextRank() {
+  for (const rank of RANKS) { if (state.totalXP < rank.xpNeeded) return rank; }
+  return null;
+}
+
+function showStatus(msg, type) {
+  const el = document.getElementById('save-status');
+  el.textContent = msg;
+  el.className = `save-status show ${type}`;
+  setTimeout(() => el.classList.remove('show'), 3000);
+}
+
+// ── START ──
+init();
+</script>
+</body>
+</html>
