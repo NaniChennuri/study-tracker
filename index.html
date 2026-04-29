@@ -387,11 +387,6 @@ main { padding: 24px 28px; display: flex; flex-direction: column; gap: 24px; }
 .subj-card.unlocked { border-color: rgba(0,255,136,.3); background: rgba(0,255,136,.03); }
 .subj-header { display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 10px; }
 .subj-name { font-size: 14px; font-weight: 600; }
-.subj-level { font-family: 'DM Mono', monospace; font-size: 9px; letter-spacing: 1px; padding: 2px 8px; border-radius: 3px; }
-.lv0 { background: rgba(255,136,0,.1); color: var(--orange); border: 1px solid rgba(255,136,0,.2); }
-.lv1 { background: rgba(74,158,255,.1); color: var(--blue); border: 1px solid rgba(74,158,255,.2); }
-.lv2 { background: rgba(0,255,136,.1); color: var(--green); border: 1px solid rgba(0,255,136,.2); }
-.lv3 { background: rgba(155,89,255,.1); color: var(--purple); border: 1px solid rgba(155,89,255,.2); }
 .subj-progress { height: 4px; background: var(--border); border-radius: 2px; overflow: hidden; }
 .subj-fill { height: 100%; border-radius: 2px; transition: width .4s; }
 .subj-meta { display: flex; justify-content: space-between; margin-top: 6px; font-size: 11px; color: var(--muted); }
@@ -653,25 +648,25 @@ const DATA_FILE   = 'tracker-data.json';
 
 // ── SUBJECTS ──
 const SUBJECTS = [
-  { id:'psir',          name:'PSIR',                    level:'lv0', topics:64 },
-  { id:'history',       name:'History',                 level:'lv1', topics:30 },
-  { id:'artculture',    name:'Art & Culture',           level:'lv1', topics:10 },
-  { id:'postindependent',name:'Post-Independent India', level:'lv1', topics:2  },
-  { id:'worldhistory',  name:'World History',           level:'lv1', topics:5  },
-  { id:'polity',        name:'Polity',                  level:'lv1', topics:25 },
-  { id:'economy',       name:'Economy',                 level:'lv1', topics:20 },
-  { id:'geo',           name:'Geography',               level:'lv1', topics:17 },
-  { id:'maps',          name:'Maps',                    level:'lv2', topics:2  },
-  { id:'ethics',        name:'Ethics',                  level:'lv2', topics:10 },
-  { id:'sci',           name:'Science & Tech',          level:'lv2', topics:8  },
-  { id:'env',           name:'Environment',             level:'lv2', topics:8  },
-  { id:'society',       name:'Society & SJ',            level:'lv3', topics:14 },
-  { id:'security',      name:'Security',                level:'lv3', topics:7  },
-  { id:'ir',            name:'IR',                      level:'lv3', topics:3  },
-  { id:'gov',           name:'Governance',              level:'lv3', topics:7  },
-  { id:'dm',            name:'Disaster Mgmt',           level:'lv3', topics:5  },
-  { id:'essay',         name:'Essay',                   level:'lv0', topics:20 },
-  { id:'csat',          name:'CSAT',                    level:'lv0', topics:20 },
+  { id:'psir',           name:'PSIR',                   topics:64 },
+  { id:'history',        name:'History',                topics:30 },
+  { id:'artculture',     name:'Art & Culture',          topics:10 },
+  { id:'postindependent',name:'Post-Independent India', topics:2  },
+  { id:'worldhistory',   name:'World History',          topics:5  },
+  { id:'polity',         name:'Polity',                 topics:25 },
+  { id:'economy',        name:'Economy',                topics:20 },
+  { id:'geo',            name:'Geography',              topics:17 },
+  { id:'maps',           name:'Maps',                   topics:2  },
+  { id:'ethics',         name:'Ethics',                 topics:10 },
+  { id:'sci',            name:'Science & Tech',         topics:8  },
+  { id:'env',            name:'Environment',            topics:8  },
+  { id:'society',        name:'Society & SJ',           topics:14 },
+  { id:'security',       name:'Security',               topics:7  },
+  { id:'ir',             name:'IR',                     topics:3  },
+  { id:'gov',            name:'Governance',             topics:7  },
+  { id:'dm',             name:'Disaster Mgmt',          topics:5  },
+  { id:'essay',          name:'Essay',                  topics:20 },
+  { id:'csat',           name:'CSAT',                   topics:20 },
 ];
 
 // ── DAILY QUESTS ──
@@ -895,17 +890,14 @@ function renderSubjects() {
   container.innerHTML = SUBJECTS.map(s => {
     const progress = state.subjects[s.id] || 0;
     const pct = Math.min(100, (progress / s.topics) * 100);
-    const colors = { lv0:'#ff8800', lv1:'#4a9eff', lv2:'#00ff88', lv3:'#9b59ff' };
-    const col = colors[s.level] || '#4a9eff';
     const unlocked = pct >= 100;
     return `
       <div class="subj-card ${unlocked ? 'unlocked' : ''}" onclick="updateSubject('${s.id}', ${s.topics})">
         <div class="subj-header">
           <div class="subj-name">${s.name}</div>
-          <div class="subj-level ${s.level}">${s.level.toUpperCase()}</div>
         </div>
         <div class="subj-progress">
-          <div class="subj-fill" style="width:${pct}%;background:${col}"></div>
+          <div class="subj-fill" style="width:${pct}%;background:var(--blue)"></div>
         </div>
         <div class="subj-meta">
           <span>${progress} / ${s.topics} topics</span>
