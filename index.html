@@ -390,6 +390,9 @@ main { padding: 24px 28px; display: flex; flex-direction: column; gap: 24px; }
 .subj-progress { height: 4px; background: var(--border); border-radius: 2px; overflow: hidden; }
 .subj-fill { height: 100%; border-radius: 2px; transition: width .4s; }
 .subj-meta { display: flex; justify-content: space-between; margin-top: 6px; font-size: 11px; color: var(--muted); }
+.paper-label { font-family: 'DM Mono', monospace; font-size: 9px; letter-spacing: 2px; text-transform: uppercase; color: var(--muted); margin: 16px 0 8px; display: flex; align-items: center; gap: 10px; }
+.paper-label:first-child { margin-top: 0; }
+.paper-label::after { content: ''; flex: 1; height: 1px; background: var(--border); }
 .subj-unlock { font-size: 11px; color: var(--green); margin-top: 6px; }
 
 /* ── STREAK ── */
@@ -542,6 +545,13 @@ main { padding: 24px 28px; display: flex; flex-direction: column; gap: 24px; }
           <div class="streak-sub">Total answers</div>
         </div>
       </div>
+      <div class="streak-card">
+        <div class="streak-num" style="color:var(--red)" id="exam-countdown">-</div>
+        <div>
+          <div class="streak-label">Days to Prelims</div>
+          <div class="streak-sub">Target: May 1, 2027</div>
+        </div>
+      </div>
     </div>
   </div>
 
@@ -669,6 +679,16 @@ const SUBJECTS = [
   { id:'csat',           name:'CSAT',                   topics:20 },
 ];
 
+// ── SUBJECT GROUPS ──
+const SUBJECT_GROUPS = [
+  { label: 'GS 1 — History, Culture & Geography', ids: ['history','artculture','postindependent','worldhistory','geo','maps','society'] },
+  { label: 'GS 2 — Polity, Governance & IR',      ids: ['polity','gov','ir'] },
+  { label: 'GS 3 — Economy, Environment & Security', ids: ['economy','env','sci','security','dm'] },
+  { label: 'GS 4 — Ethics',                       ids: ['ethics'] },
+  { label: 'Optional — PSIR',                     ids: ['psir'] },
+  { label: 'Other — Essay & CSAT',                ids: ['essay','csat'] },
+];
+
 // ── DAILY QUESTS ──
 const QUESTS = {
   0: [ // Sunday
@@ -676,6 +696,7 @@ const QUESTS = {
     { id:'sun_edit',   title:'Editorial',             sub:'30 min — The Hindu',           xp:10 },
     { id:'sun_rev',    title:'10-min Re-revision',    sub:'Recall today\'s topic',         xp:15 },
     { id:'sun_ca',     title:'CA Read',               sub:'Insights daily — 20 min',      xp:10 },
+    { id:'sun_mcq',    title:'MCQ Practice',           sub:'On today\'s topic',            xp:20 },
     { id:'sun_write',  title:'Ethics Case Study',     sub:'Write full case study answer', xp:25 },
     { id:'sun_essay',  title:'Essay / CSAT',          sub:'Fortnightly — whichever week', xp:20 },
   ],
@@ -684,13 +705,15 @@ const QUESTS = {
     { id:'mon_edit',  title:'Editorial',              sub:'30 min — The Hindu',           xp:10 },
     { id:'mon_rev',   title:'10-min Re-revision',     sub:'Recall today\'s topic',        xp:15 },
     { id:'mon_ca',    title:'CA Read',                sub:'Insights daily — 20 min',      xp:10 },
-    { id:'mon_out',   title:'MCQ or Answer Writing',  sub:'On today\'s GS topic',         xp:25 },
+    { id:'mon_mcq',   title:'MCQ Practice',            sub:'On today\'s GS topic',         xp:20 },
+    { id:'mon_write', title:'Answer Writing',          sub:'On today\'s GS topic',         xp:25 },
   ],
   2: [ // Tuesday
     { id:'tue_read',  title:'PSIR Topic Read',        sub:'60 min — current paper',       xp:30 },
     { id:'tue_edit',  title:'Editorial',              sub:'30 min — IR angle',            xp:10 },
     { id:'tue_rev',   title:'10-min Re-revision',     sub:'Recall today\'s PSIR topic',   xp:15 },
     { id:'tue_ca',    title:'CA Read',                sub:'Insights daily — 20 min',      xp:10 },
+    { id:'tue_mcq',   title:'MCQ Practice',            sub:'On today\'s PSIR topic',        xp:20 },
     { id:'tue_write', title:'PSIR Answer Writing',    sub:'1 PYQ answer — compulsory',    xp:30 },
   ],
   3: [ // Wednesday
@@ -698,13 +721,15 @@ const QUESTS = {
     { id:'wed_edit',  title:'Editorial',              sub:'30 min — governance angle',    xp:10 },
     { id:'wed_rev',   title:'10-min Re-revision',     sub:'Recall today\'s topic',        xp:15 },
     { id:'wed_ca',    title:'CA Read',                sub:'Insights daily — 20 min',      xp:10 },
-    { id:'wed_out',   title:'MCQ or Answer Writing',  sub:'On today\'s GS topic',         xp:25 },
+    { id:'wed_mcq',   title:'MCQ Practice',            sub:'On today\'s GS topic',         xp:20 },
+    { id:'wed_write', title:'Answer Writing',          sub:'On today\'s GS topic',         xp:25 },
   ],
   4: [ // Thursday
     { id:'thu_read',  title:'PSIR Topic Read',        sub:'60 min — continue from Tue',   xp:30 },
     { id:'thu_edit',  title:'Editorial',              sub:'30 min — political theory',    xp:10 },
     { id:'thu_rev',   title:'10-min Re-revision',     sub:'Recall today\'s PSIR topic',   xp:15 },
     { id:'thu_ca',    title:'CA Read',                sub:'Insights daily — 20 min',      xp:10 },
+    { id:'thu_mcq',   title:'MCQ Practice',            sub:'On today\'s PSIR topic',        xp:20 },
     { id:'thu_write', title:'PSIR Answer Writing',    sub:'1 PYQ answer — compulsory',    xp:30 },
   ],
   5: [ // Friday
@@ -712,14 +737,17 @@ const QUESTS = {
     { id:'fri_edit',  title:'Editorial',              sub:'30 min — essay angle',         xp:10 },
     { id:'fri_rev',   title:'10-min Re-revision',     sub:'Today + Monday recall',        xp:15 },
     { id:'fri_ca',    title:'CA Read',                sub:'Insights daily — 20 min',      xp:10 },
-    { id:'fri_out',   title:'MCQ or Answer Writing',  sub:'On today\'s GS topic',         xp:25 },
+    { id:'fri_mcq',   title:'MCQ Practice',            sub:'On today\'s GS topic',         xp:20 },
+    { id:'fri_write', title:'Answer Writing',          sub:'On today\'s GS topic',         xp:25 },
   ],
   6: [ // Saturday
     { id:'sat_read',  title:'GS Topic Read',          sub:'60 min — uninterrupted',       xp:30 },
     { id:'sat_rev',   title:'10-min Re-revision',     sub:'Recall today\'s topic',        xp:15 },
     { id:'sat_ca',    title:'CA Read',                sub:'Insights daily — 20 min',      xp:10 },
-    { id:'sat_mock',  title:'Weekly Mock Test',       sub:'90 min timed — week topics',   xp:50 },
-    { id:'sat_anal',  title:'Mock Analysis',          sub:'Every wrong answer traced',    xp:30 },
+    { id:'sat_mcq',   title:'MCQ Practice',            sub:'On today\'s topic',            xp:20 },
+    { id:'sat_write', title:'Answer Writing',          sub:'On today\'s topic',            xp:25 },
+    { id:'sat_mock',  title:'Weekly Mock Test',        sub:'90 min timed — week topics',   xp:50 },
+    { id:'sat_anal',  title:'Mock Analysis',           sub:'Every wrong answer traced',    xp:30 },
   ],
 };
 
@@ -812,6 +840,9 @@ function renderAll() {
   document.getElementById('total-days').textContent = state.totalDays;
   document.getElementById('total-xp-disp').textContent = state.totalXP;
   document.getElementById('answers-written').textContent = state.answersWritten;
+  const prelims = new Date('2027-05-01');
+  const now = new Date(); now.setHours(0,0,0,0);
+  document.getElementById('exam-countdown').textContent = Math.ceil((prelims - now) / 86400000);
 }
 
 function renderHeader() {
@@ -886,26 +917,32 @@ function renderDelta(key, history, current, unit) {
 }
 
 function renderSubjects() {
+  const subjectMap = Object.fromEntries(SUBJECTS.map(s => [s.id, s]));
   const container = document.getElementById('subjects-container');
-  container.innerHTML = SUBJECTS.map(s => {
-    const progress = state.subjects[s.id] || 0;
-    const pct = Math.min(100, (progress / s.topics) * 100);
-    const unlocked = pct >= 100;
-    return `
-      <div class="subj-card ${unlocked ? 'unlocked' : ''}" onclick="updateSubject('${s.id}', ${s.topics})">
-        <div class="subj-header">
-          <div class="subj-name">${s.name}</div>
+  container.innerHTML = SUBJECT_GROUPS.map(group => {
+    const cards = group.ids.map(id => {
+      const s = subjectMap[id];
+      if (!s) return '';
+      const progress = state.subjects[s.id] || 0;
+      const pct = Math.min(100, (progress / s.topics) * 100);
+      const unlocked = pct >= 100;
+      return `
+        <div class="subj-card ${unlocked ? 'unlocked' : ''}" onclick="updateSubject('${s.id}', ${s.topics})">
+          <div class="subj-header">
+            <div class="subj-name">${s.name}</div>
+          </div>
+          <div class="subj-progress">
+            <div class="subj-fill" style="width:${pct}%;background:var(--blue)"></div>
+          </div>
+          <div class="subj-meta">
+            <span>${progress} / ${s.topics} topics</span>
+            <span>${Math.round(pct)}%</span>
+          </div>
+          ${unlocked ? '<div class="subj-unlock">✓ SKILL UNLOCKED</div>' : ''}
         </div>
-        <div class="subj-progress">
-          <div class="subj-fill" style="width:${pct}%;background:var(--blue)"></div>
-        </div>
-        <div class="subj-meta">
-          <span>${progress} / ${s.topics} topics</span>
-          <span>${Math.round(pct)}%</span>
-        </div>
-        ${unlocked ? '<div class="subj-unlock">✓ SKILL UNLOCKED</div>' : ''}
-      </div>
-    `;
+      `;
+    }).join('');
+    return `<div class="paper-label">${group.label}</div><div class="subjects-grid">${cards}</div>`;
   }).join('');
 }
 
