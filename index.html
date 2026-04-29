@@ -374,26 +374,74 @@ main { padding: 24px 28px; display: flex; flex-direction: column; gap: 24px; }
 .mock-score.low { color: var(--red); }
 
 /* ── SUBJECT TRACKER ── */
-.subjects-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 10px; }
-.subj-card {
+#subjects-container { display: flex; flex-direction: column; gap: 8px; }
+
+.paper-panel {
   background: var(--panel);
   border: 1px solid var(--border);
-  border-radius: 6px;
-  padding: 14px;
+  border-radius: 8px;
+  overflow: hidden;
+  position: relative;
+  transition: border-color .2s;
+}
+.paper-panel:hover { border-color: var(--border2); }
+.paper-panel::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: 2px;
+  background: var(--pcol, var(--blue));
+}
+.paper-header {
+  display: flex; align-items: center; gap: 12px;
+  padding: 14px 16px 12px;
   cursor: pointer;
-  transition: all .2s;
+  user-select: none;
+  transition: background .15s;
+}
+.paper-header:hover { background: rgba(255,255,255,.02); }
+.paper-tag {
+  font-family: 'Orbitron', monospace;
+  font-size: 9px; font-weight: 700; letter-spacing: 1.5px;
+  padding: 3px 9px;
+  border-radius: 3px;
+  border: 1px solid;
+  flex-shrink: 0;
+}
+.paper-info { flex: 1; min-width: 0; }
+.paper-title { font-size: 13px; font-weight: 600; }
+.paper-sub { font-family: 'DM Mono', monospace; font-size: 10px; color: var(--muted); margin-top: 2px; }
+.paper-stats { text-align: right; flex-shrink: 0; }
+.paper-pct { font-family: 'Orbitron', monospace; font-size: 15px; font-weight: 700; }
+.paper-topics { font-family: 'DM Mono', monospace; font-size: 10px; color: var(--muted); margin-top: 1px; }
+.paper-chevron { font-size: 9px; color: var(--muted); flex-shrink: 0; transition: transform .25s; margin-left: 4px; }
+.paper-panel.collapsed .paper-chevron { transform: rotate(-90deg); }
+.paper-progress { height: 3px; background: var(--border2); }
+.paper-fill { height: 100%; transition: width .5s ease; }
+.paper-body {
+  padding: 10px 12px 14px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+  gap: 7px;
+}
+.paper-panel.collapsed .paper-body,
+.paper-panel.collapsed .paper-progress { display: none; }
+
+.subj-card {
+  background: var(--panel2);
+  border: 1px solid var(--border);
+  border-radius: 5px;
+  padding: 10px 12px;
+  cursor: pointer;
+  transition: border-color .2s;
 }
 .subj-card:hover { border-color: var(--border2); }
-.subj-card.unlocked { border-color: rgba(0,255,136,.3); background: rgba(0,255,136,.03); }
-.subj-header { display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 10px; }
-.subj-name { font-size: 14px; font-weight: 600; }
-.subj-progress { height: 4px; background: var(--border); border-radius: 2px; overflow: hidden; }
+.subj-card.unlocked { border-color: rgba(0,255,136,.25); background: rgba(0,255,136,.03); }
+.subj-name { font-size: 13px; font-weight: 600; margin-bottom: 8px; }
+.subj-progress { height: 3px; background: var(--border); border-radius: 2px; overflow: hidden; }
 .subj-fill { height: 100%; border-radius: 2px; transition: width .4s; }
-.subj-meta { display: flex; justify-content: space-between; margin-top: 6px; font-size: 11px; color: var(--muted); }
-.paper-label { font-family: 'DM Mono', monospace; font-size: 9px; letter-spacing: 2px; text-transform: uppercase; color: var(--muted); margin: 16px 0 8px; display: flex; align-items: center; gap: 10px; }
-.paper-label:first-child { margin-top: 0; }
-.paper-label::after { content: ''; flex: 1; height: 1px; background: var(--border); }
-.subj-unlock { font-size: 11px; color: var(--green); margin-top: 6px; }
+.subj-meta { display: flex; justify-content: space-between; margin-top: 5px; font-size: 10px; color: var(--muted); font-family: 'DM Mono', monospace; }
+.subj-unlock { font-size: 10px; color: var(--green); margin-top: 4px; }
 
 /* ── STREAK ── */
 .streak-row { display: flex; gap: 10px; flex-wrap: wrap; }
@@ -637,7 +685,7 @@ main { padding: 24px 28px; display: flex; flex-direction: column; gap: 24px; }
   <!-- SUBJECT TRACKER -->
   <div>
     <div class="sec-title">Subject Skills — Click to Update Progress</div>
-    <div class="subjects-grid" id="subjects-container"></div>
+    <div id="subjects-container"></div>
   </div>
 
   <!-- ACTIVITY LOG -->
@@ -681,12 +729,12 @@ const SUBJECTS = [
 
 // ── SUBJECT GROUPS ──
 const SUBJECT_GROUPS = [
-  { label: 'GS 1 — History, Culture & Geography', ids: ['history','artculture','postindependent','worldhistory','geo','maps','society'] },
-  { label: 'GS 2 — Polity, Governance & IR',      ids: ['polity','gov','ir'] },
-  { label: 'GS 3 — Economy, Environment & Security', ids: ['economy','env','sci','security','dm'] },
-  { label: 'GS 4 — Ethics',                       ids: ['ethics'] },
-  { label: 'Optional — PSIR',                     ids: ['psir'] },
-  { label: 'Other — Essay & CSAT',                ids: ['essay','csat'] },
+  { tag:'GS-1', label:'History, Culture & Geography', color:'var(--cyan)',   ids:['history','artculture','postindependent','worldhistory','geo','maps','society'] },
+  { tag:'GS-2', label:'Polity, Governance & IR',      color:'var(--blue)',   ids:['polity','gov','ir'] },
+  { tag:'GS-3', label:'Economy, Environment & Security', color:'var(--green)', ids:['economy','env','sci','security','dm'] },
+  { tag:'GS-4', label:'Ethics',                        color:'var(--gold)',   ids:['ethics'] },
+  { tag:'OPT',  label:'PSIR — Optional',               color:'var(--purple)', ids:['psir'] },
+  { tag:'OTHER',label:'Essay & CSAT',                   color:'var(--orange)', ids:['essay','csat'] },
 ];
 
 // ── DAILY QUESTS ──
@@ -919,31 +967,56 @@ function renderDelta(key, history, current, unit) {
 function renderSubjects() {
   const subjectMap = Object.fromEntries(SUBJECTS.map(s => [s.id, s]));
   const container = document.getElementById('subjects-container');
-  container.innerHTML = SUBJECT_GROUPS.map(group => {
+  const collapsed = new Set(
+    [...container.querySelectorAll('.paper-panel.collapsed')].map(el => el.dataset.gi)
+  );
+  container.innerHTML = SUBJECT_GROUPS.map((group, gi) => {
+    let done = 0, total = 0;
     const cards = group.ids.map(id => {
       const s = subjectMap[id];
       if (!s) return '';
       const progress = state.subjects[s.id] || 0;
       const pct = Math.min(100, (progress / s.topics) * 100);
+      done += progress; total += s.topics;
       const unlocked = pct >= 100;
       return `
         <div class="subj-card ${unlocked ? 'unlocked' : ''}" onclick="updateSubject('${s.id}', ${s.topics})">
-          <div class="subj-header">
-            <div class="subj-name">${s.name}</div>
-          </div>
+          <div class="subj-name">${s.name}</div>
           <div class="subj-progress">
-            <div class="subj-fill" style="width:${pct}%;background:var(--blue)"></div>
+            <div class="subj-fill" style="width:${pct}%;background:${group.color}"></div>
           </div>
           <div class="subj-meta">
-            <span>${progress} / ${s.topics} topics</span>
+            <span>${progress}/${s.topics}</span>
             <span>${Math.round(pct)}%</span>
           </div>
-          ${unlocked ? '<div class="subj-unlock">✓ SKILL UNLOCKED</div>' : ''}
-        </div>
-      `;
+          ${unlocked ? '<div class="subj-unlock">✓ UNLOCKED</div>' : ''}
+        </div>`;
     }).join('');
-    return `<div class="paper-label">${group.label}</div><div class="subjects-grid">${cards}</div>`;
+    const pct = total > 0 ? Math.round((done / total) * 100) : 0;
+    const isCollapsed = collapsed.has(String(gi));
+    return `
+      <div class="paper-panel ${isCollapsed ? 'collapsed' : ''}" data-gi="${gi}" style="--pcol:${group.color}">
+        <div class="paper-header" onclick="togglePaper(${gi})">
+          <div class="paper-tag" style="color:${group.color};border-color:${group.color}">${group.tag}</div>
+          <div class="paper-info">
+            <div class="paper-title">${group.label}</div>
+          </div>
+          <div class="paper-stats">
+            <div class="paper-pct" style="color:${group.color}">${pct}%</div>
+            <div class="paper-topics">${done} / ${total} topics</div>
+          </div>
+          <div class="paper-chevron">▼</div>
+        </div>
+        <div class="paper-progress">
+          <div class="paper-fill" style="width:${pct}%;background:${group.color}"></div>
+        </div>
+        <div class="paper-body">${cards}</div>
+      </div>`;
   }).join('');
+}
+
+function togglePaper(gi) {
+  document.querySelector(`.paper-panel[data-gi="${gi}"]`).classList.toggle('collapsed');
 }
 
 function renderMockHistory() {
