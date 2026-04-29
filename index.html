@@ -225,25 +225,16 @@ main { padding: 24px 28px; display: flex; flex-direction: column; gap: 24px; }
 .stat-card::before { content: ''; position: absolute; top: 0; left: 0; width: 100%; height: 2px; }
 .stat-card.mcq::before { background: var(--blue); }
 .stat-card.speed::before { background: var(--green); }
-.stat-card.retrieval::before { background: var(--purple); }
-.stat-card.clarity::before { background: var(--gold); }
-.stat-card.psir::before { background: var(--orange); }
 
 .stat-label { font-family: 'DM Mono', monospace; font-size: 9px; letter-spacing: 1.5px; text-transform: uppercase; color: var(--muted); margin-bottom: 8px; }
 .stat-val { font-family: 'Orbitron', monospace; font-size: 1.8rem; font-weight: 700; line-height: 1; }
 .stat-card.mcq .stat-val { color: var(--blue); }
 .stat-card.speed .stat-val { color: var(--green); }
-.stat-card.retrieval .stat-val { color: var(--purple); }
-.stat-card.clarity .stat-val { color: var(--gold); }
-.stat-card.psir .stat-val { color: var(--orange); }
 .stat-unit { font-size: 12px; font-weight: 400; }
 .stat-bar { height: 3px; background: var(--border); border-radius: 2px; margin-top: 10px; overflow: hidden; }
 .stat-fill { height: 100%; border-radius: 2px; transition: width .4s; }
 .stat-card.mcq .stat-fill { background: var(--blue); }
 .stat-card.speed .stat-fill { background: var(--green); }
-.stat-card.retrieval .stat-fill { background: var(--purple); }
-.stat-card.clarity .stat-fill { background: var(--gold); }
-.stat-card.psir .stat-fill { background: var(--orange); }
 .stat-delta { font-size: 11px; color: var(--muted); margin-top: 4px; }
 .stat-delta.up { color: var(--green); }
 .stat-delta.down { color: var(--red); }
@@ -619,24 +610,6 @@ main { padding: 24px 28px; display: flex; flex-direction: column; gap: 24px; }
         <div class="stat-bar"><div class="stat-fill" id="bar-speed" style="width:0%"></div></div>
         <div class="stat-delta" id="delta-speed">Target: 12 min</div>
       </div>
-      <div class="stat-card retrieval" onclick="openModal('retrieval')">
-        <div class="stat-label">Retrieval Score</div>
-        <div class="stat-val"><span id="stat-retrieval">0</span><span class="stat-unit">/5</span></div>
-        <div class="stat-bar"><div class="stat-fill" id="bar-retrieval" style="width:0%"></div></div>
-        <div class="stat-delta" id="delta-retrieval">Evening recall score</div>
-      </div>
-      <div class="stat-card clarity" onclick="openModal('clarity')">
-        <div class="stat-label">Answer Clarity</div>
-        <div class="stat-val"><span id="stat-clarity">0</span><span class="stat-unit">/5</span></div>
-        <div class="stat-bar"><div class="stat-fill" id="bar-clarity" style="width:0%"></div></div>
-        <div class="stat-delta" id="delta-clarity">Structure + vision</div>
-      </div>
-      <div class="stat-card psir" onclick="openModal('psir')">
-        <div class="stat-label">PSIR Depth</div>
-        <div class="stat-val"><span id="stat-psir">0</span><span class="stat-unit">/5</span></div>
-        <div class="stat-bar"><div class="stat-fill" id="bar-psir" style="width:0%"></div></div>
-        <div class="stat-delta" id="delta-psir">Argument sharpness</div>
-      </div>
     </div>
   </div>
 
@@ -818,10 +791,10 @@ let state = {
   totalDays: 0,
   lastStudyDate: null,
   answersWritten: 0,
-  stats: { mcq:0, speed:0, retrieval:0, clarity:0, psir:0 },
-  statHistory: { mcq:[], speed:[], retrieval:[], clarity:[], psir:[] },
+  stats: { mcq:0, speed:0 },
+  statHistory: { mcq:[], speed:[] },
   subjects: {},
-  completedQuests: {},  // date -> [quest ids]
+  completedQuests: {},
   mockHistory: [],
   activityLog: [],
 };
@@ -933,24 +906,14 @@ function renderStats() {
   const s = state.stats;
   document.getElementById('stat-mcq').textContent = s.mcq;
   document.getElementById('stat-speed').textContent = s.speed;
-  document.getElementById('stat-retrieval').textContent = s.retrieval;
-  document.getElementById('stat-clarity').textContent = s.clarity;
-  document.getElementById('stat-psir').textContent = s.psir;
   document.getElementById('bar-mcq').style.width = s.mcq + '%';
   document.getElementById('bar-speed').style.width = s.speed > 0 ? Math.max(10, 100 - ((s.speed / 30) * 100)) + '%' : '0%';
-  document.getElementById('bar-retrieval').style.width = (s.retrieval / 5 * 100) + '%';
-  document.getElementById('bar-clarity').style.width = (s.clarity / 5 * 100) + '%';
-  document.getElementById('bar-psir').style.width = (s.psir / 5 * 100) + '%';
-  // deltas
   renderDelta('mcq', state.statHistory.mcq, s.mcq, '%');
   if (s.speed > 0) {
     const d = document.getElementById('delta-speed');
     d.textContent = s.speed <= 12 ? '✓ On target' : `${s.speed - 12} min over target`;
     d.className = 'stat-delta ' + (s.speed <= 12 ? 'up' : 'down');
   }
-  renderDelta('retrieval', state.statHistory.retrieval, s.retrieval, '/5');
-  renderDelta('clarity', state.statHistory.clarity, s.clarity, '/5');
-  renderDelta('psir', state.statHistory.psir, s.psir, '/5');
 }
 
 function renderDelta(key, history, current, unit) {
@@ -1070,9 +1033,9 @@ function toggleQuest(id, xp) {
 
 function openModal(key) {
   currentStatKey = key;
-  const labels = { mcq:'MCQ Score', speed:'Minutes/Answer', retrieval:'Recall (1-5)', clarity:'Clarity (1-5)', psir:'PSIR Depth (1-5)' };
-  const units  = { mcq:'%', speed:'min', retrieval:'/5', clarity:'/5', psir:'/5' };
-  const hints  = { mcq:'Enter your latest mock MCQ accuracy %', speed:'How many minutes per answer today?', retrieval:'1=poor 2=weak 3=ok 4=good 5=perfect', clarity:'1=vague 3=structured 5=sharp&precise', psir:'1=surface 3=analytical 5=exam-ready' };
+  const labels = { mcq:'MCQ Score', speed:'Minutes/Answer' };
+  const units  = { mcq:'%', speed:'min' };
+  const hints  = { mcq:'Enter your latest mock MCQ accuracy %', speed:'How many minutes per answer today?' };
   document.getElementById('modal-title').textContent = 'UPDATE: ' + (labels[key] || key).toUpperCase();
   document.getElementById('modal-label').textContent = labels[key] || key;
   document.getElementById('modal-unit').textContent = units[key] || '';
