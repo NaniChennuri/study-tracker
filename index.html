@@ -599,21 +599,20 @@ main { padding: 24px 28px; display: flex; flex-direction: column; gap: 24px; }
       <div class="dungeon-form">
         <div class="df-group">
           <div class="df-label">Mock Type</div>
-          <select class="df-input" id="mock-type" style="width:150px">
-            <option>Weekly</option>
-            <option>Monthly Mega</option>
-            <option>Subject-wise</option>
-            <option>CSAT</option>
-            <option>Full Prelims</option>
+          <select class="df-input" id="mock-type" style="width:150px" onchange="updateMockForm()">
+            <option value="Random Test">Random Test</option>
+            <option value="Subject-Wise">Subject-Wise</option>
+            <option value="General Studies">General Studies</option>
+            <option value="CSAT">CSAT</option>
           </select>
         </div>
         <div class="df-group">
           <div class="df-label">Score %</div>
           <input class="df-input" type="number" id="mock-score" min="0" max="100" placeholder="65"/>
         </div>
-        <div class="df-group">
+        <div class="df-group" id="mock-subject-group">
           <div class="df-label">Subject</div>
-          <input class="df-input" type="text" id="mock-subject" placeholder="Polity" style="width:120px"/>
+          <select class="df-input" id="mock-subject" style="width:150px"></select>
         </div>
         <button class="df-btn" onclick="logMock()">LOG RAID</button>
       </div>
@@ -780,6 +779,8 @@ function init() {
     document.getElementById('setup-screen').style.display = 'none';
     loadFromGitHub();
   }
+  populateMockSubjects();
+  updateMockForm();
   renderAll();
 }
 
@@ -936,15 +937,66 @@ function renderMockHistory() {
   const container = document.getElementById('mock-history');
   const entries = [...state.mockHistory].reverse().slice(0, 10);
   if (!entries.length) { container.innerHTML = '<div style="font-size:12px;color:var(--muted);padding:8px;">No raids logged yet.</div>'; return; }
-  container.innerHTML = entries.map(m => {
+
+  let html = entries.map(m => {
     const cls = m.score >= 70 ? 'high' : m.score >= 50 ? 'mid' : 'low';
+    let qualifier = '';
+    if (m.type === 'CSAT') {
+      qualifier = m.score >= 66
+        ? `<span style="font-family:'DM Mono',monospace;font-size:9px;letter-spacing:1px;color:var(--green)">QUALIFYING</span>`
+        : `<span style="font-family:'DM Mono',monospace;font-size:9px;letter-spacing:1px;color:var(--red)">BELOW CUTOFF</span>`;
+    }
     return `<div class="mock-entry">
       <span class="mock-date">${m.date}</span>
       <span class="mock-type">${m.type}</span>
-      <span style="font-size:11px;color:var(--muted)">${m.subject || ''}</span>
+      <span style="font-size:11px;color:var(--muted);flex:1">${m.subject || ''}</span>
+      ${qualifier}
       <span class="mock-score ${cls}">${m.score}%</span>
     </div>`;
   }).join('');
+
+  const avgs = calcSubjectAverages();
+  if (Object.keys(avgs).length) {
+    html += `<div style="margin-top:12px;padding-top:10px;border-top:1px solid var(--border)">
+      <div style="font-family:'DM Mono',monospace;font-size:9px;letter-spacing:2px;text-transform:uppercase;color:var(--muted);margin-bottom:8px">Subject-Wise Averages</div>
+      <div style="display:flex;flex-wrap:wrap;gap:6px">
+        ${Object.entries(avgs).map(([subj, d]) => {
+          const cls = d.avg >= 70 ? 'high' : d.avg >= 50 ? 'mid' : 'low';
+          return `<div style="background:var(--panel2);border-radius:4px;padding:6px 10px;display:flex;align-items:center;gap:8px">
+            <span style="font-size:12px;font-weight:600">${subj}</span>
+            <span style="font-family:'DM Mono',monospace;font-size:9px;color:var(--muted)">${d.count} test${d.count > 1 ? 's' : ''}</span>
+            <span class="mock-score ${cls}" style="font-size:11px">${d.avg}% avg</span>
+          </div>`;
+        }).join('')}
+      </div>
+    </div>`;
+  }
+
+  container.innerHTML = html;
+}
+
+function calcSubjectAverages() {
+  const groups = {};
+  state.mockHistory.filter(m => m.type === 'Subject-Wise' && m.subject).forEach(m => {
+    if (!groups[m.subject]) groups[m.subject] = { total: 0, count: 0 };
+    groups[m.subject].total += m.score;
+    groups[m.subject].count++;
+  });
+  return Object.fromEntries(
+    Object.entries(groups).map(([k, v]) => [k, { avg: Math.round(v.total / v.count), count: v.count }])
+  );
+}
+
+function populateMockSubjects() {
+  const sel = document.getElementById('mock-subject');
+  sel.innerHTML = '<option value="">— Mixed —</option>' +
+    SUBJECTS.map(s => `<option value="${s.name}">${s.name}</option>`).join('');
+}
+
+function updateMockForm() {
+  const type = document.getElementById('mock-type').value;
+  const grp  = document.getElementById('mock-subject-group');
+  grp.style.display = (type === 'General Studies' || type === 'CSAT') ? 'none' : '';
 }
 
 function renderLog() {
@@ -1060,15 +1112,15 @@ function addTopic() {
 }
 
 function logMock() {
-  const score   = parseInt(document.getElementById('mock-score').value);
-  const type    = document.getElementById('mock-type').value;
-  const subject = document.getElementById('mock-subject').value;
+  const score = parseInt(document.getElementById('mock-score').value);
+  const type  = document.getElementById('mock-type').value;
+  const grp   = document.getElementById('mock-subject-group');
+  const subject = grp.style.display === 'none' ? '' : document.getElementById('mock-subject').value;
   if (isNaN(score)) { alert('Enter a score'); return; }
-  const entry = { date: new Date().toLocaleDateString(), type, subject, score };
-  state.mockHistory.push(entry);
+  state.mockHistory.push({ date: new Date().toLocaleDateString(), type, subject, score });
   const xp = score >= 70 ? 100 : score >= 50 ? 60 : 30;
   state.totalXP += xp;
-  addLog(`${type} mock: ${score}% — ${subject || 'Mixed'}`, xp);
+  addLog(`${type}: ${score}%${subject ? ' — ' + subject : ''}`, xp);
   document.getElementById('mock-score').value = '';
   document.getElementById('mock-subject').value = '';
   saveLocal();
