@@ -209,37 +209,7 @@ main { padding: 24px 28px; display: flex; flex-direction: column; gap: 24px; }
 }
 .sec-title::after { content: ''; flex: 1; height: 1px; background: var(--border); }
 
-/* ── STATS GRID ── */
-.stats-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); gap: 12px; }
-.stat-card {
-  background: var(--panel);
-  border: 1px solid var(--border);
-  border-radius: 6px;
-  padding: 14px 16px;
-  position: relative;
-  overflow: hidden;
-  cursor: pointer;
-  transition: border-color .2s;
-}
-.stat-card:hover { border-color: var(--border2); }
-.stat-card::before { content: ''; position: absolute; top: 0; left: 0; width: 100%; height: 2px; }
-.stat-card.mcq::before { background: var(--blue); }
-.stat-card.speed::before { background: var(--green); }
-
-.stat-label { font-family: 'DM Mono', monospace; font-size: 9px; letter-spacing: 1.5px; text-transform: uppercase; color: var(--muted); margin-bottom: 8px; }
-.stat-val { font-family: 'Orbitron', monospace; font-size: 1.8rem; font-weight: 700; line-height: 1; }
-.stat-card.mcq .stat-val { color: var(--blue); }
-.stat-card.speed .stat-val { color: var(--green); }
-.stat-unit { font-size: 12px; font-weight: 400; }
-.stat-bar { height: 3px; background: var(--border); border-radius: 2px; margin-top: 10px; overflow: hidden; }
-.stat-fill { height: 100%; border-radius: 2px; transition: width .4s; }
-.stat-card.mcq .stat-fill { background: var(--blue); }
-.stat-card.speed .stat-fill { background: var(--green); }
-.stat-delta { font-size: 11px; color: var(--muted); margin-top: 4px; }
-.stat-delta.up { color: var(--green); }
-.stat-delta.down { color: var(--red); }
-
-/* ── STAT LOG MODAL ── */
+/* ── MODAL ── */
 .modal-overlay {
   position: fixed; inset: 0;
   background: rgba(0,0,0,.7);
@@ -275,6 +245,17 @@ main { padding: 24px 28px; display: flex; flex-direction: column; gap: 24px; }
 .mbtn.confirm:hover { background: rgba(74,158,255,.25); }
 .mbtn.cancel { background: transparent; color: var(--muted); }
 .mbtn.cancel:hover { color: var(--text); }
+.modal-wide { max-width: 520px; }
+.topic-list { display: flex; flex-direction: column; gap: 4px; max-height: 300px; overflow-y: auto; margin-bottom: 4px; }
+.topic-row { display: flex; align-items: center; gap: 8px; padding: 8px 10px; background: var(--panel2); border-radius: 4px; }
+.topic-row.editing { background: rgba(74,158,255,.05); border: 1px solid var(--border2); }
+.topic-row-name { flex: 1; font-size: 13px; font-weight: 500; min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.topic-row-stat { font-family: 'DM Mono', monospace; font-size: 10px; color: var(--muted); min-width: 52px; flex-shrink: 0; }
+.topic-row-btn { font-family: 'DM Mono', monospace; font-size: 9px; letter-spacing: 1px; padding: 3px 8px; border-radius: 3px; border: 1px solid var(--border2); background: transparent; color: var(--muted); cursor: pointer; flex-shrink: 0; transition: all .2s; }
+.topic-row-btn:hover { color: var(--cyan); border-color: var(--cyan); }
+.subj-modal-meta { font-family: 'DM Mono', monospace; font-size: 10px; color: var(--muted); margin-bottom: 14px; display: flex; gap: 16px; flex-wrap: wrap; }
+.subj-modal-meta span { display: flex; align-items: center; gap: 5px; }
+.subj-modal-meta b { color: var(--text); }
 
 /* ── DAILY QUESTS ── */
 .quests-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 10px; }
@@ -509,19 +490,23 @@ main { padding: 24px 28px; display: flex; flex-direction: column; gap: 24px; }
   </div>
 </div>
 
-<!-- ── STAT LOG MODAL ── -->
-<div class="modal-overlay" id="stat-modal">
-  <div class="modal">
-    <div class="modal-title" id="modal-title">UPDATE STAT</div>
-    <div class="modal-row">
-      <span class="modal-label" id="modal-label">Value</span>
-      <input class="modal-input" type="number" id="modal-input" min="0" max="100"/>
-      <span style="font-size:12px;color:var(--muted)" id="modal-unit">%</span>
+<!-- ── SUBJECT MODAL ── -->
+<div class="modal-overlay" id="subject-modal">
+  <div class="modal modal-wide">
+    <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:6px">
+      <div class="modal-title" id="subj-modal-title"></div>
+      <button class="mbtn cancel" style="flex:0;padding:5px 12px" onclick="closeSubjectModal()">✕</button>
     </div>
-    <div style="font-size:12px;color:var(--muted);margin-bottom:4px;" id="modal-hint"></div>
-    <div class="modal-btns">
-      <button class="mbtn cancel" onclick="closeModal()">Cancel</button>
-      <button class="mbtn confirm" onclick="saveStatFromModal()">Update</button>
+    <div class="subj-modal-meta" id="subj-modal-meta"></div>
+    <div id="subj-topic-list"></div>
+    <div style="margin-top:12px;padding-top:12px;border-top:1px solid var(--border)">
+      <div style="font-family:'DM Mono',monospace;font-size:9px;letter-spacing:2px;text-transform:uppercase;color:var(--muted);margin-bottom:8px">Add Topic</div>
+      <div style="display:flex;gap:8px;flex-wrap:wrap">
+        <input class="modal-input" id="topic-name-input" placeholder="Topic name" style="flex:1;min-width:140px"/>
+        <input class="modal-input" id="topic-mcq-input" type="number" placeholder="MCQs" style="width:72px" min="0"/>
+        <input class="modal-input" id="topic-ans-input" type="number" placeholder="Answers" style="width:82px" min="0"/>
+        <button class="mbtn confirm" style="flex:0;white-space:nowrap" onclick="addTopic()">+ Add</button>
+      </div>
     </div>
   </div>
 </div>
@@ -590,25 +575,6 @@ main { padding: 24px 28px; display: flex; flex-direction: column; gap: 24px; }
           <div class="streak-label">Days to Prelims</div>
           <div class="streak-sub">Target: May 1, 2027</div>
         </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- STATS -->
-  <div>
-    <div class="sec-title">Character Stats — Click to Update</div>
-    <div class="stats-grid">
-      <div class="stat-card mcq" onclick="openModal('mcq')">
-        <div class="stat-label">MCQ Accuracy</div>
-        <div class="stat-val"><span id="stat-mcq">0</span><span class="stat-unit">%</span></div>
-        <div class="stat-bar"><div class="stat-fill" id="bar-mcq" style="width:0%"></div></div>
-        <div class="stat-delta" id="delta-mcq">No data yet</div>
-      </div>
-      <div class="stat-card speed" onclick="openModal('speed')">
-        <div class="stat-label">Writing Speed</div>
-        <div class="stat-val"><span id="stat-speed">0</span><span class="stat-unit">min/ans</span></div>
-        <div class="stat-bar"><div class="stat-fill" id="bar-speed" style="width:0%"></div></div>
-        <div class="stat-delta" id="delta-speed">Target: 12 min</div>
       </div>
     </div>
   </div>
@@ -790,15 +756,12 @@ let state = {
   streak: 0,
   totalDays: 0,
   lastStudyDate: null,
-  answersWritten: 0,
-  stats: { mcq:0, speed:0 },
-  statHistory: { mcq:[], speed:[] },
   subjects: {},
   completedQuests: {},
   mockHistory: [],
   activityLog: [],
 };
-let currentStatKey = null;
+let currentSubjectId = null;
 let githubToken = '';
 
 // ── INIT ──
@@ -808,6 +771,9 @@ function init() {
   if (savedState) {
     try { state = { ...state, ...JSON.parse(savedState) }; } catch(e) {}
   }
+  Object.keys(state.subjects).forEach(k => {
+    if (typeof state.subjects[k] === 'number') state.subjects[k] = [];
+  });
   if (!githubToken || !state.hunterName) {
     document.getElementById('setup-screen').style.display = 'flex';
   } else {
@@ -849,10 +815,14 @@ function completeSetup() {
 }
 
 // ── RENDER ──
+function calcAnswersWritten() {
+  return Object.values(state.subjects).filter(Array.isArray).flat()
+    .reduce((sum, t) => sum + (t.answers || 0), 0);
+}
+
 function renderAll() {
   renderHeader();
   renderQuests();
-  renderStats();
   renderSubjects();
   renderMockHistory();
   renderLog();
@@ -860,7 +830,7 @@ function renderAll() {
   document.getElementById('streak-num').textContent = state.streak;
   document.getElementById('total-days').textContent = state.totalDays;
   document.getElementById('total-xp-disp').textContent = state.totalXP;
-  document.getElementById('answers-written').textContent = state.answersWritten;
+  document.getElementById('answers-written').textContent = calcAnswersWritten();
   const prelims = new Date('2027-05-01');
   const now = new Date(); now.setHours(0,0,0,0);
   document.getElementById('exam-countdown').textContent = Math.ceil((prelims - now) / 86400000);
@@ -902,30 +872,6 @@ function renderQuests() {
   `).join('');
 }
 
-function renderStats() {
-  const s = state.stats;
-  document.getElementById('stat-mcq').textContent = s.mcq;
-  document.getElementById('stat-speed').textContent = s.speed;
-  document.getElementById('bar-mcq').style.width = s.mcq + '%';
-  document.getElementById('bar-speed').style.width = s.speed > 0 ? Math.max(10, 100 - ((s.speed / 30) * 100)) + '%' : '0%';
-  renderDelta('mcq', state.statHistory.mcq, s.mcq, '%');
-  if (s.speed > 0) {
-    const d = document.getElementById('delta-speed');
-    d.textContent = s.speed <= 12 ? '✓ On target' : `${s.speed - 12} min over target`;
-    d.className = 'stat-delta ' + (s.speed <= 12 ? 'up' : 'down');
-  }
-}
-
-function renderDelta(key, history, current, unit) {
-  const el = document.getElementById('delta-' + key);
-  if (!el) return;
-  if (history.length < 2) { el.textContent = 'Baseline'; el.className = 'stat-delta'; return; }
-  const prev = history[history.length - 2];
-  const diff = current - prev;
-  if (diff > 0) { el.textContent = `↑ +${diff}${unit} from last`; el.className = 'stat-delta up'; }
-  else if (diff < 0) { el.textContent = `↓ ${diff}${unit} from last`; el.className = 'stat-delta down'; }
-  else { el.textContent = 'No change'; el.className = 'stat-delta'; }
-}
 
 function renderSubjects() {
   const subjectMap = Object.fromEntries(SUBJECTS.map(s => [s.id, s]));
@@ -938,20 +884,24 @@ function renderSubjects() {
     const cards = group.ids.map(id => {
       const s = subjectMap[id];
       if (!s) return '';
-      const progress = state.subjects[s.id] || 0;
-      const pct = Math.min(100, (progress / s.topics) * 100);
+      const topics   = Array.isArray(state.subjects[s.id]) ? state.subjects[s.id] : [];
+      const progress = topics.length;
+      const pct      = Math.min(100, (progress / s.topics) * 100);
+      const totalMcq = topics.reduce((sum, t) => sum + (t.mcq || 0), 0);
+      const totalAns = topics.reduce((sum, t) => sum + (t.answers || 0), 0);
       done += progress; total += s.topics;
       const unlocked = pct >= 100;
       return `
-        <div class="subj-card ${unlocked ? 'unlocked' : ''}" onclick="updateSubject('${s.id}', ${s.topics})">
+        <div class="subj-card ${unlocked ? 'unlocked' : ''}" onclick="openSubjectModal('${s.id}')">
           <div class="subj-name">${s.name}</div>
           <div class="subj-progress">
             <div class="subj-fill" style="width:${pct}%;background:${group.color}"></div>
           </div>
           <div class="subj-meta">
-            <span>${progress}/${s.topics}</span>
+            <span>${progress}/${s.topics} topics</span>
             <span>${Math.round(pct)}%</span>
           </div>
+          ${totalMcq || totalAns ? `<div class="subj-meta" style="margin-top:3px;opacity:.7"><span>${totalMcq} MCQs</span><span>${totalAns} ans</span></div>` : ''}
           ${unlocked ? '<div class="subj-unlock">✓ UNLOCKED</div>' : ''}
         </div>`;
     }).join('');
@@ -1019,49 +969,94 @@ function toggleQuest(id, xp) {
   if (idx === -1) {
     arr.push(id);
     state.totalXP += xp;
-    if (id.includes('write') || id.includes('out')) state.answersWritten++;
     addLog(`Quest completed: ${id.replace(/_/g,' ')}`, xp);
     updateStreak();
   } else {
     arr.splice(idx, 1);
     state.totalXP = Math.max(0, state.totalXP - xp);
-    if (id.includes('write') || id.includes('out')) state.answersWritten = Math.max(0, state.answersWritten - 1);
   }
   saveLocal();
   renderAll();
 }
 
-function openModal(key) {
-  currentStatKey = key;
-  const labels = { mcq:'MCQ Score', speed:'Minutes/Answer' };
-  const units  = { mcq:'%', speed:'min' };
-  const hints  = { mcq:'Enter your latest mock MCQ accuracy %', speed:'How many minutes per answer today?' };
-  document.getElementById('modal-title').textContent = 'UPDATE: ' + (labels[key] || key).toUpperCase();
-  document.getElementById('modal-label').textContent = labels[key] || key;
-  document.getElementById('modal-unit').textContent = units[key] || '';
-  document.getElementById('modal-hint').textContent = hints[key] || '';
-  document.getElementById('modal-input').value = state.stats[key] || '';
-  document.getElementById('stat-modal').classList.add('open');
+function openSubjectModal(id) {
+  currentSubjectId = id;
+  if (!Array.isArray(state.subjects[id])) state.subjects[id] = [];
+  renderSubjectModal();
+  document.getElementById('subject-modal').classList.add('open');
 }
 
-function closeModal() {
-  document.getElementById('stat-modal').classList.remove('open');
-  currentStatKey = null;
+function closeSubjectModal() {
+  document.getElementById('subject-modal').classList.remove('open');
+  currentSubjectId = null;
 }
 
-function saveStatFromModal() {
-  if (!currentStatKey) return;
-  const val = parseFloat(document.getElementById('modal-input').value);
-  if (isNaN(val)) return;
-  const prev = state.stats[currentStatKey];
-  state.stats[currentStatKey] = val;
-  if (!state.statHistory[currentStatKey]) state.statHistory[currentStatKey] = [];
-  state.statHistory[currentStatKey].push(val);
-  const diff = val - prev;
-  if (diff !== 0) addLog(`Stat updated: ${currentStatKey} → ${val}${diff > 0 ? ' (↑'+diff+')' : ' (↓'+Math.abs(diff)+')'}`, 0);
-  closeModal();
-  saveLocal();
-  renderAll();
+function renderSubjectModal() {
+  const subj = SUBJECTS.find(s => s.id === currentSubjectId);
+  if (!subj) return;
+  const topics = state.subjects[currentSubjectId] || [];
+  const totalMcq = topics.reduce((s, t) => s + (t.mcq || 0), 0);
+  const totalAns = topics.reduce((s, t) => s + (t.answers || 0), 0);
+  document.getElementById('subj-modal-title').textContent = subj.name.toUpperCase();
+  document.getElementById('subj-modal-meta').innerHTML =
+    `<span><b>${topics.length}</b> / ${subj.topics} topics</span>
+     <span><b>${totalMcq}</b> MCQs attempted</span>
+     <span><b>${totalAns}</b> answers written</span>`;
+  const listEl = document.getElementById('subj-topic-list');
+  if (!topics.length) {
+    listEl.innerHTML = '<div style="font-size:12px;color:var(--muted);padding:6px 0 10px">No topics added yet — use the form below.</div>';
+    return;
+  }
+  listEl.innerHTML = `<div class="topic-list">${topics.map((t, i) => `
+    <div class="topic-row" id="topic-row-${i}">
+      <span class="topic-row-name">${t.name}</span>
+      <span class="topic-row-stat">${t.mcq || 0} MCQ</span>
+      <span class="topic-row-stat">${t.answers || 0} Ans</span>
+      <button class="topic-row-btn" onclick="startEditTopic(${i})">Edit</button>
+    </div>`).join('')}</div>`;
+}
+
+function startEditTopic(idx) {
+  const t = (state.subjects[currentSubjectId] || [])[idx];
+  if (!t) return;
+  const row = document.getElementById('topic-row-' + idx);
+  row.classList.add('editing');
+  row.innerHTML = `
+    <input class="modal-input" id="edit-name-${idx}" value="${t.name}" style="flex:1;min-width:100px"/>
+    <input class="modal-input" id="edit-mcq-${idx}" type="number" value="${t.mcq||0}" style="width:62px" min="0"/>
+    <input class="modal-input" id="edit-ans-${idx}" type="number" value="${t.answers||0}" style="width:62px" min="0"/>
+    <button class="mbtn confirm" style="flex:0;padding:5px 10px;font-size:10px" onclick="saveEditTopic(${idx})">Save</button>
+    <button class="mbtn cancel" style="flex:0;padding:5px 10px;font-size:10px" onclick="renderSubjectModal()">✕</button>`;
+}
+
+function saveEditTopic(idx) {
+  const name = document.getElementById(`edit-name-${idx}`).value.trim();
+  if (!name) return;
+  const mcq     = parseInt(document.getElementById(`edit-mcq-${idx}`).value) || 0;
+  const answers = parseInt(document.getElementById(`edit-ans-${idx}`).value) || 0;
+  state.subjects[currentSubjectId][idx] = { name, mcq, answers };
+  addLog(`Topic updated: ${name}`, 0);
+  saveLocal(); renderAll(); renderSubjectModal();
+}
+
+function addTopic() {
+  const name = document.getElementById('topic-name-input').value.trim();
+  if (!name) return;
+  const mcq     = parseInt(document.getElementById('topic-mcq-input').value) || 0;
+  const answers = parseInt(document.getElementById('topic-ans-input').value) || 0;
+  const topics  = state.subjects[currentSubjectId];
+  topics.push({ name, mcq, answers });
+  const subj = SUBJECTS.find(s => s.id === currentSubjectId);
+  if (subj && topics.length === subj.topics) {
+    state.totalXP += 200;
+    addLog(`SKILL UNLOCKED: ${subj.name} complete!`, 200);
+  } else {
+    addLog(`Topic added: ${name} (${currentSubjectId})`, 0);
+  }
+  document.getElementById('topic-name-input').value = '';
+  document.getElementById('topic-mcq-input').value  = '';
+  document.getElementById('topic-ans-input').value  = '';
+  saveLocal(); renderAll(); renderSubjectModal();
 }
 
 function logMock() {
@@ -1071,10 +1066,6 @@ function logMock() {
   if (isNaN(score)) { alert('Enter a score'); return; }
   const entry = { date: new Date().toLocaleDateString(), type, subject, score };
   state.mockHistory.push(entry);
-  // update MCQ stat
-  state.stats.mcq = score;
-  if (!state.statHistory.mcq) state.statHistory.mcq = [];
-  state.statHistory.mcq.push(score);
   const xp = score >= 70 ? 100 : score >= 50 ? 60 : 30;
   state.totalXP += xp;
   addLog(`${type} mock: ${score}% — ${subject || 'Mixed'}`, xp);
@@ -1084,23 +1075,6 @@ function logMock() {
   renderAll();
 }
 
-function updateSubject(id, maxTopics) {
-  const current = state.subjects[id] || 0;
-  const val = prompt(`Topics completed for ${id} (out of ${maxTopics}):`, current);
-  if (val === null) return;
-  const n = parseInt(val);
-  if (isNaN(n) || n < 0 || n > maxTopics) return;
-  const prev = state.subjects[id] || 0;
-  state.subjects[id] = n;
-  if (n >= maxTopics && prev < maxTopics) {
-    state.totalXP += 200;
-    addLog(`SKILL UNLOCKED: ${id.toUpperCase()} complete!`, 200);
-  } else {
-    addLog(`Subject updated: ${id} → ${n}/${maxTopics} topics`, 0);
-  }
-  saveLocal();
-  renderAll();
-}
 
 function resetDay() {
   if (!confirm('Start a new day? This resets today\'s quest checkmarks.')) return;
