@@ -465,7 +465,7 @@ main { padding: 24px 28px; display: flex; flex-direction: column; gap: 24px; }
 
 /* ── TORTOISE JOURNEY ── */
 .tortoise-section {
-  padding: 10px 28px 8px;
+  padding: 10px 28px 10px;
   background: linear-gradient(180deg, rgba(0,212,255,.03) 0%, transparent 100%);
   border-bottom: 1px solid var(--border);
 }
@@ -485,14 +485,13 @@ main { padding: 24px 28px; display: flex; flex-direction: column; gap: 24px; }
   background: var(--panel2);
   border-radius: 18px;
   border: 1px solid var(--border2);
-  overflow: visible;
-  margin-top: 20px;
+  margin-top: 18px;
 }
 .tortoise-road {
   position: absolute;
   top: 50%;
-  left: 20px;
-  right: 20px;
+  left: 22px;
+  right: 22px;
   height: 3px;
   background: var(--border2);
   transform: translateY(-50%);
@@ -512,8 +511,8 @@ main { padding: 24px 28px; display: flex; flex-direction: column; gap: 24px; }
   font-size: 16px;
   line-height: 1;
 }
-.tortoise-flag-start { left: 0px; }
-.tortoise-flag-end   { right: 0px; }
+.tortoise-flag-start { left: 2px; }
+.tortoise-flag-end   { right: 2px; }
 .tortoise-walker {
   position: absolute;
   top: 50%;
@@ -521,7 +520,6 @@ main { padding: 24px 28px; display: flex; flex-direction: column; gap: 24px; }
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 2px;
   transition: left 1.2s cubic-bezier(.4,0,.2,1);
   z-index: 2;
 }
@@ -536,13 +534,15 @@ main { padding: 24px 28px; display: flex; flex-direction: column; gap: 24px; }
   padding: 1px 5px;
   white-space: nowrap;
   position: absolute;
-  bottom: calc(100% + 6px);
+  bottom: calc(100% + 4px);
   left: 50%;
   transform: translateX(-50%);
 }
 .tortoise-sprite {
   font-size: 22px;
   line-height: 1;
+  display: inline-block;
+  transform: scaleX(-1);
   filter: drop-shadow(0 0 6px rgba(0,255,136,.4));
 }
 .tortoise-days-left {
@@ -558,7 +558,7 @@ main { padding: 24px 28px; display: flex; flex-direction: column; gap: 24px; }
   header { padding: 14px 16px; }
   main { padding: 16px; }
   .rank-badge { width: 40px; height: 40px; font-size: 1.2rem; }
-  .tortoise-section { padding: 8px 16px 6px; }
+  .tortoise-section { padding: 8px 16px 8px; }
 }
 </style>
 </head>
@@ -645,7 +645,7 @@ main { padding: 24px 28px; display: flex; flex-direction: column; gap: 24px; }
       <span class="tortoise-sprite">🐢</span>
     </div>
   </div>
-  <div class="tortoise-days-left" id="tortoise-days-left"></div>
+  <div class="tortoise-days-left" id="tortoise-days-left">Complete a quest to start the journey</div>
 </div>
 
 <main>
@@ -969,6 +969,34 @@ function completeSetup() {
 function calcAnswersWritten() {
   return Object.values(state.subjects).filter(Array.isArray).flat()
     .reduce((sum, t) => sum + (t.answers || 0), 0);
+}
+
+function renderTortoise() {
+  const TOTAL_DAYS = 365;
+  const cq = (state && state.completedQuests) ? state.completedQuests : {};
+
+  // count every day that has at least 1 quest completed
+  let studyDays = 0;
+  for (const key of Object.keys(cq)) {
+    if (Array.isArray(cq[key]) && cq[key].length > 0) studyDays++;
+  }
+
+  const pct = Math.min(100, (studyDays / TOTAL_DAYS) * 100);
+  // clamp walker between 2% and 97% so emoji stays on visible track
+  const walkerLeft = 2 + (pct / 100) * 95;
+
+  document.getElementById('tortoise-fill').style.width      = pct.toFixed(2) + '%';
+  document.getElementById('tortoise-walker').style.left     = walkerLeft.toFixed(2) + '%';
+  document.getElementById('tortoise-pct-badge').textContent = pct.toFixed(1) + '%';
+
+  if (studyDays === 0) {
+    document.getElementById('tortoise-days-left').textContent = 'Complete a quest to start the journey 🐢';
+  } else if (studyDays >= TOTAL_DAYS) {
+    document.getElementById('tortoise-days-left').textContent = '365 / 365 study days — Journey complete! 🚩';
+  } else {
+    document.getElementById('tortoise-days-left').textContent =
+      studyDays + ' / ' + TOTAL_DAYS + ' study days completed · ' + (TOTAL_DAYS - studyDays) + ' days remaining';
+  }
 }
 
 function renderAll() {
