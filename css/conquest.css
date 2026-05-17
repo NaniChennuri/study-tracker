@@ -1,0 +1,232 @@
+/* ── CONQUEST MAP ── */
+
+/* group label row */
+.conquest-group { margin-bottom:28px; }
+.conquest-group-header {
+  display:flex; align-items:center; gap:10px;
+  margin-bottom:12px;
+}
+.conquest-group-tag {
+  font-family:'Orbitron', monospace; font-size:9px;
+  letter-spacing:2px; padding:3px 10px; border-radius:3px;
+  border:1px solid; font-weight:700;
+}
+.conquest-group-label { font-size:13px; color:var(--muted); }
+.conquest-group-stats {
+  margin-left:auto;
+  font-family:'DM Mono', monospace; font-size:10px; color:var(--muted);
+}
+
+/* subject cards grid */
+.conquest-cards {
+  display:grid;
+  grid-template-columns:repeat(auto-fill, minmax(300px,1fr));
+  gap:12px;
+}
+
+/* individual subject card */
+.subj-card {
+  background:var(--panel); border:1px solid var(--border);
+  border-radius:8px; padding:16px;
+  transition:border-color .2s;
+  position:relative; overflow:hidden;
+}
+.subj-card:hover { border-color:var(--border2); }
+.subj-card.boss-ready { border-color:rgba(255,68,85,.4); }
+.subj-card.boss-ready::before {
+  content:''; position:absolute; inset:0;
+  background:linear-gradient(135deg,rgba(255,68,85,.03),transparent);
+  pointer-events:none;
+}
+.subj-card.boss-defeated { border-color:rgba(255,215,0,.3); }
+.subj-card.boss-defeated::before {
+  content:''; position:absolute; inset:0;
+  background:linear-gradient(135deg,rgba(255,215,0,.04),transparent);
+  pointer-events:none;
+}
+
+/* card header */
+.subj-card-hdr {
+  display:flex; align-items:center; gap:10px; margin-bottom:12px;
+}
+.subj-card-name {
+  font-family:'Orbitron', monospace; font-size:12px; font-weight:700;
+  letter-spacing:1px;
+}
+.subj-card-group {
+  font-family:'DM Mono', monospace; font-size:9px; letter-spacing:1px;
+  padding:2px 7px; border-radius:3px; border:1px solid;
+  text-transform:uppercase;
+}
+.subj-card-counts {
+  margin-left:auto;
+  font-family:'DM Mono', monospace; font-size:10px; color:var(--muted);
+}
+
+/* boss / status badge */
+.boss-badge {
+  font-family:'Orbitron', monospace; font-size:9px; letter-spacing:1px;
+  padding:2px 8px; border-radius:3px;
+  text-transform:uppercase; flex-shrink:0;
+}
+.boss-badge.ready    { background:rgba(255,68,85,.15);   border:1px solid var(--red);    color:var(--red); }
+.boss-badge.defeated { background:rgba(255,215,0,.15);   border:1px solid var(--gold);   color:var(--gold); }
+
+/* progress bar */
+.subj-progress-bar {
+  height:4px; background:var(--panel2); border-radius:2px;
+  overflow:hidden; margin-bottom:12px;
+}
+.subj-progress-fill {
+  height:100%; border-radius:2px;
+  transition:width .6s ease;
+  background:linear-gradient(90deg,var(--blue2),var(--cyan));
+}
+.subj-progress-fill.full { background:linear-gradient(90deg,var(--gold2),var(--gold)); }
+
+/* topic grid inside card */
+.topic-grid {
+  display:flex; flex-wrap:wrap; gap:3px;
+}
+.topic-cell {
+  width:14px; height:14px; border-radius:2px;
+  cursor:pointer; transition:all .15s; position:relative;
+  flex-shrink:0;
+}
+.topic-cell.ts-none    { background:var(--border); }
+.topic-cell.ts-read    { background:var(--blue2); box-shadow:0 0 4px rgba(74,158,255,.4); }
+.topic-cell.ts-revised { background:var(--gold); box-shadow:0 0 5px rgba(255,215,0,.5); }
+.topic-cell:hover { transform:scale(1.3); z-index:2; }
+
+/* section divider inside grid */
+.topic-section-break {
+  width:100%; height:0; flex-basis:100%;
+  margin:4px 0 2px;
+}
+.topic-section-label {
+  font-family:'DM Mono', monospace; font-size:9px;
+  color:var(--muted); letter-spacing:1px;
+  width:100%; flex-basis:100%;
+  margin-bottom:2px;
+}
+
+/* card footer */
+.subj-card-footer {
+  display:flex; align-items:center; gap:8px; margin-top:12px;
+  padding-top:10px; border-top:1px solid var(--border);
+}
+.subj-card-footer .read-count  { font-family:'DM Mono', monospace; font-size:10px; color:var(--blue); }
+.subj-card-footer .rev-count   { font-family:'DM Mono', monospace; font-size:10px; color:var(--gold); }
+.subj-card-footer .pct         { font-family:'Orbitron', monospace; font-size:11px; margin-left:auto; }
+
+/* boss raid button */
+.boss-raid-btn {
+  padding:6px 14px; border-radius:4px;
+  border:1px solid var(--red); background:rgba(255,68,85,.1);
+  color:var(--red); font-family:'Orbitron', monospace;
+  font-size:9px; letter-spacing:1px; cursor:pointer;
+  transition:all .2s; text-transform:uppercase;
+  animation:pulse-red 2s infinite;
+}
+.boss-raid-btn:hover { background:rgba(255,68,85,.2); }
+@keyframes pulse-red {
+  0%,100% { box-shadow:0 0 0 0 rgba(255,68,85,.4); }
+  50%     { box-shadow:0 0 8px 2px rgba(255,68,85,.2); }
+}
+
+/* ── TOPIC DETAIL MODAL ── */
+.topic-detail-subject {
+  font-family:'DM Mono', monospace; font-size:10px;
+  color:var(--muted); letter-spacing:1px; margin-bottom:4px;
+}
+.topic-detail-section {
+  font-size:11px; color:var(--muted); margin-bottom:12px;
+}
+.topic-detail-name {
+  font-family:'Orbitron', monospace; font-size:14px;
+  font-weight:700; color:var(--text); margin-bottom:16px; line-height:1.3;
+}
+.topic-status-display {
+  display:flex; gap:8px; margin-bottom:16px;
+}
+.topic-status-pill {
+  padding:5px 14px; border-radius:20px;
+  font-family:'DM Mono', monospace; font-size:11px; letter-spacing:1px;
+  border:1px solid;
+}
+.topic-status-pill.ts-none    { border-color:var(--border2); color:var(--muted); }
+.topic-status-pill.ts-read    { border-color:var(--blue); color:var(--blue); background:rgba(74,158,255,.1); }
+.topic-status-pill.ts-revised { border-color:var(--gold); color:var(--gold); background:rgba(255,215,0,.1); }
+
+.topic-date-info {
+  font-family:'DM Mono', monospace; font-size:10px;
+  color:var(--muted); margin-bottom:16px; line-height:1.8;
+}
+.topic-action-btns { display:flex; gap:8px; flex-wrap:wrap; }
+.topic-action-btn {
+  padding:9px 16px; border-radius:4px;
+  border:1px solid; font-family:'DM Mono', monospace;
+  font-size:11px; letter-spacing:1px; cursor:pointer;
+  text-transform:uppercase; transition:all .2s;
+}
+.topic-action-btn.mark-read    { border-color:var(--blue); color:var(--blue); background:rgba(74,158,255,.1); }
+.topic-action-btn.mark-revised { border-color:var(--gold); color:var(--gold); background:rgba(255,215,0,.1); }
+.topic-action-btn.mark-unread  { border-color:var(--muted); color:var(--muted); }
+.topic-action-btn:hover { opacity:.8; }
+
+/* tooltip for topic cells */
+.topic-tooltip {
+  position:fixed; z-index:300; pointer-events:none;
+  background:var(--panel2); border:1px solid var(--border2);
+  border-radius:4px; padding:5px 10px;
+  font-family:'DM Mono', monospace; font-size:10px;
+  color:var(--text); white-space:nowrap;
+  box-shadow:0 4px 12px rgba(0,0,0,.5);
+  opacity:0; transition:opacity .1s;
+}
+.topic-tooltip.show { opacity:1; }
+
+/* ── BOSS RAID MODAL ── */
+.boss-subject-name {
+  font-family:'Orbitron', monospace; font-size:18px; font-weight:900;
+  color:var(--red); text-align:center; margin-bottom:6px;
+  text-shadow:0 0 20px rgba(255,68,85,.4);
+}
+.boss-flavor {
+  text-align:center; color:var(--muted); font-size:12px; margin-bottom:20px;
+}
+.boss-score-input-wrap {
+  display:flex; align-items:center; gap:12px; margin-bottom:16px;
+}
+.boss-score-input {
+  flex:1; background:var(--bg2); border:2px solid var(--red);
+  border-radius:4px; padding:12px; color:var(--text);
+  font-family:'Orbitron', monospace; font-size:1.4rem; text-align:center; outline:none;
+}
+.boss-score-label { font-family:'DM Mono', monospace; font-size:11px; color:var(--muted); }
+.boss-result {
+  text-align:center; padding:12px;
+  border-radius:6px; margin-bottom:16px;
+  font-family:'Orbitron', monospace; font-size:13px; font-weight:700;
+  display:none;
+}
+.boss-result.win  { background:rgba(255,215,0,.1); border:1px solid var(--gold); color:var(--gold); display:block; }
+.boss-result.fail { background:rgba(74,158,255,.1); border:1px solid var(--blue); color:var(--blue); display:block; }
+
+/* ── CONQUEST STATS ROW ── */
+.conquest-stats-row {
+  display:flex; gap:12px; flex-wrap:wrap; margin-bottom:20px;
+}
+.conquest-stat {
+  flex:1; min-width:120px;
+  background:var(--panel); border:1px solid var(--border);
+  border-radius:6px; padding:12px 16px; text-align:center;
+}
+.conquest-stat-value {
+  font-family:'Orbitron', monospace; font-size:1.4rem; font-weight:700;
+  display:block; margin-bottom:4px;
+}
+.conquest-stat-label {
+  font-family:'DM Mono', monospace; font-size:9px;
+  letter-spacing:1px; text-transform:uppercase; color:var(--muted);
+}

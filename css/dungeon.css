@@ -1,0 +1,70 @@
+/* ── DUNGEON / MOCK TEST PANEL ── */
+.dungeon-panel {
+  background:var(--panel); border:1px solid var(--border);
+  border-radius:8px; padding:20px;
+}
+.dungeon-header {
+  display:flex; align-items:center; gap:16px; margin-bottom:16px;
+}
+.dungeon-icon { font-size:28px; }
+.dungeon-title {
+  font-family:'Orbitron', monospace; font-size:14px;
+  font-weight:700; letter-spacing:2px; color:var(--red);
+}
+.dungeon-sub { font-size:12px; color:var(--muted); margin-top:2px; }
+
+/* form */
+.dungeon-form {
+  display:flex; align-items:flex-end; gap:12px; flex-wrap:wrap;
+  margin-bottom:16px;
+}
+.df-group { display:flex; flex-direction:column; gap:4px; }
+.df-label {
+  font-family:'DM Mono', monospace; font-size:9px;
+  letter-spacing:1px; text-transform:uppercase; color:var(--muted);
+}
+.df-input {
+  background:var(--bg2); border:1px solid var(--border2);
+  border-radius:4px; padding:8px 10px; color:var(--text);
+  font-family:'DM Mono', monospace; font-size:12px; outline:none;
+  min-width:120px;
+}
+.df-input:focus { border-color:var(--cyan); }
+.df-btn {
+  padding:8px 16px; border-radius:4px;
+  background:rgba(255,68,85,.1); border:1px solid var(--red);
+  color:var(--red); font-family:'Orbitron', monospace;
+  font-size:10px; letter-spacing:2px; cursor:pointer;
+  transition:all .2s; text-transform:uppercase;
+}
+.df-btn:hover { background:rgba(255,68,85,.2); }
+
+/* mock history */
+.mock-history { display:flex; flex-direction:column; gap:6px; }
+.mock-entry {
+  display:flex; align-items:center; gap:12px;
+  padding:8px 12px; background:var(--panel2); border-radius:4px;
+  border:1px solid var(--border); font-size:12px;
+}
+.mock-entry-type  { font-family:'DM Mono', monospace; color:var(--muted); font-size:10px; flex-shrink:0; }
+.mock-entry-subj  { color:var(--text); flex:1; }
+.mock-entry-score {
+  font-family:'Orbitron', monospace; font-size:11px; flex-shrink:0;
+}
+.mock-entry-score.pass { color:var(--green); }
+.mock-entry-score.warn { color:var(--orange); }
+.mock-entry-score.fail { color:var(--red); }
+.mock-entry-date  { font-family:'DM Mono', monospace; font-size:10px; color:var(--muted); flex-shrink:0; }
+.mock-empty { font-family:'DM Mono', monospace; font-size:11px; color:var(--muted); padding:12px; text-align:center; }
+
+/* ── WEEKLY MOCK SUBJECT SELECTOR ── */
+.mock-subject-tags {
+  display:flex; flex-wrap:wrap; gap:6px; margin-top:8px;
+}
+.mock-subj-tag {
+  padding:4px 10px; border-radius:3px;
+  border:1px solid var(--border2); background:var(--panel2);
+  font-family:'DM Mono', monospace; font-size:10px; color:var(--muted);
+  cursor:pointer; transition:all .15s;
+}
+.mock-subj-tag.selected { border-color:var(--cyan); color:var(--cyan); background:rgba(0,212,255,.1); }
