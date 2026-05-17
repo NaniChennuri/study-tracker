@@ -1,0 +1,22 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(find /Users/nanichennuri/Projects/study-tracker -type f | head -50 && echo \"---\" && ls /Users/nanichennuri/Projects/levelyn-frontend/public/content/)",
+      "Read(//Users/nanichennuri/Projects/levelyn-frontend/public/content/**)",
+      "Read(//Users/nanichennuri/Projects/levelyn-frontend/public/content/upsc/**)",
+      "Read(//Users/nanichennuri/Projects/levelyn-frontend/public/content/upsc-optionals/**)",
+      "Bash(mkdir -p /Users/nanichennuri/Projects/study-tracker/css /Users/nanichennuri/Projects/study-tracker/js && echo \"done\")",
+      "Bash(node -e ' *)",
+      "Bash(node --input-type=module)",
+      "Bash(node -e \"$\\(sed 's/^const TOPIC_TREES/var TOPIC_TREES/' js/topics-data.js\\); console.log\\(Object.keys\\(TOPIC_TREES\\).length + ' subjects'\\); let t=0; Object.values\\(TOPIC_TREES\\).forEach\\(v=>v.sections.forEach\\(s=>t+=s.topics.length\\)\\); console.log\\(t + ' topics total'\\);\")",
+      "Bash(sed 's/^const /var /g; s/^function /var _fn = function /g' js/config.js)",
+      "Bash(git add *)",
+      "Bash(git commit -m ' *)",
+      "Read(//Users/nanichennuri/.claude/projects/-Users-nanichennuri-Projects-Study-Tracker/memory/**)",
+      "Read(//Users/nanichennuri/.claude/projects/-Users-nanichennuri-Projects-study-tracker/memory/**)"
+    ],
+    "additionalDirectories": [
+      "/Users/nanichennuri/Projects/study-tracker"
+    ]
+  }
+}
