@@ -630,9 +630,9 @@ main { padding: 24px 28px; display: flex; flex-direction: column; gap: 24px; }
 <!-- ── TORTOISE JOURNEY ── -->
 <div class="tortoise-section">
   <div class="tortoise-labels">
-    <span>May 17, 2026</span>
-    <span>Study Day Journey — 365 days</span>
-    <span>May 17, 2027</span>
+    <span>Day 0</span>
+    <span>Study Days Record</span>
+    <span>300 Days</span>
   </div>
   <div class="tortoise-track">
     <div class="tortoise-road">
@@ -686,7 +686,7 @@ main { padding: 24px 28px; display: flex; flex-direction: column; gap: 24px; }
         <div class="streak-num" style="color:var(--red)" id="exam-countdown">-</div>
         <div>
           <div class="streak-label">Days to Prelims</div>
-          <div class="streak-sub">Target: May 1, 2027</div>
+          <div class="streak-sub">Target: May 18, 2027</div>
         </div>
       </div>
     </div>
@@ -750,43 +750,6 @@ main { padding: 24px 28px; display: flex; flex-direction: column; gap: 24px; }
 <div class="save-status" id="save-status"></div>
 
 <script>
-// ── TORTOISE JOURNEY ──
-function renderTortoise() {
-  const JOURNEY_START = '2026-05-17';
-  const JOURNEY_END   = '2027-05-17';
-  const TOTAL_DAYS    = 365;
-
-  const cq = (typeof state !== 'undefined' && state.completedQuests) ? state.completedQuests : {};
-
-  // count days within journey window where at least 1 quest was completed
-  let studyDays = 0;
-  for (const dateKey of Object.keys(cq)) {
-    if (dateKey >= JOURNEY_START && dateKey <= JOURNEY_END && cq[dateKey].length > 0) {
-      studyDays++;
-    }
-  }
-
-  const pct = Math.min(100, (studyDays / TOTAL_DAYS) * 100);
-  // clamp walker between 2% and 97% so emoji stays on the visible track
-  const walkerLeft = 2 + (pct / 100) * 95;
-
-  document.getElementById('tortoise-fill').style.width      = pct.toFixed(2) + '%';
-  document.getElementById('tortoise-walker').style.left     = walkerLeft.toFixed(2) + '%';
-  document.getElementById('tortoise-pct-badge').textContent = pct.toFixed(1) + '%';
-
-  if (studyDays === 0) {
-    document.getElementById('tortoise-days-left').textContent = 'Complete a quest to start the journey 🐢';
-  } else if (studyDays >= TOTAL_DAYS) {
-    document.getElementById('tortoise-days-left').textContent = '365 / 365 study days — Journey complete! 🚩';
-  } else {
-    document.getElementById('tortoise-days-left').textContent =
-      studyDays + ' / ' + TOTAL_DAYS + ' study days completed · ' + (TOTAL_DAYS - studyDays) + ' days remaining';
-  }
-}
-
-// run after a brief delay so the CSS transition plays on load
-window.addEventListener('DOMContentLoaded', () => setTimeout(renderTortoise, 300));
-
 // ── CONFIG ──
 const GITHUB_USER = 'NaniChennuri';
 const GITHUB_REPO = 'study-tracker';
@@ -972,30 +935,30 @@ function calcAnswersWritten() {
 }
 
 function renderTortoise() {
-  const TOTAL_DAYS = 365;
+  const TARGET = 300;
+  const WINDOW_START = '2026-05-18';
+  const WINDOW_END   = '2027-05-18';
   const cq = (state && state.completedQuests) ? state.completedQuests : {};
 
-  // count every day that has at least 1 quest completed
   let studyDays = 0;
   for (const key of Object.keys(cq)) {
-    if (Array.isArray(cq[key]) && cq[key].length > 0) studyDays++;
+    if (key >= WINDOW_START && key <= WINDOW_END && Array.isArray(cq[key]) && cq[key].length > 0) studyDays++;
   }
 
-  const pct = Math.min(100, (studyDays / TOTAL_DAYS) * 100);
-  // clamp walker between 2% and 97% so emoji stays on visible track
+  const pct = Math.min(100, (studyDays / TARGET) * 100);
   const walkerLeft = 2 + (pct / 100) * 95;
 
   document.getElementById('tortoise-fill').style.width      = pct.toFixed(2) + '%';
   document.getElementById('tortoise-walker').style.left     = walkerLeft.toFixed(2) + '%';
-  document.getElementById('tortoise-pct-badge').textContent = pct.toFixed(1) + '%';
+  document.getElementById('tortoise-pct-badge').textContent = 'Day ' + studyDays;
 
   if (studyDays === 0) {
-    document.getElementById('tortoise-days-left').textContent = 'Complete a quest to start the journey 🐢';
-  } else if (studyDays >= TOTAL_DAYS) {
-    document.getElementById('tortoise-days-left').textContent = '365 / 365 study days — Journey complete! 🚩';
+    document.getElementById('tortoise-days-left').textContent = 'Complete a quest to move the tortoise 🐢';
+  } else if (studyDays >= TARGET) {
+    document.getElementById('tortoise-days-left').textContent = studyDays + ' study days — Milestone reached! 🚩';
   } else {
     document.getElementById('tortoise-days-left').textContent =
-      studyDays + ' / ' + TOTAL_DAYS + ' study days completed · ' + (TOTAL_DAYS - studyDays) + ' days remaining';
+      studyDays + ' / ' + TARGET + ' study days · ' + (TARGET - studyDays) + ' days to milestone';
   }
 }
 
@@ -1011,7 +974,7 @@ function renderAll() {
   document.getElementById('total-days').textContent = state.totalDays;
   document.getElementById('total-xp-disp').textContent = state.totalXP;
   document.getElementById('answers-written').textContent = calcAnswersWritten();
-  const prelims = new Date('2027-05-01');
+  const prelims = new Date('2027-05-18');
   const now = new Date(); now.setHours(0,0,0,0);
   document.getElementById('exam-countdown').textContent = Math.ceil((prelims - now) / 86400000);
 }
