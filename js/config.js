@@ -149,5 +149,5 @@ const BOSS_UNLOCK_THRESHOLD = 1.0; // 100% topics read
 const BOSS_WIN_SCORE = 70;          // % score to "defeat" boss
 
 // ── EXAM COUNTDOWN TARGET ─────────────────────────────────────────────────
-// UPSC Prelims 2026 — update as needed
-const EXAM_DATE = '2026-05-25';
+// UPSC Prelims 2027 — exact date TBA, estimated late May 2027
+const EXAM_DATE = '2027-05-30';
