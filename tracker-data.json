@@ -1,11 +1,21 @@
 {
   "hunterName": "Nani",
-  "totalXP": 30,
+  "totalXP": 50,
   "streak": 1,
   "totalDays": 1,
   "lastStudyDate": "2026-05-18",
   "topicStatus": {
     "history:prehistoric": {
+      "s": 1,
+      "rd": "2026-05-18",
+      "rv": null
+    },
+    "history:ivc": {
+      "s": 1,
+      "rd": "2026-05-18",
+      "rv": null
+    },
+    "history:vedic": {
       "s": 1,
       "rd": "2026-05-18",
       "rv": null
@@ -22,6 +32,16 @@
   "mockHistory": [],
   "bossDefeated": {},
   "activityLog": [
+    {
+      "time": "01:16 PM",
+      "text": "📖 Read: History → Vedic Culture (1500–600 BCE)",
+      "xp": 10
+    },
+    {
+      "time": "01:16 PM",
+      "text": "📖 Read: History → Harappan Culture / IVC",
+      "xp": 10
+    },
     {
       "time": "07:38 AM",
       "text": "📖 Read: History → Pre-Historic India",
