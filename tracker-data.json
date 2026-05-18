@@ -1,24 +1,24 @@
 {
   "hunterName": "Nani",
-  "totalXP": 60,
+  "totalXP": 160,
   "streak": 1,
   "totalDays": 1,
   "lastStudyDate": "2026-05-18",
   "topicStatus": {
     "history:prehistoric": {
-      "s": 1,
+      "s": 2,
       "rd": "2026-05-18",
-      "rv": null
+      "rv": "2026-05-18"
     },
     "history:ivc": {
-      "s": 1,
+      "s": 2,
       "rd": "2026-05-18",
-      "rv": null
+      "rv": "2026-05-18"
     },
     "history:vedic": {
-      "s": 1,
+      "s": 2,
       "rd": "2026-05-18",
-      "rv": null
+      "rv": "2026-05-18"
     }
   },
   "completedQuests": {
@@ -29,12 +29,55 @@
       },
       "editorial": {
         "done": true
+      },
+      "revise": {
+        "done": true,
+        "topicKey": "history:ivc"
+      },
+      "ca": {
+        "done": true
+      },
+      "mcq_practice": {
+        "done": true
+      },
+      "answer_writing": {
+        "done": true
       }
     }
   },
   "mockHistory": [],
   "bossDefeated": {},
   "activityLog": [
+    {
+      "time": "09:32 PM",
+      "text": "✅ Revised: History → Vedic Culture (1500–600 BCE)",
+      "xp": 15
+    },
+    {
+      "time": "09:32 PM",
+      "text": "✅ Revised: History → Pre-Historic India",
+      "xp": 15
+    },
+    {
+      "time": "09:32 PM",
+      "text": "✍️ Answer Writing completed",
+      "xp": 25
+    },
+    {
+      "time": "09:32 PM",
+      "text": "✏️ MCQ Practice completed",
+      "xp": 15
+    },
+    {
+      "time": "09:32 PM",
+      "text": "🗞️ Current Affairs completed",
+      "xp": 10
+    },
+    {
+      "time": "09:32 PM",
+      "text": "🔁 Revised: History → Harappan Culture / IVC",
+      "xp": 20
+    },
     {
       "time": "01:50 PM",
       "text": "📰 Editorial completed",
