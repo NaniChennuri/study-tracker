@@ -1,9 +1,38 @@
 {
   "hunterName": "Nani",
-  "totalXP": 0,
-  "streak": 0,
-  "totalDays": 0,
-  "lastStudyDate": null,
+  "totalXP": 30,
+  "streak": 1,
+  "totalDays": 1,
+  "lastStudyDate": "2026-05-18",
+  "topicStatus": {
+    "history:prehistoric": {
+      "s": 1,
+      "rd": "2026-05-18",
+      "rv": null
+    }
+  },
+  "completedQuests": {
+    "2026-05-18": {
+      "morning_gs": {
+        "done": true,
+        "topicKey": "history:prehistoric"
+      }
+    }
+  },
+  "mockHistory": [],
+  "bossDefeated": {},
+  "activityLog": [
+    {
+      "time": "07:38 AM",
+      "text": "📖 Read: History → Pre-Historic India",
+      "xp": 30
+    },
+    {
+      "time": "4/24/2026, 6:37:38 PM",
+      "text": "Nani has awakened as a Hunter",
+      "xp": 0
+    }
+  ],
   "answersWritten": 0,
   "stats": {
     "mcq": 0,
@@ -19,14 +48,5 @@
     "clarity": [],
     "psir": []
   },
-  "subjects": {},
-  "completedQuests": {},
-  "mockHistory": [],
-  "activityLog": [
-    {
-      "time": "4/24/2026, 6:37:38 PM",
-      "text": "Nani has awakened as a Hunter",
-      "xp": 0
-    }
-  ]
+  "subjects": {}
 }
