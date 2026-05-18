@@ -1,6 +1,6 @@
 {
   "hunterName": "Nani",
-  "totalXP": 50,
+  "totalXP": 60,
   "streak": 1,
   "totalDays": 1,
   "lastStudyDate": "2026-05-18",
@@ -26,12 +26,20 @@
       "morning_gs": {
         "done": true,
         "topicKey": "history:prehistoric"
+      },
+      "editorial": {
+        "done": true
       }
     }
   },
   "mockHistory": [],
   "bossDefeated": {},
   "activityLog": [
+    {
+      "time": "01:50 PM",
+      "text": "📰 Editorial completed",
+      "xp": 10
+    },
     {
       "time": "01:16 PM",
       "text": "📖 Read: History → Vedic Culture (1500–600 BCE)",
