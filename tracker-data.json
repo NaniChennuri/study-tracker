@@ -1,9 +1,9 @@
 {
   "hunterName": "Nani",
-  "totalXP": 160,
-  "streak": 1,
-  "totalDays": 1,
-  "lastStudyDate": "2026-05-18",
+  "totalXP": 270,
+  "streak": 2,
+  "totalDays": 2,
+  "lastStudyDate": "2026-05-19",
   "topicStatus": {
     "history:prehistoric": {
       "s": 2,
@@ -19,6 +19,51 @@
       "s": 2,
       "rd": "2026-05-18",
       "rv": "2026-05-18"
+    },
+    "psir1a:pt-meaning": {
+      "s": 1,
+      "rd": "2026-05-19",
+      "rv": null
+    },
+    "psir1a:pt-evolution": {
+      "s": 1,
+      "rd": "2026-05-19",
+      "rv": null
+    },
+    "psir1a:pt-approaches": {
+      "s": 1,
+      "rd": "2026-05-19",
+      "rv": null
+    },
+    "psir1a:trad-approaches": {
+      "s": 1,
+      "rd": "2026-05-19",
+      "rv": null
+    },
+    "psir1a:contemp-approaches": {
+      "s": 1,
+      "rd": "2026-05-19",
+      "rv": null
+    },
+    "psir1a:behav-inst": {
+      "s": 1,
+      "rd": "2026-05-19",
+      "rv": null
+    },
+    "psir1a:other-approaches": {
+      "s": 1,
+      "rd": "2026-05-19",
+      "rv": null
+    },
+    "psir1a:decline-pt": {
+      "s": 1,
+      "rd": "2026-05-19",
+      "rv": null
+    },
+    "psir1a:resurgence-pt": {
+      "s": 1,
+      "rd": "2026-05-19",
+      "rv": null
     }
   },
   "completedQuests": {
@@ -43,11 +88,62 @@
       "answer_writing": {
         "done": true
       }
+    },
+    "2026-05-19": {
+      "morning_psir": {
+        "done": true,
+        "topicKey": "psir1a:pt-meaning"
+      }
     }
   },
   "mockHistory": [],
   "bossDefeated": {},
   "activityLog": [
+    {
+      "time": "06:43 AM",
+      "text": "📖 Read: PSIR 1A → Resurgence of Political Theory",
+      "xp": 10
+    },
+    {
+      "time": "06:43 AM",
+      "text": "📖 Read: PSIR 1A → Decline of Political Theory",
+      "xp": 10
+    },
+    {
+      "time": "06:43 AM",
+      "text": "📖 Read: PSIR 1A → Other Approaches",
+      "xp": 10
+    },
+    {
+      "time": "06:43 AM",
+      "text": "📖 Read: PSIR 1A → Behavioural vs Institutional Approach",
+      "xp": 10
+    },
+    {
+      "time": "06:43 AM",
+      "text": "📖 Read: PSIR 1A → Contemporary Approaches",
+      "xp": 10
+    },
+    {
+      "time": "06:43 AM",
+      "text": "📖 Read: PSIR 1A → Traditional Approaches",
+      "xp": 10
+    },
+    {
+      "time": "06:43 AM",
+      "text": "📖 Read: PSIR 1A → Approaches to Political Theory",
+      "xp": 10
+    },
+    {
+      "time": "06:43 AM",
+      "text": "📖 Read: PSIR 1A → Evolution of Political Theory",
+      "xp": 10
+    },
+    {
+      "time": "06:43 AM",
+      "text": "📖 Read: PSIR 1A → Meaning of Political Theory",
+      "xp": 30
+    },
     {
       "time": "09:32 PM",
       "text": "✅ Revised: History → Vedic Culture (1500–600 BCE)",
