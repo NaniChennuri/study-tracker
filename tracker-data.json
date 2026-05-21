@@ -1,9 +1,9 @@
 {
   "hunterName": "Nani",
-  "totalXP": 270,
-  "streak": 2,
-  "totalDays": 2,
-  "lastStudyDate": "2026-05-19",
+  "totalXP": 425,
+  "streak": 1,
+  "totalDays": 3,
+  "lastStudyDate": "2026-05-21",
   "topicStatus": {
     "history:prehistoric": {
       "s": 2,
@@ -21,49 +21,49 @@
       "rv": "2026-05-18"
     },
     "psir1a:pt-meaning": {
-      "s": 1,
+      "s": 2,
       "rd": "2026-05-19",
-      "rv": null
+      "rv": "2026-05-21"
     },
     "psir1a:pt-evolution": {
-      "s": 1,
+      "s": 2,
       "rd": "2026-05-19",
-      "rv": null
+      "rv": "2026-05-21"
     },
     "psir1a:pt-approaches": {
-      "s": 1,
+      "s": 2,
       "rd": "2026-05-19",
-      "rv": null
+      "rv": "2026-05-21"
     },
     "psir1a:trad-approaches": {
-      "s": 1,
+      "s": 2,
       "rd": "2026-05-19",
-      "rv": null
+      "rv": "2026-05-21"
     },
     "psir1a:contemp-approaches": {
-      "s": 1,
+      "s": 2,
       "rd": "2026-05-19",
-      "rv": null
+      "rv": "2026-05-21"
     },
     "psir1a:behav-inst": {
-      "s": 1,
+      "s": 2,
       "rd": "2026-05-19",
-      "rv": null
+      "rv": "2026-05-21"
     },
     "psir1a:other-approaches": {
-      "s": 1,
+      "s": 2,
       "rd": "2026-05-19",
-      "rv": null
+      "rv": "2026-05-21"
     },
     "psir1a:decline-pt": {
-      "s": 1,
+      "s": 2,
       "rd": "2026-05-19",
-      "rv": null
+      "rv": "2026-05-21"
     },
     "psir1a:resurgence-pt": {
-      "s": 1,
+      "s": 2,
       "rd": "2026-05-19",
-      "rv": null
+      "rv": "2026-05-21"
     }
   },
   "completedQuests": {
@@ -94,11 +94,74 @@
         "done": true,
         "topicKey": "psir1a:pt-meaning"
       }
+    },
+    "2026-05-21": {
+      "editorial": {
+        "done": true
+      },
+      "ca": {
+        "done": true
+      }
     }
   },
   "mockHistory": [],
   "bossDefeated": {},
   "activityLog": [
+    {
+      "time": "06:44 PM",
+      "text": "🗞️ Current Affairs completed",
+      "xp": 10
+    },
+    {
+      "time": "06:34 PM",
+      "text": "📰 Editorial completed",
+      "xp": 10
+    },
+    {
+      "time": "06:33 PM",
+      "text": "✅ Revised: PSIR 1A → Resurgence of Political Theory",
+      "xp": 15
+    },
+    {
+      "time": "06:33 PM",
+      "text": "✅ Revised: PSIR 1A → Decline of Political Theory",
+      "xp": 15
+    },
+    {
+      "time": "06:33 PM",
+      "text": "✅ Revised: PSIR 1A → Other Approaches",
+      "xp": 15
+    },
+    {
+      "time": "06:33 PM",
+      "text": "✅ Revised: PSIR 1A → Behavioural vs Institutional Approach",
+      "xp": 15
+    },
+    {
+      "time": "06:33 PM",
+      "text": "✅ Revised: PSIR 1A → Contemporary Approaches",
+      "xp": 15
+    },
+    {
+      "time": "06:33 PM",
+      "text": "✅ Revised: PSIR 1A → Traditional Approaches",
+      "xp": 15
+    },
+    {
+      "time": "06:33 PM",
+      "text": "✅ Revised: PSIR 1A → Approaches to Political Theory",
+      "xp": 15
+    },
+    {
+      "time": "06:33 PM",
+      "text": "✅ Revised: PSIR 1A → Evolution of Political Theory",
+      "xp": 15
+    },
+    {
+      "time": "06:33 PM",
+      "text": "✅ Revised: PSIR 1A → Meaning of Political Theory",
+      "xp": 15
+    },
     {
       "time": "06:43 AM",
       "text": "📖 Read: PSIR 1A → Resurgence of Political Theory",
