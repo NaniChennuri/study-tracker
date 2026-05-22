@@ -1,6 +1,6 @@
 {
   "hunterName": "Nani",
-  "totalXP": 425,
+  "totalXP": 455,
   "streak": 1,
   "totalDays": 3,
   "lastStudyDate": "2026-05-21",
@@ -64,6 +64,16 @@
       "s": 2,
       "rd": "2026-05-19",
       "rv": "2026-05-21"
+    },
+    "psir1a:socrates": {
+      "s": 2,
+      "rd": "2026-05-22",
+      "rv": "2026-05-22"
+    },
+    "psir1a:plato": {
+      "s": 2,
+      "rd": "2026-05-22",
+      "rv": "2026-05-22"
     }
   },
   "completedQuests": {
@@ -107,6 +117,16 @@
   "mockHistory": [],
   "bossDefeated": {},
   "activityLog": [
+    {
+      "time": "08:02 AM",
+      "text": "✅ Revised: PSIR 1A → Plato (428–347 BC)",
+      "xp": 15
+    },
+    {
+      "time": "08:02 AM",
+      "text": "✅ Revised: PSIR 1A → Socrates (470–399 BC)",
+      "xp": 15
+    },
     {
       "time": "06:44 PM",
       "text": "🗞️ Current Affairs completed",
