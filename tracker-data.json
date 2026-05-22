@@ -1,9 +1,9 @@
 {
   "hunterName": "Nani",
-  "totalXP": 455,
-  "streak": 1,
-  "totalDays": 3,
-  "lastStudyDate": "2026-05-21",
+  "totalXP": 535,
+  "streak": 2,
+  "totalDays": 4,
+  "lastStudyDate": "2026-05-22",
   "topicStatus": {
     "history:prehistoric": {
       "s": 2,
@@ -74,6 +74,16 @@
       "s": 2,
       "rd": "2026-05-22",
       "rv": "2026-05-22"
+    },
+    "history:philosophy": {
+      "s": 2,
+      "rd": "2026-05-22",
+      "rv": "2026-05-22"
+    },
+    "history:magadha": {
+      "s": 2,
+      "rd": "2026-05-22",
+      "rv": "2026-05-22"
     }
   },
   "completedQuests": {
@@ -112,11 +122,43 @@
       "ca": {
         "done": true
       }
+    },
+    "2026-05-22": {
+      "morning_gs": {
+        "done": true,
+        "topicKey": "history:philosophy"
+      },
+      "editorial": {
+        "done": true
+      },
+      "answer_writing": {
+        "done": true
+      }
     }
   },
   "mockHistory": [],
   "bossDefeated": {},
   "activityLog": [
+    {
+      "time": "06:48 PM",
+      "text": "✅ Revised: History → Magadha and Invasions",
+      "xp": 15
+    },
+    {
+      "time": "06:48 PM",
+      "text": "✍️ Answer Writing completed",
+      "xp": 25
+    },
+    {
+      "time": "06:48 PM",
+      "text": "📰 Editorial completed",
+      "xp": 10
+    },
+    {
+      "time": "06:48 PM",
+      "text": "📖✅ Read + Revised: History → Philosophical Thoughts",
+      "xp": 30
+    },
     {
       "time": "08:02 AM",
       "text": "✅ Revised: PSIR 1A → Plato (428–347 BC)",
