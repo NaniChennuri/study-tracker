@@ -1,6 +1,6 @@
 {
   "hunterName": "Nani",
-  "totalXP": 565,
+  "totalXP": 595,
   "streak": 3,
   "totalDays": 5,
   "lastStudyDate": "2026-05-23",
@@ -86,9 +86,9 @@
       "rv": "2026-05-22"
     },
     "history:maurya": {
-      "s": 1,
+      "s": 2,
       "rd": "2026-05-23",
-      "rv": null
+      "rv": "2026-05-23"
     }
   },
   "completedQuests": {
@@ -144,12 +144,29 @@
       "morning_gs": {
         "done": true,
         "topicKey": "history:maurya"
+      },
+      "editorial": {
+        "done": true
+      },
+      "revise": {
+        "done": true,
+        "topicKey": "history:maurya"
       }
     }
   },
   "mockHistory": [],
   "bossDefeated": {},
   "activityLog": [
+    {
+      "time": "06:44 PM",
+      "text": "🔁 Revised: History → Mauryan Empire (321–185 BCE)",
+      "xp": 20
+    },
+    {
+      "time": "06:43 PM",
+      "text": "📰 Editorial completed",
+      "xp": 10
+    },
     {
       "time": "09:07 AM",
       "text": "📖 Read: History → Mauryan Empire (321–185 BCE)",
