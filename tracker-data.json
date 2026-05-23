@@ -1,9 +1,9 @@
 {
   "hunterName": "Nani",
-  "totalXP": 535,
-  "streak": 2,
-  "totalDays": 4,
-  "lastStudyDate": "2026-05-22",
+  "totalXP": 565,
+  "streak": 3,
+  "totalDays": 5,
+  "lastStudyDate": "2026-05-23",
   "topicStatus": {
     "history:prehistoric": {
       "s": 2,
@@ -84,6 +84,11 @@
       "s": 2,
       "rd": "2026-05-22",
       "rv": "2026-05-22"
+    },
+    "history:maurya": {
+      "s": 1,
+      "rd": "2026-05-23",
+      "rv": null
     }
   },
   "completedQuests": {
@@ -134,11 +139,22 @@
       "answer_writing": {
         "done": true
       }
+    },
+    "2026-05-23": {
+      "morning_gs": {
+        "done": true,
+        "topicKey": "history:maurya"
+      }
     }
   },
   "mockHistory": [],
   "bossDefeated": {},
   "activityLog": [
+    {
+      "time": "09:07 AM",
+      "text": "📖 Read: History → Mauryan Empire (321–185 BCE)",
+      "xp": 30
+    },
     {
       "time": "06:48 PM",
       "text": "✅ Revised: History → Magadha and Invasions",
