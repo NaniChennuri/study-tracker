@@ -1,9 +1,9 @@
 {
   "hunterName": "Nani",
-  "totalXP": 595,
-  "streak": 3,
-  "totalDays": 5,
-  "lastStudyDate": "2026-05-23",
+  "totalXP": 705,
+  "streak": 4,
+  "totalDays": 6,
+  "lastStudyDate": "2026-05-24",
   "topicStatus": {
     "history:prehistoric": {
       "s": 2,
@@ -89,6 +89,51 @@
       "s": 2,
       "rd": "2026-05-23",
       "rv": "2026-05-23"
+    },
+    "ethics:core-concepts": {
+      "s": 1,
+      "rd": "2026-05-24",
+      "rv": null
+    },
+    "ethics:essence-ethics": {
+      "s": 1,
+      "rd": "2026-05-24",
+      "rv": null
+    },
+    "ethics:dimensions-ethics": {
+      "s": 1,
+      "rd": "2026-05-24",
+      "rv": null
+    },
+    "ethics:determinants": {
+      "s": 1,
+      "rd": "2026-05-24",
+      "rv": null
+    },
+    "ethics:consequences": {
+      "s": 1,
+      "rd": "2026-05-24",
+      "rv": null
+    },
+    "ethics:private-public": {
+      "s": 1,
+      "rd": "2026-05-24",
+      "rv": null
+    },
+    "ethics:human-values": {
+      "s": 1,
+      "rd": "2026-05-24",
+      "rv": null
+    },
+    "ethics:family-society-edu": {
+      "s": 1,
+      "rd": "2026-05-24",
+      "rv": null
+    },
+    "ethics:key-distinctions": {
+      "s": 1,
+      "rd": "2026-05-24",
+      "rv": null
     }
   },
   "completedQuests": {
@@ -152,11 +197,62 @@
         "done": true,
         "topicKey": "history:maurya"
       }
+    },
+    "2026-05-24": {
+      "morning_ethics": {
+        "done": true,
+        "topicKey": "ethics:core-concepts"
+      }
     }
   },
   "mockHistory": [],
   "bossDefeated": {},
   "activityLog": [
+    {
+      "time": "10:47 AM",
+      "text": "📖 Read: Ethics → Key Distinctions (UPSC Favorites)",
+      "xp": 10
+    },
+    {
+      "time": "10:47 AM",
+      "text": "📖 Read: Ethics → Role of Family, Society and Educational Institutions",
+      "xp": 10
+    },
+    {
+      "time": "10:47 AM",
+      "text": "📖 Read: Ethics → Human Values: Lessons from Leaders and Thinkers",
+      "xp": 10
+    },
+    {
+      "time": "10:47 AM",
+      "text": "📖 Read: Ethics → Ethics in Private and Public Relationships",
+      "xp": 10
+    },
+    {
+      "time": "10:47 AM",
+      "text": "📖 Read: Ethics → Consequences of Ethics",
+      "xp": 10
+    },
+    {
+      "time": "10:46 AM",
+      "text": "📖 Read: Ethics → Determinants of Ethics in Human Actions",
+      "xp": 10
+    },
+    {
+      "time": "10:46 AM",
+      "text": "📖 Read: Ethics → Dimensions / Types of Ethics",
+      "xp": 10
+    },
+    {
+      "time": "10:46 AM",
+      "text": "📖 Read: Ethics → Essence of Ethics in Human Actions",
+      "xp": 10
+    },
+    {
+      "time": "10:46 AM",
+      "text": "📖 Read: Ethics → Core Concepts: Ethics and Related Terms",
+      "xp": 30
+    },
     {
       "time": "06:44 PM",
       "text": "🔁 Revised: History → Mauryan Empire (321–185 BCE)",
