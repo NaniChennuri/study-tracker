@@ -1,6 +1,6 @@
 {
   "hunterName": "Nani",
-  "totalXP": 825,
+  "totalXP": 975,
   "streak": 5,
   "totalDays": 7,
   "lastStudyDate": "2026-05-25",
@@ -91,49 +91,49 @@
       "rv": "2026-05-23"
     },
     "ethics:core-concepts": {
-      "s": 1,
+      "s": 2,
       "rd": "2026-05-24",
-      "rv": null
+      "rv": "2026-05-25"
     },
     "ethics:essence-ethics": {
-      "s": 1,
+      "s": 2,
       "rd": "2026-05-24",
-      "rv": null
+      "rv": "2026-05-25"
     },
     "ethics:dimensions-ethics": {
-      "s": 1,
+      "s": 2,
       "rd": "2026-05-24",
-      "rv": null
+      "rv": "2026-05-25"
     },
     "ethics:determinants": {
-      "s": 1,
+      "s": 2,
       "rd": "2026-05-24",
-      "rv": null
+      "rv": "2026-05-25"
     },
     "ethics:consequences": {
-      "s": 1,
+      "s": 2,
       "rd": "2026-05-24",
-      "rv": null
+      "rv": "2026-05-25"
     },
     "ethics:private-public": {
-      "s": 1,
+      "s": 2,
       "rd": "2026-05-24",
-      "rv": null
+      "rv": "2026-05-25"
     },
     "ethics:human-values": {
-      "s": 1,
+      "s": 2,
       "rd": "2026-05-24",
-      "rv": null
+      "rv": "2026-05-25"
     },
     "ethics:family-society-edu": {
-      "s": 1,
+      "s": 2,
       "rd": "2026-05-24",
-      "rv": null
+      "rv": "2026-05-25"
     },
     "ethics:key-distinctions": {
-      "s": 1,
+      "s": 2,
       "rd": "2026-05-24",
-      "rv": null
+      "rv": "2026-05-25"
     },
     "history:post-maurya": {
       "s": 2,
@@ -146,6 +146,11 @@
       "rv": "2026-05-25"
     },
     "psir1a:aristotle": {
+      "s": 2,
+      "rd": "2026-05-25",
+      "rv": "2026-05-25"
+    },
+    "history:gupta": {
       "s": 2,
       "rd": "2026-05-25",
       "rv": "2026-05-25"
@@ -239,6 +244,56 @@
   "mockHistory": [],
   "bossDefeated": {},
   "activityLog": [
+    {
+      "time": "10:23 PM",
+      "text": "✅ Revised: Ethics → Key Distinctions (UPSC Favorites)",
+      "xp": 15
+    },
+    {
+      "time": "10:23 PM",
+      "text": "✅ Revised: Ethics → Role of Family, Society and Educational Institutions",
+      "xp": 15
+    },
+    {
+      "time": "10:23 PM",
+      "text": "✅ Revised: Ethics → Human Values: Lessons from Leaders and Thinkers",
+      "xp": 15
+    },
+    {
+      "time": "10:22 PM",
+      "text": "✅ Revised: Ethics → Ethics in Private and Public Relationships",
+      "xp": 15
+    },
+    {
+      "time": "10:22 PM",
+      "text": "✅ Revised: Ethics → Consequences of Ethics",
+      "xp": 15
+    },
+    {
+      "time": "10:22 PM",
+      "text": "✅ Revised: Ethics → Determinants of Ethics in Human Actions",
+      "xp": 15
+    },
+    {
+      "time": "10:22 PM",
+      "text": "✅ Revised: Ethics → Dimensions / Types of Ethics",
+      "xp": 15
+    },
+    {
+      "time": "10:22 PM",
+      "text": "✅ Revised: Ethics → Essence of Ethics in Human Actions",
+      "xp": 15
+    },
+    {
+      "time": "10:22 PM",
+      "text": "✅ Revised: Ethics → Core Concepts: Ethics and Related Terms",
+      "xp": 15
+    },
+    {
+      "time": "10:21 PM",
+      "text": "✅ Revised: History → Gupta Empire (275–600 AD)",
+      "xp": 15
+    },
     {
       "time": "06:07 PM",
       "text": "✅ Revised: PSIR 1A → Aristotle (384–322 BC)",
