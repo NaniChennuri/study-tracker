@@ -1,9 +1,9 @@
 {
   "hunterName": "Nani",
-  "totalXP": 705,
-  "streak": 4,
-  "totalDays": 6,
-  "lastStudyDate": "2026-05-24",
+  "totalXP": 825,
+  "streak": 5,
+  "totalDays": 7,
+  "lastStudyDate": "2026-05-25",
   "topicStatus": {
     "history:prehistoric": {
       "s": 2,
@@ -134,6 +134,21 @@
       "s": 1,
       "rd": "2026-05-24",
       "rv": null
+    },
+    "history:post-maurya": {
+      "s": 2,
+      "rd": "2026-05-25",
+      "rv": "2026-05-25"
+    },
+    "history:sangam": {
+      "s": 2,
+      "rd": "2026-05-25",
+      "rv": "2026-05-25"
+    },
+    "psir1a:aristotle": {
+      "s": 2,
+      "rd": "2026-05-25",
+      "rv": "2026-05-25"
     }
   },
   "completedQuests": {
@@ -203,11 +218,57 @@
         "done": true,
         "topicKey": "ethics:core-concepts"
       }
+    },
+    "2026-05-25": {
+      "morning_gs": {
+        "done": true,
+        "topicKey": "history:post-maurya"
+      },
+      "revise": {
+        "done": true,
+        "topicKey": "history:post-maurya"
+      },
+      "answer_writing": {
+        "done": true
+      },
+      "mcq_practice": {
+        "done": true
+      }
     }
   },
   "mockHistory": [],
   "bossDefeated": {},
   "activityLog": [
+    {
+      "time": "06:07 PM",
+      "text": "✅ Revised: PSIR 1A → Aristotle (384–322 BC)",
+      "xp": 15
+    },
+    {
+      "time": "06:07 PM",
+      "text": "✅ Revised: History → Sangam Age (300 BC–300 AD)",
+      "xp": 15
+    },
+    {
+      "time": "06:07 PM",
+      "text": "✏️ MCQ Practice completed",
+      "xp": 15
+    },
+    {
+      "time": "06:06 PM",
+      "text": "✍️ Answer Writing completed",
+      "xp": 25
+    },
+    {
+      "time": "06:06 PM",
+      "text": "🔁 Revised: History → Post-Mauryan Period",
+      "xp": 20
+    },
+    {
+      "time": "06:06 PM",
+      "text": "📖 Read: History → Post-Mauryan Period",
+      "xp": 30
+    },
     {
       "time": "10:47 AM",
       "text": "📖 Read: Ethics → Key Distinctions (UPSC Favorites)",
