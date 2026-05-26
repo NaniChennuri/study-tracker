@@ -1,9 +1,9 @@
 {
   "hunterName": "Nani",
-  "totalXP": 1005,
-  "streak": 5,
-  "totalDays": 7,
-  "lastStudyDate": "2026-05-25",
+  "totalXP": 1055,
+  "streak": 6,
+  "totalDays": 8,
+  "lastStudyDate": "2026-05-26",
   "topicStatus": {
     "history:prehistoric": {
       "s": 2,
@@ -249,11 +249,31 @@
       "mcq_practice": {
         "done": true
       }
+    },
+    "2026-05-26": {
+      "morning_psir": {
+        "done": true,
+        "topicKey": "psir1a:hobbes"
+      },
+      "revise": {
+        "done": true,
+        "topicKey": "psir1a:hobbes"
+      }
     }
   },
   "mockHistory": [],
   "bossDefeated": {},
   "activityLog": [
+    {
+      "time": "08:28 AM",
+      "text": "🔁 Revised: PSIR 1A → Thomas Hobbes (1588–1679)",
+      "xp": 20
+    },
+    {
+      "time": "08:27 AM",
+      "text": "📖 Read: PSIR 1A → Thomas Hobbes (1588–1679)",
+      "xp": 30
+    },
     {
       "time": "08:27 AM",
       "text": "✅ Revised: PSIR 1A → Thomas Hobbes (1588–1679)",
