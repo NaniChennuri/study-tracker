@@ -1,6 +1,6 @@
 {
   "hunterName": "Nani",
-  "totalXP": 1055,
+  "totalXP": 1080,
   "streak": 6,
   "totalDays": 8,
   "lastStudyDate": "2026-05-26",
@@ -258,12 +258,20 @@
       "revise": {
         "done": true,
         "topicKey": "psir1a:hobbes"
+      },
+      "answer_writing": {
+        "done": true
       }
     }
   },
   "mockHistory": [],
   "bossDefeated": {},
   "activityLog": [
+    {
+      "time": "08:28 AM",
+      "text": "✍️ Answer Writing completed",
+      "xp": 25
+    },
     {
       "time": "08:28 AM",
       "text": "🔁 Revised: PSIR 1A → Thomas Hobbes (1588–1679)",
