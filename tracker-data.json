@@ -1,6 +1,6 @@
 {
   "hunterName": "Nani",
-  "totalXP": 975,
+  "totalXP": 1005,
   "streak": 5,
   "totalDays": 7,
   "lastStudyDate": "2026-05-25",
@@ -154,6 +154,16 @@
       "s": 2,
       "rd": "2026-05-25",
       "rv": "2026-05-25"
+    },
+    "psir1a:machiavelli": {
+      "s": 2,
+      "rd": "2026-05-26",
+      "rv": "2026-05-26"
+    },
+    "psir1a:hobbes": {
+      "s": 2,
+      "rd": "2026-05-26",
+      "rv": "2026-05-26"
     }
   },
   "completedQuests": {
@@ -244,6 +254,16 @@
   "mockHistory": [],
   "bossDefeated": {},
   "activityLog": [
+    {
+      "time": "08:27 AM",
+      "text": "✅ Revised: PSIR 1A → Thomas Hobbes (1588–1679)",
+      "xp": 15
+    },
+    {
+      "time": "08:27 AM",
+      "text": "✅ Revised: PSIR 1A → Machiavelli (1469–1527)",
+      "xp": 15
+    },
     {
       "time": "10:23 PM",
       "text": "✅ Revised: Ethics → Key Distinctions (UPSC Favorites)",
