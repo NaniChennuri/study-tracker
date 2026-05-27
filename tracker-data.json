@@ -1,6 +1,6 @@
 {
   "hunterName": "Nani",
-  "totalXP": 1080,
+  "totalXP": 1100,
   "streak": 6,
   "totalDays": 8,
   "lastStudyDate": "2026-05-26",
@@ -164,6 +164,16 @@
       "s": 2,
       "rd": "2026-05-26",
       "rv": "2026-05-26"
+    },
+    "psir1a:locke": {
+      "s": 1,
+      "rd": "2026-05-27",
+      "rv": null
+    },
+    "psir1a:rousseau": {
+      "s": 1,
+      "rd": "2026-05-27",
+      "rv": null
     }
   },
   "completedQuests": {
@@ -267,6 +277,16 @@
   "mockHistory": [],
   "bossDefeated": {},
   "activityLog": [
+    {
+      "time": "08:23 AM",
+      "text": "📖 Read: PSIR 1A → Rousseau (1712–1778)",
+      "xp": 10
+    },
+    {
+      "time": "08:23 AM",
+      "text": "📖 Read: PSIR 1A → John Locke (1632–1704)",
+      "xp": 10
+    },
     {
       "time": "08:28 AM",
       "text": "✍️ Answer Writing completed",
