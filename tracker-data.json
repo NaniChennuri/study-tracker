@@ -1,6 +1,6 @@
 {
   "hunterName": "Nani",
-  "totalXP": 1385,
+  "totalXP": 1415,
   "streak": 1,
   "totalDays": 10,
   "lastStudyDate": "2026-05-29",
@@ -211,7 +211,7 @@
       "rv": "2026-05-29"
     },
     "history:mughal": {
-      "s": 1,
+      "s": 2,
       "rd": "2026-05-29",
       "rv": "2026-05-29"
     },
@@ -345,12 +345,25 @@
       "morning_gs": {
         "done": true,
         "topicKey": "history:mughal"
+      },
+      "mcq_practice": {
+        "done": true
       }
     }
   },
   "mockHistory": [],
   "bossDefeated": {},
   "activityLog": [
+    {
+      "time": "07:34 AM",
+      "text": "✏️ MCQ Practice completed",
+      "xp": 15
+    },
+    {
+      "time": "07:34 AM",
+      "text": "✅ Revised: History → Mughal Empire (1526–1857)",
+      "xp": 15
+    },
     {
       "time": "07:33 AM",
       "text": "📖 Read: History → Mughal Empire (1526–1857)",
@@ -740,16 +753,6 @@
       "time": "09:32 PM",
       "text": "✅ Revised: History → Vedic Culture (1500–600 BCE)",
       "xp": 15
-    },
-    {
-      "time": "09:32 PM",
-      "text": "✅ Revised: History → Pre-Historic India",
-      "xp": 15
-    },
-    {
-      "time": "09:32 PM",
-      "text": "✍️ Answer Writing completed",
-      "xp": 25
     }
   ],
   "answersWritten": 0,
