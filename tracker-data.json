@@ -1,9 +1,9 @@
 {
   "hunterName": "Nani",
-  "totalXP": 1415,
+  "totalXP": 1525,
   "streak": 1,
-  "totalDays": 10,
-  "lastStudyDate": "2026-05-29",
+  "totalDays": 11,
+  "lastStudyDate": "2026-05-31",
   "topicStatus": {
     "history:prehistoric": {
       "s": 2,
@@ -229,6 +229,51 @@
       "s": 2,
       "rd": "2026-05-29",
       "rv": "2026-05-29"
+    },
+    "ethics:attitude-def": {
+      "s": 1,
+      "rd": "2026-05-31",
+      "rv": null
+    },
+    "ethics:attitude-structure": {
+      "s": 1,
+      "rd": "2026-05-31",
+      "rv": null
+    },
+    "ethics:attitude-types": {
+      "s": 1,
+      "rd": "2026-05-31",
+      "rv": null
+    },
+    "ethics:attitude-functions": {
+      "s": 1,
+      "rd": "2026-05-31",
+      "rv": null
+    },
+    "ethics:attitude-formation": {
+      "s": 1,
+      "rd": "2026-05-31",
+      "rv": null
+    },
+    "ethics:attitude-behaviour": {
+      "s": 1,
+      "rd": "2026-05-31",
+      "rv": null
+    },
+    "ethics:moral-pol-attitude": {
+      "s": 1,
+      "rd": "2026-05-31",
+      "rv": null
+    },
+    "ethics:social-influence": {
+      "s": 1,
+      "rd": "2026-05-31",
+      "rv": null
+    },
+    "ethics:attitude-change": {
+      "s": 1,
+      "rd": "2026-05-31",
+      "rv": null
     }
   },
   "completedQuests": {
@@ -349,11 +394,62 @@
       "mcq_practice": {
         "done": true
       }
+    },
+    "2026-05-31": {
+      "morning_ethics": {
+        "done": true,
+        "topicKey": "ethics:attitude-def"
+      }
     }
   },
   "mockHistory": [],
   "bossDefeated": {},
   "activityLog": [
+    {
+      "time": "08:28 AM",
+      "text": "📖 Read: Ethics → Attitude Change — Theories and Methods",
+      "xp": 10
+    },
+    {
+      "time": "08:28 AM",
+      "text": "📖 Read: Ethics → Social Influence and Persuasion",
+      "xp": 10
+    },
+    {
+      "time": "08:28 AM",
+      "text": "📖 Read: Ethics → Moral and Political Attitudes",
+      "xp": 10
+    },
+    {
+      "time": "08:28 AM",
+      "text": "📖 Read: Ethics → Attitude, Thought and Behaviour",
+      "xp": 10
+    },
+    {
+      "time": "08:28 AM",
+      "text": "📖 Read: Ethics → Formation of Attitude",
+      "xp": 10
+    },
+    {
+      "time": "08:28 AM",
+      "text": "📖 Read: Ethics → Functions of Attitude",
+      "xp": 10
+    },
+    {
+      "time": "08:28 AM",
+      "text": "📖 Read: Ethics → Types of Attitude",
+      "xp": 10
+    },
+    {
+      "time": "08:28 AM",
+      "text": "📖 Read: Ethics → Structure of Attitude — CAB Model",
+      "xp": 10
+    },
+    {
+      "time": "08:28 AM",
+      "text": "📖 Read: Ethics → What is Attitude — Definition and Nature",
+      "xp": 30
+    },
     {
       "time": "07:34 AM",
       "text": "✏️ MCQ Practice completed",
@@ -708,51 +804,6 @@
       "time": "06:43 AM",
       "text": "📖 Read: PSIR 1A → Resurgence of Political Theory",
       "xp": 10
-    },
-    {
-      "time": "06:43 AM",
-      "text": "📖 Read: PSIR 1A → Decline of Political Theory",
-      "xp": 10
-    },
-    {
-      "time": "06:43 AM",
-      "text": "📖 Read: PSIR 1A → Other Approaches",
-      "xp": 10
-    },
-    {
-      "time": "06:43 AM",
-      "text": "📖 Read: PSIR 1A → Behavioural vs Institutional Approach",
-      "xp": 10
-    },
-    {
-      "time": "06:43 AM",
-      "text": "📖 Read: PSIR 1A → Contemporary Approaches",
-      "xp": 10
-    },
-    {
-      "time": "06:43 AM",
-      "text": "📖 Read: PSIR 1A → Traditional Approaches",
-      "xp": 10
-    },
-    {
-      "time": "06:43 AM",
-      "text": "📖 Read: PSIR 1A → Approaches to Political Theory",
-      "xp": 10
-    },
-    {
-      "time": "06:43 AM",
-      "text": "📖 Read: PSIR 1A → Evolution of Political Theory",
-      "xp": 10
-    },
-    {
-      "time": "06:43 AM",
-      "text": "📖 Read: PSIR 1A → Meaning of Political Theory",
-      "xp": 30
-    },
-    {
-      "time": "09:32 PM",
-      "text": "✅ Revised: History → Vedic Culture (1500–600 BCE)",
-      "xp": 15
     }
   ],
   "answersWritten": 0,
