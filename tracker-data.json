@@ -1,9 +1,9 @@
 {
   "hunterName": "Nani",
-  "totalXP": 1635,
-  "streak": 2,
-  "totalDays": 12,
-  "lastStudyDate": "2026-06-01",
+  "totalXP": 1740,
+  "streak": 3,
+  "totalDays": 13,
+  "lastStudyDate": "2026-06-02",
   "topicStatus": {
     "history:prehistoric": {
       "s": 2,
@@ -289,6 +289,26 @@
       "s": 2,
       "rd": "2026-06-01",
       "rv": "2026-06-01"
+    },
+    "psir1a:gramsci": {
+      "s": 2,
+      "rd": "2026-06-02",
+      "rv": "2026-06-02"
+    },
+    "psir1a:hannah-arendt": {
+      "s": 2,
+      "rd": "2026-06-02",
+      "rv": "2026-06-02"
+    },
+    "history:french-rev": {
+      "s": 1,
+      "rd": "2026-06-02",
+      "rv": null
+    },
+    "history:industrial-rev": {
+      "s": 1,
+      "rd": "2026-06-02",
+      "rv": null
     }
   },
   "completedQuests": {
@@ -430,11 +450,50 @@
       "answer_writing": {
         "done": true
       }
+    },
+    "2026-06-02": {
+      "morning_psir": {
+        "done": true,
+        "topicKey": "psir1a:gramsci"
+      },
+      "answer_writing": {
+        "done": true
+      }
     }
   },
   "mockHistory": [],
   "bossDefeated": {},
   "activityLog": [
+    {
+      "time": "07:39 AM",
+      "text": "📖 Read: History → Industrial Revolution (1760–1840)",
+      "xp": 10
+    },
+    {
+      "time": "07:39 AM",
+      "text": "📖 Read: History → French Revolution (1789–1799)",
+      "xp": 10
+    },
+    {
+      "time": "07:38 AM",
+      "text": "✅ Revised: PSIR 1A → Hannah Arendt (1906–1975)",
+      "xp": 15
+    },
+    {
+      "time": "07:38 AM",
+      "text": "✅ Revised: PSIR 1A → Gramsci (1891–1937)",
+      "xp": 15
+    },
+    {
+      "time": "07:38 AM",
+      "text": "✍️ Answer Writing completed",
+      "xp": 25
+    },
+    {
+      "time": "07:38 AM",
+      "text": "📖 Read: PSIR 1A → Gramsci (1891–1937)",
+      "xp": 30
+    },
     {
       "time": "09:21 PM",
       "text": "✍️ Answer Writing completed",
@@ -803,36 +862,6 @@
     {
       "time": "08:02 AM",
       "text": "✅ Revised: PSIR 1A → Plato (428–347 BC)",
-      "xp": 15
-    },
-    {
-      "time": "08:02 AM",
-      "text": "✅ Revised: PSIR 1A → Socrates (470–399 BC)",
-      "xp": 15
-    },
-    {
-      "time": "06:44 PM",
-      "text": "🗞️ Current Affairs completed",
-      "xp": 10
-    },
-    {
-      "time": "06:34 PM",
-      "text": "📰 Editorial completed",
-      "xp": 10
-    },
-    {
-      "time": "06:33 PM",
-      "text": "✅ Revised: PSIR 1A → Resurgence of Political Theory",
-      "xp": 15
-    },
-    {
-      "time": "06:33 PM",
-      "text": "✅ Revised: PSIR 1A → Decline of Political Theory",
-      "xp": 15
-    },
-    {
-      "time": "06:33 PM",
-      "text": "✅ Revised: PSIR 1A → Other Approaches",
       "xp": 15
     }
   ],
