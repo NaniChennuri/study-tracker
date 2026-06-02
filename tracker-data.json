@@ -1,6 +1,6 @@
 {
   "hunterName": "Nani",
-  "totalXP": 1740,
+  "totalXP": 1810,
   "streak": 3,
   "totalDays": 13,
   "lastStudyDate": "2026-06-02",
@@ -309,6 +309,31 @@
       "s": 1,
       "rd": "2026-06-02",
       "rv": null
+    },
+    "history:unification": {
+      "s": 1,
+      "rd": "2026-06-02",
+      "rv": null
+    },
+    "history:ww1": {
+      "s": 1,
+      "rd": "2026-06-02",
+      "rv": null
+    },
+    "history:russian-rev": {
+      "s": 1,
+      "rd": "2026-06-02",
+      "rv": null
+    },
+    "history:ww2": {
+      "s": 1,
+      "rd": "2026-06-02",
+      "rv": null
+    },
+    "history:pol-philosophies": {
+      "s": 1,
+      "rd": "2026-06-02",
+      "rv": null
     }
   },
   "completedQuests": {
@@ -458,12 +483,53 @@
       },
       "answer_writing": {
         "done": true
+      },
+      "editorial": {
+        "done": true
+      },
+      "ca": {
+        "done": true
       }
     }
   },
   "mockHistory": [],
   "bossDefeated": {},
   "activityLog": [
+    {
+      "time": "10:09 PM",
+      "text": "📖 Read: History → Political Philosophies",
+      "xp": 10
+    },
+    {
+      "time": "10:09 PM",
+      "text": "📖 Read: History → World War II (1939–1945)",
+      "xp": 10
+    },
+    {
+      "time": "10:09 PM",
+      "text": "📖 Read: History → Russian Revolution (1917)",
+      "xp": 10
+    },
+    {
+      "time": "10:09 PM",
+      "text": "📖 Read: History → World War I (1914–1918)",
+      "xp": 10
+    },
+    {
+      "time": "10:09 PM",
+      "text": "📖 Read: History → Unification of Italy and Germany",
+      "xp": 10
+    },
+    {
+      "time": "10:09 PM",
+      "text": "🗞️ Current Affairs completed",
+      "xp": 10
+    },
+    {
+      "time": "10:09 PM",
+      "text": "📰 Editorial completed",
+      "xp": 10
+    },
     {
       "time": "07:39 AM",
       "text": "📖 Read: History → Industrial Revolution (1760–1840)",
@@ -828,41 +894,6 @@
       "time": "06:44 PM",
       "text": "🔁 Revised: History → Mauryan Empire (321–185 BCE)",
       "xp": 20
-    },
-    {
-      "time": "06:43 PM",
-      "text": "📰 Editorial completed",
-      "xp": 10
-    },
-    {
-      "time": "09:07 AM",
-      "text": "📖 Read: History → Mauryan Empire (321–185 BCE)",
-      "xp": 30
-    },
-    {
-      "time": "06:48 PM",
-      "text": "✅ Revised: History → Magadha and Invasions",
-      "xp": 15
-    },
-    {
-      "time": "06:48 PM",
-      "text": "✍️ Answer Writing completed",
-      "xp": 25
-    },
-    {
-      "time": "06:48 PM",
-      "text": "📰 Editorial completed",
-      "xp": 10
-    },
-    {
-      "time": "06:48 PM",
-      "text": "📖✅ Read + Revised: History → Philosophical Thoughts",
-      "xp": 30
-    },
-    {
-      "time": "08:02 AM",
-      "text": "✅ Revised: PSIR 1A → Plato (428–347 BC)",
-      "xp": 15
     }
   ],
   "answersWritten": 0,
