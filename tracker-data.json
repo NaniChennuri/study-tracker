@@ -1,6 +1,6 @@
 {
   "hunterName": "Nani",
-  "totalXP": 1885,
+  "totalXP": 1970,
   "streak": 4,
   "totalDays": 14,
   "lastStudyDate": "2026-06-03",
@@ -339,6 +339,41 @@
       "s": 1,
       "rd": "2026-06-03",
       "rv": null
+    },
+    "psir1a:ideology": {
+      "s": 2,
+      "rd": "2026-06-03",
+      "rv": "2026-06-03"
+    },
+    "psir1a:idealism": {
+      "s": 2,
+      "rd": "2026-06-03",
+      "rv": "2026-06-03"
+    },
+    "psir1a:liberalism": {
+      "s": 2,
+      "rd": "2026-06-03",
+      "rv": "2026-06-03"
+    },
+    "history:colonization": {
+      "s": 1,
+      "rd": "2026-06-03",
+      "rv": null
+    },
+    "history:fascism-nazism": {
+      "s": 1,
+      "rd": "2026-06-03",
+      "rv": null
+    },
+    "history:decolonization": {
+      "s": 1,
+      "rd": "2026-06-03",
+      "rv": null
+    },
+    "history:cold-war": {
+      "s": 1,
+      "rd": "2026-06-03",
+      "rv": null
     }
   },
   "completedQuests": {
@@ -515,6 +550,41 @@
   "mockHistory": [],
   "bossDefeated": {},
   "activityLog": [
+    {
+      "time": "10:45 PM",
+      "text": "📖 Read: History → Cold War (1947–1991)",
+      "xp": 10
+    },
+    {
+      "time": "10:45 PM",
+      "text": "📖 Read: History → Decolonization (1945–1990s)",
+      "xp": 10
+    },
+    {
+      "time": "10:45 PM",
+      "text": "📖 Read: History → Rise of Fascism and Nazism",
+      "xp": 10
+    },
+    {
+      "time": "10:45 PM",
+      "text": "📖 Read: History → Colonization and Imperialism",
+      "xp": 10
+    },
+    {
+      "time": "10:44 PM",
+      "text": "✅ Revised: PSIR 1A → Liberalism",
+      "xp": 15
+    },
+    {
+      "time": "10:44 PM",
+      "text": "✅ Revised: PSIR 1A → Idealism",
+      "xp": 15
+    },
+    {
+      "time": "10:44 PM",
+      "text": "✅ Revised: PSIR 1A → Ideology",
+      "xp": 15
+    },
     {
       "time": "10:44 PM",
       "text": "🗞️ Current Affairs completed",
@@ -879,41 +949,6 @@
       "time": "06:06 PM",
       "text": "🔁 Revised: History → Post-Mauryan Period",
       "xp": 20
-    },
-    {
-      "time": "06:06 PM",
-      "text": "📖 Read: History → Post-Mauryan Period",
-      "xp": 30
-    },
-    {
-      "time": "10:47 AM",
-      "text": "📖 Read: Ethics → Key Distinctions (UPSC Favorites)",
-      "xp": 10
-    },
-    {
-      "time": "10:47 AM",
-      "text": "📖 Read: Ethics → Role of Family, Society and Educational Institutions",
-      "xp": 10
-    },
-    {
-      "time": "10:47 AM",
-      "text": "📖 Read: Ethics → Human Values: Lessons from Leaders and Thinkers",
-      "xp": 10
-    },
-    {
-      "time": "10:47 AM",
-      "text": "📖 Read: Ethics → Ethics in Private and Public Relationships",
-      "xp": 10
-    },
-    {
-      "time": "10:47 AM",
-      "text": "📖 Read: Ethics → Consequences of Ethics",
-      "xp": 10
-    },
-    {
-      "time": "10:46 AM",
-      "text": "📖 Read: Ethics → Determinants of Ethics in Human Actions",
-      "xp": 10
     }
   ],
   "answersWritten": 0,
