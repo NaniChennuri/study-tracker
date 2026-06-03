@@ -1,9 +1,9 @@
 {
   "hunterName": "Nani",
-  "totalXP": 1810,
-  "streak": 3,
-  "totalDays": 13,
-  "lastStudyDate": "2026-06-02",
+  "totalXP": 1885,
+  "streak": 4,
+  "totalDays": 14,
+  "lastStudyDate": "2026-06-03",
   "topicStatus": {
     "history:prehistoric": {
       "s": 2,
@@ -334,6 +334,11 @@
       "s": 1,
       "rd": "2026-06-02",
       "rv": null
+    },
+    "history:later-mughals": {
+      "s": 1,
+      "rd": "2026-06-03",
+      "rv": null
     }
   },
   "completedQuests": {
@@ -490,11 +495,46 @@
       "ca": {
         "done": true
       }
+    },
+    "2026-06-03": {
+      "morning_gs": {
+        "done": true,
+        "topicKey": "history:later-mughals"
+      },
+      "answer_writing": {
+        "done": true
+      },
+      "editorial": {
+        "done": true
+      },
+      "ca": {
+        "done": true
+      }
     }
   },
   "mockHistory": [],
   "bossDefeated": {},
   "activityLog": [
+    {
+      "time": "10:44 PM",
+      "text": "🗞️ Current Affairs completed",
+      "xp": 10
+    },
+    {
+      "time": "10:44 PM",
+      "text": "📰 Editorial completed",
+      "xp": 10
+    },
+    {
+      "time": "10:43 PM",
+      "text": "✍️ Answer Writing completed",
+      "xp": 25
+    },
+    {
+      "time": "10:43 PM",
+      "text": "📖 Read: History → Later Mughals",
+      "xp": 30
+    },
     {
       "time": "10:09 PM",
       "text": "📖 Read: History → Political Philosophies",
@@ -874,26 +914,6 @@
       "time": "10:46 AM",
       "text": "📖 Read: Ethics → Determinants of Ethics in Human Actions",
       "xp": 10
-    },
-    {
-      "time": "10:46 AM",
-      "text": "📖 Read: Ethics → Dimensions / Types of Ethics",
-      "xp": 10
-    },
-    {
-      "time": "10:46 AM",
-      "text": "📖 Read: Ethics → Essence of Ethics in Human Actions",
-      "xp": 10
-    },
-    {
-      "time": "10:46 AM",
-      "text": "📖 Read: Ethics → Core Concepts: Ethics and Related Terms",
-      "xp": 30
-    },
-    {
-      "time": "06:44 PM",
-      "text": "🔁 Revised: History → Mauryan Empire (321–185 BCE)",
-      "xp": 20
     }
   ],
   "answersWritten": 0,
