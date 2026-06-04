@@ -1,6 +1,6 @@
 {
   "hunterName": "Nani",
-  "totalXP": 2015,
+  "totalXP": 2120,
   "streak": 5,
   "totalDays": 15,
   "lastStudyDate": "2026-06-04",
@@ -336,9 +336,9 @@
       "rv": null
     },
     "history:later-mughals": {
-      "s": 1,
+      "s": 2,
       "rd": "2026-06-03",
-      "rv": null
+      "rv": "2026-06-04"
     },
     "psir1a:ideology": {
       "s": 2,
@@ -381,6 +381,21 @@
       "rv": "2026-06-04"
     },
     "psir1a:marxism-after": {
+      "s": 2,
+      "rd": "2026-06-04",
+      "rv": "2026-06-04"
+    },
+    "history:europeans": {
+      "s": 2,
+      "rd": "2026-06-04",
+      "rv": "2026-06-04"
+    },
+    "history:british-conquest": {
+      "s": 2,
+      "rd": "2026-06-04",
+      "rv": "2026-06-04"
+    },
+    "history:british-rule": {
       "s": 2,
       "rd": "2026-06-04",
       "rv": "2026-06-04"
@@ -560,12 +575,56 @@
       "morning_psir": {
         "done": true,
         "topicKey": "psir1a:socialism"
+      },
+      "editorial": {
+        "done": true
+      },
+      "ca": {
+        "done": true
+      },
+      "answer_writing": {
+        "done": true
       }
     }
   },
   "mockHistory": [],
   "bossDefeated": {},
   "activityLog": [
+    {
+      "time": "11:03 PM",
+      "text": "✅ Revised: History → India under the British Rule",
+      "xp": 15
+    },
+    {
+      "time": "11:03 PM",
+      "text": "✅ Revised: History → British Conquest in India",
+      "xp": 15
+    },
+    {
+      "time": "11:03 PM",
+      "text": "✅ Revised: History → Later Mughals",
+      "xp": 15
+    },
+    {
+      "time": "11:03 PM",
+      "text": "✅ Revised: History → Coming of Europeans",
+      "xp": 15
+    },
+    {
+      "time": "11:02 PM",
+      "text": "✍️ Answer Writing completed",
+      "xp": 25
+    },
+    {
+      "time": "11:02 PM",
+      "text": "🗞️ Current Affairs completed",
+      "xp": 10
+    },
+    {
+      "time": "11:02 PM",
+      "text": "📰 Editorial completed",
+      "xp": 10
+    },
     {
       "time": "08:38 AM",
       "text": "✅ Revised: PSIR 1A → Marxism After Marx",
@@ -929,41 +988,6 @@
     {
       "time": "10:22 PM",
       "text": "✅ Revised: Ethics → Determinants of Ethics in Human Actions",
-      "xp": 15
-    },
-    {
-      "time": "10:22 PM",
-      "text": "✅ Revised: Ethics → Dimensions / Types of Ethics",
-      "xp": 15
-    },
-    {
-      "time": "10:22 PM",
-      "text": "✅ Revised: Ethics → Essence of Ethics in Human Actions",
-      "xp": 15
-    },
-    {
-      "time": "10:22 PM",
-      "text": "✅ Revised: Ethics → Core Concepts: Ethics and Related Terms",
-      "xp": 15
-    },
-    {
-      "time": "10:21 PM",
-      "text": "✅ Revised: History → Gupta Empire (275–600 AD)",
-      "xp": 15
-    },
-    {
-      "time": "06:07 PM",
-      "text": "✅ Revised: PSIR 1A → Aristotle (384–322 BC)",
-      "xp": 15
-    },
-    {
-      "time": "06:07 PM",
-      "text": "✅ Revised: History → Sangam Age (300 BC–300 AD)",
-      "xp": 15
-    },
-    {
-      "time": "06:07 PM",
-      "text": "✏️ MCQ Practice completed",
       "xp": 15
     }
   ],
