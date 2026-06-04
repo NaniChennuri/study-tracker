@@ -1,9 +1,9 @@
 {
   "hunterName": "Nani",
-  "totalXP": 1970,
-  "streak": 4,
-  "totalDays": 14,
-  "lastStudyDate": "2026-06-03",
+  "totalXP": 2015,
+  "streak": 5,
+  "totalDays": 15,
+  "lastStudyDate": "2026-06-04",
   "topicStatus": {
     "history:prehistoric": {
       "s": 2,
@@ -374,6 +374,16 @@
       "s": 1,
       "rd": "2026-06-03",
       "rv": null
+    },
+    "psir1a:socialism": {
+      "s": 2,
+      "rd": "2026-06-04",
+      "rv": "2026-06-04"
+    },
+    "psir1a:marxism-after": {
+      "s": 2,
+      "rd": "2026-06-04",
+      "rv": "2026-06-04"
     }
   },
   "completedQuests": {
@@ -545,11 +555,27 @@
       "ca": {
         "done": true
       }
+    },
+    "2026-06-04": {
+      "morning_psir": {
+        "done": true,
+        "topicKey": "psir1a:socialism"
+      }
     }
   },
   "mockHistory": [],
   "bossDefeated": {},
   "activityLog": [
+    {
+      "time": "08:38 AM",
+      "text": "✅ Revised: PSIR 1A → Marxism After Marx",
+      "xp": 15
+    },
+    {
+      "time": "08:38 AM",
+      "text": "📖✅ Read + Revised: PSIR 1A → Socialism",
+      "xp": 30
+    },
     {
       "time": "10:45 PM",
       "text": "📖 Read: History → Cold War (1947–1991)",
@@ -939,16 +965,6 @@
       "time": "06:07 PM",
       "text": "✏️ MCQ Practice completed",
       "xp": 15
-    },
-    {
-      "time": "06:06 PM",
-      "text": "✍️ Answer Writing completed",
-      "xp": 25
-    },
-    {
-      "time": "06:06 PM",
-      "text": "🔁 Revised: History → Post-Mauryan Period",
-      "xp": 20
     }
   ],
   "answersWritten": 0,
