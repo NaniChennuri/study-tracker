@@ -1,9 +1,9 @@
 {
   "hunterName": "Nani",
-  "totalXP": 2120,
-  "streak": 5,
-  "totalDays": 15,
-  "lastStudyDate": "2026-06-04",
+  "totalXP": 2230,
+  "streak": 6,
+  "totalDays": 16,
+  "lastStudyDate": "2026-06-05",
   "topicStatus": {
     "history:prehistoric": {
       "s": 2,
@@ -399,6 +399,46 @@
       "s": 2,
       "rd": "2026-06-04",
       "rv": "2026-06-04"
+    },
+    "history:resentments": {
+      "s": 1,
+      "rd": "2026-06-05",
+      "rv": null
+    },
+    "history:reform-mvmts": {
+      "s": 1,
+      "rd": "2026-06-05",
+      "rv": null
+    },
+    "history:struggle-begins": {
+      "s": 1,
+      "rd": "2026-06-05",
+      "rv": null
+    },
+    "history:nat-mvmt-1905": {
+      "s": 1,
+      "rd": "2026-06-05",
+      "rv": null
+    },
+    "history:mass-nationalism": {
+      "s": 1,
+      "rd": "2026-06-05",
+      "rv": null
+    },
+    "history:freedom-partition": {
+      "s": 1,
+      "rd": "2026-06-05",
+      "rv": null
+    },
+    "psir1a:fascism": {
+      "s": 1,
+      "rd": "2026-06-05",
+      "rv": null
+    },
+    "psir1a:feminism": {
+      "s": 1,
+      "rd": "2026-06-05",
+      "rv": null
     }
   },
   "completedQuests": {
@@ -585,11 +625,65 @@
       "answer_writing": {
         "done": true
       }
+    },
+    "2026-06-05": {
+      "ca": {
+        "done": true
+      },
+      "morning_gs": {
+        "done": true,
+        "topicKey": "history:freedom-partition"
+      }
     }
   },
   "mockHistory": [],
   "bossDefeated": {},
   "activityLog": [
+    {
+      "time": "10:42 PM",
+      "text": "📖 Read: PSIR 1A → Feminism",
+      "xp": 10
+    },
+    {
+      "time": "10:42 PM",
+      "text": "📖 Read: PSIR 1A → Fascism",
+      "xp": 10
+    },
+    {
+      "time": "10:42 PM",
+      "text": "📖 Read: History → Towards Freedom and Partition (1939–1947)",
+      "xp": 30
+    },
+    {
+      "time": "10:42 PM",
+      "text": "📖 Read: History → Era of Mass Nationalism (1919–1939)",
+      "xp": 10
+    },
+    {
+      "time": "10:42 PM",
+      "text": "📖 Read: History → National Movement (1905–1918)",
+      "xp": 10
+    },
+    {
+      "time": "10:42 PM",
+      "text": "📖 Read: History → The Struggle Begins",
+      "xp": 10
+    },
+    {
+      "time": "10:42 PM",
+      "text": "📖 Read: History → Reform Movements",
+      "xp": 10
+    },
+    {
+      "time": "10:42 PM",
+      "text": "📖 Read: History → Rising Resentments against the Rule",
+      "xp": 10
+    },
+    {
+      "time": "10:42 PM",
+      "text": "🗞️ Current Affairs completed",
+      "xp": 10
+    },
     {
       "time": "11:03 PM",
       "text": "✅ Revised: History → India under the British Rule",
@@ -944,51 +1038,6 @@
       "time": "08:28 AM",
       "text": "🔁 Revised: PSIR 1A → Thomas Hobbes (1588–1679)",
       "xp": 20
-    },
-    {
-      "time": "08:27 AM",
-      "text": "📖 Read: PSIR 1A → Thomas Hobbes (1588–1679)",
-      "xp": 30
-    },
-    {
-      "time": "08:27 AM",
-      "text": "✅ Revised: PSIR 1A → Thomas Hobbes (1588–1679)",
-      "xp": 15
-    },
-    {
-      "time": "08:27 AM",
-      "text": "✅ Revised: PSIR 1A → Machiavelli (1469–1527)",
-      "xp": 15
-    },
-    {
-      "time": "10:23 PM",
-      "text": "✅ Revised: Ethics → Key Distinctions (UPSC Favorites)",
-      "xp": 15
-    },
-    {
-      "time": "10:23 PM",
-      "text": "✅ Revised: Ethics → Role of Family, Society and Educational Institutions",
-      "xp": 15
-    },
-    {
-      "time": "10:23 PM",
-      "text": "✅ Revised: Ethics → Human Values: Lessons from Leaders and Thinkers",
-      "xp": 15
-    },
-    {
-      "time": "10:22 PM",
-      "text": "✅ Revised: Ethics → Ethics in Private and Public Relationships",
-      "xp": 15
-    },
-    {
-      "time": "10:22 PM",
-      "text": "✅ Revised: Ethics → Consequences of Ethics",
-      "xp": 15
-    },
-    {
-      "time": "10:22 PM",
-      "text": "✅ Revised: Ethics → Determinants of Ethics in Human Actions",
-      "xp": 15
     }
   ],
   "answersWritten": 0,
