@@ -1,9 +1,9 @@
 {
   "hunterName": "Nani",
-  "totalXP": 2230,
-  "streak": 6,
-  "totalDays": 16,
-  "lastStudyDate": "2026-06-05",
+  "totalXP": 2440,
+  "streak": 1,
+  "totalDays": 17,
+  "lastStudyDate": "2026-06-07",
   "topicStatus": {
     "history:prehistoric": {
       "s": 2,
@@ -439,6 +439,101 @@
       "s": 1,
       "rd": "2026-06-05",
       "rv": null
+    },
+    "ethics:aptitude-def": {
+      "s": 1,
+      "rd": "2026-06-07",
+      "rv": null
+    },
+    "history:paintings": {
+      "s": 1,
+      "rd": "2026-06-07",
+      "rv": null
+    },
+    "history:handicrafts": {
+      "s": 1,
+      "rd": "2026-06-07",
+      "rv": null
+    },
+    "history:music": {
+      "s": 1,
+      "rd": "2026-06-07",
+      "rv": null
+    },
+    "history:classical-dance": {
+      "s": 1,
+      "rd": "2026-06-07",
+      "rv": null
+    },
+    "history:folk-dance": {
+      "s": 1,
+      "rd": "2026-06-07",
+      "rv": null
+    },
+    "history:theatres": {
+      "s": 1,
+      "rd": "2026-06-07",
+      "rv": null
+    },
+    "history:puppetry": {
+      "s": 1,
+      "rd": "2026-06-07",
+      "rv": null
+    },
+    "history:martial-arts": {
+      "s": 1,
+      "rd": "2026-06-07",
+      "rv": null
+    },
+    "history:misc-culture": {
+      "s": 1,
+      "rd": "2026-06-07",
+      "rv": null
+    },
+    "ethics:foundational-values": {
+      "s": 1,
+      "rd": "2026-06-07",
+      "rv": null
+    },
+    "ethics:integrity": {
+      "s": 1,
+      "rd": "2026-06-07",
+      "rv": null
+    },
+    "ethics:impartiality": {
+      "s": 1,
+      "rd": "2026-06-07",
+      "rv": null
+    },
+    "ethics:objectivity": {
+      "s": 1,
+      "rd": "2026-06-07",
+      "rv": null
+    },
+    "ethics:dedication": {
+      "s": 1,
+      "rd": "2026-06-07",
+      "rv": null
+    },
+    "ethics:empathy-tolerance": {
+      "s": 1,
+      "rd": "2026-06-07",
+      "rv": null
+    },
+    "ethics:voice-conscience": {
+      "s": 1,
+      "rd": "2026-06-07",
+      "rv": null
+    },
+    "ethics:ethical-competence": {
+      "s": 1,
+      "rd": "2026-06-07",
+      "rv": null
+    },
+    "ethics:aptitude-distinctions": {
+      "s": 1,
+      "rd": "2026-06-07",
+      "rv": null
     }
   },
   "completedQuests": {
@@ -634,11 +729,112 @@
         "done": true,
         "topicKey": "history:freedom-partition"
       }
+    },
+    "2026-06-07": {
+      "morning_ethics": {
+        "done": true,
+        "topicKey": "ethics:aptitude-def"
+      }
     }
   },
   "mockHistory": [],
   "bossDefeated": {},
   "activityLog": [
+    {
+      "time": "07:49 AM",
+      "text": "📖 Read: Ethics → Key Distinctions (Aptitude)",
+      "xp": 10
+    },
+    {
+      "time": "07:49 AM",
+      "text": "📖 Read: Ethics → Ethical Competence",
+      "xp": 10
+    },
+    {
+      "time": "07:49 AM",
+      "text": "📖 Read: Ethics → Voice of Conscience and Crisis of Conscience",
+      "xp": 10
+    },
+    {
+      "time": "07:49 AM",
+      "text": "📖 Read: Ethics → Empathy, Tolerance and Compassion",
+      "xp": 10
+    },
+    {
+      "time": "07:48 AM",
+      "text": "📖 Read: Ethics → Dedication to Public Service",
+      "xp": 10
+    },
+    {
+      "time": "07:48 AM",
+      "text": "📖 Read: Ethics → Objectivity",
+      "xp": 10
+    },
+    {
+      "time": "07:48 AM",
+      "text": "📖 Read: Ethics → Impartiality and Non-Partisanship",
+      "xp": 10
+    },
+    {
+      "time": "07:48 AM",
+      "text": "📖 Read: Ethics → Integrity — The Cornerstone Value",
+      "xp": 10
+    },
+    {
+      "time": "07:48 AM",
+      "text": "📖 Read: Ethics → Foundational Values for Civil Service",
+      "xp": 10
+    },
+    {
+      "time": "07:47 AM",
+      "text": "📖 Read: History → Miscellaneous Culture",
+      "xp": 10
+    },
+    {
+      "time": "07:47 AM",
+      "text": "📖 Read: History → Martial Arts",
+      "xp": 10
+    },
+    {
+      "time": "07:47 AM",
+      "text": "📖 Read: History → Puppetry",
+      "xp": 10
+    },
+    {
+      "time": "07:47 AM",
+      "text": "📖 Read: History → Indian Theatres",
+      "xp": 10
+    },
+    {
+      "time": "07:47 AM",
+      "text": "📖 Read: History → Folk Dance Forms",
+      "xp": 10
+    },
+    {
+      "time": "07:47 AM",
+      "text": "📖 Read: History → Classical Dance Forms",
+      "xp": 10
+    },
+    {
+      "time": "07:47 AM",
+      "text": "📖 Read: History → Music",
+      "xp": 10
+    },
+    {
+      "time": "07:47 AM",
+      "text": "📖 Read: History → Handicrafts",
+      "xp": 10
+    },
+    {
+      "time": "07:47 AM",
+      "text": "📖 Read: History → Paintings",
+      "xp": 10
+    },
+    {
+      "time": "07:47 AM",
+      "text": "📖 Read: Ethics → Aptitude — Definition and Types",
+      "xp": 30
+    },
     {
       "time": "10:42 PM",
       "text": "📖 Read: PSIR 1A → Feminism",
@@ -943,101 +1139,6 @@
       "time": "07:33 AM",
       "text": "📖 Read: History → Mughal Empire (1526–1857)",
       "xp": 30
-    },
-    {
-      "time": "07:33 AM",
-      "text": "✅ Revised: PSIR 1A → J.S. Mill (1806–1873)",
-      "xp": 15
-    },
-    {
-      "time": "07:32 AM",
-      "text": "✅ Revised: PSIR 1A → Rousseau (1712–1778)",
-      "xp": 15
-    },
-    {
-      "time": "07:32 AM",
-      "text": "✅ Revised: PSIR 1A → John Locke (1632–1704)",
-      "xp": 15
-    },
-    {
-      "time": "07:32 AM",
-      "text": "✅ Revised: History → Architecture in Medieval/Modern India",
-      "xp": 15
-    },
-    {
-      "time": "07:32 AM",
-      "text": "✅ Revised: History → Marathas (1674–1818)",
-      "xp": 15
-    },
-    {
-      "time": "07:32 AM",
-      "text": "✅ Revised: History → Mughal Empire (1526–1857)",
-      "xp": 15
-    },
-    {
-      "time": "07:32 AM",
-      "text": "✅ Revised: History → Other Kingdoms",
-      "xp": 15
-    },
-    {
-      "time": "07:32 AM",
-      "text": "✅ Revised: History → Religious / Spiritual Movements",
-      "xp": 15
-    },
-    {
-      "time": "07:32 AM",
-      "text": "✅ Revised: History → Delhi Sultanate (1206–1526)",
-      "xp": 15
-    },
-    {
-      "time": "07:32 AM",
-      "text": "✍️ Answer Writing completed",
-      "xp": 25
-    },
-    {
-      "time": "08:25 AM",
-      "text": "✅ Revised: History → Early Medieval India",
-      "xp": 15
-    },
-    {
-      "time": "08:25 AM",
-      "text": "✅ Revised: History → Temple Architecture",
-      "xp": 15
-    },
-    {
-      "time": "08:25 AM",
-      "text": "🔁 Revised: History → South Indian Kingdoms",
-      "xp": 20
-    },
-    {
-      "time": "08:25 AM",
-      "text": "📖 Read: History → South Indian Kingdoms",
-      "xp": 30
-    },
-    {
-      "time": "08:24 AM",
-      "text": "✅ Revised: History → Harshavardhana (606–647 AD)",
-      "xp": 15
-    },
-    {
-      "time": "08:23 AM",
-      "text": "📖 Read: PSIR 1A → Rousseau (1712–1778)",
-      "xp": 10
-    },
-    {
-      "time": "08:23 AM",
-      "text": "📖 Read: PSIR 1A → John Locke (1632–1704)",
-      "xp": 10
-    },
-    {
-      "time": "08:28 AM",
-      "text": "✍️ Answer Writing completed",
-      "xp": 25
-    },
-    {
-      "time": "08:28 AM",
-      "text": "🔁 Revised: PSIR 1A → Thomas Hobbes (1588–1679)",
-      "xp": 20
     }
   ],
   "answersWritten": 0,
