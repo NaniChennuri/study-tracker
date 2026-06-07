@@ -1,6 +1,6 @@
 {
   "hunterName": "Nani",
-  "totalXP": 2440,
+  "totalXP": 2450,
   "streak": 1,
   "totalDays": 17,
   "lastStudyDate": "2026-06-07",
@@ -534,6 +534,11 @@
       "s": 1,
       "rd": "2026-06-07",
       "rv": null
+    },
+    "history:nehru-era": {
+      "s": 1,
+      "rd": "2026-06-07",
+      "rv": null
     }
   },
   "completedQuests": {
@@ -740,6 +745,11 @@
   "mockHistory": [],
   "bossDefeated": {},
   "activityLog": [
+    {
+      "time": "10:19 PM",
+      "text": "📖 Read: History → Nehruvian Era",
+      "xp": 10
+    },
     {
       "time": "07:49 AM",
       "text": "📖 Read: Ethics → Key Distinctions (Aptitude)",
@@ -1134,11 +1144,6 @@
       "time": "07:34 AM",
       "text": "✅ Revised: History → Mughal Empire (1526–1857)",
       "xp": 15
-    },
-    {
-      "time": "07:33 AM",
-      "text": "📖 Read: History → Mughal Empire (1526–1857)",
-      "xp": 30
     }
   ],
   "answersWritten": 0,
