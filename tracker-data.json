@@ -1,6 +1,6 @@
 {
   "hunterName": "Nani",
-  "totalXP": 2450,
+  "totalXP": 2490,
   "streak": 1,
   "totalDays": 17,
   "lastStudyDate": "2026-06-07",
@@ -539,6 +539,26 @@
       "s": 1,
       "rd": "2026-06-07",
       "rv": null
+    },
+    "history:shastri-era": {
+      "s": 1,
+      "rd": "2026-06-07",
+      "rv": null
+    },
+    "history:indira-era": {
+      "s": 1,
+      "rd": "2026-06-07",
+      "rv": null
+    },
+    "history:post-indira": {
+      "s": 1,
+      "rd": "2026-06-07",
+      "rv": null
+    },
+    "history:movements-reforms": {
+      "s": 1,
+      "rd": "2026-06-07",
+      "rv": null
     }
   },
   "completedQuests": {
@@ -745,6 +765,26 @@
   "mockHistory": [],
   "bossDefeated": {},
   "activityLog": [
+    {
+      "time": "10:19 PM",
+      "text": "📖 Read: History → Movements and Reforms",
+      "xp": 10
+    },
+    {
+      "time": "10:19 PM",
+      "text": "📖 Read: History → Post-Indira Governments",
+      "xp": 10
+    },
+    {
+      "time": "10:19 PM",
+      "text": "📖 Read: History → Indira Gandhi Era",
+      "xp": 10
+    },
+    {
+      "time": "10:19 PM",
+      "text": "📖 Read: History → Lal Bahadur Shastri Era (1964)",
+      "xp": 10
+    },
     {
       "time": "10:19 PM",
       "text": "📖 Read: History → Nehruvian Era",
@@ -1124,26 +1164,6 @@
       "time": "08:28 AM",
       "text": "📖 Read: Ethics → Types of Attitude",
       "xp": 10
-    },
-    {
-      "time": "08:28 AM",
-      "text": "📖 Read: Ethics → Structure of Attitude — CAB Model",
-      "xp": 10
-    },
-    {
-      "time": "08:28 AM",
-      "text": "📖 Read: Ethics → What is Attitude — Definition and Nature",
-      "xp": 30
-    },
-    {
-      "time": "07:34 AM",
-      "text": "✏️ MCQ Practice completed",
-      "xp": 15
-    },
-    {
-      "time": "07:34 AM",
-      "text": "✅ Revised: History → Mughal Empire (1526–1857)",
-      "xp": 15
     }
   ],
   "answersWritten": 0,
