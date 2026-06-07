@@ -1,6 +1,6 @@
 {
   "hunterName": "Nani",
-  "totalXP": 2490,
+  "totalXP": 2580,
   "streak": 1,
   "totalDays": 17,
   "lastStudyDate": "2026-06-07",
@@ -401,34 +401,34 @@
       "rv": "2026-06-04"
     },
     "history:resentments": {
-      "s": 1,
+      "s": 2,
       "rd": "2026-06-05",
-      "rv": null
+      "rv": "2026-06-07"
     },
     "history:reform-mvmts": {
-      "s": 1,
+      "s": 2,
       "rd": "2026-06-05",
-      "rv": null
+      "rv": "2026-06-07"
     },
     "history:struggle-begins": {
-      "s": 1,
+      "s": 2,
       "rd": "2026-06-05",
-      "rv": null
+      "rv": "2026-06-07"
     },
     "history:nat-mvmt-1905": {
-      "s": 1,
+      "s": 2,
       "rd": "2026-06-05",
-      "rv": null
+      "rv": "2026-06-07"
     },
     "history:mass-nationalism": {
-      "s": 1,
+      "s": 2,
       "rd": "2026-06-05",
-      "rv": null
+      "rv": "2026-06-07"
     },
     "history:freedom-partition": {
-      "s": 1,
+      "s": 2,
       "rd": "2026-06-05",
-      "rv": null
+      "rv": "2026-06-07"
     },
     "psir1a:fascism": {
       "s": 1,
@@ -765,6 +765,36 @@
   "mockHistory": [],
   "bossDefeated": {},
   "activityLog": [
+    {
+      "time": "10:20 PM",
+      "text": "✅ Revised: History → Towards Freedom and Partition (1939–1947)",
+      "xp": 15
+    },
+    {
+      "time": "10:20 PM",
+      "text": "✅ Revised: History → Era of Mass Nationalism (1919–1939)",
+      "xp": 15
+    },
+    {
+      "time": "10:20 PM",
+      "text": "✅ Revised: History → National Movement (1905–1918)",
+      "xp": 15
+    },
+    {
+      "time": "10:19 PM",
+      "text": "✅ Revised: History → The Struggle Begins",
+      "xp": 15
+    },
+    {
+      "time": "10:19 PM",
+      "text": "✅ Revised: History → Reform Movements",
+      "xp": 15
+    },
+    {
+      "time": "10:19 PM",
+      "text": "✅ Revised: History → Rising Resentments against the Rule",
+      "xp": 15
+    },
     {
       "time": "10:19 PM",
       "text": "📖 Read: History → Movements and Reforms",
@@ -1133,36 +1163,6 @@
     {
       "time": "08:28 AM",
       "text": "📖 Read: Ethics → Attitude Change — Theories and Methods",
-      "xp": 10
-    },
-    {
-      "time": "08:28 AM",
-      "text": "📖 Read: Ethics → Social Influence and Persuasion",
-      "xp": 10
-    },
-    {
-      "time": "08:28 AM",
-      "text": "📖 Read: Ethics → Moral and Political Attitudes",
-      "xp": 10
-    },
-    {
-      "time": "08:28 AM",
-      "text": "📖 Read: Ethics → Attitude, Thought and Behaviour",
-      "xp": 10
-    },
-    {
-      "time": "08:28 AM",
-      "text": "📖 Read: Ethics → Formation of Attitude",
-      "xp": 10
-    },
-    {
-      "time": "08:28 AM",
-      "text": "📖 Read: Ethics → Functions of Attitude",
-      "xp": 10
-    },
-    {
-      "time": "08:28 AM",
-      "text": "📖 Read: Ethics → Types of Attitude",
       "xp": 10
     }
   ],
