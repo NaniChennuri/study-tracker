@@ -1,6 +1,6 @@
 {
   "hunterName": "Nani",
-  "totalXP": 2630,
+  "totalXP": 2720,
   "streak": 2,
   "totalDays": 18,
   "lastStudyDate": "2026-06-08",
@@ -574,6 +574,41 @@
       "s": 1,
       "rd": "2026-06-08",
       "rv": null
+    },
+    "geography:continents-oceans": {
+      "s": 1,
+      "rd": "2026-06-08",
+      "rv": null
+    },
+    "geography:interior-earth": {
+      "s": 1,
+      "rd": "2026-06-08",
+      "rv": null
+    },
+    "geography:geomorphic-process": {
+      "s": 1,
+      "rd": "2026-06-08",
+      "rv": null
+    },
+    "geography:landforms": {
+      "s": 1,
+      "rd": "2026-06-08",
+      "rv": null
+    },
+    "geography:rocks": {
+      "s": 1,
+      "rd": "2026-06-08",
+      "rv": null
+    },
+    "geography:lakes-rivers": {
+      "s": 1,
+      "rd": "2026-06-08",
+      "rv": null
+    },
+    "geography:plateau": {
+      "s": 1,
+      "rd": "2026-06-08",
+      "rv": null
     }
   },
   "completedQuests": {
@@ -782,12 +817,51 @@
       },
       "ca": {
         "done": true
+      },
+      "morning_gs": {
+        "done": true,
+        "topicKey": "geography:continents-oceans"
       }
     }
   },
   "mockHistory": [],
   "bossDefeated": {},
   "activityLog": [
+    {
+      "time": "07:33 PM",
+      "text": "📖 Read: Geography → Plateau",
+      "xp": 10
+    },
+    {
+      "time": "07:33 PM",
+      "text": "📖 Read: Geography → Lakes and Rivers",
+      "xp": 10
+    },
+    {
+      "time": "07:32 PM",
+      "text": "📖 Read: Geography → Rocks",
+      "xp": 10
+    },
+    {
+      "time": "07:32 PM",
+      "text": "📖 Read: Geography → Landforms and their Evolution",
+      "xp": 10
+    },
+    {
+      "time": "07:32 PM",
+      "text": "📖 Read: Geography → Geomorphic Processes",
+      "xp": 10
+    },
+    {
+      "time": "07:32 PM",
+      "text": "📖 Read: Geography → Interior of the Earth",
+      "xp": 10
+    },
+    {
+      "time": "07:32 PM",
+      "text": "📖 Read: Geography → Origins of Continents and Oceans",
+      "xp": 30
+    },
     {
       "time": "11:52 AM",
       "text": "📖 Read: PSIR 1A → Multi-Culturalism",
@@ -1151,41 +1225,6 @@
     {
       "time": "07:39 AM",
       "text": "📖 Read: History → French Revolution (1789–1799)",
-      "xp": 10
-    },
-    {
-      "time": "07:38 AM",
-      "text": "✅ Revised: PSIR 1A → Hannah Arendt (1906–1975)",
-      "xp": 15
-    },
-    {
-      "time": "07:38 AM",
-      "text": "✅ Revised: PSIR 1A → Gramsci (1891–1937)",
-      "xp": 15
-    },
-    {
-      "time": "07:38 AM",
-      "text": "✍️ Answer Writing completed",
-      "xp": 25
-    },
-    {
-      "time": "07:38 AM",
-      "text": "📖 Read: PSIR 1A → Gramsci (1891–1937)",
-      "xp": 30
-    },
-    {
-      "time": "09:21 PM",
-      "text": "✍️ Answer Writing completed",
-      "xp": 25
-    },
-    {
-      "time": "09:21 PM",
-      "text": "🗞️ Current Affairs completed",
-      "xp": 10
-    },
-    {
-      "time": "09:21 PM",
-      "text": "📰 Editorial completed",
       "xp": 10
     }
   ],
