@@ -1,9 +1,9 @@
 {
   "hunterName": "Nani",
-  "totalXP": 2580,
-  "streak": 1,
-  "totalDays": 17,
-  "lastStudyDate": "2026-06-07",
+  "totalXP": 2630,
+  "streak": 2,
+  "totalDays": 18,
+  "lastStudyDate": "2026-06-08",
   "topicStatus": {
     "history:prehistoric": {
       "s": 2,
@@ -559,6 +559,21 @@
       "s": 1,
       "rd": "2026-06-07",
       "rv": null
+    },
+    "psir1a:post-modernism": {
+      "s": 1,
+      "rd": "2026-06-08",
+      "rv": null
+    },
+    "psir1a:post-colonialism": {
+      "s": 1,
+      "rd": "2026-06-08",
+      "rv": null
+    },
+    "psir1a:multi-culturalism": {
+      "s": 1,
+      "rd": "2026-06-08",
+      "rv": null
     }
   },
   "completedQuests": {
@@ -760,11 +775,44 @@
         "done": true,
         "topicKey": "ethics:aptitude-def"
       }
+    },
+    "2026-06-08": {
+      "editorial": {
+        "done": true
+      },
+      "ca": {
+        "done": true
+      }
     }
   },
   "mockHistory": [],
   "bossDefeated": {},
   "activityLog": [
+    {
+      "time": "11:52 AM",
+      "text": "📖 Read: PSIR 1A → Multi-Culturalism",
+      "xp": 10
+    },
+    {
+      "time": "11:52 AM",
+      "text": "📖 Read: PSIR 1A → Post-Colonialism",
+      "xp": 10
+    },
+    {
+      "time": "11:52 AM",
+      "text": "📖 Read: PSIR 1A → Post-Modernism",
+      "xp": 10
+    },
+    {
+      "time": "11:52 AM",
+      "text": "🗞️ Current Affairs completed",
+      "xp": 10
+    },
+    {
+      "time": "11:52 AM",
+      "text": "📰 Editorial completed",
+      "xp": 10
+    },
     {
       "time": "10:20 PM",
       "text": "✅ Revised: History → Towards Freedom and Partition (1939–1947)",
@@ -1138,31 +1186,6 @@
     {
       "time": "09:21 PM",
       "text": "📰 Editorial completed",
-      "xp": 10
-    },
-    {
-      "time": "09:21 PM",
-      "text": "✅ Revised: PSIR 1A → Karl Marx (1818–1883)",
-      "xp": 15
-    },
-    {
-      "time": "09:21 PM",
-      "text": "📖 Read: PSIR 1A → Karl Marx (1818–1883)",
-      "xp": 10
-    },
-    {
-      "time": "09:20 PM",
-      "text": "📖 Read: History → American Revolution (1775–1783)",
-      "xp": 10
-    },
-    {
-      "time": "09:20 PM",
-      "text": "📖 Read: History → The Renaissance and Age of Exploration",
-      "xp": 30
-    },
-    {
-      "time": "08:28 AM",
-      "text": "📖 Read: Ethics → Attitude Change — Theories and Methods",
       "xp": 10
     }
   ],
