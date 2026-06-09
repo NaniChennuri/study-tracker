@@ -1,9 +1,9 @@
 {
   "hunterName": "Nani",
-  "totalXP": 2720,
-  "streak": 2,
-  "totalDays": 18,
-  "lastStudyDate": "2026-06-08",
+  "totalXP": 2790,
+  "streak": 3,
+  "totalDays": 19,
+  "lastStudyDate": "2026-06-09",
   "topicStatus": {
     "history:prehistoric": {
       "s": 2,
@@ -609,6 +609,31 @@
       "s": 1,
       "rd": "2026-06-08",
       "rv": null
+    },
+    "psir1a:value-pluralism": {
+      "s": 1,
+      "rd": "2026-06-09",
+      "rv": null
+    },
+    "psir1a:end-of-ideology": {
+      "s": 1,
+      "rd": "2026-06-09",
+      "rv": null
+    },
+    "psir1a:clash-civilizations": {
+      "s": 1,
+      "rd": "2026-06-09",
+      "rv": null
+    },
+    "psir1a:ipt-intro": {
+      "s": 1,
+      "rd": "2026-06-09",
+      "rv": null
+    },
+    "psir1a:dharmashastra": {
+      "s": 1,
+      "rd": "2026-06-09",
+      "rv": null
     }
   },
   "completedQuests": {
@@ -822,11 +847,42 @@
         "done": true,
         "topicKey": "geography:continents-oceans"
       }
+    },
+    "2026-06-09": {
+      "morning_psir": {
+        "done": true,
+        "topicKey": "psir1a:value-pluralism"
+      }
     }
   },
   "mockHistory": [],
   "bossDefeated": {},
   "activityLog": [
+    {
+      "time": "08:06 AM",
+      "text": "📖 Read: PSIR 1A → Dharmashastra Tradition",
+      "xp": 10
+    },
+    {
+      "time": "08:06 AM",
+      "text": "📖 Read: PSIR 1A → Intro to Indian Political Thought",
+      "xp": 10
+    },
+    {
+      "time": "08:06 AM",
+      "text": "📖 Read: PSIR 1A → Clash of Civilizations",
+      "xp": 10
+    },
+    {
+      "time": "08:06 AM",
+      "text": "📖 Read: PSIR 1A → End of Ideology and History",
+      "xp": 10
+    },
+    {
+      "time": "08:06 AM",
+      "text": "📖 Read: PSIR 1A → Value Pluralism",
+      "xp": 30
+    },
     {
       "time": "07:33 PM",
       "text": "📖 Read: Geography → Plateau",
@@ -1200,31 +1256,6 @@
     {
       "time": "10:09 PM",
       "text": "📖 Read: History → World War I (1914–1918)",
-      "xp": 10
-    },
-    {
-      "time": "10:09 PM",
-      "text": "📖 Read: History → Unification of Italy and Germany",
-      "xp": 10
-    },
-    {
-      "time": "10:09 PM",
-      "text": "🗞️ Current Affairs completed",
-      "xp": 10
-    },
-    {
-      "time": "10:09 PM",
-      "text": "📰 Editorial completed",
-      "xp": 10
-    },
-    {
-      "time": "07:39 AM",
-      "text": "📖 Read: History → Industrial Revolution (1760–1840)",
-      "xp": 10
-    },
-    {
-      "time": "07:39 AM",
-      "text": "📖 Read: History → French Revolution (1789–1799)",
       "xp": 10
     }
   ],
