@@ -1,6 +1,6 @@
 {
   "hunterName": "Nani",
-  "totalXP": 2905,
+  "totalXP": 2965,
   "streak": 3,
   "totalDays": 19,
   "lastStudyDate": "2026-06-09",
@@ -674,6 +674,36 @@
       "s": 1,
       "rd": "2026-06-09",
       "rv": null
+    },
+    "geography:hydro-cycle": {
+      "s": 1,
+      "rd": "2026-06-09",
+      "rv": null
+    },
+    "geography:ocean-relief": {
+      "s": 1,
+      "rd": "2026-06-09",
+      "rv": null
+    },
+    "geography:ocean-temp": {
+      "s": 1,
+      "rd": "2026-06-09",
+      "rv": null
+    },
+    "geography:salinity": {
+      "s": 1,
+      "rd": "2026-06-09",
+      "rv": null
+    },
+    "geography:ocean-mvmt": {
+      "s": 1,
+      "rd": "2026-06-09",
+      "rv": null
+    },
+    "geography:el-nino": {
+      "s": 1,
+      "rd": "2026-06-09",
+      "rv": null
     }
   },
   "completedQuests": {
@@ -907,6 +937,36 @@
   "mockHistory": [],
   "bossDefeated": {},
   "activityLog": [
+    {
+      "time": "09:10 PM",
+      "text": "📖 Read: Geography → El-Niño, La-Niña and ENSO",
+      "xp": 10
+    },
+    {
+      "time": "09:10 PM",
+      "text": "📖 Read: Geography → Movements of Ocean Water",
+      "xp": 10
+    },
+    {
+      "time": "09:10 PM",
+      "text": "📖 Read: Geography → Salinity of Ocean Waters",
+      "xp": 10
+    },
+    {
+      "time": "09:09 PM",
+      "text": "📖 Read: Geography → Temperature of Ocean Waters",
+      "xp": 10
+    },
+    {
+      "time": "09:09 PM",
+      "text": "📖 Read: Geography → Ocean Relief Features",
+      "xp": 10
+    },
+    {
+      "time": "09:09 PM",
+      "text": "📖 Read: Geography → Hydrological Cycle",
+      "xp": 10
+    },
     {
       "time": "06:37 PM",
       "text": "📖 Read: Geography → World Climate",
@@ -1275,36 +1335,6 @@
     {
       "time": "11:02 PM",
       "text": "📰 Editorial completed",
-      "xp": 10
-    },
-    {
-      "time": "08:38 AM",
-      "text": "✅ Revised: PSIR 1A → Marxism After Marx",
-      "xp": 15
-    },
-    {
-      "time": "08:38 AM",
-      "text": "📖✅ Read + Revised: PSIR 1A → Socialism",
-      "xp": 30
-    },
-    {
-      "time": "10:45 PM",
-      "text": "📖 Read: History → Cold War (1947–1991)",
-      "xp": 10
-    },
-    {
-      "time": "10:45 PM",
-      "text": "📖 Read: History → Decolonization (1945–1990s)",
-      "xp": 10
-    },
-    {
-      "time": "10:45 PM",
-      "text": "📖 Read: History → Rise of Fascism and Nazism",
-      "xp": 10
-    },
-    {
-      "time": "10:45 PM",
-      "text": "📖 Read: History → Colonization and Imperialism",
       "xp": 10
     }
   ],
