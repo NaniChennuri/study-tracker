@@ -1,6 +1,6 @@
 {
   "hunterName": "Nani",
-  "totalXP": 2790,
+  "totalXP": 2905,
   "streak": 3,
   "totalDays": 19,
   "lastStudyDate": "2026-06-09",
@@ -634,6 +634,46 @@
       "s": 1,
       "rd": "2026-06-09",
       "rv": null
+    },
+    "geography:atmosphere": {
+      "s": 1,
+      "rd": "2026-06-09",
+      "rv": null
+    },
+    "geography:solar-rad": {
+      "s": 1,
+      "rd": "2026-06-09",
+      "rv": null
+    },
+    "geography:temperature": {
+      "s": 1,
+      "rd": "2026-06-09",
+      "rv": null
+    },
+    "geography:atm-pressure": {
+      "s": 1,
+      "rd": "2026-06-09",
+      "rv": null
+    },
+    "geography:air-masses": {
+      "s": 1,
+      "rd": "2026-06-09",
+      "rv": null
+    },
+    "geography:fronts": {
+      "s": 1,
+      "rd": "2026-06-09",
+      "rv": null
+    },
+    "geography:precipitation": {
+      "s": 1,
+      "rd": "2026-06-09",
+      "rv": null
+    },
+    "geography:world-climate": {
+      "s": 1,
+      "rd": "2026-06-09",
+      "rv": null
     }
   },
   "completedQuests": {
@@ -852,12 +892,76 @@
       "morning_psir": {
         "done": true,
         "topicKey": "psir1a:value-pluralism"
+      },
+      "editorial": {
+        "done": true
+      },
+      "ca": {
+        "done": true
+      },
+      "mcq_practice": {
+        "done": true
       }
     }
   },
   "mockHistory": [],
   "bossDefeated": {},
   "activityLog": [
+    {
+      "time": "06:37 PM",
+      "text": "📖 Read: Geography → World Climate",
+      "xp": 10
+    },
+    {
+      "time": "06:37 PM",
+      "text": "📖 Read: Geography → Precipitation",
+      "xp": 10
+    },
+    {
+      "time": "06:37 PM",
+      "text": "📖 Read: Geography → Fronts",
+      "xp": 10
+    },
+    {
+      "time": "06:37 PM",
+      "text": "📖 Read: Geography → Air Masses",
+      "xp": 10
+    },
+    {
+      "time": "06:37 PM",
+      "text": "📖 Read: Geography → Atmospheric Pressure",
+      "xp": 10
+    },
+    {
+      "time": "06:37 PM",
+      "text": "📖 Read: Geography → Temperature",
+      "xp": 10
+    },
+    {
+      "time": "06:37 PM",
+      "text": "📖 Read: Geography → Solar Radiation",
+      "xp": 10
+    },
+    {
+      "time": "06:37 PM",
+      "text": "📖 Read: Geography → Atmosphere — Composition and Structure",
+      "xp": 10
+    },
+    {
+      "time": "06:37 PM",
+      "text": "✏️ MCQ Practice completed",
+      "xp": 15
+    },
+    {
+      "time": "06:37 PM",
+      "text": "🗞️ Current Affairs completed",
+      "xp": 10
+    },
+    {
+      "time": "06:37 PM",
+      "text": "📰 Editorial completed",
+      "xp": 10
+    },
     {
       "time": "08:06 AM",
       "text": "📖 Read: PSIR 1A → Dharmashastra Tradition",
@@ -1201,61 +1305,6 @@
     {
       "time": "10:45 PM",
       "text": "📖 Read: History → Colonization and Imperialism",
-      "xp": 10
-    },
-    {
-      "time": "10:44 PM",
-      "text": "✅ Revised: PSIR 1A → Liberalism",
-      "xp": 15
-    },
-    {
-      "time": "10:44 PM",
-      "text": "✅ Revised: PSIR 1A → Idealism",
-      "xp": 15
-    },
-    {
-      "time": "10:44 PM",
-      "text": "✅ Revised: PSIR 1A → Ideology",
-      "xp": 15
-    },
-    {
-      "time": "10:44 PM",
-      "text": "🗞️ Current Affairs completed",
-      "xp": 10
-    },
-    {
-      "time": "10:44 PM",
-      "text": "📰 Editorial completed",
-      "xp": 10
-    },
-    {
-      "time": "10:43 PM",
-      "text": "✍️ Answer Writing completed",
-      "xp": 25
-    },
-    {
-      "time": "10:43 PM",
-      "text": "📖 Read: History → Later Mughals",
-      "xp": 30
-    },
-    {
-      "time": "10:09 PM",
-      "text": "📖 Read: History → Political Philosophies",
-      "xp": 10
-    },
-    {
-      "time": "10:09 PM",
-      "text": "📖 Read: History → World War II (1939–1945)",
-      "xp": 10
-    },
-    {
-      "time": "10:09 PM",
-      "text": "📖 Read: History → Russian Revolution (1917)",
-      "xp": 10
-    },
-    {
-      "time": "10:09 PM",
-      "text": "📖 Read: History → World War I (1914–1918)",
       "xp": 10
     }
   ],
