@@ -1,6 +1,6 @@
 {
   "hunterName": "Nani",
-  "totalXP": 3020,
+  "totalXP": 3045,
   "streak": 4,
   "totalDays": 20,
   "lastStudyDate": "2026-06-10",
@@ -954,12 +954,20 @@
       },
       "editorial": {
         "done": true
+      },
+      "answer_writing": {
+        "done": true
       }
     }
   },
   "mockHistory": [],
   "bossDefeated": {},
   "activityLog": [
+    {
+      "time": "08:05 AM",
+      "text": "✍️ Answer Writing completed",
+      "xp": 25
+    },
     {
       "time": "08:04 AM",
       "text": "📖 Read: PSIR 1A → Sir Syed Ahmed Khan",
@@ -1353,11 +1361,6 @@
     {
       "time": "11:03 PM",
       "text": "✅ Revised: History → India under the British Rule",
-      "xp": 15
-    },
-    {
-      "time": "11:03 PM",
-      "text": "✅ Revised: History → British Conquest in India",
       "xp": 15
     }
   ],
