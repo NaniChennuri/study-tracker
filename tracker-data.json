@@ -1,6 +1,6 @@
 {
   "hunterName": "Nani",
-  "totalXP": 3045,
+  "totalXP": 3125,
   "streak": 4,
   "totalDays": 20,
   "lastStudyDate": "2026-06-10",
@@ -719,6 +719,36 @@
       "s": 1,
       "rd": "2026-06-10",
       "rv": null
+    },
+    "geography:universe": {
+      "s": 1,
+      "rd": "2026-06-10",
+      "rv": null
+    },
+    "geography:galaxies": {
+      "s": 1,
+      "rd": "2026-06-10",
+      "rv": null
+    },
+    "geography:origin-earth": {
+      "s": 1,
+      "rd": "2026-06-10",
+      "rv": null
+    },
+    "geography:evolution-earth": {
+      "s": 1,
+      "rd": "2026-06-10",
+      "rv": null
+    },
+    "geography:planets": {
+      "s": 1,
+      "rd": "2026-06-10",
+      "rv": null
+    },
+    "geography:earth-motions": {
+      "s": 1,
+      "rd": "2026-06-10",
+      "rv": null
     }
   },
   "completedQuests": {
@@ -957,12 +987,46 @@
       },
       "answer_writing": {
         "done": true
+      },
+      "morning_gs": {
+        "done": true,
+        "topicKey": "geography:universe"
       }
     }
   },
   "mockHistory": [],
   "bossDefeated": {},
   "activityLog": [
+    {
+      "time": "06:51 PM",
+      "text": "📖 Read: Geography → Motions of the Earth",
+      "xp": 10
+    },
+    {
+      "time": "06:51 PM",
+      "text": "📖 Read: Geography → Planets",
+      "xp": 10
+    },
+    {
+      "time": "06:51 PM",
+      "text": "📖 Read: Geography → Evolution of the Earth",
+      "xp": 10
+    },
+    {
+      "time": "06:51 PM",
+      "text": "📖 Read: Geography → Origin of the Earth",
+      "xp": 10
+    },
+    {
+      "time": "06:51 PM",
+      "text": "📖 Read: Geography → Galaxies and Solar System",
+      "xp": 10
+    },
+    {
+      "time": "06:51 PM",
+      "text": "📖 Read: Geography → Universe and its Origin",
+      "xp": 30
+    },
     {
       "time": "08:05 AM",
       "text": "✍️ Answer Writing completed",
@@ -1332,36 +1396,6 @@
       "time": "10:42 PM",
       "text": "📖 Read: History → Era of Mass Nationalism (1919–1939)",
       "xp": 10
-    },
-    {
-      "time": "10:42 PM",
-      "text": "📖 Read: History → National Movement (1905–1918)",
-      "xp": 10
-    },
-    {
-      "time": "10:42 PM",
-      "text": "📖 Read: History → The Struggle Begins",
-      "xp": 10
-    },
-    {
-      "time": "10:42 PM",
-      "text": "📖 Read: History → Reform Movements",
-      "xp": 10
-    },
-    {
-      "time": "10:42 PM",
-      "text": "📖 Read: History → Rising Resentments against the Rule",
-      "xp": 10
-    },
-    {
-      "time": "10:42 PM",
-      "text": "🗞️ Current Affairs completed",
-      "xp": 10
-    },
-    {
-      "time": "11:03 PM",
-      "text": "✅ Revised: History → India under the British Rule",
-      "xp": 15
     }
   ],
   "answersWritten": 0,
