@@ -1,9 +1,9 @@
 {
   "hunterName": "Nani",
-  "totalXP": 2965,
-  "streak": 3,
-  "totalDays": 19,
-  "lastStudyDate": "2026-06-09",
+  "totalXP": 3020,
+  "streak": 4,
+  "totalDays": 20,
+  "lastStudyDate": "2026-06-10",
   "topicStatus": {
     "history:prehistoric": {
       "s": 2,
@@ -704,6 +704,21 @@
       "s": 1,
       "rd": "2026-06-09",
       "rv": null
+    },
+    "psir1a:kautilya": {
+      "s": 2,
+      "rd": "2026-06-10",
+      "rv": "2026-06-10"
+    },
+    "psir1a:buddhist-thought": {
+      "s": 1,
+      "rd": "2026-06-10",
+      "rv": null
+    },
+    "psir1a:sir-syed": {
+      "s": 1,
+      "rd": "2026-06-10",
+      "rv": null
     }
   },
   "completedQuests": {
@@ -932,11 +947,44 @@
       "mcq_practice": {
         "done": true
       }
+    },
+    "2026-06-10": {
+      "ca": {
+        "done": true
+      },
+      "editorial": {
+        "done": true
+      }
     }
   },
   "mockHistory": [],
   "bossDefeated": {},
   "activityLog": [
+    {
+      "time": "08:04 AM",
+      "text": "📖 Read: PSIR 1A → Sir Syed Ahmed Khan",
+      "xp": 10
+    },
+    {
+      "time": "08:04 AM",
+      "text": "📖 Read: PSIR 1A → Buddhist Thought",
+      "xp": 10
+    },
+    {
+      "time": "08:04 AM",
+      "text": "✅ Revised: PSIR 1A → Kautilya — Arthashastra",
+      "xp": 15
+    },
+    {
+      "time": "08:04 AM",
+      "text": "📰 Editorial completed",
+      "xp": 10
+    },
+    {
+      "time": "08:04 AM",
+      "text": "🗞️ Current Affairs completed",
+      "xp": 10
+    },
     {
       "time": "09:10 PM",
       "text": "📖 Read: Geography → El-Niño, La-Niña and ENSO",
@@ -1311,31 +1359,6 @@
       "time": "11:03 PM",
       "text": "✅ Revised: History → British Conquest in India",
       "xp": 15
-    },
-    {
-      "time": "11:03 PM",
-      "text": "✅ Revised: History → Later Mughals",
-      "xp": 15
-    },
-    {
-      "time": "11:03 PM",
-      "text": "✅ Revised: History → Coming of Europeans",
-      "xp": 15
-    },
-    {
-      "time": "11:02 PM",
-      "text": "✍️ Answer Writing completed",
-      "xp": 25
-    },
-    {
-      "time": "11:02 PM",
-      "text": "🗞️ Current Affairs completed",
-      "xp": 10
-    },
-    {
-      "time": "11:02 PM",
-      "text": "📰 Editorial completed",
-      "xp": 10
     }
   ],
   "answersWritten": 0,
