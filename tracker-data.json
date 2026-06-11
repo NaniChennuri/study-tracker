@@ -1,6 +1,6 @@
 {
   "hunterName": "Nani",
-  "totalXP": 3165,
+  "totalXP": 3250,
   "streak": 5,
   "totalDays": 21,
   "lastStudyDate": "2026-06-11",
@@ -759,6 +759,26 @@
       "s": 1,
       "rd": "2026-06-11",
       "rv": null
+    },
+    "geography:india-location": {
+      "s": 1,
+      "rd": "2026-06-11",
+      "rv": null
+    },
+    "geography:rock-system": {
+      "s": 1,
+      "rd": "2026-06-11",
+      "rv": null
+    },
+    "geography:tectonic-plate": {
+      "s": 1,
+      "rd": "2026-06-11",
+      "rv": null
+    },
+    "geography:physiography": {
+      "s": 1,
+      "rd": "2026-06-11",
+      "rv": null
     }
   },
   "completedQuests": {
@@ -1007,12 +1027,56 @@
       "morning_psir": {
         "done": true,
         "topicKey": "psir1a:aurobindo"
+      },
+      "ca": {
+        "done": true
+      },
+      "editorial": {
+        "done": true
+      },
+      "answer_writing": {
+        "done": true
       }
     }
   },
   "mockHistory": [],
   "bossDefeated": {},
   "activityLog": [
+    {
+      "time": "10:43 PM",
+      "text": "📖 Read: Geography → Structure and Physiography",
+      "xp": 10
+    },
+    {
+      "time": "10:42 PM",
+      "text": "📖 Read: Geography → Indian Tectonic Plate",
+      "xp": 10
+    },
+    {
+      "time": "10:42 PM",
+      "text": "📖 Read: Geography → Indian Rock System",
+      "xp": 10
+    },
+    {
+      "time": "10:42 PM",
+      "text": "📖 Read: Geography → India — Location",
+      "xp": 10
+    },
+    {
+      "time": "10:42 PM",
+      "text": "✍️ Answer Writing completed",
+      "xp": 25
+    },
+    {
+      "time": "10:42 PM",
+      "text": "📰 Editorial completed",
+      "xp": 10
+    },
+    {
+      "time": "10:42 PM",
+      "text": "🗞️ Current Affairs completed",
+      "xp": 10
+    },
     {
       "time": "08:35 AM",
       "text": "📖 Read: PSIR 1A → M.N. Roy",
@@ -1376,41 +1440,6 @@
     {
       "time": "07:47 AM",
       "text": "📖 Read: History → Folk Dance Forms",
-      "xp": 10
-    },
-    {
-      "time": "07:47 AM",
-      "text": "📖 Read: History → Classical Dance Forms",
-      "xp": 10
-    },
-    {
-      "time": "07:47 AM",
-      "text": "📖 Read: History → Music",
-      "xp": 10
-    },
-    {
-      "time": "07:47 AM",
-      "text": "📖 Read: History → Handicrafts",
-      "xp": 10
-    },
-    {
-      "time": "07:47 AM",
-      "text": "📖 Read: History → Paintings",
-      "xp": 10
-    },
-    {
-      "time": "07:47 AM",
-      "text": "📖 Read: Ethics → Aptitude — Definition and Types",
-      "xp": 30
-    },
-    {
-      "time": "10:42 PM",
-      "text": "📖 Read: PSIR 1A → Feminism",
-      "xp": 10
-    },
-    {
-      "time": "10:42 PM",
-      "text": "📖 Read: PSIR 1A → Fascism",
       "xp": 10
     }
   ],
