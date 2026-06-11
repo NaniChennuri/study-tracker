@@ -1,9 +1,9 @@
 {
   "hunterName": "Nani",
-  "totalXP": 3125,
-  "streak": 4,
-  "totalDays": 20,
-  "lastStudyDate": "2026-06-10",
+  "totalXP": 3165,
+  "streak": 5,
+  "totalDays": 21,
+  "lastStudyDate": "2026-06-11",
   "topicStatus": {
     "history:prehistoric": {
       "s": 2,
@@ -749,6 +749,16 @@
       "s": 1,
       "rd": "2026-06-10",
       "rv": null
+    },
+    "psir1a:aurobindo": {
+      "s": 1,
+      "rd": "2026-06-11",
+      "rv": null
+    },
+    "psir1a:mn-roy": {
+      "s": 1,
+      "rd": "2026-06-11",
+      "rv": null
     }
   },
   "completedQuests": {
@@ -992,11 +1002,27 @@
         "done": true,
         "topicKey": "geography:universe"
       }
+    },
+    "2026-06-11": {
+      "morning_psir": {
+        "done": true,
+        "topicKey": "psir1a:aurobindo"
+      }
     }
   },
   "mockHistory": [],
   "bossDefeated": {},
   "activityLog": [
+    {
+      "time": "08:35 AM",
+      "text": "📖 Read: PSIR 1A → M.N. Roy",
+      "xp": 10
+    },
+    {
+      "time": "08:35 AM",
+      "text": "📖 Read: PSIR 1A → Aurobindo Ghosh",
+      "xp": 30
+    },
     {
       "time": "06:51 PM",
       "text": "📖 Read: Geography → Motions of the Earth",
@@ -1385,16 +1411,6 @@
     {
       "time": "10:42 PM",
       "text": "📖 Read: PSIR 1A → Fascism",
-      "xp": 10
-    },
-    {
-      "time": "10:42 PM",
-      "text": "📖 Read: History → Towards Freedom and Partition (1939–1947)",
-      "xp": 30
-    },
-    {
-      "time": "10:42 PM",
-      "text": "📖 Read: History → Era of Mass Nationalism (1919–1939)",
       "xp": 10
     }
   ],
