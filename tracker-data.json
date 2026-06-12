@@ -1,6 +1,6 @@
 {
   "hunterName": "Nani",
-  "totalXP": 3250,
+  "totalXP": 3270,
   "streak": 5,
   "totalDays": 21,
   "lastStudyDate": "2026-06-11",
@@ -779,6 +779,16 @@
       "s": 1,
       "rd": "2026-06-11",
       "rv": null
+    },
+    "psir1a:gandhi": {
+      "s": 1,
+      "rd": "2026-06-12",
+      "rv": null
+    },
+    "psir1a:ambedkar": {
+      "s": 1,
+      "rd": "2026-06-12",
+      "rv": null
     }
   },
   "completedQuests": {
@@ -1042,6 +1052,16 @@
   "mockHistory": [],
   "bossDefeated": {},
   "activityLog": [
+    {
+      "time": "07:24 AM",
+      "text": "📖 Read: PSIR 1A → B.R. Ambedkar",
+      "xp": 10
+    },
+    {
+      "time": "07:24 AM",
+      "text": "📖 Read: PSIR 1A → M.K. Gandhi",
+      "xp": 10
+    },
     {
       "time": "10:43 PM",
       "text": "📖 Read: Geography → Structure and Physiography",
@@ -1430,16 +1450,6 @@
     {
       "time": "07:47 AM",
       "text": "📖 Read: History → Puppetry",
-      "xp": 10
-    },
-    {
-      "time": "07:47 AM",
-      "text": "📖 Read: History → Indian Theatres",
-      "xp": 10
-    },
-    {
-      "time": "07:47 AM",
-      "text": "📖 Read: History → Folk Dance Forms",
       "xp": 10
     }
   ],
