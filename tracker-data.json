@@ -1,9 +1,9 @@
 {
   "hunterName": "Nani",
-  "totalXP": 3270,
-  "streak": 5,
-  "totalDays": 21,
-  "lastStudyDate": "2026-06-11",
+  "totalXP": 3350,
+  "streak": 6,
+  "totalDays": 22,
+  "lastStudyDate": "2026-06-12",
   "topicStatus": {
     "history:prehistoric": {
       "s": 2,
@@ -789,6 +789,26 @@
       "s": 1,
       "rd": "2026-06-12",
       "rv": null
+    },
+    "geography:drainage": {
+      "s": 1,
+      "rd": "2026-06-12",
+      "rv": null
+    },
+    "geography:india-climate": {
+      "s": 1,
+      "rd": "2026-06-12",
+      "rv": null
+    },
+    "geography:vegetation": {
+      "s": 1,
+      "rd": "2026-06-12",
+      "rv": null
+    },
+    "geography:soils": {
+      "s": 1,
+      "rd": "2026-06-12",
+      "rv": null
     }
   },
   "completedQuests": {
@@ -1047,11 +1067,53 @@
       "answer_writing": {
         "done": true
       }
+    },
+    "2026-06-12": {
+      "morning_gs": {
+        "done": true,
+        "topicKey": "geography:drainage"
+      },
+      "editorial": {
+        "done": true
+      },
+      "ca": {
+        "done": true
+      }
     }
   },
   "mockHistory": [],
   "bossDefeated": {},
   "activityLog": [
+    {
+      "time": "08:25 PM",
+      "text": "📖 Read: Geography → Soils",
+      "xp": 10
+    },
+    {
+      "time": "08:25 PM",
+      "text": "📖 Read: Geography → Natural Vegetation of India",
+      "xp": 10
+    },
+    {
+      "time": "08:25 PM",
+      "text": "📖 Read: Geography → Climate of India",
+      "xp": 10
+    },
+    {
+      "time": "08:25 PM",
+      "text": "🗞️ Current Affairs completed",
+      "xp": 10
+    },
+    {
+      "time": "08:25 PM",
+      "text": "📰 Editorial completed",
+      "xp": 10
+    },
+    {
+      "time": "08:25 PM",
+      "text": "📖 Read: Geography → Drainage System of India",
+      "xp": 30
+    },
     {
       "time": "07:24 AM",
       "text": "📖 Read: PSIR 1A → B.R. Ambedkar",
@@ -1420,36 +1482,6 @@
     {
       "time": "07:48 AM",
       "text": "📖 Read: Ethics → Objectivity",
-      "xp": 10
-    },
-    {
-      "time": "07:48 AM",
-      "text": "📖 Read: Ethics → Impartiality and Non-Partisanship",
-      "xp": 10
-    },
-    {
-      "time": "07:48 AM",
-      "text": "📖 Read: Ethics → Integrity — The Cornerstone Value",
-      "xp": 10
-    },
-    {
-      "time": "07:48 AM",
-      "text": "📖 Read: Ethics → Foundational Values for Civil Service",
-      "xp": 10
-    },
-    {
-      "time": "07:47 AM",
-      "text": "📖 Read: History → Miscellaneous Culture",
-      "xp": 10
-    },
-    {
-      "time": "07:47 AM",
-      "text": "📖 Read: History → Martial Arts",
-      "xp": 10
-    },
-    {
-      "time": "07:47 AM",
-      "text": "📖 Read: History → Puppetry",
       "xp": 10
     }
   ],
