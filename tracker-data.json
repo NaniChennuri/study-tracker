@@ -1,9 +1,9 @@
 {
   "hunterName": "Nani",
-  "totalXP": 3350,
-  "streak": 6,
-  "totalDays": 22,
-  "lastStudyDate": "2026-06-12",
+  "totalXP": 3410,
+  "streak": 7,
+  "totalDays": 23,
+  "lastStudyDate": "2026-06-13",
   "topicStatus": {
     "history:prehistoric": {
       "s": 2,
@@ -809,6 +809,16 @@
       "s": 1,
       "rd": "2026-06-12",
       "rv": null
+    },
+    "geography:hg-agriculture": {
+      "s": 1,
+      "rd": "2026-06-13",
+      "rv": null
+    },
+    "geography:hg-resources": {
+      "s": 1,
+      "rd": "2026-06-13",
+      "rv": null
     }
   },
   "completedQuests": {
@@ -1079,11 +1089,43 @@
       "ca": {
         "done": true
       }
+    },
+    "2026-06-13": {
+      "morning_gs": {
+        "done": true,
+        "topicKey": "geography:hg-agriculture"
+      },
+      "editorial": {
+        "done": true
+      },
+      "ca": {
+        "done": true
+      }
     }
   },
   "mockHistory": [],
   "bossDefeated": {},
   "activityLog": [
+    {
+      "time": "11:13 PM",
+      "text": "📖 Read: Geography → Resources",
+      "xp": 10
+    },
+    {
+      "time": "11:13 PM",
+      "text": "🗞️ Current Affairs completed",
+      "xp": 10
+    },
+    {
+      "time": "11:13 PM",
+      "text": "📰 Editorial completed",
+      "xp": 10
+    },
+    {
+      "time": "11:13 PM",
+      "text": "📖 Read: Geography → Agriculture (Human Geography)",
+      "xp": 30
+    },
     {
       "time": "08:25 PM",
       "text": "📖 Read: Geography → Soils",
@@ -1462,26 +1504,6 @@
     {
       "time": "07:49 AM",
       "text": "📖 Read: Ethics → Ethical Competence",
-      "xp": 10
-    },
-    {
-      "time": "07:49 AM",
-      "text": "📖 Read: Ethics → Voice of Conscience and Crisis of Conscience",
-      "xp": 10
-    },
-    {
-      "time": "07:49 AM",
-      "text": "📖 Read: Ethics → Empathy, Tolerance and Compassion",
-      "xp": 10
-    },
-    {
-      "time": "07:48 AM",
-      "text": "📖 Read: Ethics → Dedication to Public Service",
-      "xp": 10
-    },
-    {
-      "time": "07:48 AM",
-      "text": "📖 Read: Ethics → Objectivity",
       "xp": 10
     }
   ],
