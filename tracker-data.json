@@ -1,9 +1,9 @@
 {
   "hunterName": "Nani",
-  "totalXP": 3410,
-  "streak": 7,
-  "totalDays": 23,
-  "lastStudyDate": "2026-06-13",
+  "totalXP": 3540,
+  "streak": 8,
+  "totalDays": 24,
+  "lastStudyDate": "2026-06-14",
   "topicStatus": {
     "history:prehistoric": {
       "s": 2,
@@ -819,6 +819,61 @@
       "s": 1,
       "rd": "2026-06-13",
       "rv": null
+    },
+    "ethics:emotions": {
+      "s": 1,
+      "rd": "2026-06-14",
+      "rv": null
+    },
+    "geography:hg-industries": {
+      "s": 1,
+      "rd": "2026-06-14",
+      "rv": null
+    },
+    "geography:hg-energy": {
+      "s": 1,
+      "rd": "2026-06-14",
+      "rv": null
+    },
+    "ethics:intelligence-types": {
+      "s": 1,
+      "rd": "2026-06-14",
+      "rv": null
+    },
+    "ethics:what-is-ei": {
+      "s": 1,
+      "rd": "2026-06-14",
+      "rv": null
+    },
+    "ethics:ei-components": {
+      "s": 1,
+      "rd": "2026-06-14",
+      "rv": null
+    },
+    "ethics:developing-ei": {
+      "s": 1,
+      "rd": "2026-06-14",
+      "rv": null
+    },
+    "ethics:ei-civil-services": {
+      "s": 1,
+      "rd": "2026-06-14",
+      "rv": null
+    },
+    "ethics:ei-admin": {
+      "s": 1,
+      "rd": "2026-06-14",
+      "rv": null
+    },
+    "ethics:ei-contemporary": {
+      "s": 1,
+      "rd": "2026-06-14",
+      "rv": null
+    },
+    "ethics:contemporary-world": {
+      "s": 1,
+      "rd": "2026-06-14",
+      "rv": null
     }
   },
   "completedQuests": {
@@ -1101,11 +1156,72 @@
       "ca": {
         "done": true
       }
+    },
+    "2026-06-14": {
+      "morning_ethics": {
+        "done": true,
+        "topicKey": "ethics:emotions"
+      }
     }
   },
   "mockHistory": [],
   "bossDefeated": {},
   "activityLog": [
+    {
+      "time": "09:20 AM",
+      "text": "📖 Read: Ethics → Ethics in the Contemporary World",
+      "xp": 10
+    },
+    {
+      "time": "09:20 AM",
+      "text": "📖 Read: Ethics → EI in Contemporary Challenges",
+      "xp": 10
+    },
+    {
+      "time": "09:20 AM",
+      "text": "📖 Read: Ethics → EI in Administration and Governance",
+      "xp": 10
+    },
+    {
+      "time": "09:20 AM",
+      "text": "📖 Read: Ethics → Relevance of EI in Civil Services",
+      "xp": 10
+    },
+    {
+      "time": "09:20 AM",
+      "text": "📖 Read: Ethics → Developing EI — Can it be Learned?",
+      "xp": 10
+    },
+    {
+      "time": "09:20 AM",
+      "text": "📖 Read: Ethics → Components of EI — Goleman's Framework",
+      "xp": 10
+    },
+    {
+      "time": "09:20 AM",
+      "text": "📖 Read: Ethics → What is Emotional Intelligence",
+      "xp": 10
+    },
+    {
+      "time": "09:19 AM",
+      "text": "📖 Read: Ethics → Intelligence — Types and Theories",
+      "xp": 10
+    },
+    {
+      "time": "09:19 AM",
+      "text": "📖 Read: Geography → Energy",
+      "xp": 10
+    },
+    {
+      "time": "09:19 AM",
+      "text": "📖 Read: Geography → Industries",
+      "xp": 10
+    },
+    {
+      "time": "09:19 AM",
+      "text": "📖 Read: Ethics → Understanding Emotions — The Foundation",
+      "xp": 30
+    },
     {
       "time": "11:13 PM",
       "text": "📖 Read: Geography → Resources",
@@ -1450,61 +1566,6 @@
       "time": "10:20 PM",
       "text": "✅ Revised: History → Era of Mass Nationalism (1919–1939)",
       "xp": 15
-    },
-    {
-      "time": "10:20 PM",
-      "text": "✅ Revised: History → National Movement (1905–1918)",
-      "xp": 15
-    },
-    {
-      "time": "10:19 PM",
-      "text": "✅ Revised: History → The Struggle Begins",
-      "xp": 15
-    },
-    {
-      "time": "10:19 PM",
-      "text": "✅ Revised: History → Reform Movements",
-      "xp": 15
-    },
-    {
-      "time": "10:19 PM",
-      "text": "✅ Revised: History → Rising Resentments against the Rule",
-      "xp": 15
-    },
-    {
-      "time": "10:19 PM",
-      "text": "📖 Read: History → Movements and Reforms",
-      "xp": 10
-    },
-    {
-      "time": "10:19 PM",
-      "text": "📖 Read: History → Post-Indira Governments",
-      "xp": 10
-    },
-    {
-      "time": "10:19 PM",
-      "text": "📖 Read: History → Indira Gandhi Era",
-      "xp": 10
-    },
-    {
-      "time": "10:19 PM",
-      "text": "📖 Read: History → Lal Bahadur Shastri Era (1964)",
-      "xp": 10
-    },
-    {
-      "time": "10:19 PM",
-      "text": "📖 Read: History → Nehruvian Era",
-      "xp": 10
-    },
-    {
-      "time": "07:49 AM",
-      "text": "📖 Read: Ethics → Key Distinctions (Aptitude)",
-      "xp": 10
-    },
-    {
-      "time": "07:49 AM",
-      "text": "📖 Read: Ethics → Ethical Competence",
-      "xp": 10
     }
   ],
   "answersWritten": 0,
