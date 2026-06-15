@@ -1,6 +1,6 @@
 {
   "hunterName": "Nani",
-  "totalXP": 3640,
+  "totalXP": 3665,
   "streak": 9,
   "totalDays": 25,
   "lastStudyDate": "2026-06-15",
@@ -1196,12 +1196,20 @@
       },
       "mcq_practice": {
         "done": true
+      },
+      "answer_writing": {
+        "done": true
       }
     }
   },
   "mockHistory": [],
   "bossDefeated": {},
   "activityLog": [
+    {
+      "time": "09:18 PM",
+      "text": "✍️ Answer Writing completed",
+      "xp": 25
+    },
     {
       "time": "09:18 PM",
       "text": "✅ Revised: PSIR 1A → Theories of State",
@@ -1596,11 +1604,6 @@
       "time": "07:32 PM",
       "text": "📖 Read: Geography → Interior of the Earth",
       "xp": 10
-    },
-    {
-      "time": "07:32 PM",
-      "text": "📖 Read: Geography → Origins of Continents and Oceans",
-      "xp": 30
     }
   ],
   "answersWritten": 0,
