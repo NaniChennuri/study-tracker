@@ -1,9 +1,9 @@
 {
   "hunterName": "Nani",
-  "totalXP": 3665,
-  "streak": 9,
-  "totalDays": 25,
-  "lastStudyDate": "2026-06-15",
+  "totalXP": 3845,
+  "streak": 10,
+  "totalDays": 26,
+  "lastStudyDate": "2026-06-16",
   "topicStatus": {
     "history:prehistoric": {
       "s": 2,
@@ -894,6 +894,76 @@
       "s": 2,
       "rd": "2026-06-15",
       "rv": "2026-06-15"
+    },
+    "psir1a:theories-power": {
+      "s": 1,
+      "rd": "2026-06-16",
+      "rv": null
+    },
+    "polity:union-territory": {
+      "s": 1,
+      "rd": "2026-06-16",
+      "rv": null
+    },
+    "polity:citizenship": {
+      "s": 1,
+      "rd": "2026-06-16",
+      "rv": null
+    },
+    "polity:fr-intro": {
+      "s": 1,
+      "rd": "2026-06-16",
+      "rv": null
+    },
+    "polity:fr-equality": {
+      "s": 1,
+      "rd": "2026-06-16",
+      "rv": null
+    },
+    "polity:fr-freedom": {
+      "s": 1,
+      "rd": "2026-06-16",
+      "rv": null
+    },
+    "polity:fr-exploitation": {
+      "s": 1,
+      "rd": "2026-06-16",
+      "rv": null
+    },
+    "polity:fr-religion": {
+      "s": 1,
+      "rd": "2026-06-16",
+      "rv": null
+    },
+    "polity:fr-cultural-edu": {
+      "s": 1,
+      "rd": "2026-06-16",
+      "rv": null
+    },
+    "polity:fr-remedies": {
+      "s": 1,
+      "rd": "2026-06-16",
+      "rv": null
+    },
+    "polity:dpsp": {
+      "s": 1,
+      "rd": "2026-06-16",
+      "rv": null
+    },
+    "polity:fundamental-duties": {
+      "s": 1,
+      "rd": "2026-06-16",
+      "rv": null
+    },
+    "polity:amendment": {
+      "s": 1,
+      "rd": "2026-06-16",
+      "rv": null
+    },
+    "polity:basic-structure": {
+      "s": 1,
+      "rd": "2026-06-16",
+      "rv": null
     }
   },
   "completedQuests": {
@@ -1200,11 +1270,103 @@
       "answer_writing": {
         "done": true
       }
+    },
+    "2026-06-16": {
+      "morning_psir": {
+        "done": true,
+        "topicKey": "psir1a:theories-power"
+      },
+      "editorial": {
+        "done": true
+      },
+      "ca": {
+        "done": true
+      }
     }
   },
   "mockHistory": [],
   "bossDefeated": {},
   "activityLog": [
+    {
+      "time": "09:16 PM",
+      "text": "📖 Read: Polity → Basic Structure of the Constitution",
+      "xp": 10
+    },
+    {
+      "time": "09:16 PM",
+      "text": "📖 Read: Polity → Amendment of the Constitution (Art. 368)",
+      "xp": 10
+    },
+    {
+      "time": "09:16 PM",
+      "text": "📖 Read: Polity → Fundamental Duties (Part IVA)",
+      "xp": 10
+    },
+    {
+      "time": "09:16 PM",
+      "text": "📖 Read: Polity → Directive Principles of State Policy (Part IV)",
+      "xp": 10
+    },
+    {
+      "time": "09:16 PM",
+      "text": "📖 Read: Polity → Right to Constitutional Remedies",
+      "xp": 10
+    },
+    {
+      "time": "09:16 PM",
+      "text": "📖 Read: Polity → Cultural and Educational Rights (Art. 29–30)",
+      "xp": 10
+    },
+    {
+      "time": "09:16 PM",
+      "text": "📖 Read: Polity → Right to Freedom of Religion (Art. 25–28)",
+      "xp": 10
+    },
+    {
+      "time": "09:16 PM",
+      "text": "📖 Read: Polity → Right Against Exploitation (Art. 23–24)",
+      "xp": 10
+    },
+    {
+      "time": "09:16 PM",
+      "text": "📖 Read: Polity → Right to Freedom (Art. 19–22)",
+      "xp": 10
+    },
+    {
+      "time": "09:16 PM",
+      "text": "📖 Read: Polity → Right to Equality (Art. 14–18)",
+      "xp": 10
+    },
+    {
+      "time": "09:16 PM",
+      "text": "📖 Read: Polity → Introduction to Fundamental Rights",
+      "xp": 10
+    },
+    {
+      "time": "09:16 PM",
+      "text": "📖 Read: Polity → Citizenship (Part II)",
+      "xp": 10
+    },
+    {
+      "time": "09:15 PM",
+      "text": "📖 Read: Polity → Union and its Territory (Part I)",
+      "xp": 10
+    },
+    {
+      "time": "09:15 PM",
+      "text": "🗞️ Current Affairs completed",
+      "xp": 10
+    },
+    {
+      "time": "09:15 PM",
+      "text": "📰 Editorial completed",
+      "xp": 10
+    },
+    {
+      "time": "09:15 PM",
+      "text": "📖 Read: PSIR 1A → Theories of Power: Hegemony, Ideology, Legitimacy",
+      "xp": 30
+    },
     {
       "time": "09:18 PM",
       "text": "✍️ Answer Writing completed",
@@ -1523,86 +1685,6 @@
     {
       "time": "06:37 PM",
       "text": "📖 Read: Geography → Temperature",
-      "xp": 10
-    },
-    {
-      "time": "06:37 PM",
-      "text": "📖 Read: Geography → Solar Radiation",
-      "xp": 10
-    },
-    {
-      "time": "06:37 PM",
-      "text": "📖 Read: Geography → Atmosphere — Composition and Structure",
-      "xp": 10
-    },
-    {
-      "time": "06:37 PM",
-      "text": "✏️ MCQ Practice completed",
-      "xp": 15
-    },
-    {
-      "time": "06:37 PM",
-      "text": "🗞️ Current Affairs completed",
-      "xp": 10
-    },
-    {
-      "time": "06:37 PM",
-      "text": "📰 Editorial completed",
-      "xp": 10
-    },
-    {
-      "time": "08:06 AM",
-      "text": "📖 Read: PSIR 1A → Dharmashastra Tradition",
-      "xp": 10
-    },
-    {
-      "time": "08:06 AM",
-      "text": "📖 Read: PSIR 1A → Intro to Indian Political Thought",
-      "xp": 10
-    },
-    {
-      "time": "08:06 AM",
-      "text": "📖 Read: PSIR 1A → Clash of Civilizations",
-      "xp": 10
-    },
-    {
-      "time": "08:06 AM",
-      "text": "📖 Read: PSIR 1A → End of Ideology and History",
-      "xp": 10
-    },
-    {
-      "time": "08:06 AM",
-      "text": "📖 Read: PSIR 1A → Value Pluralism",
-      "xp": 30
-    },
-    {
-      "time": "07:33 PM",
-      "text": "📖 Read: Geography → Plateau",
-      "xp": 10
-    },
-    {
-      "time": "07:33 PM",
-      "text": "📖 Read: Geography → Lakes and Rivers",
-      "xp": 10
-    },
-    {
-      "time": "07:32 PM",
-      "text": "📖 Read: Geography → Rocks",
-      "xp": 10
-    },
-    {
-      "time": "07:32 PM",
-      "text": "📖 Read: Geography → Landforms and their Evolution",
-      "xp": 10
-    },
-    {
-      "time": "07:32 PM",
-      "text": "📖 Read: Geography → Geomorphic Processes",
-      "xp": 10
-    },
-    {
-      "time": "07:32 PM",
-      "text": "📖 Read: Geography → Interior of the Earth",
       "xp": 10
     }
   ],
