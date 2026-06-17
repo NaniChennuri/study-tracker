@@ -1,9 +1,9 @@
 {
   "hunterName": "Nani",
-  "totalXP": 3845,
-  "streak": 10,
-  "totalDays": 26,
-  "lastStudyDate": "2026-06-16",
+  "totalXP": 3955,
+  "streak": 11,
+  "totalDays": 27,
+  "lastStudyDate": "2026-06-17",
   "topicStatus": {
     "history:prehistoric": {
       "s": 2,
@@ -964,6 +964,41 @@
       "s": 1,
       "rd": "2026-06-16",
       "rv": null
+    },
+    "polity:president": {
+      "s": 1,
+      "rd": "2026-06-17",
+      "rv": null
+    },
+    "polity:vp": {
+      "s": 1,
+      "rd": "2026-06-17",
+      "rv": null
+    },
+    "polity:pm": {
+      "s": 1,
+      "rd": "2026-06-17",
+      "rv": null
+    },
+    "polity:com": {
+      "s": 1,
+      "rd": "2026-06-17",
+      "rv": null
+    },
+    "polity:ag": {
+      "s": 1,
+      "rd": "2026-06-17",
+      "rv": null
+    },
+    "polity:cag": {
+      "s": 1,
+      "rd": "2026-06-17",
+      "rv": null
+    },
+    "psir1a:theories-democracy": {
+      "s": 1,
+      "rd": "2026-06-17",
+      "rv": null
     }
   },
   "completedQuests": {
@@ -1282,11 +1317,68 @@
       "ca": {
         "done": true
       }
+    },
+    "2026-06-17": {
+      "morning_gs": {
+        "done": true,
+        "topicKey": "polity:president"
+      },
+      "editorial": {
+        "done": true
+      },
+      "ca": {
+        "done": true
+      }
     }
   },
   "mockHistory": [],
   "bossDefeated": {},
   "activityLog": [
+    {
+      "time": "09:10 PM",
+      "text": "📖 Read: PSIR 1A → Theories and Models of Democracy",
+      "xp": 10
+    },
+    {
+      "time": "09:10 PM",
+      "text": "📖 Read: Polity → Comptroller and Auditor General (Art. 148–151)",
+      "xp": 10
+    },
+    {
+      "time": "09:10 PM",
+      "text": "📖 Read: Polity → Attorney General of India (Art. 76)",
+      "xp": 10
+    },
+    {
+      "time": "09:10 PM",
+      "text": "📖 Read: Polity → Council of Ministers",
+      "xp": 10
+    },
+    {
+      "time": "09:10 PM",
+      "text": "📖 Read: Polity → Prime Minister",
+      "xp": 10
+    },
+    {
+      "time": "09:10 PM",
+      "text": "📖 Read: Polity → Vice-President (Art. 63–71)",
+      "xp": 10
+    },
+    {
+      "time": "09:09 PM",
+      "text": "🗞️ Current Affairs completed",
+      "xp": 10
+    },
+    {
+      "time": "09:09 PM",
+      "text": "📰 Editorial completed",
+      "xp": 10
+    },
+    {
+      "time": "09:09 PM",
+      "text": "📖 Read: Polity → President (Art. 52–62)",
+      "xp": 30
+    },
     {
       "time": "09:16 PM",
       "text": "📖 Read: Polity → Basic Structure of the Constitution",
@@ -1640,51 +1732,6 @@
     {
       "time": "09:10 PM",
       "text": "📖 Read: Geography → Salinity of Ocean Waters",
-      "xp": 10
-    },
-    {
-      "time": "09:09 PM",
-      "text": "📖 Read: Geography → Temperature of Ocean Waters",
-      "xp": 10
-    },
-    {
-      "time": "09:09 PM",
-      "text": "📖 Read: Geography → Ocean Relief Features",
-      "xp": 10
-    },
-    {
-      "time": "09:09 PM",
-      "text": "📖 Read: Geography → Hydrological Cycle",
-      "xp": 10
-    },
-    {
-      "time": "06:37 PM",
-      "text": "📖 Read: Geography → World Climate",
-      "xp": 10
-    },
-    {
-      "time": "06:37 PM",
-      "text": "📖 Read: Geography → Precipitation",
-      "xp": 10
-    },
-    {
-      "time": "06:37 PM",
-      "text": "📖 Read: Geography → Fronts",
-      "xp": 10
-    },
-    {
-      "time": "06:37 PM",
-      "text": "📖 Read: Geography → Air Masses",
-      "xp": 10
-    },
-    {
-      "time": "06:37 PM",
-      "text": "📖 Read: Geography → Atmospheric Pressure",
-      "xp": 10
-    },
-    {
-      "time": "06:37 PM",
-      "text": "📖 Read: Geography → Temperature",
       "xp": 10
     }
   ],
