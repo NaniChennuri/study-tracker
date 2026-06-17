@@ -1,6 +1,6 @@
 {
   "hunterName": "Nani",
-  "totalXP": 3955,
+  "totalXP": 3980,
   "streak": 11,
   "totalDays": 27,
   "lastStudyDate": "2026-06-17",
@@ -1328,12 +1328,20 @@
       },
       "ca": {
         "done": true
+      },
+      "answer_writing": {
+        "done": true
       }
     }
   },
   "mockHistory": [],
   "bossDefeated": {},
   "activityLog": [
+    {
+      "time": "09:12 PM",
+      "text": "✍️ Answer Writing completed",
+      "xp": 25
+    },
     {
       "time": "09:10 PM",
       "text": "📖 Read: PSIR 1A → Theories and Models of Democracy",
@@ -1727,11 +1735,6 @@
     {
       "time": "09:10 PM",
       "text": "📖 Read: Geography → Movements of Ocean Water",
-      "xp": 10
-    },
-    {
-      "time": "09:10 PM",
-      "text": "📖 Read: Geography → Salinity of Ocean Waters",
       "xp": 10
     }
   ],
