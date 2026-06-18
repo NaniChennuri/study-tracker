@@ -1,9 +1,9 @@
 {
   "hunterName": "Nani",
-  "totalXP": 3980,
-  "streak": 11,
-  "totalDays": 27,
-  "lastStudyDate": "2026-06-17",
+  "totalXP": 4120,
+  "streak": 12,
+  "totalDays": 28,
+  "lastStudyDate": "2026-06-18",
   "topicStatus": {
     "history:prehistoric": {
       "s": 2,
@@ -999,6 +999,56 @@
       "s": 1,
       "rd": "2026-06-17",
       "rv": null
+    },
+    "psir1a:theories-rights": {
+      "s": 1,
+      "rd": "2026-06-18",
+      "rv": null
+    },
+    "polity:parl-org": {
+      "s": 1,
+      "rd": "2026-06-18",
+      "rv": null
+    },
+    "polity:parl-membership": {
+      "s": 1,
+      "rd": "2026-06-18",
+      "rv": null
+    },
+    "polity:parl-sessions": {
+      "s": 1,
+      "rd": "2026-06-18",
+      "rv": null
+    },
+    "polity:parl-bills": {
+      "s": 1,
+      "rd": "2026-06-18",
+      "rv": null
+    },
+    "polity:parl-budget": {
+      "s": 1,
+      "rd": "2026-06-18",
+      "rv": null
+    },
+    "polity:parl-functions": {
+      "s": 1,
+      "rd": "2026-06-18",
+      "rv": null
+    },
+    "polity:governor": {
+      "s": 1,
+      "rd": "2026-06-18",
+      "rv": null
+    },
+    "polity:cm-state-com": {
+      "s": 1,
+      "rd": "2026-06-18",
+      "rv": null
+    },
+    "polity:state-legislature": {
+      "s": 1,
+      "rd": "2026-06-18",
+      "rv": null
     }
   },
   "completedQuests": {
@@ -1332,11 +1382,83 @@
       "answer_writing": {
         "done": true
       }
+    },
+    "2026-06-18": {
+      "morning_psir": {
+        "done": true,
+        "topicKey": "psir1a:theories-rights"
+      },
+      "editorial": {
+        "done": true
+      },
+      "ca": {
+        "done": true
+      }
     }
   },
   "mockHistory": [],
   "bossDefeated": {},
   "activityLog": [
+    {
+      "time": "07:48 PM",
+      "text": "📖 Read: Polity → State Legislature (Part VI, Art. 168–212)",
+      "xp": 10
+    },
+    {
+      "time": "07:48 PM",
+      "text": "📖 Read: Polity → Chief Minister and State Council of Ministers",
+      "xp": 10
+    },
+    {
+      "time": "07:48 PM",
+      "text": "📖 Read: Polity → Governor (Art. 153–167)",
+      "xp": 10
+    },
+    {
+      "time": "07:48 PM",
+      "text": "📖 Read: Polity → Functions, Privileges and Committees",
+      "xp": 10
+    },
+    {
+      "time": "07:48 PM",
+      "text": "📖 Read: Polity → Budget and Funds",
+      "xp": 10
+    },
+    {
+      "time": "07:48 PM",
+      "text": "📖 Read: Polity → Devices, Motions and Bills",
+      "xp": 10
+    },
+    {
+      "time": "07:47 PM",
+      "text": "📖 Read: Polity → Leaders, Sessions and Proceedings",
+      "xp": 10
+    },
+    {
+      "time": "07:47 PM",
+      "text": "📖 Read: Polity → Membership and Presiding Officers",
+      "xp": 10
+    },
+    {
+      "time": "07:47 PM",
+      "text": "📖 Read: Polity → Organisation and Composition",
+      "xp": 10
+    },
+    {
+      "time": "07:47 PM",
+      "text": "🗞️ Current Affairs completed",
+      "xp": 10
+    },
+    {
+      "time": "07:47 PM",
+      "text": "📰 Editorial completed",
+      "xp": 10
+    },
+    {
+      "time": "07:47 PM",
+      "text": "📖 Read: PSIR 1A → Theories of Rights and Human Rights",
+      "xp": 30
+    },
     {
       "time": "09:12 PM",
       "text": "✍️ Answer Writing completed",
@@ -1675,66 +1797,6 @@
     {
       "time": "06:51 PM",
       "text": "📖 Read: Geography → Planets",
-      "xp": 10
-    },
-    {
-      "time": "06:51 PM",
-      "text": "📖 Read: Geography → Evolution of the Earth",
-      "xp": 10
-    },
-    {
-      "time": "06:51 PM",
-      "text": "📖 Read: Geography → Origin of the Earth",
-      "xp": 10
-    },
-    {
-      "time": "06:51 PM",
-      "text": "📖 Read: Geography → Galaxies and Solar System",
-      "xp": 10
-    },
-    {
-      "time": "06:51 PM",
-      "text": "📖 Read: Geography → Universe and its Origin",
-      "xp": 30
-    },
-    {
-      "time": "08:05 AM",
-      "text": "✍️ Answer Writing completed",
-      "xp": 25
-    },
-    {
-      "time": "08:04 AM",
-      "text": "📖 Read: PSIR 1A → Sir Syed Ahmed Khan",
-      "xp": 10
-    },
-    {
-      "time": "08:04 AM",
-      "text": "📖 Read: PSIR 1A → Buddhist Thought",
-      "xp": 10
-    },
-    {
-      "time": "08:04 AM",
-      "text": "✅ Revised: PSIR 1A → Kautilya — Arthashastra",
-      "xp": 15
-    },
-    {
-      "time": "08:04 AM",
-      "text": "📰 Editorial completed",
-      "xp": 10
-    },
-    {
-      "time": "08:04 AM",
-      "text": "🗞️ Current Affairs completed",
-      "xp": 10
-    },
-    {
-      "time": "09:10 PM",
-      "text": "📖 Read: Geography → El-Niño, La-Niña and ENSO",
-      "xp": 10
-    },
-    {
-      "time": "09:10 PM",
-      "text": "📖 Read: Geography → Movements of Ocean Water",
       "xp": 10
     }
   ],
