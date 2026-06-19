@@ -1,9 +1,9 @@
 {
   "hunterName": "Nani",
-  "totalXP": 4120,
-  "streak": 12,
-  "totalDays": 28,
-  "lastStudyDate": "2026-06-18",
+  "totalXP": 4210,
+  "streak": 13,
+  "totalDays": 29,
+  "lastStudyDate": "2026-06-19",
   "topicStatus": {
     "history:prehistoric": {
       "s": 2,
@@ -1049,6 +1049,31 @@
       "s": 1,
       "rd": "2026-06-18",
       "rv": null
+    },
+    "polity:parl-federal": {
+      "s": 1,
+      "rd": "2026-06-19",
+      "rv": null
+    },
+    "polity:centre-state": {
+      "s": 1,
+      "rd": "2026-06-19",
+      "rv": null
+    },
+    "polity:inter-state": {
+      "s": 1,
+      "rd": "2026-06-19",
+      "rv": null
+    },
+    "polity:emergency": {
+      "s": 1,
+      "rd": "2026-06-19",
+      "rv": null
+    },
+    "psir1a:theories-justice": {
+      "s": 1,
+      "rd": "2026-06-19",
+      "rv": null
     }
   },
   "completedQuests": {
@@ -1394,11 +1419,58 @@
       "ca": {
         "done": true
       }
+    },
+    "2026-06-19": {
+      "morning_gs": {
+        "done": true,
+        "topicKey": "polity:parl-federal"
+      },
+      "editorial": {
+        "done": true
+      },
+      "ca": {
+        "done": true
+      }
     }
   },
   "mockHistory": [],
   "bossDefeated": {},
   "activityLog": [
+    {
+      "time": "09:18 PM",
+      "text": "📖 Read: PSIR 1A → Theories of Justice",
+      "xp": 10
+    },
+    {
+      "time": "09:18 PM",
+      "text": "📖 Read: Polity → Emergency Provisions (Art. 352–360)",
+      "xp": 10
+    },
+    {
+      "time": "09:18 PM",
+      "text": "📖 Read: Polity → Inter-State Relations",
+      "xp": 10
+    },
+    {
+      "time": "09:18 PM",
+      "text": "📖 Read: Polity → Centre-State Relations",
+      "xp": 10
+    },
+    {
+      "time": "09:18 PM",
+      "text": "🗞️ Current Affairs completed",
+      "xp": 10
+    },
+    {
+      "time": "09:18 PM",
+      "text": "📰 Editorial completed",
+      "xp": 10
+    },
+    {
+      "time": "09:18 PM",
+      "text": "📖 Read: Polity → Parliamentary and Federal System",
+      "xp": 30
+    },
     {
       "time": "07:48 PM",
       "text": "📖 Read: Polity → State Legislature (Part VI, Art. 168–212)",
@@ -1762,41 +1834,6 @@
     {
       "time": "10:42 PM",
       "text": "📖 Read: Geography → India — Location",
-      "xp": 10
-    },
-    {
-      "time": "10:42 PM",
-      "text": "✍️ Answer Writing completed",
-      "xp": 25
-    },
-    {
-      "time": "10:42 PM",
-      "text": "📰 Editorial completed",
-      "xp": 10
-    },
-    {
-      "time": "10:42 PM",
-      "text": "🗞️ Current Affairs completed",
-      "xp": 10
-    },
-    {
-      "time": "08:35 AM",
-      "text": "📖 Read: PSIR 1A → M.N. Roy",
-      "xp": 10
-    },
-    {
-      "time": "08:35 AM",
-      "text": "📖 Read: PSIR 1A → Aurobindo Ghosh",
-      "xp": 30
-    },
-    {
-      "time": "06:51 PM",
-      "text": "📖 Read: Geography → Motions of the Earth",
-      "xp": 10
-    },
-    {
-      "time": "06:51 PM",
-      "text": "📖 Read: Geography → Planets",
       "xp": 10
     }
   ],
