@@ -1,9 +1,9 @@
 {
   "hunterName": "Nani",
-  "totalXP": 4210,
-  "streak": 13,
-  "totalDays": 29,
-  "lastStudyDate": "2026-06-19",
+  "totalXP": 4260,
+  "streak": 14,
+  "totalDays": 30,
+  "lastStudyDate": "2026-06-20",
   "topicStatus": {
     "history:prehistoric": {
       "s": 2,
@@ -1074,6 +1074,21 @@
       "s": 1,
       "rd": "2026-06-19",
       "rv": null
+    },
+    "polity:supreme-court": {
+      "s": 1,
+      "rd": "2026-06-20",
+      "rv": null
+    },
+    "polity:high-court": {
+      "s": 1,
+      "rd": "2026-06-20",
+      "rv": null
+    },
+    "polity:other-courts": {
+      "s": 1,
+      "rd": "2026-06-20",
+      "rv": null
     }
   },
   "completedQuests": {
@@ -1431,11 +1446,32 @@
       "ca": {
         "done": true
       }
+    },
+    "2026-06-20": {
+      "morning_gs": {
+        "done": true,
+        "topicKey": "polity:supreme-court"
+      }
     }
   },
   "mockHistory": [],
   "bossDefeated": {},
   "activityLog": [
+    {
+      "time": "09:23 PM",
+      "text": "📖 Read: Polity → Other Courts and Tribunals",
+      "xp": 10
+    },
+    {
+      "time": "09:23 PM",
+      "text": "📖 Read: Polity → High Court (Art. 214–231)",
+      "xp": 10
+    },
+    {
+      "time": "09:23 PM",
+      "text": "📖 Read: Polity → Supreme Court (Art. 124–147)",
+      "xp": 30
+    },
     {
       "time": "09:18 PM",
       "text": "📖 Read: PSIR 1A → Theories of Justice",
@@ -1819,21 +1855,6 @@
     {
       "time": "10:43 PM",
       "text": "📖 Read: Geography → Structure and Physiography",
-      "xp": 10
-    },
-    {
-      "time": "10:42 PM",
-      "text": "📖 Read: Geography → Indian Tectonic Plate",
-      "xp": 10
-    },
-    {
-      "time": "10:42 PM",
-      "text": "📖 Read: Geography → Indian Rock System",
-      "xp": 10
-    },
-    {
-      "time": "10:42 PM",
-      "text": "📖 Read: Geography → India — Location",
       "xp": 10
     }
   ],
