@@ -1,6 +1,6 @@
 {
   "hunterName": "Nani",
-  "totalXP": 4570,
+  "totalXP": 4620,
   "streak": 15,
   "totalDays": 31,
   "lastStudyDate": "2026-06-21",
@@ -1234,6 +1234,31 @@
       "s": 1,
       "rd": "2026-06-21",
       "rv": null
+    },
+    "polity:elections": {
+      "s": 1,
+      "rd": "2026-06-21",
+      "rv": null
+    },
+    "polity:panchayati-raj-evo": {
+      "s": 1,
+      "rd": "2026-06-21",
+      "rv": null
+    },
+    "polity:panchayati-raj": {
+      "s": 1,
+      "rd": "2026-06-21",
+      "rv": null
+    },
+    "polity:municipalities": {
+      "s": 1,
+      "rd": "2026-06-21",
+      "rv": null
+    },
+    "polity:cooperatives": {
+      "s": 1,
+      "rd": "2026-06-21",
+      "rv": null
     }
   },
   "completedQuests": {
@@ -1611,6 +1636,31 @@
   "bossDefeated": {},
   "activityLog": [
     {
+      "time": "10:52 PM",
+      "text": "📖 Read: Polity → Co-operatives",
+      "xp": 10
+    },
+    {
+      "time": "10:52 PM",
+      "text": "📖 Read: Polity → Municipalities (Art. 243P–243ZG)",
+      "xp": 10
+    },
+    {
+      "time": "10:52 PM",
+      "text": "📖 Read: Polity → Panchayati Raj (Art. 243)",
+      "xp": 10
+    },
+    {
+      "time": "10:51 PM",
+      "text": "📖 Read: Polity → Evolution of Panchayati Raj",
+      "xp": 10
+    },
+    {
+      "time": "10:51 PM",
+      "text": "📖 Read: Polity → Elections (Art. 324–329, Part XV)",
+      "xp": 10
+    },
+    {
       "time": "07:34 AM",
       "text": "🗞️ Current Affairs completed",
       "xp": 10
@@ -1984,31 +2034,6 @@
       "time": "09:16 PM",
       "text": "📖 Read: Polity → Citizenship (Part II)",
       "xp": 10
-    },
-    {
-      "time": "09:15 PM",
-      "text": "📖 Read: Polity → Union and its Territory (Part I)",
-      "xp": 10
-    },
-    {
-      "time": "09:15 PM",
-      "text": "🗞️ Current Affairs completed",
-      "xp": 10
-    },
-    {
-      "time": "09:15 PM",
-      "text": "📰 Editorial completed",
-      "xp": 10
-    },
-    {
-      "time": "09:15 PM",
-      "text": "📖 Read: PSIR 1A → Theories of Power: Hegemony, Ideology, Legitimacy",
-      "xp": 30
-    },
-    {
-      "time": "09:18 PM",
-      "text": "✍️ Answer Writing completed",
-      "xp": 25
     }
   ],
   "answersWritten": 0,
