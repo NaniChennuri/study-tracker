@@ -1,6 +1,6 @@
 {
   "hunterName": "Nani",
-  "totalXP": 4260,
+  "totalXP": 4550,
   "streak": 14,
   "totalDays": 30,
   "lastStudyDate": "2026-06-20",
@@ -1089,6 +1089,151 @@
       "s": 1,
       "rd": "2026-06-20",
       "rv": null
+    },
+    "ethics:western-philosophy": {
+      "s": 1,
+      "rd": "2026-06-21",
+      "rv": null
+    },
+    "ethics:ancient-indian-phil": {
+      "s": 1,
+      "rd": "2026-06-21",
+      "rv": null
+    },
+    "ethics:modern-indian-leaders": {
+      "s": 1,
+      "rd": "2026-06-21",
+      "rv": null
+    },
+    "ethics:global-leaders": {
+      "s": 1,
+      "rd": "2026-06-21",
+      "rv": null
+    },
+    "ethics:master-quote-table": {
+      "s": 1,
+      "rd": "2026-06-21",
+      "rv": null
+    },
+    "ethics:public-admin-ethics": {
+      "s": 1,
+      "rd": "2026-06-21",
+      "rv": null
+    },
+    "ethics:governance-ethics": {
+      "s": 1,
+      "rd": "2026-06-21",
+      "rv": null
+    },
+    "ethics:ethical-concerns": {
+      "s": 1,
+      "rd": "2026-06-21",
+      "rv": null
+    },
+    "ethics:ethical-guidance": {
+      "s": 1,
+      "rd": "2026-06-21",
+      "rv": null
+    },
+    "ethics:accountability": {
+      "s": 1,
+      "rd": "2026-06-21",
+      "rv": null
+    },
+    "ethics:strengthening-values": {
+      "s": 1,
+      "rd": "2026-06-21",
+      "rv": null
+    },
+    "ethics:ethics-in-ir": {
+      "s": 1,
+      "rd": "2026-06-21",
+      "rv": null
+    },
+    "ethics:corporate-governance": {
+      "s": 1,
+      "rd": "2026-06-21",
+      "rv": null
+    },
+    "ethics:probity-concept": {
+      "s": 1,
+      "rd": "2026-06-21",
+      "rv": null
+    },
+    "ethics:probity-philosophy": {
+      "s": 1,
+      "rd": "2026-06-21",
+      "rv": null
+    },
+    "ethics:transparency": {
+      "s": 1,
+      "rd": "2026-06-21",
+      "rv": null
+    },
+    "ethics:codes-of-ethics": {
+      "s": 1,
+      "rd": "2026-06-21",
+      "rv": null
+    },
+    "ethics:work-culture": {
+      "s": 1,
+      "rd": "2026-06-21",
+      "rv": null
+    },
+    "ethics:public-funds": {
+      "s": 1,
+      "rd": "2026-06-21",
+      "rv": null
+    },
+    "ethics:corruption": {
+      "s": 1,
+      "rd": "2026-06-21",
+      "rv": null
+    },
+    "ethics:universal-framework": {
+      "s": 1,
+      "rd": "2026-06-21",
+      "rv": null
+    },
+    "ethics:identifying-dilemmas": {
+      "s": 1,
+      "rd": "2026-06-21",
+      "rv": null
+    },
+    "ethics:stakeholder-analysis": {
+      "s": 1,
+      "rd": "2026-06-21",
+      "rv": null
+    },
+    "ethics:generating-options": {
+      "s": 1,
+      "rd": "2026-06-21",
+      "rv": null
+    },
+    "ethics:evaluating-options": {
+      "s": 1,
+      "rd": "2026-06-21",
+      "rv": null
+    },
+    "ethics:writing-conclusion": {
+      "s": 1,
+      "rd": "2026-06-21",
+      "rv": null
+    },
+    "ethics:pyq-2025": {
+      "s": 1,
+      "rd": "2026-06-21",
+      "rv": null
+    },
+    "ethics:pyq-2024": {
+      "s": 1,
+      "rd": "2026-06-21",
+      "rv": null
+    },
+    "ethics:case-vocabulary": {
+      "s": 1,
+      "rd": "2026-06-21",
+      "rv": null
     }
   },
   "completedQuests": {
@@ -1458,6 +1603,151 @@
   "bossDefeated": {},
   "activityLog": [
     {
+      "time": "07:03 AM",
+      "text": "📖 Read: Ethics → Quick Reference — Case Study Vocabulary",
+      "xp": 10
+    },
+    {
+      "time": "07:03 AM",
+      "text": "📖 Read: Ethics → PYQ Analysis — 2024 Case Studies",
+      "xp": 10
+    },
+    {
+      "time": "07:03 AM",
+      "text": "📖 Read: Ethics → PYQ Analysis — 2025 Case Studies",
+      "xp": 10
+    },
+    {
+      "time": "07:03 AM",
+      "text": "📖 Read: Ethics → Writing the Conclusion",
+      "xp": 10
+    },
+    {
+      "time": "07:03 AM",
+      "text": "📖 Read: Ethics → Evaluating Options — Merits and Demerits",
+      "xp": 10
+    },
+    {
+      "time": "07:03 AM",
+      "text": "📖 Read: Ethics → Generating Options — 3-Option Framework",
+      "xp": 10
+    },
+    {
+      "time": "07:03 AM",
+      "text": "📖 Read: Ethics → Stakeholder Analysis",
+      "xp": 10
+    },
+    {
+      "time": "07:02 AM",
+      "text": "📖 Read: Ethics → Identifying Ethical Dilemmas",
+      "xp": 10
+    },
+    {
+      "time": "07:02 AM",
+      "text": "📖 Read: Ethics → Universal Framework — Answering Any Case Study",
+      "xp": 10
+    },
+    {
+      "time": "07:02 AM",
+      "text": "📖 Read: Ethics → Challenges of Corruption",
+      "xp": 10
+    },
+    {
+      "time": "07:02 AM",
+      "text": "📖 Read: Ethics → Utilization of Public Funds",
+      "xp": 10
+    },
+    {
+      "time": "07:02 AM",
+      "text": "📖 Read: Ethics → Work Culture and Quality of Service Delivery",
+      "xp": 10
+    },
+    {
+      "time": "07:02 AM",
+      "text": "📖 Read: Ethics → Codes of Ethics, Codes of Conduct and Citizen's Charters",
+      "xp": 10
+    },
+    {
+      "time": "07:02 AM",
+      "text": "📖 Read: Ethics → Information Sharing and Transparency in Government",
+      "xp": 10
+    },
+    {
+      "time": "07:02 AM",
+      "text": "📖 Read: Ethics → Philosophical Basis of Governance and Probity",
+      "xp": 10
+    },
+    {
+      "time": "07:02 AM",
+      "text": "📖 Read: Ethics → Concept of Public Service and Probity",
+      "xp": 10
+    },
+    {
+      "time": "07:02 AM",
+      "text": "📖 Read: Ethics → Corporate Governance",
+      "xp": 10
+    },
+    {
+      "time": "07:02 AM",
+      "text": "📖 Read: Ethics → Ethical Issues in International Relations",
+      "xp": 10
+    },
+    {
+      "time": "07:02 AM",
+      "text": "📖 Read: Ethics → Strengthening Ethical and Moral Values in Governance",
+      "xp": 10
+    },
+    {
+      "time": "07:02 AM",
+      "text": "📖 Read: Ethics → Accountability and Ethical Governance",
+      "xp": 10
+    },
+    {
+      "time": "07:02 AM",
+      "text": "📖 Read: Ethics → Sources of Ethical Guidance",
+      "xp": 10
+    },
+    {
+      "time": "07:02 AM",
+      "text": "📖 Read: Ethics → Status and Problems — Ethical Concerns and Dilemmas",
+      "xp": 10
+    },
+    {
+      "time": "07:01 AM",
+      "text": "📖 Read: Ethics → Governance, Good Governance and Ethical Governance",
+      "xp": 10
+    },
+    {
+      "time": "07:01 AM",
+      "text": "📖 Read: Ethics → Public Administration and Public Service Ethics",
+      "xp": 10
+    },
+    {
+      "time": "07:01 AM",
+      "text": "📖 Read: Ethics → Master Quote Reference Table",
+      "xp": 10
+    },
+    {
+      "time": "07:01 AM",
+      "text": "📖 Read: Ethics → Global Leaders and Thinkers",
+      "xp": 10
+    },
+    {
+      "time": "07:01 AM",
+      "text": "📖 Read: Ethics → Modern Indian Leaders and Thinkers",
+      "xp": 10
+    },
+    {
+      "time": "07:01 AM",
+      "text": "📖 Read: Ethics → Ancient Indian Philosophical Traditions",
+      "xp": 10
+    },
+    {
+      "time": "07:01 AM",
+      "text": "📖 Read: Ethics → Western Philosophical Traditions",
+      "xp": 10
+    },
+    {
       "time": "09:23 PM",
       "text": "📖 Read: Polity → Other Courts and Tribunals",
       "xp": 10
@@ -1710,151 +2000,6 @@
     {
       "time": "09:17 PM",
       "text": "📖 Read: Polity → The Preamble",
-      "xp": 10
-    },
-    {
-      "time": "09:16 PM",
-      "text": "📖 Read: Polity → Indian Constitution — Overview",
-      "xp": 10
-    },
-    {
-      "time": "09:16 PM",
-      "text": "✏️ MCQ Practice completed",
-      "xp": 15
-    },
-    {
-      "time": "09:16 PM",
-      "text": "📖 Read: Polity → Historical Background",
-      "xp": 30
-    },
-    {
-      "time": "09:16 PM",
-      "text": "🗞️ Current Affairs completed",
-      "xp": 10
-    },
-    {
-      "time": "09:16 PM",
-      "text": "📰 Editorial completed",
-      "xp": 10
-    },
-    {
-      "time": "09:20 AM",
-      "text": "📖 Read: Ethics → Ethics in the Contemporary World",
-      "xp": 10
-    },
-    {
-      "time": "09:20 AM",
-      "text": "📖 Read: Ethics → EI in Contemporary Challenges",
-      "xp": 10
-    },
-    {
-      "time": "09:20 AM",
-      "text": "📖 Read: Ethics → EI in Administration and Governance",
-      "xp": 10
-    },
-    {
-      "time": "09:20 AM",
-      "text": "📖 Read: Ethics → Relevance of EI in Civil Services",
-      "xp": 10
-    },
-    {
-      "time": "09:20 AM",
-      "text": "📖 Read: Ethics → Developing EI — Can it be Learned?",
-      "xp": 10
-    },
-    {
-      "time": "09:20 AM",
-      "text": "📖 Read: Ethics → Components of EI — Goleman's Framework",
-      "xp": 10
-    },
-    {
-      "time": "09:20 AM",
-      "text": "📖 Read: Ethics → What is Emotional Intelligence",
-      "xp": 10
-    },
-    {
-      "time": "09:19 AM",
-      "text": "📖 Read: Ethics → Intelligence — Types and Theories",
-      "xp": 10
-    },
-    {
-      "time": "09:19 AM",
-      "text": "📖 Read: Geography → Energy",
-      "xp": 10
-    },
-    {
-      "time": "09:19 AM",
-      "text": "📖 Read: Geography → Industries",
-      "xp": 10
-    },
-    {
-      "time": "09:19 AM",
-      "text": "📖 Read: Ethics → Understanding Emotions — The Foundation",
-      "xp": 30
-    },
-    {
-      "time": "11:13 PM",
-      "text": "📖 Read: Geography → Resources",
-      "xp": 10
-    },
-    {
-      "time": "11:13 PM",
-      "text": "🗞️ Current Affairs completed",
-      "xp": 10
-    },
-    {
-      "time": "11:13 PM",
-      "text": "📰 Editorial completed",
-      "xp": 10
-    },
-    {
-      "time": "11:13 PM",
-      "text": "📖 Read: Geography → Agriculture (Human Geography)",
-      "xp": 30
-    },
-    {
-      "time": "08:25 PM",
-      "text": "📖 Read: Geography → Soils",
-      "xp": 10
-    },
-    {
-      "time": "08:25 PM",
-      "text": "📖 Read: Geography → Natural Vegetation of India",
-      "xp": 10
-    },
-    {
-      "time": "08:25 PM",
-      "text": "📖 Read: Geography → Climate of India",
-      "xp": 10
-    },
-    {
-      "time": "08:25 PM",
-      "text": "🗞️ Current Affairs completed",
-      "xp": 10
-    },
-    {
-      "time": "08:25 PM",
-      "text": "📰 Editorial completed",
-      "xp": 10
-    },
-    {
-      "time": "08:25 PM",
-      "text": "📖 Read: Geography → Drainage System of India",
-      "xp": 30
-    },
-    {
-      "time": "07:24 AM",
-      "text": "📖 Read: PSIR 1A → B.R. Ambedkar",
-      "xp": 10
-    },
-    {
-      "time": "07:24 AM",
-      "text": "📖 Read: PSIR 1A → M.K. Gandhi",
-      "xp": 10
-    },
-    {
-      "time": "10:43 PM",
-      "text": "📖 Read: Geography → Structure and Physiography",
       "xp": 10
     }
   ],
