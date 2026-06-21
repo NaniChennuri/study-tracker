@@ -1,9 +1,9 @@
 {
   "hunterName": "Nani",
-  "totalXP": 4550,
-  "streak": 14,
-  "totalDays": 30,
-  "lastStudyDate": "2026-06-20",
+  "totalXP": 4570,
+  "streak": 15,
+  "totalDays": 31,
+  "lastStudyDate": "2026-06-21",
   "topicStatus": {
     "history:prehistoric": {
       "s": 2,
@@ -1597,11 +1597,29 @@
         "done": true,
         "topicKey": "polity:supreme-court"
       }
+    },
+    "2026-06-21": {
+      "editorial": {
+        "done": true
+      },
+      "ca": {
+        "done": true
+      }
     }
   },
   "mockHistory": [],
   "bossDefeated": {},
   "activityLog": [
+    {
+      "time": "07:34 AM",
+      "text": "🗞️ Current Affairs completed",
+      "xp": 10
+    },
+    {
+      "time": "07:34 AM",
+      "text": "📰 Editorial completed",
+      "xp": 10
+    },
     {
       "time": "07:03 AM",
       "text": "📖 Read: Ethics → Quick Reference — Case Study Vocabulary",
@@ -1991,16 +2009,6 @@
       "time": "09:18 PM",
       "text": "✍️ Answer Writing completed",
       "xp": 25
-    },
-    {
-      "time": "09:18 PM",
-      "text": "✅ Revised: PSIR 1A → Theories of State",
-      "xp": 15
-    },
-    {
-      "time": "09:17 PM",
-      "text": "📖 Read: Polity → The Preamble",
-      "xp": 10
     }
   ],
   "answersWritten": 0,
