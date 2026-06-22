@@ -1,9 +1,9 @@
 {
   "hunterName": "Nani",
-  "totalXP": 4630,
-  "streak": 15,
-  "totalDays": 31,
-  "lastStudyDate": "2026-06-21",
+  "totalXP": 4750,
+  "streak": 16,
+  "totalDays": 32,
+  "lastStudyDate": "2026-06-22",
   "topicStatus": {
     "history:prehistoric": {
       "s": 2,
@@ -1264,6 +1264,46 @@
       "s": 1,
       "rd": "2026-06-22",
       "rv": null
+    },
+    "polity:ut": {
+      "s": 1,
+      "rd": "2026-06-22",
+      "rv": null
+    },
+    "polity:scheduled-tribal": {
+      "s": 1,
+      "rd": "2026-06-22",
+      "rv": null
+    },
+    "polity:constitutional-bodies": {
+      "s": 1,
+      "rd": "2026-06-22",
+      "rv": null
+    },
+    "polity:nhrc": {
+      "s": 1,
+      "rd": "2026-06-22",
+      "rv": null
+    },
+    "polity:rti-cic": {
+      "s": 1,
+      "rd": "2026-06-22",
+      "rv": null
+    },
+    "polity:cbi": {
+      "s": 1,
+      "rd": "2026-06-22",
+      "rv": null
+    },
+    "polity:cvc": {
+      "s": 1,
+      "rd": "2026-06-22",
+      "rv": null
+    },
+    "polity:lokpal": {
+      "s": 1,
+      "rd": "2026-06-22",
+      "rv": null
     }
   },
   "completedQuests": {
@@ -1635,11 +1675,73 @@
       "ca": {
         "done": true
       }
+    },
+    "2026-06-22": {
+      "morning_gs": {
+        "done": true,
+        "topicKey": "polity:ut"
+      },
+      "editorial": {
+        "done": true
+      },
+      "ca": {
+        "done": true
+      }
     }
   },
   "mockHistory": [],
   "bossDefeated": {},
   "activityLog": [
+    {
+      "time": "08:54 PM",
+      "text": "📖 Read: Polity → Lokpal and Lokayukta",
+      "xp": 10
+    },
+    {
+      "time": "08:54 PM",
+      "text": "📖 Read: Polity → Central Vigilance Commission (CVC)",
+      "xp": 10
+    },
+    {
+      "time": "08:54 PM",
+      "text": "📖 Read: Polity → Central Bureau of Investigation (CBI)",
+      "xp": 10
+    },
+    {
+      "time": "08:54 PM",
+      "text": "📖 Read: Polity → Central Information Commission and RTI",
+      "xp": 10
+    },
+    {
+      "time": "08:53 PM",
+      "text": "📖 Read: Polity → National Human Rights Commission (NHRC)",
+      "xp": 10
+    },
+    {
+      "time": "08:53 PM",
+      "text": "📖 Read: Polity → Constitutional Bodies",
+      "xp": 10
+    },
+    {
+      "time": "08:53 PM",
+      "text": "📖 Read: Polity → Scheduled and Tribal Areas (Art. 244)",
+      "xp": 10
+    },
+    {
+      "time": "08:53 PM",
+      "text": "🗞️ Current Affairs completed",
+      "xp": 10
+    },
+    {
+      "time": "08:53 PM",
+      "text": "📰 Editorial completed",
+      "xp": 10
+    },
+    {
+      "time": "08:53 PM",
+      "text": "📖 Read: Polity → Union Territories (Art. 239–241)",
+      "xp": 30
+    },
     {
       "time": "06:42 AM",
       "text": "📖 Read: PSIR 1A → Equality, Freedom and Affirmative Action",
@@ -1988,56 +2090,6 @@
     {
       "time": "09:16 PM",
       "text": "📖 Read: Polity → Basic Structure of the Constitution",
-      "xp": 10
-    },
-    {
-      "time": "09:16 PM",
-      "text": "📖 Read: Polity → Amendment of the Constitution (Art. 368)",
-      "xp": 10
-    },
-    {
-      "time": "09:16 PM",
-      "text": "📖 Read: Polity → Fundamental Duties (Part IVA)",
-      "xp": 10
-    },
-    {
-      "time": "09:16 PM",
-      "text": "📖 Read: Polity → Directive Principles of State Policy (Part IV)",
-      "xp": 10
-    },
-    {
-      "time": "09:16 PM",
-      "text": "📖 Read: Polity → Right to Constitutional Remedies",
-      "xp": 10
-    },
-    {
-      "time": "09:16 PM",
-      "text": "📖 Read: Polity → Cultural and Educational Rights (Art. 29–30)",
-      "xp": 10
-    },
-    {
-      "time": "09:16 PM",
-      "text": "📖 Read: Polity → Right to Freedom of Religion (Art. 25–28)",
-      "xp": 10
-    },
-    {
-      "time": "09:16 PM",
-      "text": "📖 Read: Polity → Right Against Exploitation (Art. 23–24)",
-      "xp": 10
-    },
-    {
-      "time": "09:16 PM",
-      "text": "📖 Read: Polity → Right to Freedom (Art. 19–22)",
-      "xp": 10
-    },
-    {
-      "time": "09:16 PM",
-      "text": "📖 Read: Polity → Right to Equality (Art. 14–18)",
-      "xp": 10
-    },
-    {
-      "time": "09:16 PM",
-      "text": "📖 Read: Polity → Introduction to Fundamental Rights",
       "xp": 10
     }
   ],
