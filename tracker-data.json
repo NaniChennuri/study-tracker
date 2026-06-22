@@ -1,6 +1,6 @@
 {
   "hunterName": "Nani",
-  "totalXP": 4620,
+  "totalXP": 4630,
   "streak": 15,
   "totalDays": 31,
   "lastStudyDate": "2026-06-21",
@@ -1259,6 +1259,11 @@
       "s": 1,
       "rd": "2026-06-21",
       "rv": null
+    },
+    "psir1a:equality-freedom": {
+      "s": 1,
+      "rd": "2026-06-22",
+      "rv": null
     }
   },
   "completedQuests": {
@@ -1635,6 +1640,11 @@
   "mockHistory": [],
   "bossDefeated": {},
   "activityLog": [
+    {
+      "time": "06:42 AM",
+      "text": "📖 Read: PSIR 1A → Equality, Freedom and Affirmative Action",
+      "xp": 10
+    },
     {
       "time": "10:52 PM",
       "text": "📖 Read: Polity → Co-operatives",
@@ -2028,11 +2038,6 @@
     {
       "time": "09:16 PM",
       "text": "📖 Read: Polity → Introduction to Fundamental Rights",
-      "xp": 10
-    },
-    {
-      "time": "09:16 PM",
-      "text": "📖 Read: Polity → Citizenship (Part II)",
       "xp": 10
     }
   ],
