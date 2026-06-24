@@ -1,6 +1,6 @@
 {
   "hunterName": "Nani",
-  "totalXP": 4750,
+  "totalXP": 4850,
   "streak": 16,
   "totalDays": 32,
   "lastStudyDate": "2026-06-22",
@@ -1304,6 +1304,56 @@
       "s": 1,
       "rd": "2026-06-22",
       "rv": null
+    },
+    "governance:civil-serv-role": {
+      "s": 1,
+      "rd": "2026-06-24",
+      "rv": null
+    },
+    "governance:civil-serv-reforms": {
+      "s": 1,
+      "rd": "2026-06-24",
+      "rv": null
+    },
+    "governance:civil-society": {
+      "s": 1,
+      "rd": "2026-06-24",
+      "rv": null
+    },
+    "governance:lokpal-gov": {
+      "s": 1,
+      "rd": "2026-06-24",
+      "rv": null
+    },
+    "governance:nhrc-gov": {
+      "s": 1,
+      "rd": "2026-06-24",
+      "rv": null
+    },
+    "governance:rti": {
+      "s": 1,
+      "rd": "2026-06-24",
+      "rv": null
+    },
+    "governance:whistleblower": {
+      "s": 1,
+      "rd": "2026-06-24",
+      "rv": null
+    },
+    "psir1b:indian-nationalism": {
+      "s": 1,
+      "rd": "2026-06-24",
+      "rv": null
+    },
+    "psir1b:making-constitution": {
+      "s": 1,
+      "rd": "2026-06-24",
+      "rv": null
+    },
+    "psir1b:preamble-psir": {
+      "s": 1,
+      "rd": "2026-06-24",
+      "rv": null
     }
   },
   "completedQuests": {
@@ -1693,6 +1743,56 @@
   "bossDefeated": {},
   "activityLog": [
     {
+      "time": "06:17 AM",
+      "text": "📖 Read: PSIR 1B → The Preamble",
+      "xp": 10
+    },
+    {
+      "time": "06:17 AM",
+      "text": "📖 Read: PSIR 1B → Making of Indian Constitution",
+      "xp": 10
+    },
+    {
+      "time": "06:17 AM",
+      "text": "📖 Read: PSIR 1B → Indian Nationalism",
+      "xp": 10
+    },
+    {
+      "time": "06:16 AM",
+      "text": "📖 Read: Governance → Whistle-Blower Protection",
+      "xp": 10
+    },
+    {
+      "time": "06:16 AM",
+      "text": "📖 Read: Governance → Right to Information Act",
+      "xp": 10
+    },
+    {
+      "time": "06:16 AM",
+      "text": "📖 Read: Governance → NHRC and Human Rights Architecture",
+      "xp": 10
+    },
+    {
+      "time": "06:16 AM",
+      "text": "📖 Read: Governance → Lokpal — The Anti-Corruption Ombudsman",
+      "xp": 10
+    },
+    {
+      "time": "06:15 AM",
+      "text": "📖 Read: Governance → Civil Society — Anti-State or Non-State?",
+      "xp": 10
+    },
+    {
+      "time": "06:15 AM",
+      "text": "📖 Read: Governance → Civil Services Reforms",
+      "xp": 10
+    },
+    {
+      "time": "06:15 AM",
+      "text": "📖 Read: Governance → Civil Services — Constitutional Role and Challenges",
+      "xp": 10
+    },
+    {
       "time": "08:54 PM",
       "text": "📖 Read: Polity → Lokpal and Lokayukta",
       "xp": 10
@@ -2041,56 +2141,6 @@
       "time": "09:12 PM",
       "text": "✍️ Answer Writing completed",
       "xp": 25
-    },
-    {
-      "time": "09:10 PM",
-      "text": "📖 Read: PSIR 1A → Theories and Models of Democracy",
-      "xp": 10
-    },
-    {
-      "time": "09:10 PM",
-      "text": "📖 Read: Polity → Comptroller and Auditor General (Art. 148–151)",
-      "xp": 10
-    },
-    {
-      "time": "09:10 PM",
-      "text": "📖 Read: Polity → Attorney General of India (Art. 76)",
-      "xp": 10
-    },
-    {
-      "time": "09:10 PM",
-      "text": "📖 Read: Polity → Council of Ministers",
-      "xp": 10
-    },
-    {
-      "time": "09:10 PM",
-      "text": "📖 Read: Polity → Prime Minister",
-      "xp": 10
-    },
-    {
-      "time": "09:10 PM",
-      "text": "📖 Read: Polity → Vice-President (Art. 63–71)",
-      "xp": 10
-    },
-    {
-      "time": "09:09 PM",
-      "text": "🗞️ Current Affairs completed",
-      "xp": 10
-    },
-    {
-      "time": "09:09 PM",
-      "text": "📰 Editorial completed",
-      "xp": 10
-    },
-    {
-      "time": "09:09 PM",
-      "text": "📖 Read: Polity → President (Art. 52–62)",
-      "xp": 30
-    },
-    {
-      "time": "09:16 PM",
-      "text": "📖 Read: Polity → Basic Structure of the Constitution",
-      "xp": 10
     }
   ],
   "answersWritten": 0,
