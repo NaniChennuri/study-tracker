@@ -1,6 +1,6 @@
 {
   "hunterName": "Nani",
-  "totalXP": 4850,
+  "totalXP": 4870,
   "streak": 16,
   "totalDays": 32,
   "lastStudyDate": "2026-06-22",
@@ -1354,6 +1354,16 @@
       "s": 1,
       "rd": "2026-06-24",
       "rv": null
+    },
+    "psir1b:fr-fd-dpsp": {
+      "s": 1,
+      "rd": "2026-06-24",
+      "rv": null
+    },
+    "psir1b:ucc": {
+      "s": 1,
+      "rd": "2026-06-24",
+      "rv": null
     }
   },
   "completedQuests": {
@@ -1743,6 +1753,16 @@
   "bossDefeated": {},
   "activityLog": [
     {
+      "time": "06:45 AM",
+      "text": "📖 Read: PSIR 1B → Uniform Civil Code",
+      "xp": 10
+    },
+    {
+      "time": "06:45 AM",
+      "text": "📖 Read: PSIR 1B → Fundamental Rights, Duties and DPSP",
+      "xp": 10
+    },
+    {
       "time": "06:17 AM",
       "text": "📖 Read: PSIR 1B → The Preamble",
       "xp": 10
@@ -2131,16 +2151,6 @@
       "time": "07:47 PM",
       "text": "📰 Editorial completed",
       "xp": 10
-    },
-    {
-      "time": "07:47 PM",
-      "text": "📖 Read: PSIR 1A → Theories of Rights and Human Rights",
-      "xp": 30
-    },
-    {
-      "time": "09:12 PM",
-      "text": "✍️ Answer Writing completed",
-      "xp": 25
     }
   ],
   "answersWritten": 0,
