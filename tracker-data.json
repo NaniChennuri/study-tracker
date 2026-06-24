@@ -1,9 +1,9 @@
 {
   "hunterName": "Nani",
-  "totalXP": 4870,
-  "streak": 16,
-  "totalDays": 32,
-  "lastStudyDate": "2026-06-22",
+  "totalXP": 5010,
+  "streak": 1,
+  "totalDays": 33,
+  "lastStudyDate": "2026-06-24",
   "topicStatus": {
     "history:prehistoric": {
       "s": 2,
@@ -1364,6 +1364,56 @@
       "s": 1,
       "rd": "2026-06-24",
       "rv": null
+    },
+    "governance:gatishakti": {
+      "s": 1,
+      "rd": "2026-06-24",
+      "rv": null
+    },
+    "governance:dbt": {
+      "s": 1,
+      "rd": "2026-06-24",
+      "rv": null
+    },
+    "governance:css": {
+      "s": 1,
+      "rd": "2026-06-24",
+      "rv": null
+    },
+    "governance:lpg-response": {
+      "s": 1,
+      "rd": "2026-06-24",
+      "rv": null
+    },
+    "governance:shgs": {
+      "s": 1,
+      "rd": "2026-06-24",
+      "rv": null
+    },
+    "governance:ngos": {
+      "s": 1,
+      "rd": "2026-06-24",
+      "rv": null
+    },
+    "governance:citizens-charter": {
+      "s": 1,
+      "rd": "2026-06-24",
+      "rv": null
+    },
+    "governance:e-governance": {
+      "s": 1,
+      "rd": "2026-06-24",
+      "rv": null
+    },
+    "governance:niti-aayog": {
+      "s": 1,
+      "rd": "2026-06-24",
+      "rv": null
+    },
+    "governance:participatory": {
+      "s": 1,
+      "rd": "2026-06-24",
+      "rv": null
     }
   },
   "completedQuests": {
@@ -1747,11 +1797,83 @@
       "ca": {
         "done": true
       }
+    },
+    "2026-06-24": {
+      "morning_gs": {
+        "done": true,
+        "topicKey": "governance:gatishakti"
+      },
+      "ca": {
+        "done": true
+      },
+      "editorial": {
+        "done": true
+      }
     }
   },
   "mockHistory": [],
   "bossDefeated": {},
   "activityLog": [
+    {
+      "time": "08:07 PM",
+      "text": "📖 Read: Governance → Participatory Governance and Citizens",
+      "xp": 10
+    },
+    {
+      "time": "08:07 PM",
+      "text": "📖 Read: Governance → NITI Aayog — From Planning to Transforming",
+      "xp": 10
+    },
+    {
+      "time": "08:07 PM",
+      "text": "📖 Read: Governance → E-Governance — Models, Achievements, Limitations",
+      "xp": 10
+    },
+    {
+      "time": "08:07 PM",
+      "text": "📖 Read: Governance → Citizen's Charter",
+      "xp": 10
+    },
+    {
+      "time": "08:07 PM",
+      "text": "📖 Read: Governance → NGOs in Development — Role, Regulation, FCRA",
+      "xp": 10
+    },
+    {
+      "time": "08:07 PM",
+      "text": "📖 Read: Governance → Self-Help Groups — Microfinance and Women Empowerment",
+      "xp": 10
+    },
+    {
+      "time": "08:07 PM",
+      "text": "📖 Read: Governance → India's Response to LPG Reforms",
+      "xp": 10
+    },
+    {
+      "time": "08:07 PM",
+      "text": "📖 Read: Governance → Centrally Sponsored Schemes",
+      "xp": 10
+    },
+    {
+      "time": "08:07 PM",
+      "text": "📖 Read: Governance → Direct Benefit Transfer",
+      "xp": 10
+    },
+    {
+      "time": "08:06 PM",
+      "text": "📰 Editorial completed",
+      "xp": 10
+    },
+    {
+      "time": "08:06 PM",
+      "text": "🗞️ Current Affairs completed",
+      "xp": 10
+    },
+    {
+      "time": "08:06 PM",
+      "text": "📖 Read: Governance → PM GatiShakti and Multimodal Connectivity",
+      "xp": 30
+    },
     {
       "time": "06:45 AM",
       "text": "📖 Read: PSIR 1B → Uniform Civil Code",
@@ -2089,66 +2211,6 @@
     },
     {
       "time": "09:18 PM",
-      "text": "📰 Editorial completed",
-      "xp": 10
-    },
-    {
-      "time": "09:18 PM",
-      "text": "📖 Read: Polity → Parliamentary and Federal System",
-      "xp": 30
-    },
-    {
-      "time": "07:48 PM",
-      "text": "📖 Read: Polity → State Legislature (Part VI, Art. 168–212)",
-      "xp": 10
-    },
-    {
-      "time": "07:48 PM",
-      "text": "📖 Read: Polity → Chief Minister and State Council of Ministers",
-      "xp": 10
-    },
-    {
-      "time": "07:48 PM",
-      "text": "📖 Read: Polity → Governor (Art. 153–167)",
-      "xp": 10
-    },
-    {
-      "time": "07:48 PM",
-      "text": "📖 Read: Polity → Functions, Privileges and Committees",
-      "xp": 10
-    },
-    {
-      "time": "07:48 PM",
-      "text": "📖 Read: Polity → Budget and Funds",
-      "xp": 10
-    },
-    {
-      "time": "07:48 PM",
-      "text": "📖 Read: Polity → Devices, Motions and Bills",
-      "xp": 10
-    },
-    {
-      "time": "07:47 PM",
-      "text": "📖 Read: Polity → Leaders, Sessions and Proceedings",
-      "xp": 10
-    },
-    {
-      "time": "07:47 PM",
-      "text": "📖 Read: Polity → Membership and Presiding Officers",
-      "xp": 10
-    },
-    {
-      "time": "07:47 PM",
-      "text": "📖 Read: Polity → Organisation and Composition",
-      "xp": 10
-    },
-    {
-      "time": "07:47 PM",
-      "text": "🗞️ Current Affairs completed",
-      "xp": 10
-    },
-    {
-      "time": "07:47 PM",
       "text": "📰 Editorial completed",
       "xp": 10
     }
