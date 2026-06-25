@@ -1,6 +1,6 @@
 {
   "hunterName": "Nani",
-  "totalXP": 5090,
+  "totalXP": 5380,
   "streak": 2,
   "totalDays": 34,
   "lastStudyDate": "2026-06-25",
@@ -1444,6 +1444,141 @@
       "s": 1,
       "rd": "2026-06-25",
       "rv": null
+    },
+    "security:lwe": {
+      "s": 1,
+      "rd": "2026-06-25",
+      "rv": null
+    },
+    "security:dev-extremism": {
+      "s": 1,
+      "rd": "2026-06-25",
+      "rv": null
+    },
+    "security:lwe-response": {
+      "s": 1,
+      "rd": "2026-06-25",
+      "rv": null
+    },
+    "security:ne-insurgency": {
+      "s": 1,
+      "rd": "2026-06-25",
+      "rv": null
+    },
+    "security:peace-accords": {
+      "s": 1,
+      "rd": "2026-06-25",
+      "rv": null
+    },
+    "security:terrorism-india": {
+      "s": 1,
+      "rd": "2026-06-25",
+      "rv": null
+    },
+    "security:pakistan-actor": {
+      "s": 1,
+      "rd": "2026-06-25",
+      "rv": null
+    },
+    "security:china-actor": {
+      "s": 1,
+      "rd": "2026-06-25",
+      "rv": null
+    },
+    "security:narco-terrorism": {
+      "s": 1,
+      "rd": "2026-06-25",
+      "rv": null
+    },
+    "security:radicalization": {
+      "s": 1,
+      "rd": "2026-06-25",
+      "rv": null
+    },
+    "security:social-media-sec": {
+      "s": 1,
+      "rd": "2026-06-25",
+      "rv": null
+    },
+    "security:cyber-basics": {
+      "s": 1,
+      "rd": "2026-06-25",
+      "rv": null
+    },
+    "security:cyber-arch": {
+      "s": 1,
+      "rd": "2026-06-25",
+      "rv": null
+    },
+    "security:dpdpa": {
+      "s": 1,
+      "rd": "2026-06-25",
+      "rv": null
+    },
+    "security:drones": {
+      "s": 1,
+      "rd": "2026-06-25",
+      "rv": null
+    },
+    "security:money-laundering": {
+      "s": 1,
+      "rd": "2026-06-25",
+      "rv": null
+    },
+    "security:border-landscape": {
+      "s": 1,
+      "rd": "2026-06-25",
+      "rv": null
+    },
+    "security:pak-border": {
+      "s": 1,
+      "rd": "2026-06-25",
+      "rv": null
+    },
+    "security:china-border": {
+      "s": 1,
+      "rd": "2026-06-25",
+      "rv": null
+    },
+    "security:bd-myan-border": {
+      "s": 1,
+      "rd": "2026-06-25",
+      "rv": null
+    },
+    "security:maritime-sec": {
+      "s": 1,
+      "rd": "2026-06-25",
+      "rv": null
+    },
+    "security:organized-crime": {
+      "s": 1,
+      "rd": "2026-06-25",
+      "rv": null
+    },
+    "security:capfs": {
+      "s": 1,
+      "rd": "2026-06-25",
+      "rv": null
+    },
+    "security:intelligence": {
+      "s": 1,
+      "rd": "2026-06-25",
+      "rv": null
+    },
+    "security:nia": {
+      "s": 1,
+      "rd": "2026-06-25",
+      "rv": null
+    },
+    "security:anti-terror-laws": {
+      "s": 1,
+      "rd": "2026-06-25",
+      "rv": null
+    },
+    "security:nsc-system": {
+      "s": 1,
+      "rd": "2026-06-25",
+      "rv": null
     }
   },
   "completedQuests": {
@@ -1844,12 +1979,163 @@
       "morning_psir": {
         "done": true,
         "topicKey": "psir1b:parliamentary-sys"
+      },
+      "editorial": {
+        "done": true
+      },
+      "ca": {
+        "done": true
       }
     }
   },
   "mockHistory": [],
   "bossDefeated": {},
   "activityLog": [
+    {
+      "time": "11:14 PM",
+      "text": "📖 Read: Internal Security → National Security Council System",
+      "xp": 10
+    },
+    {
+      "time": "11:14 PM",
+      "text": "📖 Read: Internal Security → Anti-Terror Laws — UAPA and AFSPA",
+      "xp": 10
+    },
+    {
+      "time": "11:14 PM",
+      "text": "📖 Read: Internal Security → National Investigation Agency (NIA)",
+      "xp": 10
+    },
+    {
+      "time": "11:14 PM",
+      "text": "📖 Read: Internal Security → Intelligence Agencies",
+      "xp": 10
+    },
+    {
+      "time": "11:14 PM",
+      "text": "📖 Read: Internal Security → Central Armed Police Forces (CAPFs)",
+      "xp": 10
+    },
+    {
+      "time": "11:14 PM",
+      "text": "📖 Read: Internal Security → Organized Crime — Terrorism Nexus",
+      "xp": 10
+    },
+    {
+      "time": "11:14 PM",
+      "text": "📖 Read: Internal Security → Maritime Security Challenges",
+      "xp": 10
+    },
+    {
+      "time": "11:14 PM",
+      "text": "📖 Read: Internal Security → India-Bangladesh and India-Myanmar Border Challenges",
+      "xp": 10
+    },
+    {
+      "time": "11:14 PM",
+      "text": "📖 Read: Internal Security → India-China Border Challenges",
+      "xp": 10
+    },
+    {
+      "time": "11:14 PM",
+      "text": "📖 Read: Internal Security → India-Pakistan Border Challenges",
+      "xp": 10
+    },
+    {
+      "time": "11:14 PM",
+      "text": "📖 Read: Internal Security → India's Border Landscape",
+      "xp": 10
+    },
+    {
+      "time": "11:14 PM",
+      "text": "📖 Read: Internal Security → Money Laundering and Its Prevention",
+      "xp": 10
+    },
+    {
+      "time": "11:14 PM",
+      "text": "📖 Read: Internal Security → UAVs / Drones as Security Threat",
+      "xp": 10
+    },
+    {
+      "time": "11:14 PM",
+      "text": "📖 Read: Internal Security → Digital Personal Data Protection Act 2023",
+      "xp": 10
+    },
+    {
+      "time": "11:14 PM",
+      "text": "📖 Read: Internal Security → India's Cyber Security Architecture",
+      "xp": 10
+    },
+    {
+      "time": "11:13 PM",
+      "text": "📖 Read: Internal Security → Basics of Cyber Security",
+      "xp": 10
+    },
+    {
+      "time": "11:13 PM",
+      "text": "📖 Read: Internal Security → Social Media and Internal Security",
+      "xp": 10
+    },
+    {
+      "time": "11:13 PM",
+      "text": "📖 Read: Internal Security → Radicalization and Online Extremism",
+      "xp": 10
+    },
+    {
+      "time": "11:13 PM",
+      "text": "📖 Read: Internal Security → Narco-Terrorism",
+      "xp": 10
+    },
+    {
+      "time": "11:13 PM",
+      "text": "📖 Read: Internal Security → China as External State Actor",
+      "xp": 10
+    },
+    {
+      "time": "11:13 PM",
+      "text": "📖 Read: Internal Security → Pakistan as External State Actor",
+      "xp": 10
+    },
+    {
+      "time": "11:13 PM",
+      "text": "📖 Read: Internal Security → Terrorism in India — Nature and Manifestations",
+      "xp": 10
+    },
+    {
+      "time": "11:13 PM",
+      "text": "📖 Read: Internal Security → Peace Accords in North-East India",
+      "xp": 10
+    },
+    {
+      "time": "11:13 PM",
+      "text": "📖 Read: Internal Security → North-East Insurgency — Nature and Causes",
+      "xp": 10
+    },
+    {
+      "time": "11:13 PM",
+      "text": "📖 Read: Internal Security → Government Response to LWE",
+      "xp": 10
+    },
+    {
+      "time": "11:13 PM",
+      "text": "📖 Read: Internal Security → Development-Extremism Nexus",
+      "xp": 10
+    },
+    {
+      "time": "11:13 PM",
+      "text": "📖 Read: Internal Security → Left Wing Extremism — Roots and Nature",
+      "xp": 10
+    },
+    {
+      "time": "11:13 PM",
+      "text": "🗞️ Current Affairs completed",
+      "xp": 10
+    },
+    {
+      "time": "11:13 PM",
+      "text": "📰 Editorial completed",
+      "xp": 10
+    },
     {
       "time": "06:59 AM",
       "text": "📖 Read: PSIR 1B → Executive",
@@ -2104,151 +2390,6 @@
       "time": "07:03 AM",
       "text": "📖 Read: Ethics → PYQ Analysis — 2025 Case Studies",
       "xp": 10
-    },
-    {
-      "time": "07:03 AM",
-      "text": "📖 Read: Ethics → Writing the Conclusion",
-      "xp": 10
-    },
-    {
-      "time": "07:03 AM",
-      "text": "📖 Read: Ethics → Evaluating Options — Merits and Demerits",
-      "xp": 10
-    },
-    {
-      "time": "07:03 AM",
-      "text": "📖 Read: Ethics → Generating Options — 3-Option Framework",
-      "xp": 10
-    },
-    {
-      "time": "07:03 AM",
-      "text": "📖 Read: Ethics → Stakeholder Analysis",
-      "xp": 10
-    },
-    {
-      "time": "07:02 AM",
-      "text": "📖 Read: Ethics → Identifying Ethical Dilemmas",
-      "xp": 10
-    },
-    {
-      "time": "07:02 AM",
-      "text": "📖 Read: Ethics → Universal Framework — Answering Any Case Study",
-      "xp": 10
-    },
-    {
-      "time": "07:02 AM",
-      "text": "📖 Read: Ethics → Challenges of Corruption",
-      "xp": 10
-    },
-    {
-      "time": "07:02 AM",
-      "text": "📖 Read: Ethics → Utilization of Public Funds",
-      "xp": 10
-    },
-    {
-      "time": "07:02 AM",
-      "text": "📖 Read: Ethics → Work Culture and Quality of Service Delivery",
-      "xp": 10
-    },
-    {
-      "time": "07:02 AM",
-      "text": "📖 Read: Ethics → Codes of Ethics, Codes of Conduct and Citizen's Charters",
-      "xp": 10
-    },
-    {
-      "time": "07:02 AM",
-      "text": "📖 Read: Ethics → Information Sharing and Transparency in Government",
-      "xp": 10
-    },
-    {
-      "time": "07:02 AM",
-      "text": "📖 Read: Ethics → Philosophical Basis of Governance and Probity",
-      "xp": 10
-    },
-    {
-      "time": "07:02 AM",
-      "text": "📖 Read: Ethics → Concept of Public Service and Probity",
-      "xp": 10
-    },
-    {
-      "time": "07:02 AM",
-      "text": "📖 Read: Ethics → Corporate Governance",
-      "xp": 10
-    },
-    {
-      "time": "07:02 AM",
-      "text": "📖 Read: Ethics → Ethical Issues in International Relations",
-      "xp": 10
-    },
-    {
-      "time": "07:02 AM",
-      "text": "📖 Read: Ethics → Strengthening Ethical and Moral Values in Governance",
-      "xp": 10
-    },
-    {
-      "time": "07:02 AM",
-      "text": "📖 Read: Ethics → Accountability and Ethical Governance",
-      "xp": 10
-    },
-    {
-      "time": "07:02 AM",
-      "text": "📖 Read: Ethics → Sources of Ethical Guidance",
-      "xp": 10
-    },
-    {
-      "time": "07:02 AM",
-      "text": "📖 Read: Ethics → Status and Problems — Ethical Concerns and Dilemmas",
-      "xp": 10
-    },
-    {
-      "time": "07:01 AM",
-      "text": "📖 Read: Ethics → Governance, Good Governance and Ethical Governance",
-      "xp": 10
-    },
-    {
-      "time": "07:01 AM",
-      "text": "📖 Read: Ethics → Public Administration and Public Service Ethics",
-      "xp": 10
-    },
-    {
-      "time": "07:01 AM",
-      "text": "📖 Read: Ethics → Master Quote Reference Table",
-      "xp": 10
-    },
-    {
-      "time": "07:01 AM",
-      "text": "📖 Read: Ethics → Global Leaders and Thinkers",
-      "xp": 10
-    },
-    {
-      "time": "07:01 AM",
-      "text": "📖 Read: Ethics → Modern Indian Leaders and Thinkers",
-      "xp": 10
-    },
-    {
-      "time": "07:01 AM",
-      "text": "📖 Read: Ethics → Ancient Indian Philosophical Traditions",
-      "xp": 10
-    },
-    {
-      "time": "07:01 AM",
-      "text": "📖 Read: Ethics → Western Philosophical Traditions",
-      "xp": 10
-    },
-    {
-      "time": "09:23 PM",
-      "text": "📖 Read: Polity → Other Courts and Tribunals",
-      "xp": 10
-    },
-    {
-      "time": "09:23 PM",
-      "text": "📖 Read: Polity → High Court (Art. 214–231)",
-      "xp": 10
-    },
-    {
-      "time": "09:23 PM",
-      "text": "📖 Read: Polity → Supreme Court (Art. 124–147)",
-      "xp": 30
     }
   ],
   "answersWritten": 0,
