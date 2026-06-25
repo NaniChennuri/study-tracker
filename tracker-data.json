@@ -1,9 +1,9 @@
 {
   "hunterName": "Nani",
-  "totalXP": 5010,
-  "streak": 1,
-  "totalDays": 33,
-  "lastStudyDate": "2026-06-24",
+  "totalXP": 5090,
+  "streak": 2,
+  "totalDays": 34,
+  "lastStudyDate": "2026-06-25",
   "topicStatus": {
     "history:prehistoric": {
       "s": 2,
@@ -1414,6 +1414,36 @@
       "s": 1,
       "rd": "2026-06-24",
       "rv": null
+    },
+    "psir1b:parliamentary-sys": {
+      "s": 1,
+      "rd": "2026-06-25",
+      "rv": null
+    },
+    "psir1b:judicial-sys": {
+      "s": 1,
+      "rd": "2026-06-25",
+      "rv": null
+    },
+    "psir1b:constitutional-morality": {
+      "s": 1,
+      "rd": "2026-06-25",
+      "rv": null
+    },
+    "psir1b:legislature": {
+      "s": 1,
+      "rd": "2026-06-25",
+      "rv": null
+    },
+    "psir1b:judiciary-psir": {
+      "s": 1,
+      "rd": "2026-06-25",
+      "rv": null
+    },
+    "psir1b:executive": {
+      "s": 1,
+      "rd": "2026-06-25",
+      "rv": null
     }
   },
   "completedQuests": {
@@ -1809,11 +1839,47 @@
       "editorial": {
         "done": true
       }
+    },
+    "2026-06-25": {
+      "morning_psir": {
+        "done": true,
+        "topicKey": "psir1b:parliamentary-sys"
+      }
     }
   },
   "mockHistory": [],
   "bossDefeated": {},
   "activityLog": [
+    {
+      "time": "06:59 AM",
+      "text": "📖 Read: PSIR 1B → Executive",
+      "xp": 10
+    },
+    {
+      "time": "06:59 AM",
+      "text": "📖 Read: PSIR 1B → Judiciary",
+      "xp": 10
+    },
+    {
+      "time": "06:59 AM",
+      "text": "📖 Read: PSIR 1B → Legislature",
+      "xp": 10
+    },
+    {
+      "time": "06:59 AM",
+      "text": "📖 Read: PSIR 1B → Constitutional Morality",
+      "xp": 10
+    },
+    {
+      "time": "06:59 AM",
+      "text": "📖 Read: PSIR 1B → Judicial System",
+      "xp": 10
+    },
+    {
+      "time": "06:59 AM",
+      "text": "📖 Read: PSIR 1B → Parliamentary System",
+      "xp": 30
+    },
     {
       "time": "08:07 PM",
       "text": "📖 Read: Governance → Participatory Governance and Citizens",
@@ -2183,36 +2249,6 @@
       "time": "09:23 PM",
       "text": "📖 Read: Polity → Supreme Court (Art. 124–147)",
       "xp": 30
-    },
-    {
-      "time": "09:18 PM",
-      "text": "📖 Read: PSIR 1A → Theories of Justice",
-      "xp": 10
-    },
-    {
-      "time": "09:18 PM",
-      "text": "📖 Read: Polity → Emergency Provisions (Art. 352–360)",
-      "xp": 10
-    },
-    {
-      "time": "09:18 PM",
-      "text": "📖 Read: Polity → Inter-State Relations",
-      "xp": 10
-    },
-    {
-      "time": "09:18 PM",
-      "text": "📖 Read: Polity → Centre-State Relations",
-      "xp": 10
-    },
-    {
-      "time": "09:18 PM",
-      "text": "🗞️ Current Affairs completed",
-      "xp": 10
-    },
-    {
-      "time": "09:18 PM",
-      "text": "📰 Editorial completed",
-      "xp": 10
     }
   ],
   "answersWritten": 0,
