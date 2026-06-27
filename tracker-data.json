@@ -1,9 +1,9 @@
 {
   "hunterName": "Nani",
-  "totalXP": 5380,
-  "streak": 2,
-  "totalDays": 34,
-  "lastStudyDate": "2026-06-25",
+  "totalXP": 5710,
+  "streak": 1,
+  "totalDays": 35,
+  "lastStudyDate": "2026-06-27",
   "topicStatus": {
     "history:prehistoric": {
       "s": 2,
@@ -1579,6 +1579,161 @@
       "s": 1,
       "rd": "2026-06-25",
       "rv": null
+    },
+    "society:social-structures": {
+      "s": 1,
+      "rd": "2026-06-27",
+      "rv": null
+    },
+    "society:diversity-unity": {
+      "s": 1,
+      "rd": "2026-06-27",
+      "rv": null
+    },
+    "society:communalism": {
+      "s": 1,
+      "rd": "2026-06-27",
+      "rv": null
+    },
+    "society:regionalism": {
+      "s": 1,
+      "rd": "2026-06-27",
+      "rv": null
+    },
+    "society:secularism": {
+      "s": 1,
+      "rd": "2026-06-27",
+      "rv": null
+    },
+    "society:urbanisation": {
+      "s": 1,
+      "rd": "2026-06-27",
+      "rv": null
+    },
+    "society:globalisation": {
+      "s": 1,
+      "rd": "2026-06-27",
+      "rv": null
+    },
+    "society:demography": {
+      "s": 1,
+      "rd": "2026-06-27",
+      "rv": null
+    },
+    "society:demographic-profile": {
+      "s": 1,
+      "rd": "2026-06-27",
+      "rv": null
+    },
+    "society:demographic-dividend": {
+      "s": 1,
+      "rd": "2026-06-27",
+      "rv": null
+    },
+    "society:literacy-employment": {
+      "s": 1,
+      "rd": "2026-06-27",
+      "rv": null
+    },
+    "society:population-issues": {
+      "s": 1,
+      "rd": "2026-06-27",
+      "rv": null
+    },
+    "society:migration": {
+      "s": 1,
+      "rd": "2026-06-27",
+      "rv": null
+    },
+    "society:poverty": {
+      "s": 1,
+      "rd": "2026-06-27",
+      "rv": null
+    },
+    "society:hunger-food-sec": {
+      "s": 1,
+      "rd": "2026-06-27",
+      "rv": null
+    },
+    "society:hrd": {
+      "s": 1,
+      "rd": "2026-06-27",
+      "rv": null
+    },
+    "society:health": {
+      "s": 1,
+      "rd": "2026-06-27",
+      "rv": null
+    },
+    "society:education": {
+      "s": 1,
+      "rd": "2026-06-27",
+      "rv": null
+    },
+    "society:women-profile": {
+      "s": 1,
+      "rd": "2026-06-27",
+      "rv": null
+    },
+    "society:women-movements": {
+      "s": 1,
+      "rd": "2026-06-27",
+      "rv": null
+    },
+    "society:women-legal": {
+      "s": 1,
+      "rd": "2026-06-27",
+      "rv": null
+    },
+    "society:women-schemes": {
+      "s": 1,
+      "rd": "2026-06-27",
+      "rv": null
+    },
+    "society:welfare-overview": {
+      "s": 1,
+      "rd": "2026-06-27",
+      "rv": null
+    },
+    "society:welfare-children": {
+      "s": 1,
+      "rd": "2026-06-27",
+      "rv": null
+    },
+    "society:welfare-sc": {
+      "s": 1,
+      "rd": "2026-06-27",
+      "rv": null
+    },
+    "society:welfare-st": {
+      "s": 1,
+      "rd": "2026-06-27",
+      "rv": null
+    },
+    "society:welfare-obc": {
+      "s": 1,
+      "rd": "2026-06-27",
+      "rv": null
+    },
+    "society:welfare-senior": {
+      "s": 1,
+      "rd": "2026-06-27",
+      "rv": null
+    },
+    "society:welfare-disabled": {
+      "s": 1,
+      "rd": "2026-06-27",
+      "rv": null
+    },
+    "society:welfare-minorities": {
+      "s": 1,
+      "rd": "2026-06-27",
+      "rv": null
+    },
+    "society:welfare-lgbt": {
+      "s": 1,
+      "rd": "2026-06-27",
+      "rv": null
     }
   },
   "completedQuests": {
@@ -1986,11 +2141,184 @@
       "ca": {
         "done": true
       }
+    },
+    "2026-06-27": {
+      "editorial": {
+        "done": true
+      },
+      "ca": {
+        "done": true
+      }
     }
   },
   "mockHistory": [],
   "bossDefeated": {},
   "activityLog": [
+    {
+      "time": "09:05 PM",
+      "text": "📖 Read: Society and SJ → LGBT Community",
+      "xp": 10
+    },
+    {
+      "time": "09:05 PM",
+      "text": "📖 Read: Society and SJ → Minorities",
+      "xp": 10
+    },
+    {
+      "time": "09:05 PM",
+      "text": "📖 Read: Society and SJ → Disabled Persons",
+      "xp": 10
+    },
+    {
+      "time": "09:04 PM",
+      "text": "📖 Read: Society and SJ → Senior Citizens / Aged",
+      "xp": 10
+    },
+    {
+      "time": "09:04 PM",
+      "text": "📖 Read: Society and SJ → Other Backward Classes",
+      "xp": 10
+    },
+    {
+      "time": "09:04 PM",
+      "text": "📖 Read: Society and SJ → Scheduled Tribes",
+      "xp": 10
+    },
+    {
+      "time": "09:04 PM",
+      "text": "📖 Read: Society and SJ → Scheduled Castes",
+      "xp": 10
+    },
+    {
+      "time": "09:04 PM",
+      "text": "📖 Read: Society and SJ → Children",
+      "xp": 10
+    },
+    {
+      "time": "09:04 PM",
+      "text": "📖 Read: Society and SJ → Overview of Welfare Schemes",
+      "xp": 10
+    },
+    {
+      "time": "09:04 PM",
+      "text": "📖 Read: Society and SJ → Government Schemes and Key Issues (Women)",
+      "xp": 10
+    },
+    {
+      "time": "09:04 PM",
+      "text": "📖 Read: Society and SJ → Constitutional and Legal Framework (Women)",
+      "xp": 10
+    },
+    {
+      "time": "09:04 PM",
+      "text": "📖 Read: Society and SJ → Women's Movements",
+      "xp": 10
+    },
+    {
+      "time": "09:04 PM",
+      "text": "📖 Read: Society and SJ → Profile and Social Structures (Women)",
+      "xp": 10
+    },
+    {
+      "time": "09:04 PM",
+      "text": "📖 Read: Society and SJ → Education Sector",
+      "xp": 10
+    },
+    {
+      "time": "09:04 PM",
+      "text": "📖 Read: Society and SJ → Health Sector",
+      "xp": 10
+    },
+    {
+      "time": "09:04 PM",
+      "text": "📖 Read: Society and SJ → Human Resources Development",
+      "xp": 10
+    },
+    {
+      "time": "09:04 PM",
+      "text": "📖 Read: Society and SJ → Hunger and Food Security",
+      "xp": 10
+    },
+    {
+      "time": "09:04 PM",
+      "text": "📖 Read: Society and SJ → Poverty",
+      "xp": 10
+    },
+    {
+      "time": "09:03 PM",
+      "text": "📖 Read: Society and SJ → Migration",
+      "xp": 10
+    },
+    {
+      "time": "09:03 PM",
+      "text": "📖 Read: Society and SJ → Population Issues and Policies",
+      "xp": 10
+    },
+    {
+      "time": "09:03 PM",
+      "text": "📖 Read: Society and SJ → Literacy and Employment",
+      "xp": 10
+    },
+    {
+      "time": "09:03 PM",
+      "text": "📖 Read: Society and SJ → Demographic Transition and Dividend",
+      "xp": 10
+    },
+    {
+      "time": "09:03 PM",
+      "text": "📖 Read: Society and SJ → India's Demographic Profile",
+      "xp": 10
+    },
+    {
+      "time": "09:03 PM",
+      "text": "📖 Read: Society and SJ → Demography and Population Growth",
+      "xp": 10
+    },
+    {
+      "time": "09:03 PM",
+      "text": "📖 Read: Society and SJ → Impact of Globalisation on Indian Society",
+      "xp": 10
+    },
+    {
+      "time": "09:03 PM",
+      "text": "📖 Read: Society and SJ → Urbanisation",
+      "xp": 10
+    },
+    {
+      "time": "09:03 PM",
+      "text": "📖 Read: Society and SJ → Secularism",
+      "xp": 10
+    },
+    {
+      "time": "09:03 PM",
+      "text": "📖 Read: Society and SJ → Regionalism",
+      "xp": 10
+    },
+    {
+      "time": "09:03 PM",
+      "text": "📖 Read: Society and SJ → Communalism",
+      "xp": 10
+    },
+    {
+      "time": "09:03 PM",
+      "text": "📖 Read: Society and SJ → Diversity and Unity",
+      "xp": 10
+    },
+    {
+      "time": "09:03 PM",
+      "text": "📖 Read: Society and SJ → Social Structures",
+      "xp": 10
+    },
+    {
+      "time": "09:03 PM",
+      "text": "🗞️ Current Affairs completed",
+      "xp": 10
+    },
+    {
+      "time": "09:03 PM",
+      "text": "📰 Editorial completed",
+      "xp": 10
+    },
     {
       "time": "11:14 PM",
       "text": "📖 Read: Internal Security → National Security Council System",
@@ -2225,171 +2553,6 @@
       "time": "08:06 PM",
       "text": "📖 Read: Governance → PM GatiShakti and Multimodal Connectivity",
       "xp": 30
-    },
-    {
-      "time": "06:45 AM",
-      "text": "📖 Read: PSIR 1B → Uniform Civil Code",
-      "xp": 10
-    },
-    {
-      "time": "06:45 AM",
-      "text": "📖 Read: PSIR 1B → Fundamental Rights, Duties and DPSP",
-      "xp": 10
-    },
-    {
-      "time": "06:17 AM",
-      "text": "📖 Read: PSIR 1B → The Preamble",
-      "xp": 10
-    },
-    {
-      "time": "06:17 AM",
-      "text": "📖 Read: PSIR 1B → Making of Indian Constitution",
-      "xp": 10
-    },
-    {
-      "time": "06:17 AM",
-      "text": "📖 Read: PSIR 1B → Indian Nationalism",
-      "xp": 10
-    },
-    {
-      "time": "06:16 AM",
-      "text": "📖 Read: Governance → Whistle-Blower Protection",
-      "xp": 10
-    },
-    {
-      "time": "06:16 AM",
-      "text": "📖 Read: Governance → Right to Information Act",
-      "xp": 10
-    },
-    {
-      "time": "06:16 AM",
-      "text": "📖 Read: Governance → NHRC and Human Rights Architecture",
-      "xp": 10
-    },
-    {
-      "time": "06:16 AM",
-      "text": "📖 Read: Governance → Lokpal — The Anti-Corruption Ombudsman",
-      "xp": 10
-    },
-    {
-      "time": "06:15 AM",
-      "text": "📖 Read: Governance → Civil Society — Anti-State or Non-State?",
-      "xp": 10
-    },
-    {
-      "time": "06:15 AM",
-      "text": "📖 Read: Governance → Civil Services Reforms",
-      "xp": 10
-    },
-    {
-      "time": "06:15 AM",
-      "text": "📖 Read: Governance → Civil Services — Constitutional Role and Challenges",
-      "xp": 10
-    },
-    {
-      "time": "08:54 PM",
-      "text": "📖 Read: Polity → Lokpal and Lokayukta",
-      "xp": 10
-    },
-    {
-      "time": "08:54 PM",
-      "text": "📖 Read: Polity → Central Vigilance Commission (CVC)",
-      "xp": 10
-    },
-    {
-      "time": "08:54 PM",
-      "text": "📖 Read: Polity → Central Bureau of Investigation (CBI)",
-      "xp": 10
-    },
-    {
-      "time": "08:54 PM",
-      "text": "📖 Read: Polity → Central Information Commission and RTI",
-      "xp": 10
-    },
-    {
-      "time": "08:53 PM",
-      "text": "📖 Read: Polity → National Human Rights Commission (NHRC)",
-      "xp": 10
-    },
-    {
-      "time": "08:53 PM",
-      "text": "📖 Read: Polity → Constitutional Bodies",
-      "xp": 10
-    },
-    {
-      "time": "08:53 PM",
-      "text": "📖 Read: Polity → Scheduled and Tribal Areas (Art. 244)",
-      "xp": 10
-    },
-    {
-      "time": "08:53 PM",
-      "text": "🗞️ Current Affairs completed",
-      "xp": 10
-    },
-    {
-      "time": "08:53 PM",
-      "text": "📰 Editorial completed",
-      "xp": 10
-    },
-    {
-      "time": "08:53 PM",
-      "text": "📖 Read: Polity → Union Territories (Art. 239–241)",
-      "xp": 30
-    },
-    {
-      "time": "06:42 AM",
-      "text": "📖 Read: PSIR 1A → Equality, Freedom and Affirmative Action",
-      "xp": 10
-    },
-    {
-      "time": "10:52 PM",
-      "text": "📖 Read: Polity → Co-operatives",
-      "xp": 10
-    },
-    {
-      "time": "10:52 PM",
-      "text": "📖 Read: Polity → Municipalities (Art. 243P–243ZG)",
-      "xp": 10
-    },
-    {
-      "time": "10:52 PM",
-      "text": "📖 Read: Polity → Panchayati Raj (Art. 243)",
-      "xp": 10
-    },
-    {
-      "time": "10:51 PM",
-      "text": "📖 Read: Polity → Evolution of Panchayati Raj",
-      "xp": 10
-    },
-    {
-      "time": "10:51 PM",
-      "text": "📖 Read: Polity → Elections (Art. 324–329, Part XV)",
-      "xp": 10
-    },
-    {
-      "time": "07:34 AM",
-      "text": "🗞️ Current Affairs completed",
-      "xp": 10
-    },
-    {
-      "time": "07:34 AM",
-      "text": "📰 Editorial completed",
-      "xp": 10
-    },
-    {
-      "time": "07:03 AM",
-      "text": "📖 Read: Ethics → Quick Reference — Case Study Vocabulary",
-      "xp": 10
-    },
-    {
-      "time": "07:03 AM",
-      "text": "📖 Read: Ethics → PYQ Analysis — 2024 Case Studies",
-      "xp": 10
-    },
-    {
-      "time": "07:03 AM",
-      "text": "📖 Read: Ethics → PYQ Analysis — 2025 Case Studies",
-      "xp": 10
     }
   ],
   "answersWritten": 0,
