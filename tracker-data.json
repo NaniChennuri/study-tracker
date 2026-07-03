@@ -1,6 +1,6 @@
 {
   "hunterName": "Nani",
-  "totalXP": 5710,
+  "totalXP": 5740,
   "streak": 1,
   "totalDays": 35,
   "lastStudyDate": "2026-06-27",
@@ -1734,6 +1734,21 @@
       "s": 1,
       "rd": "2026-06-27",
       "rv": null
+    },
+    "psir1b:grassroots": {
+      "s": 1,
+      "rd": "2026-07-03",
+      "rv": null
+    },
+    "psir1b:federalism": {
+      "s": 1,
+      "rd": "2026-07-03",
+      "rv": null
+    },
+    "psir1b:planning-econ": {
+      "s": 1,
+      "rd": "2026-07-03",
+      "rv": null
     }
   },
   "completedQuests": {
@@ -2155,6 +2170,21 @@
   "bossDefeated": {},
   "activityLog": [
     {
+      "time": "07:33 AM",
+      "text": "📖 Read: PSIR 1B → Planning and Economic Development",
+      "xp": 10
+    },
+    {
+      "time": "07:33 AM",
+      "text": "📖 Read: PSIR 1B → Federalism",
+      "xp": 10
+    },
+    {
+      "time": "07:33 AM",
+      "text": "📖 Read: PSIR 1B → Grassroots Democracy",
+      "xp": 10
+    },
+    {
       "time": "09:05 PM",
       "text": "📖 Read: Society and SJ → LGBT Community",
       "xp": 10
@@ -2538,21 +2568,6 @@
       "time": "08:07 PM",
       "text": "📖 Read: Governance → Direct Benefit Transfer",
       "xp": 10
-    },
-    {
-      "time": "08:06 PM",
-      "text": "📰 Editorial completed",
-      "xp": 10
-    },
-    {
-      "time": "08:06 PM",
-      "text": "🗞️ Current Affairs completed",
-      "xp": 10
-    },
-    {
-      "time": "08:06 PM",
-      "text": "📖 Read: Governance → PM GatiShakti and Multimodal Connectivity",
-      "xp": 30
     }
   ],
   "answersWritten": 0,
