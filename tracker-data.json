@@ -1,6 +1,6 @@
 {
   "hunterName": "Nani",
-  "totalXP": 5740,
+  "totalXP": 5810,
   "streak": 1,
   "totalDays": 35,
   "lastStudyDate": "2026-06-27",
@@ -1749,6 +1749,41 @@
       "s": 1,
       "rd": "2026-07-03",
       "rv": null
+    },
+    "economy:intro": {
+      "s": 1,
+      "rd": "2026-07-04",
+      "rv": null
+    },
+    "economy:national-income": {
+      "s": 1,
+      "rd": "2026-07-04",
+      "rv": null
+    },
+    "economy:microeconomics": {
+      "s": 1,
+      "rd": "2026-07-04",
+      "rv": null
+    },
+    "economy:growth-dev": {
+      "s": 1,
+      "rd": "2026-07-04",
+      "rv": null
+    },
+    "economy:planning": {
+      "s": 1,
+      "rd": "2026-07-04",
+      "rv": null
+    },
+    "economy:lpg": {
+      "s": 1,
+      "rd": "2026-07-04",
+      "rv": null
+    },
+    "economy:inflation": {
+      "s": 1,
+      "rd": "2026-07-04",
+      "rv": null
     }
   },
   "completedQuests": {
@@ -2170,6 +2205,41 @@
   "bossDefeated": {},
   "activityLog": [
     {
+      "time": "02:51 PM",
+      "text": "📖 Read: Economy → Inflation",
+      "xp": 10
+    },
+    {
+      "time": "02:51 PM",
+      "text": "📖 Read: Economy → LPG Reforms",
+      "xp": 10
+    },
+    {
+      "time": "02:51 PM",
+      "text": "📖 Read: Economy → Economic Planning",
+      "xp": 10
+    },
+    {
+      "time": "02:51 PM",
+      "text": "📖 Read: Economy → Growth and Development",
+      "xp": 10
+    },
+    {
+      "time": "02:51 PM",
+      "text": "📖 Read: Economy → Microeconomics",
+      "xp": 10
+    },
+    {
+      "time": "02:50 PM",
+      "text": "📖 Read: Economy → National Income Accounting",
+      "xp": 10
+    },
+    {
+      "time": "02:50 PM",
+      "text": "📖 Read: Economy → Introduction to Economy",
+      "xp": 10
+    },
+    {
       "time": "07:33 AM",
       "text": "📖 Read: PSIR 1B → Planning and Economic Development",
       "xp": 10
@@ -2532,41 +2602,6 @@
     {
       "time": "08:07 PM",
       "text": "📖 Read: Governance → NITI Aayog — From Planning to Transforming",
-      "xp": 10
-    },
-    {
-      "time": "08:07 PM",
-      "text": "📖 Read: Governance → E-Governance — Models, Achievements, Limitations",
-      "xp": 10
-    },
-    {
-      "time": "08:07 PM",
-      "text": "📖 Read: Governance → Citizen's Charter",
-      "xp": 10
-    },
-    {
-      "time": "08:07 PM",
-      "text": "📖 Read: Governance → NGOs in Development — Role, Regulation, FCRA",
-      "xp": 10
-    },
-    {
-      "time": "08:07 PM",
-      "text": "📖 Read: Governance → Self-Help Groups — Microfinance and Women Empowerment",
-      "xp": 10
-    },
-    {
-      "time": "08:07 PM",
-      "text": "📖 Read: Governance → India's Response to LPG Reforms",
-      "xp": 10
-    },
-    {
-      "time": "08:07 PM",
-      "text": "📖 Read: Governance → Centrally Sponsored Schemes",
-      "xp": 10
-    },
-    {
-      "time": "08:07 PM",
-      "text": "📖 Read: Governance → Direct Benefit Transfer",
       "xp": 10
     }
   ],
