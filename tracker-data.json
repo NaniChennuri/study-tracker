@@ -1,9 +1,9 @@
 {
   "hunterName": "Nani",
-  "totalXP": 5810,
+  "totalXP": 5900,
   "streak": 1,
-  "totalDays": 35,
-  "lastStudyDate": "2026-06-27",
+  "totalDays": 36,
+  "lastStudyDate": "2026-07-04",
   "topicStatus": {
     "history:prehistoric": {
       "s": 2,
@@ -1784,6 +1784,41 @@
       "s": 1,
       "rd": "2026-07-04",
       "rv": null
+    },
+    "economy:monetary-policy": {
+      "s": 1,
+      "rd": "2026-07-04",
+      "rv": null
+    },
+    "economy:fin-intro": {
+      "s": 1,
+      "rd": "2026-07-04",
+      "rv": null
+    },
+    "economy:money-capital": {
+      "s": 1,
+      "rd": "2026-07-04",
+      "rv": null
+    },
+    "economy:commodity-market": {
+      "s": 1,
+      "rd": "2026-07-04",
+      "rv": null
+    },
+    "economy:sebi": {
+      "s": 1,
+      "rd": "2026-07-04",
+      "rv": null
+    },
+    "economy:pension": {
+      "s": 1,
+      "rd": "2026-07-04",
+      "rv": null
+    },
+    "economy:insurance": {
+      "s": 1,
+      "rd": "2026-07-04",
+      "rv": null
     }
   },
   "completedQuests": {
@@ -2199,11 +2234,64 @@
       "ca": {
         "done": true
       }
+    },
+    "2026-07-04": {
+      "editorial": {
+        "done": true
+      },
+      "ca": {
+        "done": true
+      }
     }
   },
   "mockHistory": [],
   "bossDefeated": {},
   "activityLog": [
+    {
+      "time": "11:40 PM",
+      "text": "📖 Read: Economy → Insurance Schemes",
+      "xp": 10
+    },
+    {
+      "time": "11:40 PM",
+      "text": "📖 Read: Economy → Pension Schemes",
+      "xp": 10
+    },
+    {
+      "time": "11:40 PM",
+      "text": "📖 Read: Economy → Regulators — SEBI",
+      "xp": 10
+    },
+    {
+      "time": "11:40 PM",
+      "text": "📖 Read: Economy → Commodity Market",
+      "xp": 10
+    },
+    {
+      "time": "11:39 PM",
+      "text": "📖 Read: Economy → Money and Capital Markets",
+      "xp": 10
+    },
+    {
+      "time": "11:39 PM",
+      "text": "📖 Read: Economy → Financial Market — Introduction",
+      "xp": 10
+    },
+    {
+      "time": "11:39 PM",
+      "text": "📖 Read: Economy → Monetary Policy",
+      "xp": 10
+    },
+    {
+      "time": "11:39 PM",
+      "text": "🗞️ Current Affairs completed",
+      "xp": 10
+    },
+    {
+      "time": "11:39 PM",
+      "text": "📰 Editorial completed",
+      "xp": 10
+    },
     {
       "time": "02:51 PM",
       "text": "📖 Read: Economy → Inflation",
@@ -2557,51 +2645,6 @@
     {
       "time": "11:13 PM",
       "text": "🗞️ Current Affairs completed",
-      "xp": 10
-    },
-    {
-      "time": "11:13 PM",
-      "text": "📰 Editorial completed",
-      "xp": 10
-    },
-    {
-      "time": "06:59 AM",
-      "text": "📖 Read: PSIR 1B → Executive",
-      "xp": 10
-    },
-    {
-      "time": "06:59 AM",
-      "text": "📖 Read: PSIR 1B → Judiciary",
-      "xp": 10
-    },
-    {
-      "time": "06:59 AM",
-      "text": "📖 Read: PSIR 1B → Legislature",
-      "xp": 10
-    },
-    {
-      "time": "06:59 AM",
-      "text": "📖 Read: PSIR 1B → Constitutional Morality",
-      "xp": 10
-    },
-    {
-      "time": "06:59 AM",
-      "text": "📖 Read: PSIR 1B → Judicial System",
-      "xp": 10
-    },
-    {
-      "time": "06:59 AM",
-      "text": "📖 Read: PSIR 1B → Parliamentary System",
-      "xp": 30
-    },
-    {
-      "time": "08:07 PM",
-      "text": "📖 Read: Governance → Participatory Governance and Citizens",
-      "xp": 10
-    },
-    {
-      "time": "08:07 PM",
-      "text": "📖 Read: Governance → NITI Aayog — From Planning to Transforming",
       "xp": 10
     }
   ],
