@@ -1,6 +1,6 @@
 {
   "hunterName": "Nani",
-  "totalXP": 5900,
+  "totalXP": 6000,
   "streak": 1,
   "totalDays": 36,
   "lastStudyDate": "2026-07-04",
@@ -1819,6 +1819,56 @@
       "s": 1,
       "rd": "2026-07-04",
       "rv": null
+    },
+    "economy:rbi-history": {
+      "s": 1,
+      "rd": "2026-07-05",
+      "rv": null
+    },
+    "economy:bank-structure": {
+      "s": 1,
+      "rd": "2026-07-05",
+      "rv": null
+    },
+    "economy:dfi": {
+      "s": 1,
+      "rd": "2026-07-05",
+      "rv": null
+    },
+    "economy:nbfc": {
+      "s": 1,
+      "rd": "2026-07-05",
+      "rv": null
+    },
+    "economy:npa": {
+      "s": 1,
+      "rd": "2026-07-05",
+      "rv": null
+    },
+    "economy:basel": {
+      "s": 1,
+      "rd": "2026-07-05",
+      "rv": null
+    },
+    "economy:payment-sys": {
+      "s": 1,
+      "rd": "2026-07-05",
+      "rv": null
+    },
+    "economy:fin-inclusion": {
+      "s": 1,
+      "rd": "2026-07-05",
+      "rv": null
+    },
+    "economy:public-finance": {
+      "s": 1,
+      "rd": "2026-07-05",
+      "rv": null
+    },
+    "economy:taxation": {
+      "s": 1,
+      "rd": "2026-07-05",
+      "rv": null
     }
   },
   "completedQuests": {
@@ -2248,6 +2298,56 @@
   "bossDefeated": {},
   "activityLog": [
     {
+      "time": "09:23 PM",
+      "text": "📖 Read: Economy → Taxation",
+      "xp": 10
+    },
+    {
+      "time": "09:23 PM",
+      "text": "📖 Read: Economy → Public Finance",
+      "xp": 10
+    },
+    {
+      "time": "09:23 PM",
+      "text": "📖 Read: Economy → Financial Inclusion",
+      "xp": 10
+    },
+    {
+      "time": "09:23 PM",
+      "text": "📖 Read: Economy → Payment Systems",
+      "xp": 10
+    },
+    {
+      "time": "09:23 PM",
+      "text": "📖 Read: Economy → Basel Norms",
+      "xp": 10
+    },
+    {
+      "time": "09:23 PM",
+      "text": "📖 Read: Economy → NPAs and Resolution",
+      "xp": 10
+    },
+    {
+      "time": "09:23 PM",
+      "text": "📖 Read: Economy → NBFCs and Microfinance",
+      "xp": 10
+    },
+    {
+      "time": "09:23 PM",
+      "text": "📖 Read: Economy → Development Finance Institutions",
+      "xp": 10
+    },
+    {
+      "time": "09:23 PM",
+      "text": "📖 Read: Economy → Structure of Banks",
+      "xp": 10
+    },
+    {
+      "time": "09:23 PM",
+      "text": "📖 Read: Economy → History and RBI",
+      "xp": 10
+    },
+    {
       "time": "11:40 PM",
       "text": "📖 Read: Economy → Insurance Schemes",
       "xp": 10
@@ -2595,56 +2695,6 @@
     {
       "time": "11:13 PM",
       "text": "📖 Read: Internal Security → Radicalization and Online Extremism",
-      "xp": 10
-    },
-    {
-      "time": "11:13 PM",
-      "text": "📖 Read: Internal Security → Narco-Terrorism",
-      "xp": 10
-    },
-    {
-      "time": "11:13 PM",
-      "text": "📖 Read: Internal Security → China as External State Actor",
-      "xp": 10
-    },
-    {
-      "time": "11:13 PM",
-      "text": "📖 Read: Internal Security → Pakistan as External State Actor",
-      "xp": 10
-    },
-    {
-      "time": "11:13 PM",
-      "text": "📖 Read: Internal Security → Terrorism in India — Nature and Manifestations",
-      "xp": 10
-    },
-    {
-      "time": "11:13 PM",
-      "text": "📖 Read: Internal Security → Peace Accords in North-East India",
-      "xp": 10
-    },
-    {
-      "time": "11:13 PM",
-      "text": "📖 Read: Internal Security → North-East Insurgency — Nature and Causes",
-      "xp": 10
-    },
-    {
-      "time": "11:13 PM",
-      "text": "📖 Read: Internal Security → Government Response to LWE",
-      "xp": 10
-    },
-    {
-      "time": "11:13 PM",
-      "text": "📖 Read: Internal Security → Development-Extremism Nexus",
-      "xp": 10
-    },
-    {
-      "time": "11:13 PM",
-      "text": "📖 Read: Internal Security → Left Wing Extremism — Roots and Nature",
-      "xp": 10
-    },
-    {
-      "time": "11:13 PM",
-      "text": "🗞️ Current Affairs completed",
       "xp": 10
     }
   ],
