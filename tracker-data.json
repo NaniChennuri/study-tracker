@@ -1,6 +1,6 @@
 {
   "hunterName": "Nani",
-  "totalXP": 6030,
+  "totalXP": 6050,
   "streak": 1,
   "totalDays": 36,
   "lastStudyDate": "2026-07-04",
@@ -1884,6 +1884,16 @@
       "s": 1,
       "rd": "2026-07-06",
       "rv": null
+    },
+    "economy:external-sector": {
+      "s": 1,
+      "rd": "2026-07-06",
+      "rv": null
+    },
+    "economy:investment-models": {
+      "s": 1,
+      "rd": "2026-07-06",
+      "rv": null
     }
   },
   "completedQuests": {
@@ -2313,6 +2323,16 @@
   "bossDefeated": {},
   "activityLog": [
     {
+      "time": "07:20 PM",
+      "text": "📖 Read: Economy → Investment Models",
+      "xp": 10
+    },
+    {
+      "time": "07:20 PM",
+      "text": "📖 Read: Economy → External Sector",
+      "xp": 10
+    },
+    {
       "time": "08:18 AM",
       "text": "📖 Read: PSIR 1B → Religion in Indian Politics",
       "xp": 10
@@ -2700,16 +2720,6 @@
     {
       "time": "11:14 PM",
       "text": "📖 Read: Internal Security → UAVs / Drones as Security Threat",
-      "xp": 10
-    },
-    {
-      "time": "11:14 PM",
-      "text": "📖 Read: Internal Security → Digital Personal Data Protection Act 2023",
-      "xp": 10
-    },
-    {
-      "time": "11:14 PM",
-      "text": "📖 Read: Internal Security → India's Cyber Security Architecture",
       "xp": 10
     }
   ],
