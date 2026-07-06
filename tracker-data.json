@@ -1,6 +1,6 @@
 {
   "hunterName": "Nani",
-  "totalXP": 6000,
+  "totalXP": 6030,
   "streak": 1,
   "totalDays": 36,
   "lastStudyDate": "2026-07-04",
@@ -1869,6 +1869,21 @@
       "s": 1,
       "rd": "2026-07-05",
       "rv": null
+    },
+    "psir1b:caste-politics": {
+      "s": 1,
+      "rd": "2026-07-06",
+      "rv": null
+    },
+    "psir1b:ethnicity": {
+      "s": 1,
+      "rd": "2026-07-06",
+      "rv": null
+    },
+    "psir1b:religion-politics": {
+      "s": 1,
+      "rd": "2026-07-06",
+      "rv": null
     }
   },
   "completedQuests": {
@@ -2298,6 +2313,21 @@
   "bossDefeated": {},
   "activityLog": [
     {
+      "time": "08:18 AM",
+      "text": "📖 Read: PSIR 1B → Religion in Indian Politics",
+      "xp": 10
+    },
+    {
+      "time": "08:18 AM",
+      "text": "📖 Read: PSIR 1B → Ethnicity in Indian Politics",
+      "xp": 10
+    },
+    {
+      "time": "08:18 AM",
+      "text": "📖 Read: PSIR 1B → Role of Caste in Politics",
+      "xp": 10
+    },
+    {
       "time": "09:23 PM",
       "text": "📖 Read: Economy → Taxation",
       "xp": 10
@@ -2680,21 +2710,6 @@
     {
       "time": "11:14 PM",
       "text": "📖 Read: Internal Security → India's Cyber Security Architecture",
-      "xp": 10
-    },
-    {
-      "time": "11:13 PM",
-      "text": "📖 Read: Internal Security → Basics of Cyber Security",
-      "xp": 10
-    },
-    {
-      "time": "11:13 PM",
-      "text": "📖 Read: Internal Security → Social Media and Internal Security",
-      "xp": 10
-    },
-    {
-      "time": "11:13 PM",
-      "text": "📖 Read: Internal Security → Radicalization and Online Extremism",
       "xp": 10
     }
   ],
