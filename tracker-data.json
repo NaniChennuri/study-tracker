@@ -1,6 +1,6 @@
 {
   "hunterName": "Nani",
-  "totalXP": 6050,
+  "totalXP": 6190,
   "streak": 1,
   "totalDays": 36,
   "lastStudyDate": "2026-07-04",
@@ -1894,6 +1894,76 @@
       "s": 1,
       "rd": "2026-07-06",
       "rv": null
+    },
+    "economy:farming-types": {
+      "s": 1,
+      "rd": "2026-07-07",
+      "rv": null
+    },
+    "economy:land-reforms": {
+      "s": 1,
+      "rd": "2026-07-07",
+      "rv": null
+    },
+    "economy:agri-input": {
+      "s": 1,
+      "rd": "2026-07-07",
+      "rv": null
+    },
+    "economy:farming-practices": {
+      "s": 1,
+      "rd": "2026-07-07",
+      "rv": null
+    },
+    "economy:storage-transport": {
+      "s": 1,
+      "rd": "2026-07-07",
+      "rv": null
+    },
+    "economy:agri-marketing": {
+      "s": 1,
+      "rd": "2026-07-07",
+      "rv": null
+    },
+    "economy:food-processing": {
+      "s": 1,
+      "rd": "2026-07-07",
+      "rv": null
+    },
+    "economy:allied-sectors": {
+      "s": 1,
+      "rd": "2026-07-07",
+      "rv": null
+    },
+    "economy:climate-trade": {
+      "s": 1,
+      "rd": "2026-07-07",
+      "rv": null
+    },
+    "psir1b:congress": {
+      "s": 1,
+      "rd": "2026-07-07",
+      "rv": null
+    },
+    "psir1b:regional-parties": {
+      "s": 1,
+      "rd": "2026-07-07",
+      "rv": null
+    },
+    "psir1b:ideology-parties": {
+      "s": 1,
+      "rd": "2026-07-07",
+      "rv": null
+    },
+    "psir1b:coalition": {
+      "s": 1,
+      "rd": "2026-07-07",
+      "rv": null
+    },
+    "psir1b:election-commission": {
+      "s": 1,
+      "rd": "2026-07-07",
+      "rv": null
     }
   },
   "completedQuests": {
@@ -2323,6 +2393,76 @@
   "bossDefeated": {},
   "activityLog": [
     {
+      "time": "08:47 PM",
+      "text": "📖 Read: PSIR 1B → Election Commission and Electoral Reforms",
+      "xp": 10
+    },
+    {
+      "time": "08:47 PM",
+      "text": "📖 Read: PSIR 1B → Coalition Politics",
+      "xp": 10
+    },
+    {
+      "time": "08:47 PM",
+      "text": "📖 Read: PSIR 1B → Ideology and Political Parties",
+      "xp": 10
+    },
+    {
+      "time": "08:47 PM",
+      "text": "📖 Read: PSIR 1B → Regional Parties",
+      "xp": 10
+    },
+    {
+      "time": "08:47 PM",
+      "text": "📖 Read: PSIR 1B → Congress and Its Decline",
+      "xp": 10
+    },
+    {
+      "time": "08:46 PM",
+      "text": "📖 Read: Economy → Climate and Trade",
+      "xp": 10
+    },
+    {
+      "time": "08:46 PM",
+      "text": "📖 Read: Economy → Allied Sectors",
+      "xp": 10
+    },
+    {
+      "time": "08:46 PM",
+      "text": "📖 Read: Economy → Food Processing",
+      "xp": 10
+    },
+    {
+      "time": "08:46 PM",
+      "text": "📖 Read: Economy → Agricultural Marketing",
+      "xp": 10
+    },
+    {
+      "time": "08:46 PM",
+      "text": "📖 Read: Economy → Storage and Transport",
+      "xp": 10
+    },
+    {
+      "time": "08:46 PM",
+      "text": "📖 Read: Economy → Farming Practices",
+      "xp": 10
+    },
+    {
+      "time": "08:46 PM",
+      "text": "📖 Read: Economy → Agricultural Input",
+      "xp": 10
+    },
+    {
+      "time": "08:46 PM",
+      "text": "📖 Read: Economy → Land Reforms",
+      "xp": 10
+    },
+    {
+      "time": "08:46 PM",
+      "text": "📖 Read: Economy → Types of Farming",
+      "xp": 10
+    },
+    {
       "time": "07:20 PM",
       "text": "📖 Read: Economy → Investment Models",
       "xp": 10
@@ -2650,76 +2790,6 @@
     {
       "time": "09:03 PM",
       "text": "🗞️ Current Affairs completed",
-      "xp": 10
-    },
-    {
-      "time": "09:03 PM",
-      "text": "📰 Editorial completed",
-      "xp": 10
-    },
-    {
-      "time": "11:14 PM",
-      "text": "📖 Read: Internal Security → National Security Council System",
-      "xp": 10
-    },
-    {
-      "time": "11:14 PM",
-      "text": "📖 Read: Internal Security → Anti-Terror Laws — UAPA and AFSPA",
-      "xp": 10
-    },
-    {
-      "time": "11:14 PM",
-      "text": "📖 Read: Internal Security → National Investigation Agency (NIA)",
-      "xp": 10
-    },
-    {
-      "time": "11:14 PM",
-      "text": "📖 Read: Internal Security → Intelligence Agencies",
-      "xp": 10
-    },
-    {
-      "time": "11:14 PM",
-      "text": "📖 Read: Internal Security → Central Armed Police Forces (CAPFs)",
-      "xp": 10
-    },
-    {
-      "time": "11:14 PM",
-      "text": "📖 Read: Internal Security → Organized Crime — Terrorism Nexus",
-      "xp": 10
-    },
-    {
-      "time": "11:14 PM",
-      "text": "📖 Read: Internal Security → Maritime Security Challenges",
-      "xp": 10
-    },
-    {
-      "time": "11:14 PM",
-      "text": "📖 Read: Internal Security → India-Bangladesh and India-Myanmar Border Challenges",
-      "xp": 10
-    },
-    {
-      "time": "11:14 PM",
-      "text": "📖 Read: Internal Security → India-China Border Challenges",
-      "xp": 10
-    },
-    {
-      "time": "11:14 PM",
-      "text": "📖 Read: Internal Security → India-Pakistan Border Challenges",
-      "xp": 10
-    },
-    {
-      "time": "11:14 PM",
-      "text": "📖 Read: Internal Security → India's Border Landscape",
-      "xp": 10
-    },
-    {
-      "time": "11:14 PM",
-      "text": "📖 Read: Internal Security → Money Laundering and Its Prevention",
-      "xp": 10
-    },
-    {
-      "time": "11:14 PM",
-      "text": "📖 Read: Internal Security → UAVs / Drones as Security Threat",
       "xp": 10
     }
   ],
