@@ -1,6 +1,6 @@
 {
   "hunterName": "Nani",
-  "totalXP": 6220,
+  "totalXP": 6280,
   "streak": 1,
   "totalDays": 36,
   "lastStudyDate": "2026-07-04",
@@ -1979,6 +1979,36 @@
       "s": 1,
       "rd": "2026-07-08",
       "rv": null
+    },
+    "economy:industrial-policy": {
+      "s": 1,
+      "rd": "2026-07-08",
+      "rv": null
+    },
+    "economy:msme": {
+      "s": 1,
+      "rd": "2026-07-08",
+      "rv": null
+    },
+    "economy:entrepreneurship": {
+      "s": 1,
+      "rd": "2026-07-08",
+      "rv": null
+    },
+    "economy:ipr": {
+      "s": 1,
+      "rd": "2026-07-08",
+      "rv": null
+    },
+    "economy:ease-biz": {
+      "s": 1,
+      "rd": "2026-07-08",
+      "rv": null
+    },
+    "economy:infra-models": {
+      "s": 1,
+      "rd": "2026-07-08",
+      "rv": null
     }
   },
   "completedQuests": {
@@ -2408,6 +2438,36 @@
   "bossDefeated": {},
   "activityLog": [
     {
+      "time": "05:02 PM",
+      "text": "📖 Read: Economy → Models and Zones",
+      "xp": 10
+    },
+    {
+      "time": "05:02 PM",
+      "text": "📖 Read: Economy → Ease of Doing Business",
+      "xp": 10
+    },
+    {
+      "time": "05:02 PM",
+      "text": "📖 Read: Economy → Intellectual Property Rights",
+      "xp": 10
+    },
+    {
+      "time": "05:02 PM",
+      "text": "📖 Read: Economy → Entrepreneurship",
+      "xp": 10
+    },
+    {
+      "time": "05:02 PM",
+      "text": "📖 Read: Economy → MSME and Schemes",
+      "xp": 10
+    },
+    {
+      "time": "05:02 PM",
+      "text": "📖 Read: Economy → Industrial Policies",
+      "xp": 10
+    },
+    {
       "time": "06:54 AM",
       "text": "📖 Read: PSIR 1B → Social Movements",
       "xp": 10
@@ -2775,36 +2835,6 @@
     {
       "time": "09:03 PM",
       "text": "📖 Read: Society and SJ → India's Demographic Profile",
-      "xp": 10
-    },
-    {
-      "time": "09:03 PM",
-      "text": "📖 Read: Society and SJ → Demography and Population Growth",
-      "xp": 10
-    },
-    {
-      "time": "09:03 PM",
-      "text": "📖 Read: Society and SJ → Impact of Globalisation on Indian Society",
-      "xp": 10
-    },
-    {
-      "time": "09:03 PM",
-      "text": "📖 Read: Society and SJ → Urbanisation",
-      "xp": 10
-    },
-    {
-      "time": "09:03 PM",
-      "text": "📖 Read: Society and SJ → Secularism",
-      "xp": 10
-    },
-    {
-      "time": "09:03 PM",
-      "text": "📖 Read: Society and SJ → Regionalism",
-      "xp": 10
-    },
-    {
-      "time": "09:03 PM",
-      "text": "📖 Read: Society and SJ → Communalism",
       "xp": 10
     }
   ],
