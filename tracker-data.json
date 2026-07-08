@@ -1,6 +1,6 @@
 {
   "hunterName": "Nani",
-  "totalXP": 6190,
+  "totalXP": 6220,
   "streak": 1,
   "totalDays": 36,
   "lastStudyDate": "2026-07-04",
@@ -1964,6 +1964,21 @@
       "s": 1,
       "rd": "2026-07-07",
       "rv": null
+    },
+    "psir1b:pressure-groups": {
+      "s": 1,
+      "rd": "2026-07-08",
+      "rv": null
+    },
+    "psir1b:electoral-behaviour": {
+      "s": 1,
+      "rd": "2026-07-08",
+      "rv": null
+    },
+    "psir1b:social-mvmts": {
+      "s": 1,
+      "rd": "2026-07-08",
+      "rv": null
     }
   },
   "completedQuests": {
@@ -2393,6 +2408,21 @@
   "bossDefeated": {},
   "activityLog": [
     {
+      "time": "06:54 AM",
+      "text": "📖 Read: PSIR 1B → Social Movements",
+      "xp": 10
+    },
+    {
+      "time": "06:53 AM",
+      "text": "📖 Read: PSIR 1B → Electoral Behaviour",
+      "xp": 10
+    },
+    {
+      "time": "06:53 AM",
+      "text": "📖 Read: PSIR 1B → Pressure Groups",
+      "xp": 10
+    },
+    {
       "time": "08:47 PM",
       "text": "📖 Read: PSIR 1B → Election Commission and Electoral Reforms",
       "xp": 10
@@ -2775,21 +2805,6 @@
     {
       "time": "09:03 PM",
       "text": "📖 Read: Society and SJ → Communalism",
-      "xp": 10
-    },
-    {
-      "time": "09:03 PM",
-      "text": "📖 Read: Society and SJ → Diversity and Unity",
-      "xp": 10
-    },
-    {
-      "time": "09:03 PM",
-      "text": "📖 Read: Society and SJ → Social Structures",
-      "xp": 10
-    },
-    {
-      "time": "09:03 PM",
-      "text": "🗞️ Current Affairs completed",
       "xp": 10
     }
   ],
