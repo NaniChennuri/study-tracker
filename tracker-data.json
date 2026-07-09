@@ -1,6 +1,6 @@
 {
   "hunterName": "Nani",
-  "totalXP": 6280,
+  "totalXP": 6310,
   "streak": 1,
   "totalDays": 36,
   "lastStudyDate": "2026-07-04",
@@ -2009,6 +2009,21 @@
       "s": 1,
       "rd": "2026-07-08",
       "rv": null
+    },
+    "psir1b:civil-liberties": {
+      "s": 1,
+      "rd": "2026-07-09",
+      "rv": null
+    },
+    "psir1b:womens-movements": {
+      "s": 1,
+      "rd": "2026-07-09",
+      "rv": null
+    },
+    "psir1b:env-movements": {
+      "s": 1,
+      "rd": "2026-07-09",
+      "rv": null
     }
   },
   "completedQuests": {
@@ -2438,6 +2453,21 @@
   "bossDefeated": {},
   "activityLog": [
     {
+      "time": "06:33 AM",
+      "text": "📖 Read: PSIR 1B → Environmental Movements",
+      "xp": 10
+    },
+    {
+      "time": "06:33 AM",
+      "text": "📖 Read: PSIR 1B → Women's Movements",
+      "xp": 10
+    },
+    {
+      "time": "06:33 AM",
+      "text": "📖 Read: PSIR 1B → Civil Liberties and Human Rights",
+      "xp": 10
+    },
+    {
       "time": "05:02 PM",
       "text": "📖 Read: Economy → Models and Zones",
       "xp": 10
@@ -2820,21 +2850,6 @@
     {
       "time": "09:03 PM",
       "text": "📖 Read: Society and SJ → Population Issues and Policies",
-      "xp": 10
-    },
-    {
-      "time": "09:03 PM",
-      "text": "📖 Read: Society and SJ → Literacy and Employment",
-      "xp": 10
-    },
-    {
-      "time": "09:03 PM",
-      "text": "📖 Read: Society and SJ → Demographic Transition and Dividend",
-      "xp": 10
-    },
-    {
-      "time": "09:03 PM",
-      "text": "📖 Read: Society and SJ → India's Demographic Profile",
       "xp": 10
     }
   ],
