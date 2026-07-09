@@ -1,6 +1,6 @@
 {
   "hunterName": "Nani",
-  "totalXP": 6310,
+  "totalXP": 6350,
   "streak": 1,
   "totalDays": 36,
   "lastStudyDate": "2026-07-04",
@@ -2024,6 +2024,26 @@
       "s": 1,
       "rd": "2026-07-09",
       "rv": null
+    },
+    "economy:logistics": {
+      "s": 1,
+      "rd": "2026-07-09",
+      "rv": null
+    },
+    "economy:rural-urban-dev": {
+      "s": 1,
+      "rd": "2026-07-09",
+      "rv": null
+    },
+    "economy:energy-sector": {
+      "s": 1,
+      "rd": "2026-07-09",
+      "rv": null
+    },
+    "economy:intl-econ-orgs": {
+      "s": 1,
+      "rd": "2026-07-09",
+      "rv": null
     }
   },
   "completedQuests": {
@@ -2453,6 +2473,26 @@
   "bossDefeated": {},
   "activityLog": [
     {
+      "time": "08:50 PM",
+      "text": "📖 Read: Economy → International Economic Organisations",
+      "xp": 10
+    },
+    {
+      "time": "08:50 PM",
+      "text": "📖 Read: Economy → Energy Sector",
+      "xp": 10
+    },
+    {
+      "time": "08:50 PM",
+      "text": "📖 Read: Economy → Rural and Urban Development",
+      "xp": 10
+    },
+    {
+      "time": "08:50 PM",
+      "text": "📖 Read: Economy → Logistics and Transport",
+      "xp": 10
+    },
+    {
       "time": "06:33 AM",
       "text": "📖 Read: PSIR 1B → Environmental Movements",
       "xp": 10
@@ -2830,26 +2870,6 @@
     {
       "time": "09:04 PM",
       "text": "📖 Read: Society and SJ → Human Resources Development",
-      "xp": 10
-    },
-    {
-      "time": "09:04 PM",
-      "text": "📖 Read: Society and SJ → Hunger and Food Security",
-      "xp": 10
-    },
-    {
-      "time": "09:04 PM",
-      "text": "📖 Read: Society and SJ → Poverty",
-      "xp": 10
-    },
-    {
-      "time": "09:03 PM",
-      "text": "📖 Read: Society and SJ → Migration",
-      "xp": 10
-    },
-    {
-      "time": "09:03 PM",
-      "text": "📖 Read: Society and SJ → Population Issues and Policies",
       "xp": 10
     }
   ],
