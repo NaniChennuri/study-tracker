@@ -1,6 +1,6 @@
 {
   "hunterName": "Nani",
-  "totalXP": 6350,
+  "totalXP": 6360,
   "streak": 1,
   "totalDays": 36,
   "lastStudyDate": "2026-07-04",
@@ -2044,6 +2044,11 @@
       "s": 1,
       "rd": "2026-07-09",
       "rv": null
+    },
+    "psir2a:comp-pol-intro": {
+      "s": 1,
+      "rd": "2026-07-10",
+      "rv": null
     }
   },
   "completedQuests": {
@@ -2473,6 +2478,11 @@
   "bossDefeated": {},
   "activityLog": [
     {
+      "time": "06:44 AM",
+      "text": "📖 Read: PSIR 2A → Introduction to Comparative Politics",
+      "xp": 10
+    },
+    {
       "time": "08:50 PM",
       "text": "📖 Read: Economy → International Economic Organisations",
       "xp": 10
@@ -2865,11 +2875,6 @@
     {
       "time": "09:04 PM",
       "text": "📖 Read: Society and SJ → Health Sector",
-      "xp": 10
-    },
-    {
-      "time": "09:04 PM",
-      "text": "📖 Read: Society and SJ → Human Resources Development",
       "xp": 10
     }
   ],
