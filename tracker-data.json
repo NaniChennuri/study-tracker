@@ -1,6 +1,6 @@
 {
   "hunterName": "Nani",
-  "totalXP": 6430,
+  "totalXP": 6490,
   "streak": 1,
   "totalDays": 36,
   "lastStudyDate": "2026-07-04",
@@ -2084,6 +2084,36 @@
       "s": 1,
       "rd": "2026-07-13",
       "rv": null
+    },
+    "science:space-india": {
+      "s": 1,
+      "rd": "2026-07-13",
+      "rv": null
+    },
+    "science:orbits": {
+      "s": 1,
+      "rd": "2026-07-13",
+      "rv": null
+    },
+    "science:rockets": {
+      "s": 1,
+      "rd": "2026-07-13",
+      "rv": null
+    },
+    "science:satellites": {
+      "s": 1,
+      "rd": "2026-07-13",
+      "rv": null
+    },
+    "science:telescopes": {
+      "s": 1,
+      "rd": "2026-07-13",
+      "rv": null
+    },
+    "science:space-basics": {
+      "s": 1,
+      "rd": "2026-07-13",
+      "rv": null
     }
   },
   "completedQuests": {
@@ -2513,6 +2543,36 @@
   "bossDefeated": {},
   "activityLog": [
     {
+      "time": "08:57 PM",
+      "text": "📖 Read: Science and Tech → Space Basics",
+      "xp": 10
+    },
+    {
+      "time": "08:57 PM",
+      "text": "📖 Read: Science and Tech → Telescopes",
+      "xp": 10
+    },
+    {
+      "time": "08:57 PM",
+      "text": "📖 Read: Science and Tech → Satellite System",
+      "xp": 10
+    },
+    {
+      "time": "08:57 PM",
+      "text": "📖 Read: Science and Tech → Rockets",
+      "xp": 10
+    },
+    {
+      "time": "08:57 PM",
+      "text": "📖 Read: Science and Tech → Orbits",
+      "xp": 10
+    },
+    {
+      "time": "08:57 PM",
+      "text": "📖 Read: Science and Tech → Space Programmes in India",
+      "xp": 10
+    },
+    {
       "time": "07:37 AM",
       "text": "📖 Read: PSIR 2A → Political Sociology Approach",
       "xp": 10
@@ -2880,36 +2940,6 @@
     {
       "time": "09:05 PM",
       "text": "📖 Read: Society and SJ → Minorities",
-      "xp": 10
-    },
-    {
-      "time": "09:05 PM",
-      "text": "📖 Read: Society and SJ → Disabled Persons",
-      "xp": 10
-    },
-    {
-      "time": "09:04 PM",
-      "text": "📖 Read: Society and SJ → Senior Citizens / Aged",
-      "xp": 10
-    },
-    {
-      "time": "09:04 PM",
-      "text": "📖 Read: Society and SJ → Other Backward Classes",
-      "xp": 10
-    },
-    {
-      "time": "09:04 PM",
-      "text": "📖 Read: Society and SJ → Scheduled Tribes",
-      "xp": 10
-    },
-    {
-      "time": "09:04 PM",
-      "text": "📖 Read: Society and SJ → Scheduled Castes",
-      "xp": 10
-    },
-    {
-      "time": "09:04 PM",
-      "text": "📖 Read: Society and SJ → Children",
       "xp": 10
     }
   ],
