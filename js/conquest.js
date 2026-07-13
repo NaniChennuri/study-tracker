@@ -6,6 +6,10 @@ let _tooltip = null;
 let _detailSubjectId = null;
 let _detailTopicId   = null;
 
+// multi-select mode state
+let _selectMode = false;
+let _selectedTopics = new Set(); // keys of topicKey(subjectId, topicId)
+
 function renderConquestMap() {
   const container = document.getElementById('conquest-section');
   if (!container) return;
@@ -45,9 +49,18 @@ function renderConquestMap() {
     </div>
   `;
 
+  const toolbarHTML = `
+    <div class="conquest-toolbar">
+      <button class="select-mode-btn ${_selectMode ? 'active' : ''}" onclick="toggleSelectMode()">
+        ${_selectMode ? '✕ Exit Select Mode' : '☑ Select Multiple'}
+      </button>
+      ${_selectMode ? `<span class="select-mode-hint">Click topic boxes to select them, then apply a status below.</span>` : ''}
+    </div>
+  `;
+
   const groupsHTML = SUBJECT_GROUPS.map(g => renderConquestGroup(g)).join('');
 
-  container.innerHTML = statsHTML + groupsHTML;
+  container.innerHTML = statsHTML + toolbarHTML + groupsHTML;
 
   // init tooltip
   if (!_tooltip) {
@@ -55,6 +68,8 @@ function renderConquestMap() {
     _tooltip.className = 'topic-tooltip';
     document.body.appendChild(_tooltip);
   }
+
+  _renderSelectBar();
 }
 
 function renderConquestGroup(group) {
@@ -103,9 +118,13 @@ function renderSubjectCard(subj) {
       sec.topics.forEach(t => {
         const st = getTopicStatus(subj.id, t.id);
         const cssClass = TOPIC_STATUS[st.s].cssClass;
-        gridHTML += `<div class="topic-cell ${cssClass}"
+        const isSelected = _selectedTopics.has(topicKey(subj.id, t.id));
+        const clickHandler = _selectMode
+          ? `toggleTopicSelect('${subj.id}','${t.id}')`
+          : `openTopicDetail('${subj.id}','${t.id}')`;
+        gridHTML += `<div class="topic-cell ${cssClass} ${isSelected ? 'selected' : ''}"
           data-subj="${subj.id}" data-topic="${t.id}" data-name="${t.name.replace(/"/g,'&quot;')}"
-          onclick="openTopicDetail('${subj.id}','${t.id}')"
+          onclick="${clickHandler}"
           onmouseenter="showTooltip(event,'${t.name.replace(/'/g,'&#39;')}')"
           onmouseleave="hideTooltip()"></div>`;
       });
@@ -166,6 +185,85 @@ function _positionTooltip(evt) {
 
 function hideTooltip() {
   if (_tooltip) _tooltip.classList.remove('show');
+}
+
+// ── MULTI-SELECT MODE ─────────────────────────────────────────────────────
+function toggleSelectMode() {
+  _selectMode = !_selectMode;
+  if (!_selectMode) _selectedTopics.clear();
+  renderConquestMap();
+}
+
+function toggleTopicSelect(subjectId, topicId) {
+  const key = topicKey(subjectId, topicId);
+  if (_selectedTopics.has(key)) _selectedTopics.delete(key);
+  else _selectedTopics.add(key);
+  renderConquestMap();
+}
+
+function clearSelection() {
+  _selectedTopics.clear();
+  renderConquestMap();
+}
+
+function _renderSelectBar() {
+  let bar = document.getElementById('bulk-select-bar');
+  if (!_selectMode || _selectedTopics.size === 0) {
+    if (bar) bar.remove();
+    return;
+  }
+  if (!bar) {
+    bar = document.createElement('div');
+    bar.id = 'bulk-select-bar';
+    bar.className = 'bulk-select-bar';
+    document.body.appendChild(bar);
+  }
+  const n = _selectedTopics.size;
+  bar.innerHTML = `
+    <span class="bulk-select-count">${n} topic${n === 1 ? '' : 's'} selected</span>
+    <button class="bulk-select-btn mark-read"    onclick="bulkApplyStatus(1)">Mark as Read</button>
+    <button class="bulk-select-btn mark-revised" onclick="bulkApplyStatus(2)">Read + Revised</button>
+    <button class="bulk-select-btn mark-unread"  onclick="bulkApplyStatus(0)">Reset to Unread</button>
+    <button class="bulk-select-btn clear"        onclick="clearSelection()">Clear</button>
+  `;
+}
+
+function bulkApplyStatus(newStatus) {
+  if (_selectedTopics.size === 0) return;
+  const today = todayKey();
+  let count = 0;
+
+  _selectedTopics.forEach(key => {
+    const sepIdx = key.indexOf(':');
+    const subjectId = key.slice(0, sepIdx);
+    const topicId   = key.slice(sepIdx + 1);
+    const existing = getTopicStatus(subjectId, topicId);
+    setTopicStatus(subjectId, topicId, {
+      s:  newStatus,
+      rd: newStatus >= 1 ? (existing.rd || today) : null,
+      rv: newStatus >= 2 ? (existing.rv || today)  : null,
+    });
+    count++;
+  });
+
+  let xpGained = 0;
+  let verb = '↩ Bulk Reset';
+  if (newStatus === 1) { xpGained = count * 10; verb = '📖 Bulk Read'; }
+  else if (newStatus === 2) { xpGained = count * 15; verb = '✅ Bulk Revised'; }
+
+  if (xpGained > 0) {
+    state.totalXP = (state.totalXP || 0) + xpGained;
+    showXPPop(xpGained);
+  }
+  addLog(`${verb}: ${count} topic${count === 1 ? '' : 's'}`, xpGained);
+
+  _selectedTopics.clear();
+  _selectMode = false;
+
+  saveLocal();
+  renderConquestMap();
+  renderHeader();
+  renderLog();
 }
 
 // ── TOPIC DETAIL MODAL ────────────────────────────────────────────────────

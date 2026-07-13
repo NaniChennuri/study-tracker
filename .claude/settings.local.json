@@ -13,7 +13,10 @@
       "Bash(git add *)",
       "Bash(git commit -m ' *)",
       "Read(//Users/nanichennuri/.claude/projects/-Users-nanichennuri-Projects-Study-Tracker/memory/**)",
-      "Read(//Users/nanichennuri/.claude/projects/-Users-nanichennuri-Projects-study-tracker/memory/**)"
+      "Read(//Users/nanichennuri/.claude/projects/-Users-nanichennuri-Projects-study-tracker/memory/**)",
+      "Skill(run)",
+      "Skill(run:*)",
+      "Bash(curl -s http://localhost:8934/index.html)"
     ],
     "additionalDirectories": [
       "/Users/nanichennuri/Projects/study-tracker"
