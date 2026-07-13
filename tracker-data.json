@@ -1,6 +1,6 @@
 {
   "hunterName": "Nani",
-  "totalXP": 6360,
+  "totalXP": 6430,
   "streak": 1,
   "totalDays": 36,
   "lastStudyDate": "2026-07-04",
@@ -2049,6 +2049,41 @@
       "s": 1,
       "rd": "2026-07-10",
       "rv": null
+    },
+    "psir2a:systems-approach": {
+      "s": 1,
+      "rd": "2026-07-13",
+      "rv": null
+    },
+    "psir2a:structural-functional": {
+      "s": 1,
+      "rd": "2026-07-13",
+      "rv": null
+    },
+    "psir2a:pol-development": {
+      "s": 1,
+      "rd": "2026-07-13",
+      "rv": null
+    },
+    "psir2a:pol-modernisation": {
+      "s": 1,
+      "rd": "2026-07-13",
+      "rv": null
+    },
+    "psir2a:pol-culture": {
+      "s": 1,
+      "rd": "2026-07-13",
+      "rv": null
+    },
+    "psir2a:pol-economy": {
+      "s": 1,
+      "rd": "2026-07-13",
+      "rv": null
+    },
+    "psir2a:pol-sociology": {
+      "s": 1,
+      "rd": "2026-07-13",
+      "rv": null
     }
   },
   "completedQuests": {
@@ -2478,6 +2513,41 @@
   "bossDefeated": {},
   "activityLog": [
     {
+      "time": "07:37 AM",
+      "text": "📖 Read: PSIR 2A → Political Sociology Approach",
+      "xp": 10
+    },
+    {
+      "time": "07:37 AM",
+      "text": "📖 Read: PSIR 2A → Political Economy Approach",
+      "xp": 10
+    },
+    {
+      "time": "07:37 AM",
+      "text": "📖 Read: PSIR 2A → Political Culture Approach — Almond and Verba",
+      "xp": 10
+    },
+    {
+      "time": "07:37 AM",
+      "text": "📖 Read: PSIR 2A → Political Modernisation",
+      "xp": 10
+    },
+    {
+      "time": "07:37 AM",
+      "text": "📖 Read: PSIR 2A → Political Development Approach",
+      "xp": 10
+    },
+    {
+      "time": "07:37 AM",
+      "text": "📖 Read: PSIR 2A → Structural Functional Approach — Almond and Powell",
+      "xp": 10
+    },
+    {
+      "time": "07:37 AM",
+      "text": "📖 Read: PSIR 2A → Systems Approach — David Easton",
+      "xp": 10
+    },
+    {
       "time": "06:44 AM",
       "text": "📖 Read: PSIR 2A → Introduction to Comparative Politics",
       "xp": 10
@@ -2840,41 +2910,6 @@
     {
       "time": "09:04 PM",
       "text": "📖 Read: Society and SJ → Children",
-      "xp": 10
-    },
-    {
-      "time": "09:04 PM",
-      "text": "📖 Read: Society and SJ → Overview of Welfare Schemes",
-      "xp": 10
-    },
-    {
-      "time": "09:04 PM",
-      "text": "📖 Read: Society and SJ → Government Schemes and Key Issues (Women)",
-      "xp": 10
-    },
-    {
-      "time": "09:04 PM",
-      "text": "📖 Read: Society and SJ → Constitutional and Legal Framework (Women)",
-      "xp": 10
-    },
-    {
-      "time": "09:04 PM",
-      "text": "📖 Read: Society and SJ → Women's Movements",
-      "xp": 10
-    },
-    {
-      "time": "09:04 PM",
-      "text": "📖 Read: Society and SJ → Profile and Social Structures (Women)",
-      "xp": 10
-    },
-    {
-      "time": "09:04 PM",
-      "text": "📖 Read: Society and SJ → Education Sector",
-      "xp": 10
-    },
-    {
-      "time": "09:04 PM",
-      "text": "📖 Read: Society and SJ → Health Sector",
       "xp": 10
     }
   ],
