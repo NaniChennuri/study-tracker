@@ -1,6 +1,6 @@
 {
   "hunterName": "Nani",
-  "totalXP": 6490,
+  "totalXP": 6760,
   "streak": 1,
   "totalDays": 36,
   "lastStudyDate": "2026-07-04",
@@ -2114,6 +2114,141 @@
       "s": 1,
       "rd": "2026-07-13",
       "rv": null
+    },
+    "disaster:hazard-profile": {
+      "s": 1,
+      "rd": "2026-07-13",
+      "rv": null
+    },
+    "disaster:earthquakes": {
+      "s": 1,
+      "rd": "2026-07-13",
+      "rv": null
+    },
+    "disaster:floods": {
+      "s": 1,
+      "rd": "2026-07-13",
+      "rv": null
+    },
+    "disaster:cyclones": {
+      "s": 1,
+      "rd": "2026-07-13",
+      "rv": null
+    },
+    "disaster:droughts": {
+      "s": 1,
+      "rd": "2026-07-13",
+      "rv": null
+    },
+    "disaster:landslides": {
+      "s": 1,
+      "rd": "2026-07-13",
+      "rv": null
+    },
+    "disaster:dam-failures": {
+      "s": 1,
+      "rd": "2026-07-13",
+      "rv": null
+    },
+    "disaster:coastal-erosion": {
+      "s": 1,
+      "rd": "2026-07-13",
+      "rv": null
+    },
+    "disaster:manmade-disasters": {
+      "s": 1,
+      "rd": "2026-07-13",
+      "rv": null
+    },
+    "disaster:four-phase": {
+      "s": 1,
+      "rd": "2026-07-13",
+      "rv": null
+    },
+    "disaster:resilience": {
+      "s": 1,
+      "rd": "2026-07-13",
+      "rv": null
+    },
+    "disaster:india-shift": {
+      "s": 1,
+      "rd": "2026-07-13",
+      "rv": null
+    },
+    "disaster:ndma": {
+      "s": 1,
+      "rd": "2026-07-13",
+      "rv": null
+    },
+    "disaster:ndrf": {
+      "s": 1,
+      "rd": "2026-07-13",
+      "rv": null
+    },
+    "disaster:dm-amendment": {
+      "s": 1,
+      "rd": "2026-07-13",
+      "rv": null
+    },
+    "disaster:armed-tech": {
+      "s": 1,
+      "rd": "2026-07-13",
+      "rv": null
+    },
+    "disaster:community-first": {
+      "s": 1,
+      "rd": "2026-07-13",
+      "rv": null
+    },
+    "disaster:climate-nexus": {
+      "s": 1,
+      "rd": "2026-07-13",
+      "rv": null
+    },
+    "disaster:heat-action": {
+      "s": 1,
+      "rd": "2026-07-13",
+      "rv": null
+    },
+    "disaster:aapda-mitra": {
+      "s": 1,
+      "rd": "2026-07-13",
+      "rv": null
+    },
+    "disaster:odisha-model": {
+      "s": 1,
+      "rd": "2026-07-13",
+      "rv": null
+    },
+    "disaster:ndma-cbdrr": {
+      "s": 1,
+      "rd": "2026-07-13",
+      "rv": null
+    },
+    "disaster:sendai": {
+      "s": 1,
+      "rd": "2026-07-13",
+      "rv": null
+    },
+    "disaster:hyogo": {
+      "s": 1,
+      "rd": "2026-07-13",
+      "rv": null
+    },
+    "disaster:sendai-hyogo": {
+      "s": 1,
+      "rd": "2026-07-13",
+      "rv": null
+    },
+    "disaster:undrr": {
+      "s": 1,
+      "rd": "2026-07-13",
+      "rv": null
+    },
+    "disaster:dm-act-2005": {
+      "s": 1,
+      "rd": "2026-07-13",
+      "rv": null
     }
   },
   "completedQuests": {
@@ -2543,6 +2678,21 @@
   "bossDefeated": {},
   "activityLog": [
     {
+      "time": "09:10 PM",
+      "text": "📖 Bulk Read: 14 topics",
+      "xp": 140
+    },
+    {
+      "time": "09:10 PM",
+      "text": "📖 Read: Disaster Management → NDMA — Apex Body",
+      "xp": 10
+    },
+    {
+      "time": "09:10 PM",
+      "text": "📖 Bulk Read: 12 topics",
+      "xp": 120
+    },
+    {
       "time": "08:57 PM",
       "text": "📖 Read: Science and Tech → Space Basics",
       "xp": 10
@@ -2925,21 +3075,6 @@
     {
       "time": "07:33 AM",
       "text": "📖 Read: PSIR 1B → Federalism",
-      "xp": 10
-    },
-    {
-      "time": "07:33 AM",
-      "text": "📖 Read: PSIR 1B → Grassroots Democracy",
-      "xp": 10
-    },
-    {
-      "time": "09:05 PM",
-      "text": "📖 Read: Society and SJ → LGBT Community",
-      "xp": 10
-    },
-    {
-      "time": "09:05 PM",
-      "text": "📖 Read: Society and SJ → Minorities",
       "xp": 10
     }
   ],
