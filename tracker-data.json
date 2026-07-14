@@ -1,6 +1,6 @@
 {
   "hunterName": "Nani",
-  "totalXP": 6760,
+  "totalXP": 6790,
   "streak": 1,
   "totalDays": 36,
   "lastStudyDate": "2026-07-04",
@@ -2249,6 +2249,21 @@
       "s": 1,
       "rd": "2026-07-13",
       "rv": null
+    },
+    "psir2a:advanced-industrial": {
+      "s": 1,
+      "rd": "2026-07-14",
+      "rv": null
+    },
+    "psir2a:socialist-states": {
+      "s": 1,
+      "rd": "2026-07-14",
+      "rv": null
+    },
+    "psir2a:developing-countries": {
+      "s": 1,
+      "rd": "2026-07-14",
+      "rv": null
     }
   },
   "completedQuests": {
@@ -2678,6 +2693,11 @@
   "bossDefeated": {},
   "activityLog": [
     {
+      "time": "07:13 AM",
+      "text": "📖 Bulk Read: 3 topics",
+      "xp": 30
+    },
+    {
       "time": "09:10 PM",
       "text": "📖 Bulk Read: 14 topics",
       "xp": 140
@@ -3070,11 +3090,6 @@
     {
       "time": "07:33 AM",
       "text": "📖 Read: PSIR 1B → Planning and Economic Development",
-      "xp": 10
-    },
-    {
-      "time": "07:33 AM",
-      "text": "📖 Read: PSIR 1B → Federalism",
       "xp": 10
     }
   ],
