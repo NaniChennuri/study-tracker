@@ -1,6 +1,6 @@
 {
   "hunterName": "Nani",
-  "totalXP": 6790,
+  "totalXP": 6830,
   "streak": 1,
   "totalDays": 36,
   "lastStudyDate": "2026-07-04",
@@ -2264,6 +2264,26 @@
       "s": 1,
       "rd": "2026-07-14",
       "rv": null
+    },
+    "science:energy-st": {
+      "s": 1,
+      "rd": "2026-07-14",
+      "rv": null
+    },
+    "science:nuclear": {
+      "s": 1,
+      "rd": "2026-07-14",
+      "rv": null
+    },
+    "science:defence": {
+      "s": 1,
+      "rd": "2026-07-14",
+      "rv": null
+    },
+    "science:sci-misc": {
+      "s": 1,
+      "rd": "2026-07-14",
+      "rv": null
     }
   },
   "completedQuests": {
@@ -2693,6 +2713,16 @@
   "bossDefeated": {},
   "activityLog": [
     {
+      "time": "09:10 PM",
+      "text": "📖 Read: Science and Tech → Science and Technology — Miscellaneous",
+      "xp": 10
+    },
+    {
+      "time": "09:10 PM",
+      "text": "📖 Bulk Read: 3 topics",
+      "xp": 30
+    },
+    {
       "time": "07:13 AM",
       "text": "📖 Bulk Read: 3 topics",
       "xp": 30
@@ -3080,16 +3110,6 @@
     {
       "time": "02:50 PM",
       "text": "📖 Read: Economy → National Income Accounting",
-      "xp": 10
-    },
-    {
-      "time": "02:50 PM",
-      "text": "📖 Read: Economy → Introduction to Economy",
-      "xp": 10
-    },
-    {
-      "time": "07:33 AM",
-      "text": "📖 Read: PSIR 1B → Planning and Economic Development",
       "xp": 10
     }
   ],
