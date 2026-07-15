@@ -1,6 +1,6 @@
 {
   "hunterName": "Nani",
-  "totalXP": 6830,
+  "totalXP": 6900,
   "streak": 1,
   "totalDays": 36,
   "lastStudyDate": "2026-07-04",
@@ -2284,6 +2284,41 @@
       "s": 1,
       "rd": "2026-07-14",
       "rv": null
+    },
+    "science:it": {
+      "s": 1,
+      "rd": "2026-07-15",
+      "rv": null
+    },
+    "science:frontier-tech": {
+      "s": 1,
+      "rd": "2026-07-15",
+      "rv": null
+    },
+    "science:bio-intro": {
+      "s": 1,
+      "rd": "2026-07-15",
+      "rv": null
+    },
+    "psir2a:political-parties-cp": {
+      "s": 1,
+      "rd": "2026-07-15",
+      "rv": null
+    },
+    "psir2a:party-systems": {
+      "s": 1,
+      "rd": "2026-07-15",
+      "rv": null
+    },
+    "psir2a:pressure-groups-cp": {
+      "s": 1,
+      "rd": "2026-07-15",
+      "rv": null
+    },
+    "psir2a:social-mvmts-cp": {
+      "s": 1,
+      "rd": "2026-07-15",
+      "rv": null
     }
   },
   "completedQuests": {
@@ -2713,6 +2748,16 @@
   "bossDefeated": {},
   "activityLog": [
     {
+      "time": "09:46 PM",
+      "text": "📖 Bulk Read: 4 topics",
+      "xp": 40
+    },
+    {
+      "time": "09:46 PM",
+      "text": "📖 Bulk Read: 3 topics",
+      "xp": 30
+    },
+    {
       "time": "09:10 PM",
       "text": "📖 Read: Science and Tech → Science and Technology — Miscellaneous",
       "xp": 10
@@ -3100,16 +3145,6 @@
     {
       "time": "02:51 PM",
       "text": "📖 Read: Economy → Growth and Development",
-      "xp": 10
-    },
-    {
-      "time": "02:51 PM",
-      "text": "📖 Read: Economy → Microeconomics",
-      "xp": 10
-    },
-    {
-      "time": "02:50 PM",
-      "text": "📖 Read: Economy → National Income Accounting",
       "xp": 10
     }
   ],
