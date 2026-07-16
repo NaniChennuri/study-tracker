@@ -1,6 +1,6 @@
 {
   "hunterName": "Nani",
-  "totalXP": 6900,
+  "totalXP": 6940,
   "streak": 1,
   "totalDays": 36,
   "lastStudyDate": "2026-07-04",
@@ -2319,6 +2319,26 @@
       "s": 1,
       "rd": "2026-07-15",
       "rv": null
+    },
+    "psir2a:glob-understanding": {
+      "s": 1,
+      "rd": "2026-07-16",
+      "rv": null
+    },
+    "psir2a:glob-theories": {
+      "s": 1,
+      "rd": "2026-07-16",
+      "rv": null
+    },
+    "psir2a:glob-south": {
+      "s": 1,
+      "rd": "2026-07-16",
+      "rv": null
+    },
+    "psir2a:glob-sovereignty": {
+      "s": 1,
+      "rd": "2026-07-16",
+      "rv": null
     }
   },
   "completedQuests": {
@@ -2748,6 +2768,11 @@
   "bossDefeated": {},
   "activityLog": [
     {
+      "time": "07:36 AM",
+      "text": "📖 Bulk Read: 4 topics",
+      "xp": 40
+    },
+    {
       "time": "09:46 PM",
       "text": "📖 Bulk Read: 4 topics",
       "xp": 40
@@ -3140,11 +3165,6 @@
     {
       "time": "02:51 PM",
       "text": "📖 Read: Economy → Economic Planning",
-      "xp": 10
-    },
-    {
-      "time": "02:51 PM",
-      "text": "📖 Read: Economy → Growth and Development",
       "xp": 10
     }
   ],
