@@ -1,6 +1,6 @@
 {
   "hunterName": "Nani",
-  "totalXP": 6940,
+  "totalXP": 6970,
   "streak": 1,
   "totalDays": 36,
   "lastStudyDate": "2026-07-04",
@@ -2339,6 +2339,21 @@
       "s": 1,
       "rd": "2026-07-16",
       "rv": null
+    },
+    "science:nutrients": {
+      "s": 1,
+      "rd": "2026-07-16",
+      "rv": null
+    },
+    "science:blood": {
+      "s": 1,
+      "rd": "2026-07-16",
+      "rv": null
+    },
+    "science:diseases": {
+      "s": 1,
+      "rd": "2026-07-16",
+      "rv": null
     }
   },
   "completedQuests": {
@@ -2768,6 +2783,11 @@
   "bossDefeated": {},
   "activityLog": [
     {
+      "time": "10:25 PM",
+      "text": "📖 Bulk Read: 3 topics",
+      "xp": 30
+    },
+    {
       "time": "07:36 AM",
       "text": "📖 Bulk Read: 4 topics",
       "xp": 40
@@ -3160,11 +3180,6 @@
     {
       "time": "02:51 PM",
       "text": "📖 Read: Economy → LPG Reforms",
-      "xp": 10
-    },
-    {
-      "time": "02:51 PM",
-      "text": "📖 Read: Economy → Economic Planning",
       "xp": 10
     }
   ],
