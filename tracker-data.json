@@ -1,6 +1,6 @@
 {
   "hunterName": "Nani",
-  "totalXP": 6970,
+  "totalXP": 6990,
   "streak": 1,
   "totalDays": 36,
   "lastStudyDate": "2026-07-04",
@@ -2354,6 +2354,16 @@
       "s": 1,
       "rd": "2026-07-16",
       "rv": null
+    },
+    "psir2a:ir-study": {
+      "s": 1,
+      "rd": "2026-07-17",
+      "rv": null
+    },
+    "psir2a:realist-school": {
+      "s": 1,
+      "rd": "2026-07-17",
+      "rv": null
     }
   },
   "completedQuests": {
@@ -2783,6 +2793,11 @@
   "bossDefeated": {},
   "activityLog": [
     {
+      "time": "07:41 AM",
+      "text": "📖 Bulk Read: 2 topics",
+      "xp": 20
+    },
+    {
       "time": "10:25 PM",
       "text": "📖 Bulk Read: 3 topics",
       "xp": 30
@@ -3175,11 +3190,6 @@
     {
       "time": "02:51 PM",
       "text": "📖 Read: Economy → Inflation",
-      "xp": 10
-    },
-    {
-      "time": "02:51 PM",
-      "text": "📖 Read: Economy → LPG Reforms",
       "xp": 10
     }
   ],
