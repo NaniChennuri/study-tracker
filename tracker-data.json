@@ -1,6 +1,6 @@
 {
   "hunterName": "Nani",
-  "totalXP": 7020,
+  "totalXP": 7380,
   "streak": 1,
   "totalDays": 36,
   "lastStudyDate": "2026-07-04",
@@ -2379,6 +2379,186 @@
       "s": 1,
       "rd": "2026-07-17",
       "rv": null
+    },
+    "environment:core-adaptations": {
+      "s": 1,
+      "rd": "2026-07-20",
+      "rv": null
+    },
+    "environment:species-interactions": {
+      "s": 1,
+      "rd": "2026-07-20",
+      "rv": null
+    },
+    "environment:eco-components": {
+      "s": 1,
+      "rd": "2026-07-20",
+      "rv": null
+    },
+    "environment:nutrient-cycling": {
+      "s": 1,
+      "rd": "2026-07-20",
+      "rv": null
+    },
+    "environment:eco-succession": {
+      "s": 1,
+      "rd": "2026-07-20",
+      "rv": null
+    },
+    "environment:eco-pyqs": {
+      "s": 1,
+      "rd": "2026-07-20",
+      "rv": null
+    },
+    "environment:eco-intro": {
+      "s": 1,
+      "rd": "2026-07-20",
+      "rv": null
+    },
+    "environment:bio-measurement": {
+      "s": 1,
+      "rd": "2026-07-20",
+      "rv": null
+    },
+    "environment:biogeographic-zones": {
+      "s": 1,
+      "rd": "2026-07-20",
+      "rv": null
+    },
+    "environment:forest-ecosystem": {
+      "s": 1,
+      "rd": "2026-07-20",
+      "rv": null
+    },
+    "environment:desertification": {
+      "s": 1,
+      "rd": "2026-07-20",
+      "rv": null
+    },
+    "environment:aquatic-ecosystem": {
+      "s": 1,
+      "rd": "2026-07-20",
+      "rv": null
+    },
+    "environment:mangrove": {
+      "s": 1,
+      "rd": "2026-07-20",
+      "rv": null
+    },
+    "environment:wetland": {
+      "s": 1,
+      "rd": "2026-07-20",
+      "rv": null
+    },
+    "environment:coral": {
+      "s": 1,
+      "rd": "2026-07-20",
+      "rv": null
+    },
+    "environment:coastal-zone": {
+      "s": 1,
+      "rd": "2026-07-20",
+      "rv": null
+    },
+    "environment:bio-hotspots": {
+      "s": 1,
+      "rd": "2026-07-20",
+      "rv": null
+    },
+    "environment:protected-areas": {
+      "s": 1,
+      "rd": "2026-07-20",
+      "rv": null
+    },
+    "environment:biosphere-reserve": {
+      "s": 1,
+      "rd": "2026-07-20",
+      "rv": null
+    },
+    "environment:conservation-measures": {
+      "s": 1,
+      "rd": "2026-07-20",
+      "rv": null
+    },
+    "environment:species-projects": {
+      "s": 1,
+      "rd": "2026-07-20",
+      "rv": null
+    },
+    "environment:bio-pyqs": {
+      "s": 1,
+      "rd": "2026-07-20",
+      "rv": null
+    },
+    "environment:pollution-overview": {
+      "s": 1,
+      "rd": "2026-07-20",
+      "rv": null
+    },
+    "environment:cc-core": {
+      "s": 1,
+      "rd": "2026-07-20",
+      "rv": null
+    },
+    "environment:air-pollution": {
+      "s": 1,
+      "rd": "2026-07-20",
+      "rv": null
+    },
+    "environment:mitigation": {
+      "s": 1,
+      "rd": "2026-07-20",
+      "rv": null
+    },
+    "environment:india-cc-policies": {
+      "s": 1,
+      "rd": "2026-07-20",
+      "rv": null
+    },
+    "environment:global-conventions": {
+      "s": 1,
+      "rd": "2026-07-20",
+      "rv": null
+    },
+    "environment:cc-pyqs": {
+      "s": 1,
+      "rd": "2026-07-20",
+      "rv": null
+    },
+    "environment:water-pollution": {
+      "s": 1,
+      "rd": "2026-07-20",
+      "rv": null
+    },
+    "environment:noise-pollution": {
+      "s": 1,
+      "rd": "2026-07-20",
+      "rv": null
+    },
+    "environment:waste-management": {
+      "s": 1,
+      "rd": "2026-07-20",
+      "rv": null
+    },
+    "environment:pollution-pyqs": {
+      "s": 1,
+      "rd": "2026-07-20",
+      "rv": null
+    },
+    "environment:eia": {
+      "s": 1,
+      "rd": "2026-07-20",
+      "rv": null
+    },
+    "environment:indian-institutions": {
+      "s": 1,
+      "rd": "2026-07-20",
+      "rv": null
+    },
+    "environment:env-conventions": {
+      "s": 1,
+      "rd": "2026-07-20",
+      "rv": null
     }
   },
   "completedQuests": {
@@ -2808,6 +2988,16 @@
   "bossDefeated": {},
   "activityLog": [
     {
+      "time": "05:49 PM",
+      "text": "📖 Bulk Read: 20 topics",
+      "xp": 200
+    },
+    {
+      "time": "05:49 PM",
+      "text": "📖 Bulk Read: 16 topics",
+      "xp": 160
+    },
+    {
       "time": "07:05 PM",
       "text": "📖 Bulk Read: 3 topics",
       "xp": 30
@@ -3195,16 +3385,6 @@
     {
       "time": "11:39 PM",
       "text": "📖 Read: Economy → Monetary Policy",
-      "xp": 10
-    },
-    {
-      "time": "11:39 PM",
-      "text": "🗞️ Current Affairs completed",
-      "xp": 10
-    },
-    {
-      "time": "11:39 PM",
-      "text": "📰 Editorial completed",
       "xp": 10
     }
   ],
