@@ -1,6 +1,6 @@
 {
   "hunterName": "Nani",
-  "totalXP": 7380,
+  "totalXP": 7410,
   "streak": 1,
   "totalDays": 36,
   "lastStudyDate": "2026-07-04",
@@ -2559,6 +2559,21 @@
       "s": 1,
       "rd": "2026-07-20",
       "rv": null
+    },
+    "psir2a:liberalism-school": {
+      "s": 1,
+      "rd": "2026-07-21",
+      "rv": null
+    },
+    "psir2a:marxist-school": {
+      "s": 1,
+      "rd": "2026-07-21",
+      "rv": null
+    },
+    "psir2a:other-ir-theories": {
+      "s": 1,
+      "rd": "2026-07-21",
+      "rv": null
     }
   },
   "completedQuests": {
@@ -2988,6 +3003,11 @@
   "bossDefeated": {},
   "activityLog": [
     {
+      "time": "07:44 AM",
+      "text": "📖 Bulk Read: 3 topics",
+      "xp": 30
+    },
+    {
       "time": "05:49 PM",
       "text": "📖 Bulk Read: 20 topics",
       "xp": 200
@@ -3380,11 +3400,6 @@
     {
       "time": "11:39 PM",
       "text": "📖 Read: Economy → Financial Market — Introduction",
-      "xp": 10
-    },
-    {
-      "time": "11:39 PM",
-      "text": "📖 Read: Economy → Monetary Policy",
       "xp": 10
     }
   ],
