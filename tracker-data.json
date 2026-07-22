@@ -1,6 +1,6 @@
 {
   "hunterName": "Nani",
-  "totalXP": 7410,
+  "totalXP": 7420,
   "streak": 1,
   "totalDays": 36,
   "lastStudyDate": "2026-07-04",
@@ -2574,6 +2574,11 @@
       "s": 1,
       "rd": "2026-07-21",
       "rv": null
+    },
+    "psir2a:national-interest": {
+      "s": 1,
+      "rd": "2026-07-22",
+      "rv": null
     }
   },
   "completedQuests": {
@@ -3003,6 +3008,11 @@
   "bossDefeated": {},
   "activityLog": [
     {
+      "time": "07:56 AM",
+      "text": "📖 Read: PSIR 2A → National Interest",
+      "xp": 10
+    },
+    {
       "time": "07:44 AM",
       "text": "📖 Bulk Read: 3 topics",
       "xp": 30
@@ -3395,11 +3405,6 @@
     {
       "time": "11:39 PM",
       "text": "📖 Read: Economy → Money and Capital Markets",
-      "xp": 10
-    },
-    {
-      "time": "11:39 PM",
-      "text": "📖 Read: Economy → Financial Market — Introduction",
       "xp": 10
     }
   ],
