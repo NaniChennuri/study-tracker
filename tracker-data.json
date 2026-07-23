@@ -1,6 +1,6 @@
 {
   "hunterName": "Nani",
-  "totalXP": 7420,
+  "totalXP": 7470,
   "streak": 1,
   "totalDays": 36,
   "lastStudyDate": "2026-07-04",
@@ -2579,6 +2579,31 @@
       "s": 1,
       "rd": "2026-07-22",
       "rv": null
+    },
+    "psir2a:security-ir": {
+      "s": 1,
+      "rd": "2026-07-23",
+      "rv": null
+    },
+    "psir2a:deterrence": {
+      "s": 1,
+      "rd": "2026-07-23",
+      "rv": null
+    },
+    "psir2a:balance-of-power": {
+      "s": 1,
+      "rd": "2026-07-23",
+      "rv": null
+    },
+    "psir2a:transnational": {
+      "s": 1,
+      "rd": "2026-07-23",
+      "rv": null
+    },
+    "psir2a:collective-sec": {
+      "s": 1,
+      "rd": "2026-07-23",
+      "rv": null
     }
   },
   "completedQuests": {
@@ -3008,6 +3033,11 @@
   "bossDefeated": {},
   "activityLog": [
     {
+      "time": "06:30 AM",
+      "text": "📖 Bulk Read: 5 topics",
+      "xp": 50
+    },
+    {
       "time": "07:56 AM",
       "text": "📖 Read: PSIR 2A → National Interest",
       "xp": 10
@@ -3400,11 +3430,6 @@
     {
       "time": "11:40 PM",
       "text": "📖 Read: Economy → Commodity Market",
-      "xp": 10
-    },
-    {
-      "time": "11:39 PM",
-      "text": "📖 Read: Economy → Money and Capital Markets",
       "xp": 10
     }
   ],
