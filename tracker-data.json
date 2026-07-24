@@ -1,6 +1,6 @@
 {
   "hunterName": "Nani",
-  "totalXP": 7470,
+  "totalXP": 7520,
   "streak": 1,
   "totalDays": 36,
   "lastStudyDate": "2026-07-04",
@@ -2604,6 +2604,31 @@
       "s": 1,
       "rd": "2026-07-23",
       "rv": null
+    },
+    "psir2a:cold-war-ir": {
+      "s": 1,
+      "rd": "2026-07-24",
+      "rv": null
+    },
+    "psir2a:nuclear-sec": {
+      "s": 1,
+      "rd": "2026-07-24",
+      "rv": null
+    },
+    "psir2a:nam-ir": {
+      "s": 1,
+      "rd": "2026-07-24",
+      "rv": null
+    },
+    "psir2a:us-hegemony": {
+      "s": 1,
+      "rd": "2026-07-24",
+      "rv": null
+    },
+    "psir2a:nato": {
+      "s": 1,
+      "rd": "2026-07-24",
+      "rv": null
     }
   },
   "completedQuests": {
@@ -3033,6 +3058,11 @@
   "bossDefeated": {},
   "activityLog": [
     {
+      "time": "07:17 AM",
+      "text": "📖 Bulk Read: 5 topics",
+      "xp": 50
+    },
+    {
       "time": "06:30 AM",
       "text": "📖 Bulk Read: 5 topics",
       "xp": 50
@@ -3425,11 +3455,6 @@
     {
       "time": "11:40 PM",
       "text": "📖 Read: Economy → Regulators — SEBI",
-      "xp": 10
-    },
-    {
-      "time": "11:40 PM",
-      "text": "📖 Read: Economy → Commodity Market",
       "xp": 10
     }
   ],
