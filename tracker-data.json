@@ -1,6 +1,6 @@
 {
   "hunterName": "Nani",
-  "totalXP": 7520,
+  "totalXP": 7560,
   "streak": 1,
   "totalDays": 36,
   "lastStudyDate": "2026-07-04",
@@ -2629,6 +2629,26 @@
       "s": 1,
       "rd": "2026-07-24",
       "rv": null
+    },
+    "psir2a:bretton-woods": {
+      "s": 1,
+      "rd": "2026-07-29",
+      "rv": null
+    },
+    "psir2a:world-bank": {
+      "s": 1,
+      "rd": "2026-07-29",
+      "rv": null
+    },
+    "psir2a:wto": {
+      "s": 1,
+      "rd": "2026-07-29",
+      "rv": null
+    },
+    "psir2a:nieo": {
+      "s": 1,
+      "rd": "2026-07-29",
+      "rv": null
     }
   },
   "completedQuests": {
@@ -3058,6 +3078,11 @@
   "bossDefeated": {},
   "activityLog": [
     {
+      "time": "07:02 AM",
+      "text": "📖 Bulk Read: 4 topics",
+      "xp": 40
+    },
+    {
       "time": "07:17 AM",
       "text": "📖 Bulk Read: 5 topics",
       "xp": 50
@@ -3450,11 +3475,6 @@
     {
       "time": "11:40 PM",
       "text": "📖 Read: Economy → Pension Schemes",
-      "xp": 10
-    },
-    {
-      "time": "11:40 PM",
-      "text": "📖 Read: Economy → Regulators — SEBI",
       "xp": 10
     }
   ],
