@@ -23,6 +23,19 @@ let state      = { ...DEFAULT_STATE };
 let ghToken    = '';
 let ghFileSHA  = '';
 let activeSubjectId = null;
+let isDirty    = false;
+
+function markDirty() {
+  isDirty = true;
+  const btn = document.getElementById('btn-save');
+  if (btn) btn.classList.add('dirty');
+}
+
+function markClean() {
+  isDirty = false;
+  const btn = document.getElementById('btn-save');
+  if (btn) btn.classList.remove('dirty');
+}
 
 // ── HELPERS ───────────────────────────────────────────────────────────────
 function todayStr() {
@@ -64,6 +77,7 @@ function fmtDate(d) {
 // ── PERSISTENCE — LOCAL ───────────────────────────────────────────────────
 function saveLocal() {
   localStorage.setItem('upsc_tracker_v2', JSON.stringify(state));
+  markDirty();
 }
 
 function loadLocal() {
@@ -147,6 +161,7 @@ async function loadFromGitHub() {
 async function saveAll() {
   saveLocal();
   const ok = await saveToGitHub();
+  if (ok) markClean();
   showToast(ok ? '✓ Saved to GitHub' : '✓ Saved locally (GitHub failed)', ok);
 }
 
@@ -200,11 +215,18 @@ function renderTopbar() {
   const caDone = !!state.ca[today];
   const btn    = document.getElementById('ca-today-btn');
   const daysEl = document.getElementById('tb-days');
+  const actEl  = document.getElementById('tb-active');
   if (btn) {
     btn.textContent = caDone ? '✓' : '○';
     btn.className   = 'ca-btn' + (caDone ? ' done' : '');
   }
   if (daysEl) daysEl.textContent = `${daysToExam()} days to exam`;
+  if (actEl) {
+    const start = START_DATE <= today ? START_DATE : today;
+    const totalDays = dateRange(start, today).length;
+    const activeDays = dateRange(start, today).filter(d => !!state.ca[d]).length;
+    actEl.textContent = `${activeDays}/${totalDays} days active`;
+  }
 }
 
 function toggleCAToday() {
@@ -228,7 +250,7 @@ function renderSidebar() {
         let right = '';
         if (st) {
           const pct = st.total ? Math.round(st.done / st.total * 100) : 0;
-          right = `<span class="subj-pct ${pct === 100 ? 'complete' : ''}">${st.done}/${st.total}</span>`;
+          right = `<span class="subj-pct ${pct === 100 ? 'complete' : ''}">${st.done}/${st.total} · ${pct}%</span>`;
         }
         return `<div class="subj-item${active}" onclick="navigate('${subj.id}')">
           <span class="subj-name">${subj.label}</span>${right}
@@ -361,46 +383,109 @@ function adjustTopic(subjectId, groupId, i, field, delta) {
 }
 
 // ── CA PANEL ──────────────────────────────────────────────────────────────
+let caViewMonth = null; // 'YYYY-MM', null = current month
+
+function caStreak() {
+  const today = todayStr();
+  let streak = 0, d = new Date();
+  while (true) {
+    const s = `${d.getFullYear()}-${String(d.getMonth()+1).padStart(2,'0')}-${String(d.getDate()).padStart(2,'0')}`;
+    if (s > today) { d.setDate(d.getDate()-1); continue; }
+    if (state.ca[s]) { streak++; d.setDate(d.getDate()-1); }
+    else break;
+  }
+  return streak;
+}
+
 function renderCAPanel(el) {
   const today = todayStr();
-  // show from start date up to today
+  const now   = new Date();
+  const viewDate = caViewMonth ? new Date(caViewMonth + '-01') : new Date(now.getFullYear(), now.getMonth(), 1);
+  const year  = viewDate.getFullYear();
+  const month = viewDate.getMonth(); // 0-indexed
+  const monthStr = `${year}-${String(month+1).padStart(2,'0')}`;
+
+  const firstDay = new Date(year, month, 1).getDay(); // 0=Sun
+  const daysInMonth = new Date(year, month+1, 0).getDate();
+  const startOffset = (firstDay + 6) % 7; // shift so Mon=0
+
+  // stats for this month
+  let monthDone = 0, monthTotal = 0;
+  for (let d = 1; d <= daysInMonth; d++) {
+    const ds = `${monthStr}-${String(d).padStart(2,'0')}`;
+    if (ds > today) break;
+    const startD = START_DATE > today ? today : START_DATE;
+    if (ds < startD) continue;
+    monthTotal++;
+    if (state.ca[ds]) monthDone++;
+  }
+
+  // overall stats
   const startD = START_DATE > today ? today : START_DATE;
-  const dates  = dateRange(startD, today).reverse();
+  const allDates = dateRange(startD, today);
+  const totalDone = allDates.filter(d => !!state.ca[d]).length;
+  const streak = caStreak();
 
-  const rows = dates.map(d => {
-    const done = !!state.ca[d];
-    const isToday = d === today;
-    return `
-      <div class="ca-row ${done ? 'ca-done' : 'ca-miss'} ${isToday ? 'ca-today' : ''}">
-        <span class="ca-date">${fmtDate(d)}${isToday ? ' — Today' : ''}</span>
-        <button class="ca-tick-btn ${done ? 'done' : ''}" onclick="toggleCADate('${d}')">
-          ${done ? '✓ Done' : '✗ Missed'}
-        </button>
-      </div>
-    `;
-  }).join('');
+  // build calendar cells
+  const dayLabels = ['Mon','Tue','Wed','Thu','Fri','Sat','Sun'];
+  const cells = dayLabels.map(l => `<div class="ca-day-label">${l}</div>`).join('')
+    + Array(startOffset).fill('<div class="ca-cell ca-cell-empty"></div>').join('')
+    + Array.from({length: daysInMonth}, (_, idx) => {
+        const d = idx + 1;
+        const ds = `${monthStr}-${String(d).padStart(2,'0')}`;
+        const isToday = ds === today;
+        const isFuture = ds > today;
+        const beforeStart = ds < startD;
+        const done = !!state.ca[ds];
+        let cls = 'ca-cell';
+        if (isFuture || beforeStart) cls += ' ca-cell-future';
+        else if (done) cls += ' ca-cell-done';
+        else cls += ' ca-cell-miss';
+        if (isToday) cls += ' ca-cell-today';
+        const clickable = !isFuture && !beforeStart;
+        return `<div class="${cls}" ${clickable ? `onclick="toggleCADate('${ds}')"` : ''}>
+          <span class="ca-cell-num">${d}</span>
+          ${done ? '<span class="ca-cell-tick">✓</span>' : ''}
+        </div>`;
+      }).join('');
 
-  const total  = dates.length;
-  const done   = dates.filter(d => !!state.ca[d]).length;
-  const missed = total - done;
+  const prevMonth = new Date(year, month-1, 1);
+  const nextMonth = new Date(year, month+1, 1);
+  const prevStr = `${prevMonth.getFullYear()}-${String(prevMonth.getMonth()+1).padStart(2,'0')}`;
+  const nextStr = `${nextMonth.getFullYear()}-${String(nextMonth.getMonth()+1).padStart(2,'0')}`;
+  const monthLabel = viewDate.toLocaleDateString('en-IN', { month: 'long', year: 'numeric' });
+  const canGoNext = nextStr <= `${now.getFullYear()}-${String(now.getMonth()+1).padStart(2,'0')}`;
 
   el.innerHTML = `
     <div class="main-header">
       <h1 class="main-title">Current Affairs</h1>
       <div class="main-meta">
-        <span class="pill pill-green">${done} done</span>
-        <span class="pill pill-red">${missed} missed</span>
-        <span class="pill pill-muted">${total} days tracked</span>
+        <span class="pill pill-green">${totalDone} total done</span>
+        <span class="pill pill-amber">${streak} day streak</span>
+        <span class="pill pill-blue">${monthDone}/${monthTotal} this month</span>
       </div>
     </div>
-    <div class="ca-list">${rows}</div>
+    <div class="ca-calendar-wrap">
+      <div class="ca-nav">
+        <button class="ca-nav-btn" onclick="caNavigate('${prevStr}')">&#8592;</button>
+        <span class="ca-nav-label">${monthLabel}</span>
+        <button class="ca-nav-btn" onclick="caNavigate('${nextStr}')" ${!canGoNext ? 'disabled' : ''}>&#8594;</button>
+      </div>
+      <div class="ca-grid">${cells}</div>
+    </div>
   `;
+}
+
+function caNavigate(monthStr) {
+  caViewMonth = monthStr;
+  renderCAPanel(document.getElementById('main'));
 }
 
 function toggleCADate(d) {
   if (state.ca[d]) delete state.ca[d];
   else state.ca[d] = true;
   saveLocal();
+  markDirty();
   renderTopbar();
   renderCAPanel(document.getElementById('main'));
 }
