@@ -75,6 +75,14 @@ function loadLocal() {
 async function saveToGitHub() {
   if (!ghToken) return false;
   try {
+    // Always fetch latest SHA before writing to avoid 409 conflicts
+    if (!ghFileSHA) {
+      const check = await fetch(
+        `https://api.github.com/repos/${GITHUB_USER}/${GITHUB_REPO}/contents/${DATA_FILE}`,
+        { headers: { Authorization: `token ${ghToken}`, Accept: 'application/vnd.github.v3+json' } }
+      );
+      if (check.ok) { const j = await check.json(); ghFileSHA = j.sha; }
+    }
     const content = btoa(unescape(encodeURIComponent(JSON.stringify(state, null, 2))));
     const body = { message: `update: ${todayStr()}`, content };
     if (ghFileSHA) body.sha = ghFileSHA;
@@ -94,6 +102,22 @@ async function saveToGitHub() {
       const json = await res.json();
       ghFileSHA = json.content.sha;
       return true;
+    }
+    // If 409 conflict, fetch fresh SHA and retry once
+    if (res.status === 409 || res.status === 422) {
+      const check = await fetch(
+        `https://api.github.com/repos/${GITHUB_USER}/${GITHUB_REPO}/contents/${DATA_FILE}`,
+        { headers: { Authorization: `token ${ghToken}`, Accept: 'application/vnd.github.v3+json' } }
+      );
+      if (check.ok) {
+        const j = await check.json(); ghFileSHA = j.sha;
+        body.sha = ghFileSHA;
+        const retry = await fetch(
+          `https://api.github.com/repos/${GITHUB_USER}/${GITHUB_REPO}/contents/${DATA_FILE}`,
+          { method: 'PUT', headers: { Authorization: `token ${ghToken}`, Accept: 'application/vnd.github.v3+json', 'Content-Type': 'application/json' }, body: JSON.stringify(body) }
+        );
+        if (retry.ok) { const rj = await retry.json(); ghFileSHA = rj.content.sha; return true; }
+      }
     }
     return false;
   } catch(e) { return false; }
@@ -533,11 +557,11 @@ function init() {
   } else {
     document.getElementById('setup-screen').style.display = 'none';
     document.getElementById('app').style.display = 'block';
+    renderAll();
     loadFromGitHub().then(ok => {
       renderAll();
       showToast(ok ? 'Loaded from GitHub' : 'Using local data', ok);
     });
-    renderAll();
   }
 }
 
