@@ -16,6 +16,7 @@ const DEFAULT_STATE = {
   ca: {},
   csat: [],
   essays: 0,
+  essayDates: [],
 };
 
 let state      = { ...DEFAULT_STATE };
@@ -25,7 +26,8 @@ let activeSubjectId = null;
 
 // ── HELPERS ───────────────────────────────────────────────────────────────
 function todayStr() {
-  return new Date().toISOString().slice(0, 10);
+  const d = new Date();
+  return `${d.getFullYear()}-${String(d.getMonth()+1).padStart(2,'0')}-${String(d.getDate()).padStart(2,'0')}`;
 }
 
 function tKey(subjectId, groupId, i) {
@@ -148,11 +150,16 @@ async function saveAll() {
   showToast(ok ? '✓ Saved to GitHub' : '✓ Saved locally (GitHub failed)', ok);
 }
 
+function showSetupError(msg) {
+  const el = document.getElementById('setup-error');
+  if (el) { el.textContent = msg; el.style.display = 'block'; }
+}
+
 // ── SETUP ─────────────────────────────────────────────────────────────────
 function completeSetup() {
   const name  = document.getElementById('setup-name').value.trim();
   const token = document.getElementById('setup-token').value.trim();
-  if (!name || !token) { alert('Please enter both name and token.'); return; }
+  if (!name || !token) { showSetupError('Please enter both name and token.'); return; }
   state.name = name;
   ghToken = token;
   localStorage.setItem('gh_token', token);
@@ -221,7 +228,7 @@ function renderSidebar() {
         let right = '';
         if (st) {
           const pct = st.total ? Math.round(st.done / st.total * 100) : 0;
-          right = `<span class="subj-pct ${pct === 100 ? 'complete' : ''}">${pct}%</span>`;
+          right = `<span class="subj-pct ${pct === 100 ? 'complete' : ''}">${st.done}/${st.total}</span>`;
         }
         return `<div class="subj-item${active}" onclick="navigate('${subj.id}')">
           <span class="subj-name">${subj.label}</span>${right}
@@ -262,15 +269,10 @@ function renderMain() {
   if (!subject || !subject.groups) return;
 
   const st  = subjectStats(subject);
-  const pct = st.total ? Math.round(st.done / st.total * 100) : 0;
 
   el.innerHTML = `
     <div class="main-header">
       <h1 class="main-title">${subject.label}</h1>
-      <div class="main-meta">
-        <span class="pill pill-blue">${st.done} / ${st.total} done</span>
-        <span class="pill pill-muted">${pct}%</span>
-      </div>
     </div>
     <div class="topic-table">
       <div class="table-head">
@@ -510,7 +512,7 @@ function renderHome(el) {
       <div class="overview-list">
         ${SECTIONS.map(sec => {
           let total = 0, done = 0;
-          sec.subjects.forEach(s => { const st = subjectStats(s); if (st) { total += st.total; done += st.done; } });
+          sec.subjects.forEach(subj => { const st = subjectStats(subj); if (st) { total += st.total; done += st.done; } });
           const p = total ? Math.round(done / total * 100) : 0;
           return `
             <div class="overview-row">
