@@ -1,6 +1,6 @@
 {
   "hunterName": "Nani",
-  "totalXP": 7740,
+  "totalXP": 8120,
   "streak": 1,
   "totalDays": 36,
   "lastStudyDate": "2026-07-04",
@@ -2739,6 +2739,196 @@
       "s": 1,
       "rd": "2026-07-30",
       "rv": null
+    },
+    "psir2b:fp-determinants": {
+      "s": 1,
+      "rd": "2026-07-30",
+      "rv": null
+    },
+    "psir2b:fp-institutions": {
+      "s": 1,
+      "rd": "2026-07-30",
+      "rv": null
+    },
+    "psir2b:nam-phases": {
+      "s": 1,
+      "rd": "2026-07-30",
+      "rv": null
+    },
+    "psir2b:india-pak": {
+      "s": 1,
+      "rd": "2026-07-30",
+      "rv": null
+    },
+    "psir2b:india-bd": {
+      "s": 1,
+      "rd": "2026-07-30",
+      "rv": null
+    },
+    "psir2b:non-alignment-2": {
+      "s": 1,
+      "rd": "2026-07-30",
+      "rv": null
+    },
+    "psir2b:nam-relevance": {
+      "s": 1,
+      "rd": "2026-07-30",
+      "rv": null
+    },
+    "psir2b:fp-phases": {
+      "s": 1,
+      "rd": "2026-07-30",
+      "rv": null
+    },
+    "psir2b:nehru-to-multi-alignment": {
+      "s": 1,
+      "rd": "2026-07-30",
+      "rv": null
+    },
+    "psir2b:india-sl": {
+      "s": 1,
+      "rd": "2026-07-30",
+      "rv": null
+    },
+    "psir2b:india-nepal": {
+      "s": 1,
+      "rd": "2026-07-30",
+      "rv": null
+    },
+    "psir2b:india-afg": {
+      "s": 1,
+      "rd": "2026-07-30",
+      "rv": null
+    },
+    "psir2b:india-myanmar": {
+      "s": 1,
+      "rd": "2026-07-30",
+      "rv": null
+    },
+    "psir2b:india-bhutan": {
+      "s": 1,
+      "rd": "2026-07-30",
+      "rv": null
+    },
+    "psir2b:saarc-2b": {
+      "s": 1,
+      "rd": "2026-07-30",
+      "rv": null
+    },
+    "psir2b:look-east": {
+      "s": 1,
+      "rd": "2026-07-30",
+      "rv": null
+    },
+    "psir2b:india-africa": {
+      "s": 1,
+      "rd": "2026-07-30",
+      "rv": null
+    },
+    "psir2b:india-latam": {
+      "s": 1,
+      "rd": "2026-07-30",
+      "rv": null
+    },
+    "psir2b:india-nieo-wto": {
+      "s": 1,
+      "rd": "2026-07-30",
+      "rv": null
+    },
+    "psir2b:voice-global-south": {
+      "s": 1,
+      "rd": "2026-07-30",
+      "rv": null
+    },
+    "psir2b:india-usa": {
+      "s": 1,
+      "rd": "2026-07-30",
+      "rv": null
+    },
+    "psir2b:india-russia": {
+      "s": 1,
+      "rd": "2026-07-30",
+      "rv": null
+    },
+    "psir2b:india-china": {
+      "s": 1,
+      "rd": "2026-07-30",
+      "rv": null
+    },
+    "psir2b:india-japan": {
+      "s": 1,
+      "rd": "2026-07-30",
+      "rv": null
+    },
+    "psir2b:india-eu": {
+      "s": 1,
+      "rd": "2026-07-30",
+      "rv": null
+    },
+    "psir2b:india-un-pk": {
+      "s": 1,
+      "rd": "2026-07-30",
+      "rv": null
+    },
+    "psir2b:unsc-seat": {
+      "s": 1,
+      "rd": "2026-07-30",
+      "rv": null
+    },
+    "psir2b:multilateral-dip": {
+      "s": 1,
+      "rd": "2026-07-30",
+      "rv": null
+    },
+    "psir2b:nuclear-evolution": {
+      "s": 1,
+      "rd": "2026-07-30",
+      "rv": null
+    },
+    "psir2b:nuclear-doctrine": {
+      "s": 1,
+      "rd": "2026-07-30",
+      "rv": null
+    },
+    "psir2b:nuclear-order": {
+      "s": 1,
+      "rd": "2026-07-30",
+      "rv": null
+    },
+    "psir2b:indo-us-nuclear": {
+      "s": 1,
+      "rd": "2026-07-30",
+      "rv": null
+    },
+    "psir2b:india-west-asia": {
+      "s": 1,
+      "rd": "2026-07-30",
+      "rv": null
+    },
+    "psir2b:india-israel": {
+      "s": 1,
+      "rd": "2026-07-30",
+      "rv": null
+    },
+    "psir2b:indo-pacific": {
+      "s": 1,
+      "rd": "2026-07-30",
+      "rv": null
+    },
+    "psir2b:new-world-order": {
+      "s": 1,
+      "rd": "2026-07-30",
+      "rv": null
+    },
+    "psir2b:climate-diplomacy": {
+      "s": 1,
+      "rd": "2026-07-30",
+      "rv": null
+    },
+    "psir2b:neighbourhood-first": {
+      "s": 1,
+      "rd": "2026-07-30",
+      "rv": null
     }
   },
   "completedQuests": {
@@ -3168,6 +3358,11 @@
   "bossDefeated": {},
   "activityLog": [
     {
+      "time": "07:58 PM",
+      "text": "📖 Bulk Read: 38 topics",
+      "xp": 380
+    },
+    {
       "time": "07:56 PM",
       "text": "📖 Bulk Read: 13 topics",
       "xp": 130
@@ -3560,11 +3755,6 @@
     {
       "time": "09:23 PM",
       "text": "📖 Read: Economy → Structure of Banks",
-      "xp": 10
-    },
-    {
-      "time": "09:23 PM",
-      "text": "📖 Read: Economy → History and RBI",
       "xp": 10
     }
   ],
