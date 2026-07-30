@@ -1,128 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8"/>
-<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-<title>UPSC Hunter — Conquest Tracker</title>
-<link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;500;600;700&family=Orbitron:wght@400;700;900&family=DM+Mono:wght@300;400;500&display=swap" rel="stylesheet"/>
-<link rel="stylesheet" href="css/base.css"/>
-<link rel="stylesheet" href="css/quests.css"/>
-<link rel="stylesheet" href="css/conquest.css"/>
-<link rel="stylesheet" href="css/dungeon.css"/>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>UPSC Tracker</title>
+  <link rel="stylesheet" href="style.css"/>
 </head>
 <body>
 
-<!-- ── SETUP SCREEN ── -->
-<div id="setup-screen" style="display:none">
+<!-- SETUP SCREEN -->
+<div id="setup-screen">
   <div class="setup-box">
-    <div class="setup-title">UPSC HUNTER</div>
-    <div class="setup-sub">Initialize your conquest tracker</div>
-
-    <label class="setup-label">Hunter Name</label>
-    <input class="setup-input" id="setup-name" type="text" placeholder="Your name" value="Nani"/>
-
-    <label class="setup-label">GitHub Token (for sync)</label>
+    <div class="setup-title">UPSC Tracker</div>
+    <div class="setup-sub">Enter your details to get started</div>
+    <label class="setup-label">Your Name</label>
+    <input class="setup-input" id="setup-name" type="text" placeholder="Name"/>
+    <label class="setup-label">GitHub Token</label>
     <input class="setup-input" id="setup-token" type="password" placeholder="ghp_xxxxxxxxxxxx"/>
-
-    <button class="setup-btn" onclick="completeSetup()">AWAKEN AS HUNTER</button>
-
-    <div class="setup-note">
-      Token needs <b>repo</b> scope. It is stored only in your browser's localStorage.<br/>
-      Data syncs to <b>NaniChennuri/study-tracker</b> → tracker-data.json
-    </div>
+    <div class="setup-note">Token needs <b>repo</b> scope. Stored only in your browser. Syncs to <b>NaniChennuri/study-tracker → tracker-data.json</b></div>
+    <button class="setup-btn" onclick="completeSetup()">Get Started</button>
   </div>
 </div>
 
-<!-- ── MAIN APP ── -->
-<div id="app-main" style="display:none">
-  <header id="app-header"></header>
+<!-- MAIN APP -->
+<div id="app" style="display:none">
 
-  <main>
-
-    <!-- DAILY QUESTS -->
-    <div>
-      <div class="sec-title">Daily Quests</div>
-      <div id="quests-section"></div>
+  <div id="topbar">
+    <div class="tb-brand" onclick="navigateHome()">UPSC Tracker</div>
+    <div class="tb-ca">
+      <span class="tb-ca-lbl">Current Affairs</span>
+      <button class="ca-btn" id="ca-today-btn" onclick="toggleCAToday()">○</button>
     </div>
-
-    <!-- CONQUEST MAP -->
-    <div>
-      <div class="sec-title">Syllabus Conquest Map</div>
-      <div id="conquest-section"></div>
-    </div>
-
-    <!-- DUNGEON -->
-    <div>
-      <div class="sec-title">Dungeon Raids — Mock Test Log</div>
-      <div id="dungeon-section"></div>
-    </div>
-
-    <!-- ACTIVITY LOG -->
-    <div>
-      <div class="sec-title">Activity Log</div>
-      <div class="log-list" id="log-list"></div>
-    </div>
-
-  </main>
-</div>
-
-<!-- ── CLAIM MODAL (topic picker for quest claiming) ── -->
-<div class="modal-overlay" id="claim-modal">
-  <div class="modal modal-wide">
-    <button class="modal-close" onclick="closeClaimModal()">✕</button>
-    <div class="modal-title" id="claim-modal-title">CLAIM TOPIC</div>
-    <div id="claim-modal-body"></div>
-    <div class="modal-btns">
-      <button class="mbtn confirm" onclick="confirmClaim()">CONFIRM</button>
-      <button class="mbtn cancel"  onclick="closeClaimModal()">CANCEL</button>
+    <div class="tb-right">
+      <span class="tb-days" id="tb-days"></span>
+      <button class="btn-save" onclick="saveAll()">Save</button>
     </div>
   </div>
-</div>
 
-<!-- ── TOPIC DETAIL MODAL ── -->
-<div class="modal-overlay" id="topic-detail-modal">
-  <div class="modal">
-    <button class="modal-close" onclick="closeTopicDetailModal()">✕</button>
-    <div class="modal-title">TOPIC DETAIL</div>
-    <div id="topic-detail-body"></div>
+  <div id="layout">
+    <nav id="sidebar"></nav>
+    <main id="main"></main>
   </div>
+
 </div>
 
-<!-- ── BOSS RAID MODAL ── -->
-<div class="modal-overlay" id="boss-modal">
-  <div class="modal">
-    <button class="modal-close" onclick="closeBossModal()">✕</button>
-    <div class="modal-title" style="color:var(--red)">⚔ BOSS RAID</div>
-    <div class="boss-subject-name" id="boss-subject-name"></div>
-    <div class="boss-flavor">All topics cleared. Log your subject-wise mock score.</div>
+<div class="toast" id="toast"></div>
 
-    <div class="boss-score-input-wrap">
-      <input class="boss-score-input" id="boss-score-input" type="number"
-        min="0" max="100" placeholder="75"/>
-      <span class="boss-score-label">%</span>
-    </div>
-
-    <div class="boss-result" id="boss-result"></div>
-
-    <div class="modal-btns">
-      <button class="mbtn confirm" style="border-color:var(--red);color:var(--red)"
-        onclick="submitBossRaid()">ENTER RAID</button>
-      <button class="mbtn cancel" onclick="closeBossModal()">RETREAT</button>
-    </div>
-  </div>
-</div>
-
-<!-- ── TOAST ── -->
-<div class="save-toast" id="save-toast"></div>
-
-<!-- ── SCRIPTS (order matters) ── -->
-<script src="js/topics-data.js"></script>
-<script src="js/config.js"></script>
-<script src="js/state.js"></script>
-<script src="js/quests.js"></script>
-<script src="js/conquest.js"></script>
-<script src="js/dungeon.js"></script>
+<script src="js/data.js"></script>
 <script src="js/app.js"></script>
-
 </body>
 </html>
