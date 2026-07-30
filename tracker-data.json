@@ -1,6 +1,6 @@
 {
   "hunterName": "Nani",
-  "totalXP": 7610,
+  "totalXP": 7740,
   "streak": 1,
   "totalDays": 36,
   "lastStudyDate": "2026-07-04",
@@ -2674,6 +2674,71 @@
       "s": 1,
       "rd": "2026-07-29",
       "rv": null
+    },
+    "psir2a:eu": {
+      "s": 1,
+      "rd": "2026-07-30",
+      "rv": null
+    },
+    "psir2a:regionalism": {
+      "s": 1,
+      "rd": "2026-07-30",
+      "rv": null
+    },
+    "psir2a:democracy-global": {
+      "s": 1,
+      "rd": "2026-07-30",
+      "rv": null
+    },
+    "psir2a:human-rights-gc": {
+      "s": 1,
+      "rd": "2026-07-30",
+      "rv": null
+    },
+    "psir2a:environment-gc": {
+      "s": 1,
+      "rd": "2026-07-30",
+      "rv": null
+    },
+    "psir2a:gender-justice": {
+      "s": 1,
+      "rd": "2026-07-30",
+      "rv": null
+    },
+    "psir2a:terrorism-gc": {
+      "s": 1,
+      "rd": "2026-07-30",
+      "rv": null
+    },
+    "psir2a:ai-governance": {
+      "s": 1,
+      "rd": "2026-07-30",
+      "rv": null
+    },
+    "psir2a:asean": {
+      "s": 1,
+      "rd": "2026-07-30",
+      "rv": null
+    },
+    "psir2a:saarc": {
+      "s": 1,
+      "rd": "2026-07-30",
+      "rv": null
+    },
+    "psir2a:bimstec": {
+      "s": 1,
+      "rd": "2026-07-30",
+      "rv": null
+    },
+    "psir2a:apec": {
+      "s": 1,
+      "rd": "2026-07-30",
+      "rv": null
+    },
+    "psir2a:nafta-usmca": {
+      "s": 1,
+      "rd": "2026-07-30",
+      "rv": null
     }
   },
   "completedQuests": {
@@ -3103,6 +3168,11 @@
   "bossDefeated": {},
   "activityLog": [
     {
+      "time": "07:56 PM",
+      "text": "📖 Bulk Read: 13 topics",
+      "xp": 130
+    },
+    {
       "time": "08:02 PM",
       "text": "📖 Bulk Read: 5 topics",
       "xp": 50
@@ -3495,11 +3565,6 @@
     {
       "time": "09:23 PM",
       "text": "📖 Read: Economy → History and RBI",
-      "xp": 10
-    },
-    {
-      "time": "11:40 PM",
-      "text": "📖 Read: Economy → Insurance Schemes",
       "xp": 10
     }
   ],
