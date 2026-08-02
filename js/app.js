@@ -2,10 +2,10 @@
 const GITHUB_USER = 'NaniChennuri';
 const GITHUB_REPO = 'study-tracker';
 const DATA_FILE   = 'tracker-data.json';
-const START_DATE  = '2026-08-01';
+const START_DATE  = '2026-08-03';
 
 // ── STATE ─────────────────────────────────────────────────────────────────
-// topics:  { 'subjectId:groupId:i': { rr: bool, ans: int, mcq: int } }
+// topics:  { 'subjectId:groupId:i': { rr: bool, ans: int, mcq: int, stars: int } }
 // ca:      { 'YYYY-MM-DD': true }
 // csat:    ['YYYY-MM-DD', ...]
 // essays:  number
@@ -198,15 +198,17 @@ function subjectStats(subject) {
 
 function overallStats() {
   let total = 0, done = 0, ans = 0, mcq = 0;
+  const stars = {1:0, 2:0, 3:0, 4:0, 5:0};
   SECTIONS.forEach(sec => sec.subjects.forEach(subj => {
     if (!subj.groups) return;
     subj.groups.forEach(g => g.topics.forEach((_, i) => {
       const t = getTopic(subj.id, g.id, i);
       total++; if (t.rr) done++;
       ans += (t.ans || 0); mcq += (t.mcq || 0);
+      if (t.stars) stars[t.stars]++;
     }));
   }));
-  return { total, done, ans, mcq };
+  return { total, done, ans, mcq, stars };
 }
 
 // ── TOPBAR ────────────────────────────────────────────────────────────────
@@ -302,6 +304,7 @@ function renderMain() {
         <div class="col-rr">Read &amp; Revise</div>
         <div class="col-ans">Answers</div>
         <div class="col-mcq">MCQs</div>
+        <div class="col-stars">Confidence</div>
       </div>
       ${subject.groups.map(g => `
         <div class="group-header">${g.label}</div>
@@ -314,6 +317,10 @@ function renderMain() {
 function buildRow(subjectId, groupId, i, topicName) {
   const key = tKey(subjectId, groupId, i);
   const t   = getTopic(subjectId, groupId, i);
+  const starLabels = ['','Completely lost','Understood basics','Can explain simply','Can answer a PYQ','Can connect to CA'];
+  const stars = [1,2,3,4,5].map(n => `
+    <span class="star ${(t.stars||0) >= n ? 'star-on' : ''}" onclick="setStars('${subjectId}','${groupId}',${i},${n})" title="${starLabels[n]}">&#9733;</span>
+  `).join('');
   return `
     <div class="table-row ${t.rr ? 'row-done' : ''}" data-key="${key}">
       <div class="col-topic topic-name">${topicName}</div>
@@ -337,8 +344,30 @@ function buildRow(subjectId, groupId, i, topicName) {
           <button class="counter-btn" onclick="adjustTopic('${subjectId}','${groupId}',${i},'mcq',1)">+</button>
         </div>
       </div>
+      <div class="col-stars"><div class="stars-wrap">${stars}</div></div>
     </div>
   `;
+}
+
+function setStars(subjectId, groupId, i, val) {
+  const key = tKey(subjectId, groupId, i);
+  const cur = getTopic(subjectId, groupId, i);
+  // clicking same star again clears it
+  state.topics[key] = { ...cur, stars: cur.stars === val ? 0 : val };
+  saveLocal();
+  markDirty();
+  const row = document.querySelector(`[data-key="${key}"]`);
+  if (row) {
+    let topicName = '';
+    for (const sec of SECTIONS) {
+      const subj = sec.subjects.find(s => s.id === subjectId);
+      if (subj && subj.groups) {
+        const g = subj.groups.find(g => g.id === groupId);
+        if (g) { topicName = g.topics[i]; break; }
+      }
+    }
+    row.outerHTML = buildRow(subjectId, groupId, i, topicName);
+  }
 }
 
 function toggleRR(subjectId, groupId, i) {
@@ -572,6 +601,25 @@ function toggleCSATToday() {
 function renderHome(el) {
   const s   = overallStats();
   const pct = s.total ? Math.round(s.done / s.total * 100) : 0;
+  const starLabels = ['','Completely lost','Understood basics','Can explain simply','Can answer a PYQ','Can connect to CA'];
+  const starColors = ['','#ef4444','#f97316','#eab308','#3b82f6','#22c55e'];
+  const ratedTotal = Object.values(s.stars).reduce((a,b) => a+b, 0);
+
+  const confidenceRows = [1,2,3,4,5].map(n => {
+    const count = s.stars[n] || 0;
+    const pct   = ratedTotal ? Math.round(count / ratedTotal * 100) : 0;
+    return `
+      <div class="conf-row">
+        <div class="conf-label">
+          <span class="conf-stars" style="color:${starColors[n]}">${'★'.repeat(n)}${'☆'.repeat(5-n)}</span>
+          <span class="conf-desc">${starLabels[n]}</span>
+        </div>
+        <div class="conf-bar-wrap">
+          <div class="conf-bar"><div class="conf-fill" style="width:${pct}%;background:${starColors[n]}"></div></div>
+          <span class="conf-count">${count} <span class="conf-pct">(${pct}%)</span></span>
+        </div>
+      </div>`;
+  }).join('');
 
   el.innerHTML = `
     <div class="home-wrap">
@@ -594,18 +642,27 @@ function renderHome(el) {
           <span class="home-stat-lbl">MCQs</span>
         </div>
       </div>
-      <div class="overview-list">
-        ${SECTIONS.map(sec => {
-          let total = 0, done = 0;
-          sec.subjects.forEach(subj => { const st = subjectStats(subj); if (st) { total += st.total; done += st.done; } });
-          const p = total ? Math.round(done / total * 100) : 0;
-          return `
-            <div class="overview-row">
-              <span class="overview-sec">${sec.label}</span>
-              <div class="overview-bar"><div class="overview-fill" style="width:${p}%"></div></div>
-              <span class="overview-pct">${done}/${total}</span>
-            </div>`;
-        }).join('')}
+      <div class="home-sections">
+        <div class="home-section-block">
+          <div class="home-section-title">Subject Progress</div>
+          <div class="overview-list">
+            ${SECTIONS.map(sec => {
+              let total = 0, done = 0;
+              sec.subjects.forEach(subj => { const st = subjectStats(subj); if (st) { total += st.total; done += st.done; } });
+              const p = total ? Math.round(done / total * 100) : 0;
+              return `
+                <div class="overview-row">
+                  <span class="overview-sec">${sec.label}</span>
+                  <div class="overview-bar"><div class="overview-fill" style="width:${p}%"></div></div>
+                  <span class="overview-pct">${done}/${total}</span>
+                </div>`;
+            }).join('')}
+          </div>
+        </div>
+        <div class="home-section-block">
+          <div class="home-section-title">Confidence Meter <span class="conf-subtitle">${ratedTotal} of ${s.total} topics rated</span></div>
+          <div class="conf-list">${confidenceRows}</div>
+        </div>
       </div>
     </div>
   `;

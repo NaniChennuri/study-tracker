@@ -239,6 +239,23 @@ body {
 .overview-fill { height: 100%; background: var(--blue); border-radius: 3px; }
 .overview-pct  { font-size: 11px; color: var(--muted); width: 52px; text-align: right; }
 
+.home-sections { display: grid; grid-template-columns: 1fr 1fr; gap: 32px; align-items: start; }
+.home-section-block {}
+.home-section-title { font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.7px; color: var(--muted); margin-bottom: 14px; }
+
+/* confidence meter */
+.conf-subtitle { font-weight: 400; text-transform: none; letter-spacing: 0; margin-left: 8px; color: var(--muted2); }
+.conf-list { display: flex; flex-direction: column; gap: 10px; }
+.conf-row { display: flex; flex-direction: column; gap: 4px; }
+.conf-label { display: flex; align-items: center; gap: 8px; }
+.conf-stars { font-size: 13px; letter-spacing: 1px; }
+.conf-desc { font-size: 12px; color: var(--muted); }
+.conf-bar-wrap { display: flex; align-items: center; gap: 8px; }
+.conf-bar { flex: 1; height: 5px; background: var(--panel2); border-radius: 3px; overflow: hidden; }
+.conf-fill { height: 100%; border-radius: 3px; transition: width 0.3s; }
+.conf-count { font-size: 12px; color: var(--text2); min-width: 60px; }
+.conf-pct { color: var(--muted); }
+
 /* ── MAIN HEADER ── */
 .main-header { margin-bottom: 20px; }
 .main-title  { font-size: 20px; font-weight: 600; margin-bottom: 8px; }
@@ -258,7 +275,7 @@ body {
 
 .table-head {
   display: grid;
-  grid-template-columns: 1fr 130px 110px 110px;
+  grid-template-columns: 1fr 130px 110px 110px 130px;
   padding: 6px 12px;
   font-size: 10px; font-weight: 700;
   text-transform: uppercase; letter-spacing: 0.8px;
@@ -278,7 +295,7 @@ body {
 
 .table-row {
   display: grid;
-  grid-template-columns: 1fr 130px 110px 110px;
+  grid-template-columns: 1fr 130px 110px 110px 130px;
   align-items: center;
   padding: 6px 12px;
   border-radius: 6px;
@@ -291,6 +308,12 @@ body {
 .col-rr    { display: flex; justify-content: center; }
 .col-ans   { display: flex; justify-content: center; }
 .col-mcq   { display: flex; justify-content: center; }
+.col-stars { display: flex; justify-content: center; }
+
+.stars-wrap { display: flex; gap: 3px; }
+.star { font-size: 16px; color: var(--border2); cursor: pointer; transition: color 0.1s; line-height: 1; }
+.star:hover, .star-on { color: #f59e0b; }
+.table-row.row-done .star:not(.star-on) { color: var(--border); }
 
 .topic-name { font-size: 13px; color: var(--text); padding-right: 12px; }
 
