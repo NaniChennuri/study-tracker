@@ -1,6 +1,12 @@
 {
   "name": "Nani",
-  "topics": {},
+  "topics": {
+    "psir1a:psir1a-intro:0": {
+      "rr": true,
+      "ans": 15,
+      "mcq": 0
+    }
+  },
   "ca": {},
   "csat": [],
   "essays": 0,
