@@ -4,7 +4,8 @@
     "psir1a:psir1a-intro:0": {
       "rr": true,
       "ans": 15,
-      "mcq": 0
+      "mcq": 0,
+      "stars": 4
     }
   },
   "ca": {},
