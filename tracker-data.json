@@ -6,9 +6,26 @@
       "ans": 15,
       "mcq": 0,
       "stars": 4
+    },
+    "history:ancient:0": {
+      "rr": true,
+      "ans": 0,
+      "mcq": 0
+    },
+    "history:ancient:1": {
+      "rr": true,
+      "ans": 0,
+      "mcq": 0
+    },
+    "history:ancient:2": {
+      "rr": true,
+      "ans": 0,
+      "mcq": 0
     }
   },
-  "ca": {},
+  "ca": {
+    "2026-08-03": true
+  },
   "csat": [],
   "essays": 0,
   "essayDates": []
