@@ -2,7 +2,7 @@
 const GITHUB_USER = 'NaniChennuri';
 const GITHUB_REPO = 'study-tracker';
 const DATA_FILE   = 'tracker-data.json';
-const START_DATE  = '2026-08-03';
+const START_DATE  = '2026-08-07';
 
 // ── STATE ─────────────────────────────────────────────────────────────────
 // topics:  { 'subjectId:groupId:i': { rr: bool, ans: int, mcq: int, stars: int } }

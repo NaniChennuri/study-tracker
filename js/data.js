@@ -1,7 +1,7 @@
 // ── CURRICULUM DATA ──────────────────────────────────────────────────────
 // Structure: sections → subjects → groups (optional) → topics
 
-const EXAM_DATE = '2027-05-30';
+const EXAM_DATE = '2027-05-22';
 
 const SECTIONS = [
   {
