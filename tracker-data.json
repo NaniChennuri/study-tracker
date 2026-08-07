@@ -52,7 +52,8 @@
     "history:ancient:5": {
       "rr": true,
       "ans": 0,
-      "mcq": 22
+      "mcq": 22,
+      "stars": 4
     }
   },
   "ca": {
