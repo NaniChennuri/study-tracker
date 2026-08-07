@@ -48,6 +48,11 @@
       "ans": 2,
       "mcq": 5,
       "stars": 4
+    },
+    "history:ancient:5": {
+      "rr": true,
+      "ans": 0,
+      "mcq": 22
     }
   },
   "ca": {
