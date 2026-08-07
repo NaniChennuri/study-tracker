@@ -10,17 +10,20 @@
     "history:ancient:0": {
       "rr": true,
       "ans": 0,
-      "mcq": 0
+      "mcq": 0,
+      "stars": 4
     },
     "history:ancient:1": {
       "rr": true,
       "ans": 0,
-      "mcq": 0
+      "mcq": 0,
+      "stars": 4
     },
     "history:ancient:2": {
       "rr": true,
       "ans": 0,
-      "mcq": 0
+      "mcq": 1,
+      "stars": 4
     },
     "psir1a:wpt:0": {
       "rr": true,
@@ -33,10 +36,23 @@
       "ans": 5,
       "mcq": 0,
       "stars": 4
+    },
+    "history:ancient:3": {
+      "rr": true,
+      "ans": 2,
+      "mcq": 4,
+      "stars": 4
+    },
+    "history:ancient:4": {
+      "rr": true,
+      "ans": 2,
+      "mcq": 5,
+      "stars": 4
     }
   },
   "ca": {
-    "2026-08-03": true
+    "2026-08-03": true,
+    "2026-08-07": true
   },
   "csat": [],
   "essays": 0,
