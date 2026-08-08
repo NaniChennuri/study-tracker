@@ -60,6 +60,24 @@
       "ans": 0,
       "mcq": 0,
       "stars": 4
+    },
+    "psir1a:wpt:2": {
+      "rr": true,
+      "ans": 3,
+      "mcq": 0,
+      "stars": 4
+    },
+    "psir1a:wpt:3": {
+      "rr": true,
+      "ans": 6,
+      "mcq": 0,
+      "stars": 4
+    },
+    "psir1a:wpt:4": {
+      "rr": true,
+      "ans": 4,
+      "mcq": 0,
+      "stars": 4
     }
   },
   "ca": {
