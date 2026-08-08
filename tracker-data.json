@@ -54,11 +54,18 @@
       "ans": 0,
       "mcq": 22,
       "stars": 4
+    },
+    "ethics:ethics-topics:0": {
+      "rr": true,
+      "ans": 0,
+      "mcq": 0,
+      "stars": 4
     }
   },
   "ca": {
     "2026-08-03": true,
-    "2026-08-07": true
+    "2026-08-07": true,
+    "2026-08-08": true
   },
   "csat": [],
   "essays": 0,
