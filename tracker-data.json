@@ -78,6 +78,18 @@
       "ans": 4,
       "mcq": 0,
       "stars": 4
+    },
+    "ethics:ethics-topics:1": {
+      "rr": true,
+      "ans": 25,
+      "mcq": 0,
+      "stars": 4
+    },
+    "ethics:ethics-topics:2": {
+      "rr": true,
+      "ans": 0,
+      "mcq": 0,
+      "stars": 4
     }
   },
   "ca": {
