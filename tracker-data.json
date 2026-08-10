@@ -51,7 +51,7 @@
     },
     "history:ancient:5": {
       "rr": true,
-      "ans": 0,
+      "ans": 1,
       "mcq": 22,
       "stars": 4
     },
@@ -107,6 +107,18 @@
       "rr": true,
       "ans": 4,
       "mcq": 0,
+      "stars": 4
+    },
+    "history:ancient:6": {
+      "rr": true,
+      "ans": 0,
+      "mcq": 1,
+      "stars": 4
+    },
+    "history:ancient:7": {
+      "rr": true,
+      "ans": 1,
+      "mcq": 10,
       "stars": 4
     }
   },
