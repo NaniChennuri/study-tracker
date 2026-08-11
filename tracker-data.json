@@ -136,7 +136,8 @@
     "history:worldhistory:4": {
       "rr": true,
       "ans": 5,
-      "mcq": 0
+      "mcq": 0,
+      "stars": 4
     }
   },
   "ca": {
