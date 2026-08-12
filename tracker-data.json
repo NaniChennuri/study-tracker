@@ -192,6 +192,12 @@
       "rr": false,
       "ans": 2,
       "mcq": 0
+    },
+    "history:worldhistory:3": {
+      "rr": true,
+      "ans": 3,
+      "mcq": 0,
+      "stars": 4
     }
   },
   "ca": {
