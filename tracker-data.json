@@ -210,6 +210,12 @@
       "ans": 13,
       "mcq": 0,
       "stars": 3
+    },
+    "history:worldhistory:5": {
+      "rr": true,
+      "ans": 5,
+      "mcq": 0,
+      "stars": 3
     }
   },
   "ca": {
