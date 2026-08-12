@@ -137,19 +137,19 @@
       "rr": true,
       "ans": 5,
       "mcq": 0,
-      "stars": 4
+      "stars": 3
     },
     "history:worldhistory:1": {
       "rr": true,
       "ans": 5,
       "mcq": 0,
-      "stars": 4
+      "stars": 3
     },
     "history:worldhistory:0": {
       "rr": true,
       "ans": 4,
       "mcq": 0,
-      "stars": 4
+      "stars": 3
     },
     "psir1a:pol-ideologies:0": {
       "rr": true,
@@ -197,13 +197,19 @@
       "rr": true,
       "ans": 3,
       "mcq": 0,
-      "stars": 4
+      "stars": 3
     },
     "history:worldhistory:2": {
       "rr": true,
       "ans": 4,
       "mcq": 0,
-      "stars": 4
+      "stars": 3
+    },
+    "history:postindependence:0": {
+      "rr": true,
+      "ans": 13,
+      "mcq": 0,
+      "stars": 3
     }
   },
   "ca": {
