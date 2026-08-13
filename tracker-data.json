@@ -180,9 +180,10 @@
       "mcq": 0
     },
     "psir1a:pol-ideologies:3": {
-      "rr": false,
+      "rr": true,
       "ans": 2,
-      "mcq": 0
+      "mcq": 0,
+      "stars": 4
     },
     "psir1a:pol-ideologies:6": {
       "rr": false,
