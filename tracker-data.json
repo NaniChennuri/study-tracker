@@ -158,9 +158,10 @@
       "stars": 4
     },
     "psir1a:pol-ideologies:5": {
-      "rr": false,
+      "rr": true,
       "ans": 4,
-      "mcq": 0
+      "mcq": 0,
+      "stars": 4
     },
     "psir1a:pol-ideologies:1": {
       "rr": true,
@@ -175,7 +176,7 @@
       "stars": 4
     },
     "psir1a:pol-ideologies:4": {
-      "rr": false,
+      "rr": true,
       "ans": 4,
       "mcq": 0,
       "stars": 4
