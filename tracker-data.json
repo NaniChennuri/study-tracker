@@ -11,19 +11,19 @@
       "rr": true,
       "ans": 0,
       "mcq": 0,
-      "stars": 4
+      "stars": 3
     },
     "history:ancient:1": {
       "rr": true,
       "ans": 0,
       "mcq": 0,
-      "stars": 4
+      "stars": 3
     },
     "history:ancient:2": {
       "rr": true,
       "ans": 0,
       "mcq": 1,
-      "stars": 4
+      "stars": 3
     },
     "psir1a:wpt:0": {
       "rr": true,
@@ -41,19 +41,19 @@
       "rr": true,
       "ans": 2,
       "mcq": 4,
-      "stars": 4
+      "stars": 3
     },
     "history:ancient:4": {
       "rr": true,
       "ans": 2,
       "mcq": 5,
-      "stars": 4
+      "stars": 3
     },
     "history:ancient:5": {
       "rr": true,
       "ans": 1,
       "mcq": 22,
-      "stars": 4
+      "stars": 3
     },
     "ethics:ethics-topics:0": {
       "rr": true,
@@ -113,13 +113,13 @@
       "rr": true,
       "ans": 0,
       "mcq": 1,
-      "stars": 4
+      "stars": 3
     },
     "history:ancient:7": {
       "rr": true,
       "ans": 1,
       "mcq": 11,
-      "stars": 4
+      "stars": 3
     },
     "psir1a:wpt:8": {
       "rr": true,
@@ -225,25 +225,25 @@
       "rr": true,
       "ans": 2,
       "mcq": 2,
-      "stars": 4
+      "stars": 3
     },
     "history:ancient:9": {
       "rr": true,
       "ans": 0,
       "mcq": 2,
-      "stars": 4
+      "stars": 3
     },
     "history:ancient:10": {
       "rr": true,
       "ans": 1,
       "mcq": 12,
-      "stars": 4
+      "stars": 3
     },
     "history:ancient:11": {
       "rr": true,
       "ans": 0,
       "mcq": 1,
-      "stars": 4
+      "stars": 3
     }
   },
   "ca": {
