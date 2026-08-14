@@ -256,6 +256,16 @@
       "ans": 2,
       "mcq": 3,
       "stars": 3
+    },
+    "history:medieval:0": {
+      "rr": false,
+      "ans": 0,
+      "mcq": 2
+    },
+    "history:medieval:2": {
+      "rr": false,
+      "ans": 0,
+      "mcq": 1
     }
   },
   "ca": {
