@@ -118,7 +118,7 @@
     "history:ancient:7": {
       "rr": true,
       "ans": 1,
-      "mcq": 10,
+      "mcq": 11,
       "stars": 4
     },
     "psir1a:wpt:8": {
@@ -226,6 +226,18 @@
       "ans": 2,
       "mcq": 2,
       "stars": 4
+    },
+    "history:ancient:9": {
+      "rr": true,
+      "ans": 0,
+      "mcq": 2,
+      "stars": 4
+    },
+    "history:ancient:10": {
+      "rr": true,
+      "ans": 1,
+      "mcq": 12,
+      "stars": 4
     }
   },
   "ca": {
@@ -236,7 +248,8 @@
     "2026-08-10": true,
     "2026-08-11": true,
     "2026-08-12": true,
-    "2026-08-13": true
+    "2026-08-13": true,
+    "2026-08-14": true
   },
   "csat": [
     "2026-08-09"
