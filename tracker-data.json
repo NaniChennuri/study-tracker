@@ -267,6 +267,12 @@
       "rr": false,
       "ans": 0,
       "mcq": 1
+    },
+    "psir1a:pol-ideologies:7": {
+      "rr": true,
+      "ans": 0,
+      "mcq": 0,
+      "stars": 4
     }
   },
   "ca": {
