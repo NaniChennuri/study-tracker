@@ -286,9 +286,10 @@
       "mcq": 0
     },
     "ethics:ethics-topics:4": {
-      "rr": false,
+      "rr": true,
       "ans": 8,
-      "mcq": 0
+      "mcq": 0,
+      "stars": 4
     },
     "ethics:ethics-topics:5": {
       "rr": false,
