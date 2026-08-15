@@ -81,13 +81,13 @@
     },
     "ethics:ethics-topics:1": {
       "rr": true,
-      "ans": 25,
+      "ans": 13,
       "mcq": 0,
       "stars": 4
     },
     "ethics:ethics-topics:2": {
       "rr": true,
-      "ans": 0,
+      "ans": 10,
       "mcq": 0,
       "stars": 4
     },
@@ -273,6 +273,47 @@
       "ans": 0,
       "mcq": 0,
       "stars": 4
+    },
+    "ethics:ethics-topics:3": {
+      "rr": true,
+      "ans": 15,
+      "mcq": 0,
+      "stars": 4
+    },
+    "ethics:ethics-topics:6": {
+      "rr": false,
+      "ans": 14,
+      "mcq": 0
+    },
+    "ethics:ethics-topics:4": {
+      "rr": false,
+      "ans": 8,
+      "mcq": 0
+    },
+    "ethics:ethics-topics:5": {
+      "rr": false,
+      "ans": 6,
+      "mcq": 0
+    },
+    "ethics:ethics-topics:7": {
+      "rr": false,
+      "ans": 35,
+      "mcq": 0
+    },
+    "ethics:ethics-topics:8": {
+      "rr": false,
+      "ans": 20,
+      "mcq": 0
+    },
+    "ethics:ethics-topics:10": {
+      "rr": false,
+      "ans": 4,
+      "mcq": 0
+    },
+    "ethics:ethics-topics:9": {
+      "rr": false,
+      "ans": 8,
+      "mcq": 0
     }
   },
   "ca": {
