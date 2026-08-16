@@ -292,9 +292,10 @@
       "stars": 4
     },
     "ethics:ethics-topics:5": {
-      "rr": false,
+      "rr": true,
       "ans": 6,
-      "mcq": 0
+      "mcq": 0,
+      "stars": 4
     },
     "ethics:ethics-topics:7": {
       "rr": false,
@@ -327,7 +328,8 @@
     "2026-08-12": true,
     "2026-08-13": true,
     "2026-08-14": true,
-    "2026-08-15": true
+    "2026-08-15": true,
+    "2026-08-16": true
   },
   "csat": [
     "2026-08-09"
