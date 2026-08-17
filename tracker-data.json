@@ -194,9 +194,10 @@
       "stars": 4
     },
     "psir1a:pol-ideologies:10": {
-      "rr": false,
+      "rr": true,
       "ans": 2,
-      "mcq": 0
+      "mcq": 0,
+      "stars": 4
     },
     "history:worldhistory:3": {
       "rr": true,
@@ -317,6 +318,24 @@
       "rr": false,
       "ans": 8,
       "mcq": 0
+    },
+    "psir1a:pol-ideologies:8": {
+      "rr": true,
+      "ans": 0,
+      "mcq": 0,
+      "stars": 4
+    },
+    "psir1a:pol-ideologies:9": {
+      "rr": true,
+      "ans": 0,
+      "mcq": 0,
+      "stars": 4
+    },
+    "psir1a:pol-ideologies:11": {
+      "rr": true,
+      "ans": 0,
+      "mcq": 0,
+      "stars": 4
     }
   },
   "ca": {
