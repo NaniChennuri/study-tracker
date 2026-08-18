@@ -368,7 +368,7 @@
     "polity:polity-basics:0": {
       "rr": true,
       "ans": 1,
-      "mcq": 0,
+      "mcq": 1,
       "stars": 4
     }
   },
