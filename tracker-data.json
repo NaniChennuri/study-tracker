@@ -398,6 +398,24 @@
       "rr": false,
       "ans": 5,
       "mcq": 0
+    },
+    "polity:polity-basics:1": {
+      "rr": true,
+      "ans": 7,
+      "mcq": 0,
+      "stars": 4
+    },
+    "polity:polity-basics:2": {
+      "rr": true,
+      "ans": 1,
+      "mcq": 0,
+      "stars": 4
+    },
+    "polity:polity-basics:3": {
+      "rr": true,
+      "ans": 0,
+      "mcq": 0,
+      "stars": 4
     }
   },
   "ca": {
@@ -413,7 +431,8 @@
     "2026-08-15": true,
     "2026-08-16": true,
     "2026-08-17": true,
-    "2026-08-18": true
+    "2026-08-18": true,
+    "2026-08-19": true
   },
   "csat": [
     "2026-08-09"
