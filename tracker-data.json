@@ -370,6 +370,34 @@
       "ans": 1,
       "mcq": 1,
       "stars": 4
+    },
+    "psir1a:ipt:4": {
+      "rr": true,
+      "ans": 2,
+      "mcq": 0,
+      "stars": 4
+    },
+    "psir1a:ipt:5": {
+      "rr": true,
+      "ans": 5,
+      "mcq": 0,
+      "stars": 4
+    },
+    "psir1a:ipt:6": {
+      "rr": true,
+      "ans": 1,
+      "mcq": 0,
+      "stars": 4
+    },
+    "psir1a:ipt:7": {
+      "rr": false,
+      "ans": 6,
+      "mcq": 0
+    },
+    "psir1a:ipt:8": {
+      "rr": false,
+      "ans": 5,
+      "mcq": 0
     }
   },
   "ca": {
