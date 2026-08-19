@@ -402,19 +402,19 @@
     "polity:polity-basics:1": {
       "rr": true,
       "ans": 7,
-      "mcq": 0,
+      "mcq": 11,
       "stars": 4
     },
     "polity:polity-basics:2": {
       "rr": true,
       "ans": 1,
-      "mcq": 0,
+      "mcq": 1,
       "stars": 4
     },
     "polity:polity-basics:3": {
       "rr": true,
       "ans": 0,
-      "mcq": 0,
+      "mcq": 1,
       "stars": 4
     }
   },
