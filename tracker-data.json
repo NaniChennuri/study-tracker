@@ -418,6 +418,12 @@
       "ans": 0,
       "mcq": 1,
       "stars": 4
+    },
+    "polity:polity-basics:4": {
+      "rr": true,
+      "ans": 0,
+      "mcq": 0,
+      "stars": 4
     }
   },
   "ca": {
