@@ -422,8 +422,18 @@
     "polity:polity-basics:4": {
       "rr": true,
       "ans": 5,
-      "mcq": 0,
+      "mcq": 7,
       "stars": 4
+    },
+    "polity:union-exec:0": {
+      "rr": false,
+      "ans": 0,
+      "mcq": 0
+    },
+    "polity:parliament:0": {
+      "rr": false,
+      "ans": 0,
+      "mcq": 0
     }
   },
   "ca": {
