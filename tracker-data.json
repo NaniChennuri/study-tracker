@@ -404,7 +404,7 @@
     "polity:polity-basics:1": {
       "rr": true,
       "ans": 7,
-      "mcq": 11,
+      "mcq": 12,
       "stars": 4
     },
     "polity:polity-basics:2": {
@@ -444,19 +444,19 @@
     "polity:polity-basics:5": {
       "rr": true,
       "ans": 1,
-      "mcq": 0,
+      "mcq": 11,
       "stars": 4
     },
     "polity:polity-basics:6": {
       "rr": true,
       "ans": 0,
-      "mcq": 0,
+      "mcq": 5,
       "stars": 4
     },
     "polity:polity-basics:7": {
       "rr": true,
       "ans": 4,
-      "mcq": 0,
+      "mcq": 4,
       "stars": 4
     },
     "polity:elections:0": {
