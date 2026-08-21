@@ -183,7 +183,7 @@
     },
     "psir1a:pol-ideologies:3": {
       "rr": true,
-      "ans": 2,
+      "ans": 3,
       "mcq": 0,
       "stars": 4
     },
@@ -434,6 +434,12 @@
       "rr": false,
       "ans": 0,
       "mcq": 0
+    },
+    "psir1a:theories:0": {
+      "rr": true,
+      "ans": 12,
+      "mcq": 0,
+      "stars": 4
     }
   },
   "ca": {
