@@ -421,7 +421,7 @@
     },
     "polity:polity-basics:4": {
       "rr": true,
-      "ans": 5,
+      "ans": 6,
       "mcq": 7,
       "stars": 4
     },
@@ -455,9 +455,94 @@
     },
     "polity:polity-basics:7": {
       "rr": true,
-      "ans": 0,
+      "ans": 1,
       "mcq": 0,
       "stars": 4
+    },
+    "polity:elections:0": {
+      "rr": false,
+      "ans": 4,
+      "mcq": 0
+    },
+    "polity:judiciary:2": {
+      "rr": false,
+      "ans": 2,
+      "mcq": 0
+    },
+    "polity:system-govt:0": {
+      "rr": false,
+      "ans": 4,
+      "mcq": 0
+    },
+    "polity:union-exec:3": {
+      "rr": false,
+      "ans": 1,
+      "mcq": 0
+    },
+    "polity:judiciary:0": {
+      "rr": false,
+      "ans": 4,
+      "mcq": 0
+    },
+    "polity:system-govt:3": {
+      "rr": false,
+      "ans": 2,
+      "mcq": 0
+    },
+    "polity:state-exec:1": {
+      "rr": false,
+      "ans": 0,
+      "mcq": 0
+    },
+    "polity:union-exec:2": {
+      "rr": false,
+      "ans": 1,
+      "mcq": 0
+    },
+    "polity:union-exec:4": {
+      "rr": false,
+      "ans": 1,
+      "mcq": 0
+    },
+    "polity:system-govt:2": {
+      "rr": false,
+      "ans": 2,
+      "mcq": 0
+    },
+    "polity:local-gov:0": {
+      "rr": false,
+      "ans": 2,
+      "mcq": 0
+    },
+    "polity:state-exec:2": {
+      "rr": false,
+      "ans": 1,
+      "mcq": 0
+    },
+    "polity:system-govt:4": {
+      "rr": false,
+      "ans": 1,
+      "mcq": 0
+    },
+    "polity:parliament:2": {
+      "rr": false,
+      "ans": 1,
+      "mcq": 0
+    },
+    "polity:union-exec:1": {
+      "rr": false,
+      "ans": 1,
+      "mcq": 0
+    },
+    "polity:const-bodies:1": {
+      "rr": false,
+      "ans": 1,
+      "mcq": 0
+    },
+    "polity:state-exec:0": {
+      "rr": false,
+      "ans": 1,
+      "mcq": 0
     }
   },
   "ca": {
