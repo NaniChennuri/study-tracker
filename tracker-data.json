@@ -585,9 +585,10 @@
       "mcq": 0
     },
     "psir2b:psir2b-topics:0": {
-      "rr": false,
+      "rr": true,
       "ans": 30,
-      "mcq": 0
+      "mcq": 0,
+      "stars": 4
     }
   },
   "ca": {
