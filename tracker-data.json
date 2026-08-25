@@ -613,6 +613,17 @@
       "ans": 37,
       "mcq": 0,
       "stars": 4
+    },
+    "psir2b:psir2b-topics:5": {
+      "rr": true,
+      "ans": 14,
+      "mcq": 0,
+      "stars": 4
+    },
+    "psir2b:psir2b-topics:6": {
+      "rr": false,
+      "ans": 13,
+      "mcq": 0
     }
   },
   "ca": {
