@@ -123,13 +123,13 @@
     },
     "psir1a:wpt:8": {
       "rr": true,
-      "ans": 0,
+      "ans": 3,
       "mcq": 0,
       "stars": 4
     },
     "psir1a:wpt:9": {
       "rr": true,
-      "ans": 2,
+      "ans": 4,
       "mcq": 0,
       "stars": 4
     },
@@ -629,6 +629,12 @@
     "psir2b:psir2b-topics:7": {
       "rr": true,
       "ans": 27,
+      "mcq": 0,
+      "stars": 4
+    },
+    "psir1a:theories:1": {
+      "rr": true,
+      "ans": 12,
       "mcq": 0,
       "stars": 4
     }
