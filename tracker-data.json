@@ -649,6 +649,12 @@
       "ans": 0,
       "mcq": 0,
       "stars": 4
+    },
+    "psir1a:theories:2": {
+      "rr": true,
+      "ans": 14,
+      "mcq": 0,
+      "stars": 4
     }
   },
   "ca": {
