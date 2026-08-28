@@ -679,6 +679,18 @@
       "ans": 9,
       "mcq": 0,
       "stars": 4
+    },
+    "economy:economy-core:5": {
+      "rr": true,
+      "ans": 0,
+      "mcq": 0,
+      "stars": 4
+    },
+    "economy:economy-core:6": {
+      "rr": true,
+      "ans": 0,
+      "mcq": 0,
+      "stars": 4
     }
   },
   "ca": {
