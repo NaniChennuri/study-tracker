@@ -664,13 +664,13 @@
     },
     "economy:economy-core:3": {
       "rr": true,
-      "ans": 0,
+      "ans": 2,
       "mcq": 0,
       "stars": 4
     },
     "economy:economy-core:4": {
       "rr": true,
-      "ans": 0,
+      "ans": 1,
       "mcq": 0,
       "stars": 4
     },
@@ -688,13 +688,13 @@
     },
     "economy:economy-core:6": {
       "rr": true,
-      "ans": 0,
+      "ans": 1,
       "mcq": 0,
       "stars": 4
     },
     "economy:economy-core:7": {
       "rr": true,
-      "ans": 0,
+      "ans": 1,
       "mcq": 0,
       "stars": 4
     },
@@ -709,6 +709,41 @@
       "ans": 11,
       "mcq": 0,
       "stars": 4
+    },
+    "economy:economy-core:14": {
+      "rr": false,
+      "ans": 1,
+      "mcq": 0
+    },
+    "economy:agriculture:1": {
+      "rr": false,
+      "ans": 1,
+      "mcq": 0
+    },
+    "economy:agriculture:2": {
+      "rr": false,
+      "ans": 1,
+      "mcq": 0
+    },
+    "economy:economy-core:11": {
+      "rr": false,
+      "ans": 1,
+      "mcq": 0
+    },
+    "economy:industries:0": {
+      "rr": false,
+      "ans": 1,
+      "mcq": 0
+    },
+    "economy:agriculture:3": {
+      "rr": false,
+      "ans": 1,
+      "mcq": 0
+    },
+    "economy:agriculture:0": {
+      "rr": false,
+      "ans": 1,
+      "mcq": 0
     }
   },
   "ca": {
