@@ -641,13 +641,13 @@
     "economy:economy-core:0": {
       "rr": true,
       "ans": 0,
-      "mcq": 0,
+      "mcq": 4,
       "stars": 4
     },
     "economy:economy-core:1": {
       "rr": true,
       "ans": 2,
-      "mcq": 0,
+      "mcq": 4,
       "stars": 4
     },
     "psir1a:theories:2": {
@@ -659,19 +659,19 @@
     "economy:economy-core:2": {
       "rr": true,
       "ans": 1,
-      "mcq": 0,
+      "mcq": 5,
       "stars": 4
     },
     "economy:economy-core:3": {
       "rr": true,
       "ans": 10,
-      "mcq": 0,
+      "mcq": 1,
       "stars": 4
     },
     "economy:economy-core:4": {
       "rr": true,
       "ans": 3,
-      "mcq": 0,
+      "mcq": 7,
       "stars": 4
     },
     "psir1a:theories:3": {
@@ -683,19 +683,19 @@
     "economy:economy-core:5": {
       "rr": true,
       "ans": 1,
-      "mcq": 0,
+      "mcq": 1,
       "stars": 4
     },
     "economy:economy-core:6": {
       "rr": true,
       "ans": 3,
-      "mcq": 0,
+      "mcq": 6,
       "stars": 4
     },
     "economy:economy-core:7": {
       "rr": true,
       "ans": 1,
-      "mcq": 0,
+      "mcq": 12,
       "stars": 4
     },
     "psir1a:theories:4": {
@@ -713,7 +713,7 @@
     "economy:economy-core:14": {
       "rr": false,
       "ans": 4,
-      "mcq": 0
+      "mcq": 2
     },
     "economy:agriculture:1": {
       "rr": false,
@@ -728,7 +728,7 @@
     "economy:economy-core:11": {
       "rr": false,
       "ans": 7,
-      "mcq": 0
+      "mcq": 2
     },
     "economy:industries:0": {
       "rr": false,
@@ -778,12 +778,12 @@
     "economy:economy-core:12": {
       "rr": false,
       "ans": 5,
-      "mcq": 0
+      "mcq": 2
     },
     "economy:economy-core:10": {
       "rr": false,
       "ans": 1,
-      "mcq": 0
+      "mcq": 9
     },
     "economy:infrastructure:2": {
       "rr": false,
@@ -799,6 +799,26 @@
       "rr": false,
       "ans": 1,
       "mcq": 0
+    },
+    "geography:humangeo:1": {
+      "rr": false,
+      "ans": 0,
+      "mcq": 1
+    },
+    "economy:economy-core:8": {
+      "rr": false,
+      "ans": 0,
+      "mcq": 3
+    },
+    "economy:economy-core:9": {
+      "rr": false,
+      "ans": 0,
+      "mcq": 1
+    },
+    "socialjustice:sj-topics:1": {
+      "rr": false,
+      "ans": 0,
+      "mcq": 1
     }
   },
   "ca": {
