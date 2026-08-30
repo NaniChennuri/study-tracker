@@ -646,7 +646,7 @@
     },
     "economy:economy-core:1": {
       "rr": true,
-      "ans": 0,
+      "ans": 2,
       "mcq": 0,
       "stars": 4
     },
@@ -658,19 +658,19 @@
     },
     "economy:economy-core:2": {
       "rr": true,
-      "ans": 0,
+      "ans": 1,
       "mcq": 0,
       "stars": 4
     },
     "economy:economy-core:3": {
       "rr": true,
-      "ans": 2,
+      "ans": 10,
       "mcq": 0,
       "stars": 4
     },
     "economy:economy-core:4": {
       "rr": true,
-      "ans": 1,
+      "ans": 3,
       "mcq": 0,
       "stars": 4
     },
@@ -682,13 +682,13 @@
     },
     "economy:economy-core:5": {
       "rr": true,
-      "ans": 0,
+      "ans": 1,
       "mcq": 0,
       "stars": 4
     },
     "economy:economy-core:6": {
       "rr": true,
-      "ans": 1,
+      "ans": 3,
       "mcq": 0,
       "stars": 4
     },
@@ -712,35 +712,90 @@
     },
     "economy:economy-core:14": {
       "rr": false,
-      "ans": 1,
+      "ans": 4,
       "mcq": 0
     },
     "economy:agriculture:1": {
       "rr": false,
-      "ans": 1,
+      "ans": 10,
       "mcq": 0
     },
     "economy:agriculture:2": {
       "rr": false,
-      "ans": 1,
+      "ans": 7,
       "mcq": 0
     },
     "economy:economy-core:11": {
       "rr": false,
-      "ans": 1,
+      "ans": 7,
       "mcq": 0
     },
     "economy:industries:0": {
       "rr": false,
-      "ans": 1,
+      "ans": 9,
       "mcq": 0
     },
     "economy:agriculture:3": {
       "rr": false,
-      "ans": 1,
+      "ans": 5,
       "mcq": 0
     },
     "economy:agriculture:0": {
+      "rr": false,
+      "ans": 7,
+      "mcq": 0
+    },
+    "geography:humangeo:0": {
+      "rr": false,
+      "ans": 3,
+      "mcq": 0
+    },
+    "economy:infrastructure:1": {
+      "rr": false,
+      "ans": 1,
+      "mcq": 0
+    },
+    "economy:agriculture:5": {
+      "rr": false,
+      "ans": 1,
+      "mcq": 0
+    },
+    "economy:agriculture:4": {
+      "rr": false,
+      "ans": 5,
+      "mcq": 0
+    },
+    "geography:humangeo:3": {
+      "rr": false,
+      "ans": 0,
+      "mcq": 0
+    },
+    "economy:economy-core:13": {
+      "rr": false,
+      "ans": 4,
+      "mcq": 0
+    },
+    "economy:economy-core:12": {
+      "rr": false,
+      "ans": 5,
+      "mcq": 0
+    },
+    "economy:economy-core:10": {
+      "rr": false,
+      "ans": 1,
+      "mcq": 0
+    },
+    "economy:infrastructure:2": {
+      "rr": false,
+      "ans": 1,
+      "mcq": 0
+    },
+    "economy:infrastructure:3": {
+      "rr": false,
+      "ans": 1,
+      "mcq": 0
+    },
+    "economy:infrastructure:0": {
       "rr": false,
       "ans": 1,
       "mcq": 0
