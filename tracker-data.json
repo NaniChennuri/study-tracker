@@ -819,6 +819,36 @@
       "rr": false,
       "ans": 0,
       "mcq": 1
+    },
+    "geography:geomorphology:0": {
+      "rr": true,
+      "ans": 0,
+      "mcq": 0,
+      "stars": 4
+    },
+    "geography:geomorphology:1": {
+      "rr": true,
+      "ans": 0,
+      "mcq": 0,
+      "stars": 4
+    },
+    "geography:geomorphology:2": {
+      "rr": true,
+      "ans": 0,
+      "mcq": 0,
+      "stars": 4
+    },
+    "geography:geomorphology:3": {
+      "rr": true,
+      "ans": 0,
+      "mcq": 0,
+      "stars": 4
+    },
+    "geography:geomorphology:4": {
+      "rr": true,
+      "ans": 0,
+      "mcq": 0,
+      "stars": 4
     }
   },
   "ca": {
