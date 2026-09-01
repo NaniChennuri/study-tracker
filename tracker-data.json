@@ -849,6 +849,26 @@
       "ans": 0,
       "mcq": 0,
       "stars": 4
+    },
+    "geography:climatology:0": {
+      "rr": true,
+      "ans": 0,
+      "mcq": 0
+    },
+    "geography:climatology:1": {
+      "rr": true,
+      "ans": 0,
+      "mcq": 0
+    },
+    "geography:climatology:2": {
+      "rr": true,
+      "ans": 0,
+      "mcq": 0
+    },
+    "geography:climatology:3": {
+      "rr": true,
+      "ans": 0,
+      "mcq": 0
     }
   },
   "ca": {
@@ -877,7 +897,8 @@
     "2026-08-28": true,
     "2026-08-29": true,
     "2026-08-30": true,
-    "2026-08-31": true
+    "2026-08-31": true,
+    "2026-09-01": true
   },
   "csat": [
     "2026-08-09"
