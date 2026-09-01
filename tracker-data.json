@@ -853,22 +853,26 @@
     "geography:climatology:0": {
       "rr": true,
       "ans": 0,
-      "mcq": 0
+      "mcq": 0,
+      "stars": 4
     },
     "geography:climatology:1": {
       "rr": true,
       "ans": 0,
-      "mcq": 0
+      "mcq": 0,
+      "stars": 4
     },
     "geography:climatology:2": {
       "rr": true,
       "ans": 0,
-      "mcq": 0
+      "mcq": 0,
+      "stars": 4
     },
     "geography:climatology:3": {
       "rr": true,
       "ans": 0,
-      "mcq": 0
+      "mcq": 0,
+      "stars": 4
     }
   },
   "ca": {
