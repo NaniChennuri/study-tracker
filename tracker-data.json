@@ -933,6 +933,42 @@
       "ans": 0,
       "mcq": 0,
       "stars": 4
+    },
+    "geography:worldgeo:0": {
+      "rr": true,
+      "ans": 0,
+      "mcq": 0,
+      "stars": 4
+    },
+    "geography:worldgeo:1": {
+      "rr": true,
+      "ans": 0,
+      "mcq": 0,
+      "stars": 4
+    },
+    "geography:worldgeo:2": {
+      "rr": true,
+      "ans": 0,
+      "mcq": 0,
+      "stars": 4
+    },
+    "geography:worldgeo:3": {
+      "rr": true,
+      "ans": 0,
+      "mcq": 0,
+      "stars": 4
+    },
+    "geography:worldgeo:4": {
+      "rr": true,
+      "ans": 0,
+      "mcq": 0,
+      "stars": 4
+    },
+    "geography:worldgeo:5": {
+      "rr": true,
+      "ans": 0,
+      "mcq": 0,
+      "stars": 4
     }
   },
   "ca": {
