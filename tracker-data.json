@@ -426,9 +426,10 @@
       "stars": 4
     },
     "polity:union-exec:0": {
-      "rr": false,
+      "rr": true,
       "ans": 1,
-      "mcq": 0
+      "mcq": 0,
+      "stars": 4
     },
     "polity:parliament:0": {
       "rr": false,
@@ -495,9 +496,10 @@
       "mcq": 0
     },
     "polity:union-exec:2": {
-      "rr": false,
+      "rr": true,
       "ans": 2,
-      "mcq": 0
+      "mcq": 0,
+      "stars": 4
     },
     "polity:union-exec:4": {
       "rr": false,
@@ -530,9 +532,10 @@
       "mcq": 0
     },
     "polity:union-exec:1": {
-      "rr": false,
+      "rr": true,
       "ans": 1,
-      "mcq": 0
+      "mcq": 0,
+      "stars": 4
     },
     "polity:const-bodies:1": {
       "rr": false,
@@ -1011,7 +1014,8 @@
     "2026-08-30": true,
     "2026-08-31": true,
     "2026-09-01": true,
-    "2026-09-02": true
+    "2026-09-02": true,
+    "2026-09-03": true
   },
   "csat": [
     "2026-08-09"
