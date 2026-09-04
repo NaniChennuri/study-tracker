@@ -986,9 +986,16 @@
       "stars": 4
     },
     "psir1b:psir1b-topics:2": {
-      "rr": false,
+      "rr": true,
       "ans": 31,
-      "mcq": 0
+      "mcq": 0,
+      "stars": 4
+    },
+    "psir1b:psir1b-topics:3": {
+      "rr": true,
+      "ans": 24,
+      "mcq": 0,
+      "stars": 4
     }
   },
   "ca": {
