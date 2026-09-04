@@ -476,9 +476,10 @@
       "mcq": 0
     },
     "polity:union-exec:3": {
-      "rr": false,
+      "rr": true,
       "ans": 2,
-      "mcq": 0
+      "mcq": 0,
+      "stars": 4
     },
     "polity:judiciary:0": {
       "rr": false,
@@ -502,9 +503,10 @@
       "stars": 4
     },
     "polity:union-exec:4": {
-      "rr": false,
+      "rr": true,
       "ans": 3,
-      "mcq": 0
+      "mcq": 0,
+      "stars": 4
     },
     "polity:system-govt:2": {
       "rr": false,
