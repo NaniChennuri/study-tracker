@@ -1000,9 +1000,10 @@
       "stars": 4
     },
     "psir1b:psir1b-topics:4": {
-      "rr": false,
+      "rr": true,
       "ans": 16,
-      "mcq": 0
+      "mcq": 0,
+      "stars": 4
     }
   },
   "ca": {
