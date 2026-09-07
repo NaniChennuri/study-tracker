@@ -432,9 +432,10 @@
       "stars": 4
     },
     "polity:parliament:0": {
-      "rr": false,
+      "rr": true,
       "ans": 2,
-      "mcq": 0
+      "mcq": 0,
+      "stars": 4
     },
     "psir1a:theories:0": {
       "rr": true,
@@ -585,9 +586,10 @@
       "mcq": 0
     },
     "polity:parliament:1": {
-      "rr": false,
+      "rr": true,
       "ans": 1,
-      "mcq": 0
+      "mcq": 0,
+      "stars": 4
     },
     "psir2b:psir2b-topics:0": {
       "rr": true,
@@ -1049,7 +1051,9 @@
     "2026-09-02": true,
     "2026-09-03": true,
     "2026-09-04": true,
-    "2026-09-05": true
+    "2026-09-05": true,
+    "2026-09-06": true,
+    "2026-09-07": true
   },
   "csat": [
     "2026-08-09"
