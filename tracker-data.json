@@ -530,9 +530,10 @@
       "mcq": 0
     },
     "polity:parliament:2": {
-      "rr": false,
+      "rr": true,
       "ans": 7,
-      "mcq": 0
+      "mcq": 0,
+      "stars": 4
     },
     "polity:union-exec:1": {
       "rr": true,
