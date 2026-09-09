@@ -572,9 +572,10 @@
       "mcq": 0
     },
     "polity:parliament:3": {
-      "rr": false,
+      "rr": true,
       "ans": 1,
-      "mcq": 0
+      "mcq": 0,
+      "stars": 4
     },
     "polity:const-bodies:0": {
       "rr": false,
@@ -1054,7 +1055,8 @@
     "2026-09-04": true,
     "2026-09-05": true,
     "2026-09-06": true,
-    "2026-09-07": true
+    "2026-09-07": true,
+    "2026-09-08": true
   },
   "csat": [
     "2026-08-09"
