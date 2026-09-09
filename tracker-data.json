@@ -493,9 +493,10 @@
       "mcq": 0
     },
     "polity:state-exec:1": {
-      "rr": false,
+      "rr": true,
       "ans": 0,
-      "mcq": 0
+      "mcq": 0,
+      "stars": 4
     },
     "polity:union-exec:2": {
       "rr": true,
@@ -520,9 +521,10 @@
       "mcq": 0
     },
     "polity:state-exec:2": {
-      "rr": false,
+      "rr": true,
       "ans": 2,
-      "mcq": 0
+      "mcq": 0,
+      "stars": 4
     },
     "polity:system-govt:4": {
       "rr": false,
@@ -547,9 +549,10 @@
       "mcq": 0
     },
     "polity:state-exec:0": {
-      "rr": false,
+      "rr": true,
       "ans": 1,
-      "mcq": 0
+      "mcq": 0,
+      "stars": 4
     },
     "polity:non-const-bodies:2": {
       "rr": false,
